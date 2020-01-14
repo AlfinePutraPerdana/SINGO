@@ -368,7 +368,6 @@
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-</div>
 <!-- ./wrapper -->
 <footer class="main-footer">
   <strong>Copyright &copy; Fasker.</strong>
