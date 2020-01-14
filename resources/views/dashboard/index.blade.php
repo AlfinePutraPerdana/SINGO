@@ -94,7 +94,7 @@
                     <a class="page-scroll" href="#contact">Kontak</a>
                   </li>
                   <li>
-                    <a href="{{ route('login') }}">Login</a>
+                      <a href="/login">Login</a>
                   </li>
                 </ul>
               </div>

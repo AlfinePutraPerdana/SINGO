@@ -7,6 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="{{ asset('assets_fe/css/style.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('assets_be/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
@@ -18,10 +19,14 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" 
+style="background-image: url('assets_fe/img/slider/slider1.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Login</b> Fasker</a>
+    <a><b>Login</b> Fasker</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -67,11 +72,11 @@
           <a href="forgot-password.html">Lupa Kata sandi ?</a>
         </div>
         <div class="col-6 mt-3">
-          <a href="{{ route('register')}}" class="text-center">Daftar Pengguna Baru</a>
+          <a href="/register" class="text-center">Daftar Pengguna Baru</a>
         </div>
       </div>
       <br>
-      <a href="{{ route('dashboard')}}" class="btn btn-secondary btn-block">Kembali</a>
+      <a href="/" class="btn btn-secondary btn-block">Kembali</a>
     </div>
     <!-- /.login-card-body -->
   </div>
