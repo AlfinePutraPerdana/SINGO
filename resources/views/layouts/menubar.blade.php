@@ -357,7 +357,7 @@
          <div id="app">
 
             @yield('content')
-            </div>
+          </div>
 
 
 
@@ -376,6 +376,7 @@
 
 <!-- jQuery -->
 <script src="{{ asset('js/app.js') }}"></script>
+
 <script src="{{asset('assets_be/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
