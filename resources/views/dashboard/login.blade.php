@@ -72,11 +72,11 @@ background-repeat: no-repeat;">
           <a href="forgot-password.html">Lupa Kata sandi ?</a>
         </div>
         <div class="col-6 mt-3">
-          <a href="{{ route('register')}}" class="text-center">Daftar Pengguna Baru</a>
+          <a href="/register" class="text-center">Daftar Pengguna Baru</a>
         </div>
       </div>
       <br>
-      <a href="{{ route('dashboard')}}" class="btn btn-secondary btn-block">Kembali</a>
+      <a href="/" class="btn btn-secondary btn-block">Kembali</a>
     </div>
     <!-- /.login-card-body -->
   </div>

@@ -40,17 +40,6 @@ html, body {
   height: 100%;
 }
 
-.bg-login{
-  align-items: center;
-  display: flex;
-  background-image: url("../img/slider/slider1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  height: 100%;
-}
-
 .floatleft {
   float: left;
 }

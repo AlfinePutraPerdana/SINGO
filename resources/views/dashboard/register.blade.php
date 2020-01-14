@@ -74,7 +74,7 @@ background-repeat: no-repeat;">
         </div>
         <br>
         <div class="row justify-content-around">
-          <a href="{{ route('login')}}">Kembali</a>
+          <a href="/login">Kembali</a>
         </div>
       </form>
     </div>
