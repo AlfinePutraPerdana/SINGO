@@ -1956,6 +1956,1611 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Instansi_lokal.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/instansi/Instansi_lokal.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Tambah_instansi.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/instansi/Tambah_instansi.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Monev.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/monev/Monev.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Tambah_monev.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/monev/Tambah_monev.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/rkt/Draft_rkt.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/rkt/Draft_rkt.vue?vue&type=script&lang=js& ***!
@@ -2730,6 +4335,306 @@ __webpack_require__.r(__webpack_exports__);
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Ajukan_tamu.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tamu/Ajukan_tamu.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Proses_tamu.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tamu/Proses_tamu.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Revisi_tamu.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tamu/Revisi_tamu.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -39128,6 +41033,5365 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Instansi_lokal.vue?vue&type=template&id=bc8a42b0&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/instansi/Instansi_lokal.vue?vue&type=template&id=bc8a42b0& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("section", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", [_vm._v("Pemberdayaan Mitra Lokal")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+                _c("li", { staticClass: "breadcrumb-item" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Pemberdayaan Mitra Lokal")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Daftar Mitra Lokal")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "input-group input-group-sm",
+                      staticStyle: { width: "150px" }
+                    },
+                    [
+                      _c("input", {
+                        staticClass: "form-control float-right",
+                        attrs: {
+                          type: "text",
+                          name: "table_search",
+                          placeholder: "Search"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-default",
+                            attrs: { type: "submit" }
+                          },
+                          [_c("i", { staticClass: "fas fa-search" })]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-body table-responsive p-0",
+                  staticStyle: { height: "300px" }
+                },
+                [
+                  _c("table", { staticClass: "table table-head-fixed" }, [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [_vm._v("No")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Alamat Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nomor Registrasi")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama Program")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Pembiayaan")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Durasi")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("1")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("2")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("3")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("4")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("5")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")])
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c("div", { staticClass: " float-left" }),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  { staticClass: "pagination pagination-sm m-0 float-right" },
+                  [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Tambah_instansi.vue?vue&type=template&id=80d97678&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/instansi/Tambah_instansi.vue?vue&type=template&id=80d97678& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("section", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", [_vm._v("Pemberdayaan Instansi Lokal")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+                _c("li", { staticClass: "breadcrumb-item" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Pemberdayaan Instansi Lokal")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Daftar Instansi Lokal")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "input-group input-group-sm",
+                      staticStyle: { width: "150px" }
+                    },
+                    [
+                      _c("input", {
+                        staticClass: "form-control float-right",
+                        attrs: {
+                          type: "text",
+                          name: "table_search",
+                          placeholder: "Search"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-default",
+                            attrs: { type: "submit" }
+                          },
+                          [_c("i", { staticClass: "fas fa-search" })]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-body table-responsive p-0",
+                  staticStyle: { height: "300px" }
+                },
+                [
+                  _c("table", { staticClass: "table table-head-fixed" }, [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [_vm._v("No")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama Instansi")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Negara")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Kota")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Alamat Mitra")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Kategori")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nomor Izin Registrasi")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama Program")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Pembiayaan")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Durasi")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Aksi")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("1")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Asing")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Jl Baru")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Instansi Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Negara")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "negara",
+                                                  placeholder: "Negara"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Kota")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "kota",
+                                                  placeholder: "Kota"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Alamat Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "alamat",
+                                                  placeholder: "Alamat Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Kategori")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: { for: "registrasi" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "Nomor Izin Registrasi"
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "registrasi",
+                                                  placeholder:
+                                                    "Nomor Registrasi"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "program" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "program",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Durasi")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate2"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate2"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("2")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Indonesia")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Jl Baru")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Instansi Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Negara")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "negara",
+                                                  placeholder: "Negara"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Kota")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "kota",
+                                                  placeholder: "Kota"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Alamat Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "alamat",
+                                                  placeholder: "Alamat Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Kategori")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: { for: "registrasi" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "Nomor Izin Registrasi"
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "registrasi",
+                                                  placeholder:
+                                                    "Nomor Registrasi"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "program" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "program",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Durasi")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate2"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate2"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("3")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Indonesia")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Jl Baru")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Instansi Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Negara")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "negara",
+                                                  placeholder: "Negara"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Kota")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "kota",
+                                                  placeholder: "Kota"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Alamat Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "alamat",
+                                                  placeholder: "Alamat Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Kategori")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: { for: "registrasi" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "Nomor Izin Registrasi"
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "registrasi",
+                                                  placeholder:
+                                                    "Nomor Registrasi"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "program" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "program",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Durasi")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate2"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate2"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("4")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Lokal")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Indonesia")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Jl Baru")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Instansi Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Negara")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "negara",
+                                                  placeholder: "Negara"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Kota")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "kota",
+                                                  placeholder: "Kota"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Alamat Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "alamat",
+                                                  placeholder: "Alamat Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Kategori")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: { for: "registrasi" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "Nomor Izin Registrasi"
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "registrasi",
+                                                  placeholder:
+                                                    "Nomor Registrasi"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "program" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "program",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Durasi")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate2"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate2"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("5")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra Asing")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Jl Baru")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Mitra")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("9998887776666")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Membangun")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Rp.10.000.000")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Instansi Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Negara")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "negara",
+                                                  placeholder: "Negara"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Kota")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "kota",
+                                                  placeholder: "Kota"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "alamat" } },
+                                                [_vm._v("Alamat Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "alamat",
+                                                  placeholder: "Alamat Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Kategori")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: { for: "registrasi" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "Nomor Izin Registrasi"
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "registrasi",
+                                                  placeholder:
+                                                    "Nomor Registrasi"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "program" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "program",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Durasi")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate2"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate2"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c("div", { staticClass: " float-left" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: {
+                        type: "button",
+                        "data-toggle": "modal",
+                        "data-target": "#tambah"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                      Tambah Mitra\n                  "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "modal fade",
+                      attrs: {
+                        id: "tambah",
+                        tabindex: "-1",
+                        role: "dialog",
+                        "aria-labelledby": "exampleModalLabel",
+                        "aria-hidden": "true"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "modal-dialog",
+                          attrs: { role: "document" }
+                        },
+                        [
+                          _c("div", { staticClass: "modal-content" }, [
+                            _c("div", { staticClass: "modal-header" }, [
+                              _c(
+                                "h5",
+                                {
+                                  staticClass: "modal-title",
+                                  attrs: { id: "exampleModalLabel" }
+                                },
+                                [_vm._v("Form Instansi Lokal")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "close",
+                                  attrs: {
+                                    type: "button",
+                                    "data-dismiss": "modal",
+                                    "aria-label": "Close"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "span",
+                                    { attrs: { "aria-hidden": "true" } },
+                                    [_vm._v("×")]
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "modal-body" }, [
+                              _c(
+                                "form",
+                                { attrs: { action: "", role: "form" } },
+                                [
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "nama" } }, [
+                                      _vm._v("Nama Mitra")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "nama",
+                                        placeholder: "Nama Mitra"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "alamat" } }, [
+                                      _vm._v("Negara")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "negara",
+                                        placeholder: "Negara"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "alamat" } }, [
+                                      _vm._v("Kota")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "kota",
+                                        placeholder: "Kota"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "alamat" } }, [
+                                      _vm._v("Alamat Mitra")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "alamat",
+                                        placeholder: "Alamat Mitra"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c("label", [_vm._v("Kategori")]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "select",
+                                        { staticClass: "form-control" },
+                                        [
+                                          _c("option", [_vm._v("option 1")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 2")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 3")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 4")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 5")])
+                                        ]
+                                      )
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "registrasi" } },
+                                      [_vm._v("Nomor Izin Registrasi")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "registrasi",
+                                        placeholder: "Nomor Registrasi"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "program" } }, [
+                                      _vm._v("Nama Program")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "program",
+                                        placeholder: "Nama Program"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c("label", [_vm._v("Pembiayaan")]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "select",
+                                        { staticClass: "form-control" },
+                                        [
+                                          _c("option", [_vm._v("option 1")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 2")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 3")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 4")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 5")])
+                                        ]
+                                      )
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "col-md-12" }, [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c("label", { attrs: { for: "" } }, [
+                                        _vm._v("Durasi")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "input-group" },
+                                        [
+                                          _c("input", {
+                                            staticClass:
+                                              "form-control startdate datetimepicker-input",
+                                            attrs: {
+                                              type: "text",
+                                              "data-toggle": "datetimepicker",
+                                              "data-target": ".startdate"
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "input-group-append"
+                                            },
+                                            [
+                                              _c(
+                                                "span",
+                                                {
+                                                  staticClass:
+                                                    "input-group-text"
+                                                },
+                                                [_vm._v("s/d")]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c("input", {
+                                            staticClass:
+                                              "form-control enddate datetimepicker-input",
+                                            attrs: {
+                                              type: "text",
+                                              "data-toggle": "datetimepicker",
+                                              "data-target": ".enddate"
+                                            }
+                                          })
+                                        ]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "modal-footer" }, [
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-secondary",
+                                  attrs: {
+                                    type: "button",
+                                    "data-dismiss": "modal"
+                                  }
+                                },
+                                [_vm._v("Tutup")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-primary",
+                                  attrs: { type: "button" }
+                                },
+                                [_vm._v("Simpan")]
+                              )
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  { staticClass: "pagination pagination-sm m-0 float-right" },
+                  [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Monev.vue?vue&type=template&id=690dba50&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/monev/Monev.vue?vue&type=template&id=690dba50& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("section", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", [_vm._v("Pengajuan Monev")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+                _c("li", { staticClass: "breadcrumb-item" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Pengajuan Monev")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Daftar Pengajuan Monev")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "input-group input-group-sm",
+                      staticStyle: { width: "150px" }
+                    },
+                    [
+                      _c("input", {
+                        staticClass: "form-control float-right",
+                        attrs: {
+                          type: "text",
+                          name: "table_search",
+                          placeholder: "Search"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-default",
+                            attrs: { type: "submit" }
+                          },
+                          [_c("i", { staticClass: "fas fa-search" })]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-body table-responsive p-0",
+                  staticStyle: { height: "500px" }
+                },
+                [
+                  _c("table", { staticClass: "table table-head-fixed" }, [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [_vm._v("No")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama Program")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Propinsi")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Kabupaten")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Waktu")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("1")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("2")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("3")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("4")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("5")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")])
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c(
+                  "ul",
+                  { staticClass: "pagination pagination-sm m-0 float-right" },
+                  [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Tambah_monev.vue?vue&type=template&id=650af2a4&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/monev/Tambah_monev.vue?vue&type=template&id=650af2a4& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("section", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", [_vm._v("Pengajuan Monev")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+                _c("li", { staticClass: "breadcrumb-item" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Pengajuan Monev")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Daftar Pengajuan Monev")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "input-group input-group-sm",
+                      staticStyle: { width: "150px" }
+                    },
+                    [
+                      _c("input", {
+                        staticClass: "form-control float-right",
+                        attrs: {
+                          type: "text",
+                          name: "table_search",
+                          placeholder: "Search"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-default",
+                            attrs: { type: "submit" }
+                          },
+                          [_c("i", { staticClass: "fas fa-search" })]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-body table-responsive p-0",
+                  staticStyle: { height: "500px" }
+                },
+                [
+                  _c("table", { staticClass: "table table-head-fixed" }, [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [_vm._v("No")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama Program")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Propinsi")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Kabupaten")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Waktu")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Aksi")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("1")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Pengajuan Monev")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [_vm._v("Pillih Propinsi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Jawa Barat")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Timur")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Tengah")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("DKI Jakarta")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "kabupaten" } },
+                                                [_vm._v("Pilih Kabupaten")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    multiple: "",
+                                                    id: "kabupaten"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Bogor")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Depok")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Cirebon")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Waktu")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate2"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate2 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate2"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("2")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Mitra Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Mitra")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Mitra"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [_vm._v("Pillih Propinsi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Jawa Barat")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Timur")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Tengah")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("DKI Jakarta")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "kabupaten" } },
+                                                [_vm._v("Pilih Kabupaten")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    multiple: "",
+                                                    id: "kabupaten"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Bogor")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Depok")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Cirebon")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Waktu")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate3 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate3"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate3 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate3"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("3")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Mitra Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [_vm._v("Pillih Propinsi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Jawa Barat")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Timur")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Tengah")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("DKI Jakarta")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "kabupaten" } },
+                                                [_vm._v("Pilih Kabupaten")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    multiple: "",
+                                                    id: "kabupaten"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Bogor")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Depok")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Cirebon")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Waktu")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate4 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate4"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate4 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate4"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("4")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Mitra Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [_vm._v("Pillih Propinsi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Jawa Barat")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Timur")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Tengah")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("DKI Jakarta")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "kabupaten" } },
+                                                [_vm._v("Pilih Kabupaten")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    multiple: "",
+                                                    id: "kabupaten"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Bogor")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Depok")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Cirebon")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Waktu")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate5 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate5"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate5 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate5"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("5")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Pembangunan")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                      Jawa Barat\n                  "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("ul", [
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Bogor\n                          "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                              Kabupaten Depok\n                          "
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("10/01/2020 - 12/02/2020")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ubah"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                      Ubah\n                  "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "modal fade",
+                              attrs: {
+                                id: "ubah",
+                                tabindex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "exampleModalLabel",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "modal-dialog",
+                                  attrs: { role: "document" }
+                                },
+                                [
+                                  _c("div", { staticClass: "modal-content" }, [
+                                    _c("div", { staticClass: "modal-header" }, [
+                                      _c(
+                                        "h5",
+                                        {
+                                          staticClass: "modal-title",
+                                          attrs: { id: "exampleModalLabel" }
+                                        },
+                                        [_vm._v("Form Mitra Lokal")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "close",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal",
+                                            "aria-label": "Close"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              attrs: { "aria-hidden": "true" }
+                                            },
+                                            [_vm._v("×")]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-body" }, [
+                                      _c(
+                                        "form",
+                                        { attrs: { action: "", role: "form" } },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "nama" } },
+                                                [_vm._v("Nama Program")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass: "form-control",
+                                                attrs: {
+                                                  type: "text",
+                                                  id: "nama",
+                                                  placeholder: "Nama Program"
+                                                }
+                                              })
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [_vm._v("Pillih Propinsi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlSelect1"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Jawa Barat")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Timur")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Jawa Tengah")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("DKI Jakarta")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "label",
+                                                { attrs: { for: "kabupaten" } },
+                                                [_vm._v("Pilih Kabupaten")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass: "form-control",
+                                                  attrs: {
+                                                    multiple: "",
+                                                    id: "kabupaten"
+                                                  }
+                                                },
+                                                [
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Bogor")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Depok")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("Kabupaten Cirebon")
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "form-group" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c("label", [
+                                                    _vm._v("Pembiayaan")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "select",
+                                                    {
+                                                      staticClass:
+                                                        "form-control"
+                                                    },
+                                                    [
+                                                      _c("option", [
+                                                        _vm._v("option 1")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 2")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 3")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 4")
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c("option", [
+                                                        _vm._v("option 5")
+                                                      ])
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-12" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "form-group" },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    { attrs: { for: "" } },
+                                                    [_vm._v("Waktu")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "input-group"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control startdate6 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".startdate6"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "input-group-append"
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "span",
+                                                            {
+                                                              staticClass:
+                                                                "input-group-text"
+                                                            },
+                                                            [_vm._v("s/d")]
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("input", {
+                                                        staticClass:
+                                                          "form-control enddate6 datetimepicker-input",
+                                                        attrs: {
+                                                          type: "text",
+                                                          "data-toggle":
+                                                            "datetimepicker",
+                                                          "data-target":
+                                                            ".enddate6"
+                                                        }
+                                                      })
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "modal-footer" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-secondary",
+                                          attrs: {
+                                            type: "button",
+                                            "data-dismiss": "modal"
+                                          }
+                                        },
+                                        [_vm._v("Tutup")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-success",
+                                          attrs: { type: "button" }
+                                        },
+                                        [_vm._v("Simpan")]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c(
+                  "ul",
+                  { staticClass: "pagination pagination-sm m-0 float-right" },
+                  [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "float-left" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: {
+                        type: "button",
+                        "data-toggle": "modal",
+                        "data-target": "#tambah"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                      Tambah Pengajuan\n                "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "modal fade",
+                      attrs: {
+                        id: "tambah",
+                        tabindex: "-1",
+                        role: "dialog",
+                        "aria-labelledby": "exampleModalLabel",
+                        "aria-hidden": "true"
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "modal-dialog",
+                          attrs: { role: "document" }
+                        },
+                        [
+                          _c("div", { staticClass: "modal-content" }, [
+                            _c("div", { staticClass: "modal-header" }, [
+                              _c(
+                                "h5",
+                                {
+                                  staticClass: "modal-title",
+                                  attrs: { id: "exampleModalLabel" }
+                                },
+                                [_vm._v("Form Pengajuan Monev")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "close",
+                                  attrs: {
+                                    type: "button",
+                                    "data-dismiss": "modal",
+                                    "aria-label": "Close"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "span",
+                                    { attrs: { "aria-hidden": "true" } },
+                                    [_vm._v("×")]
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "modal-body" }, [
+                              _c(
+                                "form",
+                                { attrs: { action: "", role: "form" } },
+                                [
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "nama" } }, [
+                                      _vm._v("Nama Program")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "nama",
+                                        placeholder: "Nama Mitra"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      {
+                                        attrs: {
+                                          for: "exampleFormControlSelect1"
+                                        }
+                                      },
+                                      [_vm._v("Pillih Propinsi")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "select",
+                                      {
+                                        staticClass: "form-control",
+                                        attrs: {
+                                          id: "exampleFormControlSelect1"
+                                        }
+                                      },
+                                      [
+                                        _c("option", [_vm._v("Jawa Barat")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("Jawa Timur")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("Jawa Tengah")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("DKI Jakarta")])
+                                      ]
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "kabupaten" } },
+                                      [_vm._v("Pilih Kabupaten")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "select",
+                                      {
+                                        staticClass: "form-control",
+                                        attrs: { multiple: "", id: "kabupaten" }
+                                      },
+                                      [
+                                        _c("option", [
+                                          _vm._v("Kabupaten Bogor")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("option", [
+                                          _vm._v("Kabupaten Depok")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("option", [
+                                          _vm._v("Kabupaten Cirebon")
+                                        ])
+                                      ]
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c("label", [_vm._v("Pembiayaan")]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "select",
+                                        { staticClass: "form-control" },
+                                        [
+                                          _c("option", [_vm._v("option 1")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 2")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 3")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 4")]),
+                                          _vm._v(" "),
+                                          _c("option", [_vm._v("option 5")])
+                                        ]
+                                      )
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "col-md-12" }, [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c("label", { attrs: { for: "" } }, [
+                                        _vm._v("Waktu")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "input-group" },
+                                        [
+                                          _c("input", {
+                                            staticClass:
+                                              "form-control startdate datetimepicker-input",
+                                            attrs: {
+                                              type: "text",
+                                              "data-toggle": "datetimepicker",
+                                              "data-target": ".startdate"
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "input-group-append"
+                                            },
+                                            [
+                                              _c(
+                                                "span",
+                                                {
+                                                  staticClass:
+                                                    "input-group-text"
+                                                },
+                                                [_vm._v("s/d")]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c("input", {
+                                            staticClass:
+                                              "form-control enddate datetimepicker-input",
+                                            attrs: {
+                                              type: "text",
+                                              "data-toggle": "datetimepicker",
+                                              "data-target": ".enddate"
+                                            }
+                                          })
+                                        ]
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "modal-footer" }, [
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-secondary",
+                                  attrs: {
+                                    type: "button",
+                                    "data-dismiss": "modal"
+                                  }
+                                },
+                                [_vm._v("Tutup")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-primary",
+                                  attrs: { type: "button" }
+                                },
+                                [_vm._v("Simpan")]
+                              )
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/rkt/Draft_rkt.vue?vue&type=template&id=10975da4&":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/rkt/Draft_rkt.vue?vue&type=template&id=10975da4& ***!
@@ -40665,6 +47929,648 @@ render._withStripped = true
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Ajukan_tamu.vue?vue&type=template&id=323c458e&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tamu/Ajukan_tamu.vue?vue&type=template&id=323c458e& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("section", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", [_vm._v("Rekomendasi Tenaga Asing")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+                _c("li", { staticClass: "breadcrumb-item" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Pemberitahuan Tamu Asing")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "card card-primary" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Form Pemberitahuan Tamu Asing")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("form", { attrs: { role: "form" } }, [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "nama" } }, [_vm._v("Nama")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "nama", placeholder: "nama" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "nama" } }, [
+                      _vm._v("Tempat Lahir")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "nama", placeholder: "nama" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "" } }, [
+                        _vm._v("Tanggal Lahir")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("input", {
+                          staticClass:
+                            "form-control datepicker datetimepicker-input",
+                          attrs: {
+                            type: "text",
+                            "data-toggle": "datetimepicker",
+                            "data-target": ".datepicker"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "negara" } }, [
+                        _vm._v("Asal Negara")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "negara",
+                          placeholder: "negara"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "Passport" } }, [
+                        _vm._v("Nomor Passport")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "passport",
+                          placeholder: "Nomor Passport"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-12" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "" } }, [
+                          _vm._v("Masa Berlaku Passport")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group" }, [
+                          _c("input", {
+                            staticClass:
+                              "form-control startdate2 datetimepicker-input",
+                            attrs: {
+                              type: "text",
+                              "data-toggle": "datetimepicker",
+                              "data-target": ".startdate2"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "input-group-append" }, [
+                            _c("span", { staticClass: "input-group-text" }, [
+                              _vm._v("s/d")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass:
+                              "form-control enddate2 datetimepicker-input",
+                            attrs: {
+                              type: "text",
+                              "data-toggle": "datetimepicker",
+                              "data-target": ".enddate2"
+                            }
+                          })
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", [_vm._v("Instansi")]),
+                        _vm._v(" "),
+                        _c("select", { staticClass: "form-control" }, [
+                          _c("option", [_vm._v("option 1")]),
+                          _vm._v(" "),
+                          _c("option", [_vm._v("option 2")]),
+                          _vm._v(" "),
+                          _c("option", [_vm._v("option 3")]),
+                          _vm._v(" "),
+                          _c("option", [_vm._v("option 4")]),
+                          _vm._v(" "),
+                          _c("option", [_vm._v("option 5")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "tujuan" } }, [
+                          _vm._v("Tujuan Kegiatan")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "tujuan",
+                            placeholder: "Tujuan Kegiatan"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "jabatan" } }, [
+                          _vm._v("Jabatan")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "jabatan",
+                            placeholder: "Jabatan"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "file" } }, [
+                          _vm._v("Lampirkan Foto")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group" }, [
+                          _c("div", { staticClass: "custom-file" }, [
+                            _c("input", {
+                              staticClass: "custom-file-input",
+                              attrs: { type: "file", id: "foto" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass: "custom-file-label",
+                                attrs: { for: "file" }
+                              },
+                              [_vm._v("Pilih File")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "input-group-append" }, [
+                            _c(
+                              "span",
+                              {
+                                staticClass: "input-group-text",
+                                attrs: { id: "upload" }
+                              },
+                              [_vm._v("Unggah")]
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "file" } }, [
+                          _vm._v("Lampirkan Passport")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group" }, [
+                          _c("div", { staticClass: "custom-file" }, [
+                            _c("input", {
+                              staticClass: "custom-file-input",
+                              attrs: { type: "file", id: "passport" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass: "custom-file-label",
+                                attrs: { for: "file" }
+                              },
+                              [_vm._v("Pilih File")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "input-group-append" }, [
+                            _c(
+                              "span",
+                              {
+                                staticClass: "input-group-text",
+                                attrs: { id: "upload" }
+                              },
+                              [_vm._v("Unggah")]
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "file" } }, [
+                          _vm._v("Lampirkan CV")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group" }, [
+                          _c("div", { staticClass: "custom-file" }, [
+                            _c("input", {
+                              staticClass: "custom-file-input",
+                              attrs: { type: "file", id: "cv" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass: "custom-file-label",
+                                attrs: { for: "file" }
+                              },
+                              [_vm._v("Pilih File")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "input-group-append" }, [
+                            _c(
+                              "span",
+                              {
+                                staticClass: "input-group-text",
+                                attrs: { id: "upload" }
+                              },
+                              [_vm._v("Unggah")]
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("label", { attrs: { for: "" } }, [
+                            _vm._v("Lama Kegiatan")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "input-group" }, [
+                            _c("input", {
+                              staticClass:
+                                "form-control startdate datetimepicker-input",
+                              attrs: {
+                                type: "text",
+                                "data-toggle": "datetimepicker",
+                                "data-target": ".startdate"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "input-group-append" }, [
+                              _c("span", { staticClass: "input-group-text" }, [
+                                _vm._v("s/d")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass:
+                                "form-control enddate datetimepicker-input",
+                              attrs: {
+                                type: "text",
+                                "data-toggle": "datetimepicker",
+                                "data-target": ".enddate"
+                              }
+                            })
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-footer" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { href: "/tamu", role: "button" }
+                      },
+                      [_vm._v("Simpan")]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Proses_tamu.vue?vue&type=template&id=0daf2ede&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tamu/Proses_tamu.vue?vue&type=template&id=0daf2ede& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("section", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", [_vm._v("Pemberitahuan Tamu Asing")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+                _c("li", { staticClass: "breadcrumb-item" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Sedang Proses")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [
+                  _vm._v("Pemberitahuan Tamu Asing")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "input-group input-group-sm",
+                      staticStyle: { width: "150px" }
+                    },
+                    [
+                      _c("input", {
+                        staticClass: "form-control float-right",
+                        attrs: {
+                          type: "text",
+                          name: "table_search",
+                          placeholder: "Search"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-default",
+                            attrs: { type: "submit" }
+                          },
+                          [_c("i", { staticClass: "fas fa-search" })]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-body table-responsive p-0",
+                  staticStyle: { height: "300px" }
+                },
+                [
+                  _c("table", { staticClass: "table table-head-fixed" }, [
+                    _c("thead", [
+                      _c("tr", [
+                        _c("th", [_vm._v("No")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Nama")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Asal Negara")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Tujuan Daerah")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Lama Kegiatan")]),
+                        _vm._v(" "),
+                        _c("th", [_vm._v("Status")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("1")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Andy Woods")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("span", { staticClass: "badge badge-warning" }, [
+                            _vm._v("Dalam Proses")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("2")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Andy Woods")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("2 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("span", { staticClass: "badge badge-warning" }, [
+                            _vm._v("Dalam Proses")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("3")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Andy Woods")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("3 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("span", { staticClass: "badge badge-warning" }, [
+                            _vm._v("Dalam Proses")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("4")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Andy Woods")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("4 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("span", { staticClass: "badge badge-warning" }, [
+                            _vm._v("Dalam Proses")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("5")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Andy Woods")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Singapura")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Bogor")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("5 Tahun")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("span", { staticClass: "badge badge-warning" }, [
+                            _vm._v("Dalam Proses")
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c(
+                  "ul",
+                  { staticClass: "pagination pagination-sm m-0 float-right" },
+                  [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Revisi_tamu.vue?vue&type=template&id=06e41329&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tamu/Revisi_tamu.vue?vue&type=template&id=06e41329& ***!
   \*******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -55080,6 +62986,12 @@ Vue.component('proses-tenaga', __webpack_require__(/*! ./components/tenaga/Prose
 Vue.component('list-tenaga', __webpack_require__(/*! ./components/tenaga/List_tenaga.vue */ "./resources/js/components/tenaga/List_tenaga.vue")["default"]);
 Vue.component('tamu-asing', __webpack_require__(/*! ./components/tamu/Tamu_asing.vue */ "./resources/js/components/tamu/Tamu_asing.vue")["default"]);
 Vue.component('ajukan-tamu', __webpack_require__(/*! ./components/tamu/Ajukan_tamu.vue */ "./resources/js/components/tamu/Ajukan_tamu.vue")["default"]);
+Vue.component('revisi-tamu', __webpack_require__(/*! ./components/tamu/Revisi_tamu.vue */ "./resources/js/components/tamu/Revisi_tamu.vue")["default"]);
+Vue.component('proses-tamu', __webpack_require__(/*! ./components/tamu/Proses_tamu.vue */ "./resources/js/components/tamu/Proses_tamu.vue")["default"]);
+Vue.component('instansi-lokal', __webpack_require__(/*! ./components/instansi/Instansi_lokal.vue */ "./resources/js/components/instansi/Instansi_lokal.vue")["default"]);
+Vue.component('tambah-instansi', __webpack_require__(/*! ./components/instansi/Tambah_instansi.vue */ "./resources/js/components/instansi/Tambah_instansi.vue")["default"]);
+Vue.component('list-monev', __webpack_require__(/*! ./components/monev/Monev.vue */ "./resources/js/components/monev/Monev.vue")["default"]);
+Vue.component('tambah-monev', __webpack_require__(/*! ./components/monev/Tambah_monev.vue */ "./resources/js/components/monev/Tambah_monev.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -55201,6 +63113,282 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/instansi/Instansi_lokal.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/instansi/Instansi_lokal.vue ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Instansi_lokal_vue_vue_type_template_id_bc8a42b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Instansi_lokal.vue?vue&type=template&id=bc8a42b0& */ "./resources/js/components/instansi/Instansi_lokal.vue?vue&type=template&id=bc8a42b0&");
+/* harmony import */ var _Instansi_lokal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Instansi_lokal.vue?vue&type=script&lang=js& */ "./resources/js/components/instansi/Instansi_lokal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Instansi_lokal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Instansi_lokal_vue_vue_type_template_id_bc8a42b0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Instansi_lokal_vue_vue_type_template_id_bc8a42b0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/instansi/Instansi_lokal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/instansi/Instansi_lokal.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/instansi/Instansi_lokal.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Instansi_lokal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Instansi_lokal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Instansi_lokal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Instansi_lokal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/instansi/Instansi_lokal.vue?vue&type=template&id=bc8a42b0&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/instansi/Instansi_lokal.vue?vue&type=template&id=bc8a42b0& ***!
+  \********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Instansi_lokal_vue_vue_type_template_id_bc8a42b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Instansi_lokal.vue?vue&type=template&id=bc8a42b0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Instansi_lokal.vue?vue&type=template&id=bc8a42b0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Instansi_lokal_vue_vue_type_template_id_bc8a42b0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Instansi_lokal_vue_vue_type_template_id_bc8a42b0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/instansi/Tambah_instansi.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/instansi/Tambah_instansi.vue ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Tambah_instansi_vue_vue_type_template_id_80d97678___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tambah_instansi.vue?vue&type=template&id=80d97678& */ "./resources/js/components/instansi/Tambah_instansi.vue?vue&type=template&id=80d97678&");
+/* harmony import */ var _Tambah_instansi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tambah_instansi.vue?vue&type=script&lang=js& */ "./resources/js/components/instansi/Tambah_instansi.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Tambah_instansi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tambah_instansi_vue_vue_type_template_id_80d97678___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tambah_instansi_vue_vue_type_template_id_80d97678___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/instansi/Tambah_instansi.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/instansi/Tambah_instansi.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/instansi/Tambah_instansi.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_instansi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Tambah_instansi.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Tambah_instansi.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_instansi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/instansi/Tambah_instansi.vue?vue&type=template&id=80d97678&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/instansi/Tambah_instansi.vue?vue&type=template&id=80d97678& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_instansi_vue_vue_type_template_id_80d97678___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Tambah_instansi.vue?vue&type=template&id=80d97678& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/instansi/Tambah_instansi.vue?vue&type=template&id=80d97678&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_instansi_vue_vue_type_template_id_80d97678___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_instansi_vue_vue_type_template_id_80d97678___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/monev/Monev.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/monev/Monev.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Monev_vue_vue_type_template_id_690dba50___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Monev.vue?vue&type=template&id=690dba50& */ "./resources/js/components/monev/Monev.vue?vue&type=template&id=690dba50&");
+/* harmony import */ var _Monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Monev.vue?vue&type=script&lang=js& */ "./resources/js/components/monev/Monev.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Monev_vue_vue_type_template_id_690dba50___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Monev_vue_vue_type_template_id_690dba50___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/monev/Monev.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/monev/Monev.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/monev/Monev.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Monev.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Monev.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/monev/Monev.vue?vue&type=template&id=690dba50&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/monev/Monev.vue?vue&type=template&id=690dba50& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Monev_vue_vue_type_template_id_690dba50___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Monev.vue?vue&type=template&id=690dba50& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Monev.vue?vue&type=template&id=690dba50&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Monev_vue_vue_type_template_id_690dba50___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Monev_vue_vue_type_template_id_690dba50___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/monev/Tambah_monev.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/monev/Tambah_monev.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Tambah_monev_vue_vue_type_template_id_650af2a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tambah_monev.vue?vue&type=template&id=650af2a4& */ "./resources/js/components/monev/Tambah_monev.vue?vue&type=template&id=650af2a4&");
+/* harmony import */ var _Tambah_monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tambah_monev.vue?vue&type=script&lang=js& */ "./resources/js/components/monev/Tambah_monev.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Tambah_monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tambah_monev_vue_vue_type_template_id_650af2a4___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tambah_monev_vue_vue_type_template_id_650af2a4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/monev/Tambah_monev.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/monev/Tambah_monev.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/monev/Tambah_monev.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Tambah_monev.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Tambah_monev.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_monev_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/monev/Tambah_monev.vue?vue&type=template&id=650af2a4&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/monev/Tambah_monev.vue?vue&type=template&id=650af2a4& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_monev_vue_vue_type_template_id_650af2a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Tambah_monev.vue?vue&type=template&id=650af2a4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/monev/Tambah_monev.vue?vue&type=template&id=650af2a4&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_monev_vue_vue_type_template_id_650af2a4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tambah_monev_vue_vue_type_template_id_650af2a4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -55615,6 +63803,144 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Ajukan_tamu_vue_vue_type_template_id_323c458e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Ajukan_tamu_vue_vue_type_template_id_323c458e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/tamu/Proses_tamu.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/tamu/Proses_tamu.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Proses_tamu_vue_vue_type_template_id_0daf2ede___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proses_tamu.vue?vue&type=template&id=0daf2ede& */ "./resources/js/components/tamu/Proses_tamu.vue?vue&type=template&id=0daf2ede&");
+/* harmony import */ var _Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proses_tamu.vue?vue&type=script&lang=js& */ "./resources/js/components/tamu/Proses_tamu.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Proses_tamu_vue_vue_type_template_id_0daf2ede___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Proses_tamu_vue_vue_type_template_id_0daf2ede___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/tamu/Proses_tamu.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/tamu/Proses_tamu.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/tamu/Proses_tamu.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses_tamu.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Proses_tamu.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/tamu/Proses_tamu.vue?vue&type=template&id=0daf2ede&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/tamu/Proses_tamu.vue?vue&type=template&id=0daf2ede& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_template_id_0daf2ede___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses_tamu.vue?vue&type=template&id=0daf2ede& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Proses_tamu.vue?vue&type=template&id=0daf2ede&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_template_id_0daf2ede___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_template_id_0daf2ede___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/tamu/Revisi_tamu.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/tamu/Revisi_tamu.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Revisi_tamu_vue_vue_type_template_id_06e41329___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Revisi_tamu.vue?vue&type=template&id=06e41329& */ "./resources/js/components/tamu/Revisi_tamu.vue?vue&type=template&id=06e41329&");
+/* harmony import */ var _Revisi_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Revisi_tamu.vue?vue&type=script&lang=js& */ "./resources/js/components/tamu/Revisi_tamu.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Revisi_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Revisi_tamu_vue_vue_type_template_id_06e41329___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Revisi_tamu_vue_vue_type_template_id_06e41329___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/tamu/Revisi_tamu.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/tamu/Revisi_tamu.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/tamu/Revisi_tamu.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Revisi_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Revisi_tamu.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Revisi_tamu.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Revisi_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/tamu/Revisi_tamu.vue?vue&type=template&id=06e41329&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/tamu/Revisi_tamu.vue?vue&type=template&id=06e41329& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Revisi_tamu_vue_vue_type_template_id_06e41329___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Revisi_tamu.vue?vue&type=template&id=06e41329& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tamu/Revisi_tamu.vue?vue&type=template&id=06e41329&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Revisi_tamu_vue_vue_type_template_id_06e41329___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Revisi_tamu_vue_vue_type_template_id_06e41329___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
