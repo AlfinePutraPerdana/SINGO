@@ -35,12 +35,19 @@ Vue.component('tamu-asing', require('./components/tamu/Tamu_asing.vue').default)
 Vue.component('ajukan-tamu', require('./components/tamu/Ajukan_tamu.vue').default);
 Vue.component('revisi-tamu', require('./components/tamu/Revisi_tamu.vue').default);
 Vue.component('proses-tamu', require('./components/tamu/Proses_tamu.vue').default);
+Vue.component('list-tamu', require('./components/tamu/List_tamu.vue').default);
 
 Vue.component('instansi-lokal', require('./components/instansi/Instansi_lokal.vue').default);
 Vue.component('tambah-instansi', require('./components/instansi/Tambah_instansi.vue').default);
 
 Vue.component('list-monev', require('./components/monev/Monev.vue').default);
 Vue.component('tambah-monev', require('./components/monev/Tambah_monev.vue').default);
+
+Vue.component('laporan-keuangan', require('./components/ltk/Laporan_keuangan.vue').default);
+Vue.component('tambah-laporan', require('./components/ltk/Tambah_laporan.vue').default);
+
+Vue.component('dok-artikel', require('./components/dokumentasi/Artikel.vue').default);
+Vue.component('tambah-artikel', require('./components/dokumentasi/Tambah_artikel.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

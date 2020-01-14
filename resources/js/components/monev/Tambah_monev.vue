@@ -27,7 +27,9 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Pengajuan Monev</h3>
+              <h3 class="card-title">Daftar Pengajuan Monev <a href="#"  type="button" class="badge badge-primary" data-toggle="modal" data-target="#tambah">
+                        Tambah Pengajuan
+                  </a></h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -48,7 +50,9 @@
                     <th>Propinsi</th>
                     <th>Kabupaten</th>
                     <th>Waktu</th>
+                    <th>Status</th>
                     <th>Aksi</th>
+                    <th>Pilih Pengajuan</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -69,6 +73,7 @@
                         </ul>
                     </td>
                     <td>10/01/2020 - 12/02/2020</td>
+                    <td><span class="badge badge-pill badge-warning">Dalam Proses</span></td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -139,6 +144,12 @@
                         </div>
                     </div>
                     </td>
+                    <td>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih1">
+                        <label for="pilih1"></label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -157,6 +168,7 @@
                         </ul>
                     </td>
                     <td>10/01/2020 - 12/02/2020</td>
+                    <td><span class="badge badge-pill badge-warning">Dalam Proses</span></td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -227,6 +239,12 @@
                         </div>
                     </div>
                     </td>
+                    <td>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih2">
+                        <label for="pilih2"></label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>3</td>
@@ -245,6 +263,7 @@
                         </ul>
                     </td>
                     <td>10/01/2020 - 12/02/2020</td>
+                    <td><span class="badge badge-pill badge-danger">Revisi</span></td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -315,6 +334,12 @@
                         </div>
                     </div>
                     </td>
+                    <td>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih3">
+                        <label for="pilih3"></label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>4</td>
@@ -333,6 +358,7 @@
                         </ul>
                     </td>
                     <td>10/01/2020 - 12/02/2020</td>
+                    <td><span class="badge badge-pill badge-danger">Revisi</span></td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -403,6 +429,12 @@
                         </div>
                     </div>
                     </td>
+                    <td>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih4">
+                        <label for="pilih4"></label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>5</td>
@@ -421,6 +453,7 @@
                         </ul>
                     </td>
                     <td>10/01/2020 - 12/02/2020</td>
+                    <td><span class="badge badge-pill badge-warning">Dalam Proses</span></td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -491,6 +524,12 @@
                         </div>
                     </div>
                     </td>
+                    <td>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih5">
+                        <label for="pilih5"></label>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -506,9 +545,7 @@
               </ul>
               <div class="float-left">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah">
-                        Tambah Pengajuan
-                  </button>
+                <a href="" role="button" class="btn btn-primary">Kirim</a>
                     <!-- Modal -->
                     <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">

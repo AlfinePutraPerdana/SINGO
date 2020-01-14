@@ -3,7 +3,7 @@
 
 @section('content')
 
-<instasi-lokal></instasi-lokal>
+<instansi-lokal></instansi-lokal>
 
 @endsection
 
