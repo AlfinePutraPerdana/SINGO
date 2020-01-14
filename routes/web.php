@@ -109,5 +109,3 @@ Route::get('/tambah-ltk', function () {
 
 Auth::routes();
 
-
-Route::get('/', 'HomeController@index')->name('');
