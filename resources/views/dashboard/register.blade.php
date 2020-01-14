@@ -18,10 +18,14 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition register-page">
+<body class="hold-transition register-page"
+style="background-image: url('assets_fe/img/slider/slider3.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Registrasi</b> Fasker</a>
+    <a><b>Registrasi</b> Fasker</a>
   </div>
 
   <div class="card">
@@ -67,6 +71,10 @@
             <button type="submit" class="btn btn-primary btn-block">Register</button>
           </div>
           <!-- /.col -->
+        </div>
+        <br>
+        <div class="row justify-content-around">
+          <a href="/login">Kembali</a>
         </div>
       </form>
     </div>

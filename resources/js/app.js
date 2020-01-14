@@ -20,6 +20,19 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('proses-rencana-kerja', require('./components/rkt/Proses_rkt_draft.vue').default);
+Vue.component('rencana-kerja', require('./components/rkt/Rencana_kerja.vue').default);
+Vue.component('tambah-rencana', require('./components/rkt/Tambah_rkt.vue').default);
+Vue.component('revisi-rencana', require('./components/rkt/Revisi_rkt.vue').default);
+Vue.component('draft-rencana', require('./components/rkt/Draft_rkt.vue').default);
+
+Vue.component('tenaga-kerja', require('./components/tenaga/Tenaga_kerja.vue').default);
+Vue.component('ajukan-tenaga', require('./components/tenaga/Ajukan_tenaga.vue').default);
+Vue.component('proses-tenaga', require('./components/tenaga/Proses_tenaga.vue').default);
+Vue.component('list-tenaga', require('./components/tenaga/List_tenaga.vue').default);
+
+Vue.component('tamu-asing', require('./components/tamu/Tamu_asing.vue').default);
+Vue.component('ajukan-tamu', require('./components/tamu/Ajukan_tamu.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

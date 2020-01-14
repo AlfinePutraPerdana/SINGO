@@ -94,7 +94,7 @@
                     <a class="page-scroll" href="#contact">Kontak</a>
                   </li>
                   <li>
-                    <a href="{{ route('login') }}">Login</a>
+                      <a href="/login">Login</a>
                   </li>
                 </ul>
               </div>
@@ -354,8 +354,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- single-awesome-project end -->
-                  <!-- single-awesome-project start -->
                   <div class="col-md-4 col-sm-4 col-xs-12 photo">
                     <div class="single-awesome-project">
                       <div class="awesome-img">
@@ -371,8 +369,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- single-awesome-project end -->
-                  <!-- single-awesome-project start -->
                   <div class="col-md-4 col-sm-4 col-xs-12 design">
                     <div class="single-awesome-project">
                       <div class="awesome-img">
@@ -388,8 +384,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- single-awesome-project end -->
-                  <!-- single-awesome-project start -->
                   <div class="col-md-4 col-sm-4 col-xs-12 photo development">
                     <div class="single-awesome-project">
                       <div class="awesome-img">
@@ -405,8 +399,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- single-awesome-project end -->
-                  <!-- single-awesome-project start -->
                   <div class="col-md-4 col-sm-4 col-xs-12 development">
                     <div class="single-awesome-project">
                       <div class="awesome-img">
@@ -422,8 +414,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- single-awesome-project end -->
-                  <!-- single-awesome-project start -->
                   <div class="col-md-4 col-sm-4 col-xs-12 design photo">
                     <div class="single-awesome-project">
                       <div class="awesome-img">
