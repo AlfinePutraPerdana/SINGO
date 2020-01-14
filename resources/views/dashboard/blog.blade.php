@@ -8,31 +8,31 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('assets_fe/img/favicon.png')}}" rel="icon">
+  <link href="{{ asset('assets_fe/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
-  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/nivo-slider/css/nivo-slider.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/owlcarousel/owl.carousel.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/owlcarousel/owl.transitions.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/venobox/venobox.css')}}" rel="stylesheet">
 
   <!-- Nivo Slider Theme -->
-  <link href="css/nivo-slider-theme.css" rel="stylesheet">
+  <link href="{{ asset('assets_fe/css/nivo-slider-theme.css')}}" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{ asset('assets_fe/css/style.css')}}" rel="stylesheet">
 
   <!-- Responsive Stylesheet File -->
-  <link href="css/responsive.css" rel="stylesheet">
+  <link href="{{ asset('assets_fe/css/responsive.css')}}" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: eBusiness
@@ -64,7 +64,7 @@
 										<span class="icon-bar"></span>
 									</button>
                 <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                <a class="navbar-brand page-scroll sticky-logo" href="/">
                   <h1>FASKER</h1>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -74,22 +74,18 @@
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
-                    <a class="page-scroll" href="#home"><i class="fa fa-home" style="font-size: 25px;"></i></a>
+                    <a class="page-scroll" href="/"><i class="fa fa-home" style="font-size: 25px;"></i></a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">Tentang</a>
+                    <a class="page-scroll" href="/#about">Tentang</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#blog">Berita</a>
+                    <a class="page-scroll" href="/#blog">Berita</a>
+                  <li>
+                    <a class="page-scroll" href="/#contact">Kontak</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#FAQ">FAQ</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Kontak</a>
+                      <a href="/login">Login</a>
                   </li>
                 </ul>
               </div>
@@ -136,8 +132,8 @@
                 <div class="search-option">
                   <input type="text" placeholder="Search...">
                   <button class="button" type="submit">
-                                            <i class="fa fa-search"></i>
-                                        </button>
+                    <i class="fa fa-search"></i>
+                  </button>
                 </div>
               </form>
               <!-- search option end -->
@@ -151,7 +147,7 @@
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="#">
-												   <img src="img/blog/1.jpg" alt="">
+												   <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
@@ -163,7 +159,7 @@
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="#">
-												   <img src="img/blog/2.jpg" alt="">
+												   <img src="{{ asset('assets_fe/img/blog/2.jpg')}}" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
@@ -175,7 +171,7 @@
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="#">
-												   <img src="img/blog/3.jpg" alt="">
+												   <img src="{{ asset('assets_fe/img/blog/3.jpg')}}" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
@@ -187,7 +183,7 @@
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="#">
-												   <img src="img/blog/4.jpg" alt="">
+												   <img src="{{ asset('assets_fe/img/blog/4.jpg')}}" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
@@ -263,8 +259,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/1.jpg" alt="">
+                  <a href="/blog-details">
+											<img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt="">
 										</a>
                 </div>
                 <div class="blog-meta">
@@ -285,7 +281,7 @@
                   </p>
                 </div>
                 <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+										<a href="/blog-details" class="ready-btn">Read more</a>
 									</span>
               </div>
             </div>
@@ -293,8 +289,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/2.jpg" alt="">
+                  <a href="/blog-details">
+											<img src="{{ asset('assets_fe/img/blog/2.jpg')}}" alt="">
 										</a>
                 </div>
                 <div class="blog-meta">
@@ -315,7 +311,7 @@
                   </p>
                 </div>
                 <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+										<a href="/blog-details" class="ready-btn">Read more</a>
 									</span>
               </div>
             </div>
@@ -323,8 +319,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/3.jpg" alt="">
+                  <a href="/blog-details">
+											<img src="{{ asset('assets_fe/img/blog/3.jpg')}}" alt="">
 										</a>
                 </div>
                 <div class="blog-meta">
@@ -345,7 +341,7 @@
                   </p>
                 </div>
                 <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+										<a href="/blog-details" class="ready-btn">Read more</a>
 									</span>
               </div>
             </div>
@@ -353,8 +349,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/4.jpg" alt="">
+                  <a href="/blog-details">
+											<img src="{{ asset('assets_fe/img/blog/4.jpg')}}" alt="">
 										</a>
                 </div>
                 <div class="blog-meta">
@@ -375,7 +371,7 @@
                   </p>
                 </div>
                 <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+										<a href="/blog-details" class="ready-btn">Read more</a>
 									</span>
               </div>
             </div>
@@ -383,8 +379,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="single-blog">
                 <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/5.jpg" alt="">
+                  <a href="/blog-details">
+											<img src="{{ asset('assets_fe/img/blog/5.jpg')}}" alt="">
 										</a>
                 </div>
                 <div class="blog-meta">
@@ -405,7 +401,7 @@
                   </p>
                 </div>
                 <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+										<a href="/blog-details" class="ready-btn">Read more</a>
 									</span>
               </div>
             </div>
@@ -433,7 +429,7 @@
     <div class="footer-area">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
@@ -461,7 +457,7 @@
             </div>
           </div>
           <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <h4>information</h4>
@@ -472,22 +468,6 @@
                   <p><span>Tel:</span> +123 456 789</p>
                   <p><span>Email:</span> contact@example.com</p>
                   <p><span>Working Hours:</span> 9am-5pm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/6.jpg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -504,15 +484,6 @@
                 &copy; Copyright <strong>FASKER</strong>. All Rights Reserved
               </p>
             </div>
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
-              -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
           </div>
         </div>
       </div>
@@ -522,22 +493,22 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/venobox/venobox.min.js"></script>
-  <script src="lib/knob/jquery.knob.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/parallax/parallax.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-  <script src="lib/appear/jquery.appear.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="{{ asset('assets_fe/lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/venobox/venobox.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/knob/jquery.knob.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/wow/wow.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/parallax/parallax.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/easing/easing.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/nivo-slider/js/jquery.nivo.slider.js')}}" type="text/javascript"></script>
+  <script src="{{ asset('assets_fe/lib/appear/jquery.appear.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/isotope/isotope.pkgd.min.js')}}"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <script src="{{ asset('assets_fe/contactform/contactform.js')}}"></script>
 
-  <script src="js/main.js"></script>
+  <script src="{{ asset('assets_fe/js/main.js')}}"></script>
 </body>
 
 </html>
