@@ -1,4 +1,4 @@
-@extends('mitra.ngo.layout')
+@extends('layouts.menubar')
 
 @section('content')
      <!-- Content Wrapper. Contains page content -->
@@ -29,8 +29,8 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Instansi Lokal</h3>  
-                
+              <h3 class="card-title">Daftar Instansi Lokal</h3>
+
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -100,7 +100,7 @@
                                     <div class="form-group">
                                         <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div> 
+                                    </div>
                                     <div class="form-group">
                                       <div class="form-group">
                                         <label>Kategori</label>
@@ -197,7 +197,7 @@
                                     <div class="form-group">
                                         <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div> 
+                                    </div>
                                     <div class="form-group">
                                       <div class="form-group">
                                         <label>Kategori</label>
@@ -294,7 +294,7 @@
                                     <div class="form-group">
                                         <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div> 
+                                    </div>
                                     <div class="form-group">
                                       <div class="form-group">
                                         <label>Kategori</label>
@@ -391,7 +391,7 @@
                                     <div class="form-group">
                                         <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div> 
+                                    </div>
                                     <div class="form-group">
                                       <div class="form-group">
                                         <label>Kategori</label>
@@ -488,7 +488,7 @@
                                     <div class="form-group">
                                         <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div> 
+                                    </div>
                                     <div class="form-group">
                                       <div class="form-group">
                                         <label>Kategori</label>
@@ -650,6 +650,6 @@
       </div>
   <!-- /.content-wrapper -->
 @endsection
- 
+
 
 

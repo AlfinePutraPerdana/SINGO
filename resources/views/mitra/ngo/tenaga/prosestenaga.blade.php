@@ -1,4 +1,5 @@
-@extends('mitra.ngo.layout')
+@extends('layouts.menubar')
+
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->

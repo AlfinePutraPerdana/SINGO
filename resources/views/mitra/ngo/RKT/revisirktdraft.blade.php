@@ -1,4 +1,4 @@
-@extends('mitra.ngo.layout')
+@extends('layouts.menubar')
 
 @section('content')
      <!-- Content Wrapper. Contains page content -->
@@ -30,11 +30,11 @@
               </div>
               <form role="form">
                 <div class="card-body">
-                  
+
                 <div class="form-group">
                     <label for="">Pendahuluan</label>
                     <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-                      
+
                     </textarea>
                 </div>
                 <div class="form-group">
@@ -104,7 +104,7 @@
                   <div class="form-group">
                     <label for="">Penutup</label>
                     <textarea id="penutup" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-                      
+
                     </textarea>
                 </div>
                   <div class="form-group">
@@ -145,9 +145,9 @@
 
       <!-- Default box -->
       <!-- /.row -->
-      
+
   <!-- /.content-wrapper -->
 @endsection
 
- 
+
 

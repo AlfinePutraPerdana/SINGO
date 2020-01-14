@@ -1,4 +1,5 @@
-@extends('mitra.ngo.layout')
+@extends('layouts.menubar')
+
 
 @section('content')
      <!-- Content Wrapper. Contains page content -->
@@ -29,8 +30,8 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Mitra Lokal</h3>  
-                
+              <h3 class="card-title">Daftar Mitra Lokal</h3>
+
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -107,10 +108,10 @@
             <div class="card-footer clearfix">
               <div class=" float-left">
                 <!-- Button trigger modal -->
-                
-                    
+
+
                     <!-- Modal -->
-                    
+
               </div>
                 <ul class="pagination pagination-sm m-0 float-right">
                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
@@ -128,5 +129,5 @@
   <!-- /.content-wrapper -->
 @endsection
 
- 
+
 

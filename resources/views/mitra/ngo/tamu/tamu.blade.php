@@ -1,4 +1,5 @@
-@extends('mitra.ngo.layout')
+@extends('layouts.menubar')
+
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->
@@ -29,8 +30,8 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Pemberitahuan Tamu Asing <span><a href="/ajukan-tamu" class="badge badge-primary">Tambah Pemberitahuan Tamu</a></span></h3>  
-                
+              <h3 class="card-title">Pemberitahuan Tamu Asing <span><a href="/ajukan-tamu" class="badge badge-primary">Tambah Pemberitahuan Tamu</a></span></h3>
+
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -180,4 +181,4 @@
 @endsection
 
 
-  
+

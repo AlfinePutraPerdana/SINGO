@@ -1,4 +1,5 @@
-@extends('mitra.ngo.layout')
+@extends('layouts.menubar')
+
 
 @section('content')
     <!-- Content Wrapper. Contains page content -->
@@ -133,7 +134,7 @@
                     </div>
                   </div>
                 </div>
-                  
+
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
@@ -148,10 +149,10 @@
 
       <!-- Default box -->
       <!-- /.row -->
-      
+
   <!-- /.content-wrapper -->
 @endsection
 
-  
+
 
 
