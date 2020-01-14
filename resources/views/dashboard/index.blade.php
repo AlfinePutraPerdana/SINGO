@@ -273,7 +273,7 @@
                   <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="single-blog">
                       <div class="single-blog-img">
-                        <a href="blog.html">
+                        <a href="/blog">
                             <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt="">
                           </a>
                       </div>
@@ -288,14 +288,14 @@
                       </div>
                       <div class="blog-text">
                         <h4>
-                          <a href="blog.html">Assumenda repud eum veniam</a>
+                          <a href="/blog">Assumenda repud eum veniam</a>
                           </h4>
                         <p>
                           Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
                         </p>
                       </div>
                       <span>
-                          <a href="blog.html" class="ready-btn">Read more</a>
+                          <a href="/blog" class="ready-btn">Read more</a>
                         </span>
                     </div>
                     <!-- Start single blog -->
@@ -305,7 +305,7 @@
                   <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="single-blog">
                       <div class="single-blog-img">
-                        <a href="blog.html">
+                        <a href="/blog">
                             <img src="{{ asset('assets_fe/img/blog/2.jpg')}}" alt="">
                           </a>
                       </div>
@@ -320,14 +320,14 @@
                       </div>
                       <div class="blog-text">
                         <h4>
-                          <a href="blog.html">Explicabo magnam quibusdam.</a>
+                          <a href="/blog">Explicabo magnam quibusdam.</a>
                           </h4>
                         <p>
                           Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
                         </p>
                       </div>
                       <span>
-                          <a href="blog.html" class="ready-btn">Read more</a>
+                          <a href="/blog" class="ready-btn">Read more</a>
                         </span>
                     </div>
                     <!-- Start single blog -->
@@ -531,6 +531,23 @@
     </div>
   </div>
   <!-- End Contact Area -->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>FASKER</strong>. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

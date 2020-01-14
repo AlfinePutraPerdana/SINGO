@@ -120,3 +120,9 @@ Route::get('/login', function(){
 Route::get('/register', function(){
     return view('dashboard.register');
 });
+Route::get('/blog', function(){
+    return view('dashboard.blog');
+});
+Route::get('/blog-details', function(){
+    return view('dashboard.blog-details');
+});

@@ -12,6 +12,6 @@ class User_detail extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'password','email','no_hp','jabatan','foto',
+        'name', 'instansi_id','created_at','updated_at',
     ];
 }
