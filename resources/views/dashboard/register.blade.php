@@ -21,7 +21,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Registrasi</b> Fasker</a>
+    <a><b>Registrasi</b> Fasker</a>
   </div>
 
   <div class="card">
@@ -67,6 +67,10 @@
             <button type="submit" class="btn btn-primary btn-block">Register</button>
           </div>
           <!-- /.col -->
+        </div>
+        <br>
+        <div class="row justify-content-around">
+          <a href="{{ route('login')}}">Kembali</a>
         </div>
       </form>
     </div>

@@ -109,3 +109,6 @@ Route::get('/tambah-ltk', function () {
 
 Auth::routes();
 
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/login', 'DashboardController@login')->name('login');
+Route::get('/register', 'DashboardController@register')->name('register');
