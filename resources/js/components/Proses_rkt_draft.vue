@@ -1,9 +1,5 @@
-@extends('layouts.menubar')
-
-
-@section('content')
-    <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<template>
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -49,8 +45,7 @@
                     <th>No</th>
                     <th>Draft Rencana</th>
                     <th>Date</th>
-                    <th>Tujuan</th>
-                    <th>Sasaran</th>
+                    <th>Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -58,43 +53,38 @@
                     <td>1</td>
                     <td>Rencana Kerja</td>
                     <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><span class="badge badge-warning">Dalam Proses</span></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Rencana Kerja</td>
                     <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
-                  </tr>
-                  <tr>
+                    <td><span class="badge badge-warning">Dalam Proses</span></td>
+                </tr>
+                <tr>
                     <td>3</td>
                     <td>Rencana Kerja</td>
                     <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
-                  </tr>
-                  <tr>
+                    <td><span class="badge badge-warning">Dalam Proses</span></td>
+                </tr>
+                <tr>
                     <td>4</td>
                     <td>Rencana Kerja</td>
                     <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
-                  </tr>
-                  <tr>
+                    <td><span class="badge badge-warning">Dalam Proses</span></td>
+                </tr>
+                <tr>
                     <td>5</td>
                     <td>Rencana Kerja</td>
                     <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><span class="badge badge-warning">Dalam Proses</span></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <ul class="pagination pagination-sm m-0 float-right">
+                <ul class="pagination pagination-sm m-0 float-right">
                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -108,7 +98,12 @@
       </div>
       </section>
       </div>
-  <!-- /.content-wrapper -->
-@endsection
+</template>
 
-
+<script>
+    export default {
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
+</script>

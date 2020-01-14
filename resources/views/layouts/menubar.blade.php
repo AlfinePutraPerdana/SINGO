@@ -353,9 +353,12 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div id="app">
-  @yield('content')
-  </div>
+
+         <div id="app">
+
+            @yield('content')
+            </div>
+
 
 
 
@@ -373,7 +376,7 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{asset('js/app.js')}}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="{{asset('assets_be/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -399,7 +402,7 @@
       $('#pendahuluan').summernote()
       $('#penutup').summernote()
       $('#upaya').summernote()
-    })
+    });
 </script>
 
 

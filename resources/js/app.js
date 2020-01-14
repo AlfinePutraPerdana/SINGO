@@ -20,7 +20,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('rencana-kerja', require('./components/Rencana_kerja.vue').default);
+Vue.component('proses-rencana-kerja', require('./components/Proses_rkt_draft.vue').default);
 
 
 /**
