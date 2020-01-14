@@ -28,7 +28,11 @@ Vue.component('draft-rencana', require('./components/rkt/Draft_rkt.vue').default
 
 Vue.component('tenaga-kerja', require('./components/tenaga/Tenaga_kerja.vue').default);
 Vue.component('ajukan-tenaga', require('./components/tenaga/Ajukan_tenaga.vue').default);
+Vue.component('proses-tenaga', require('./components/tenaga/Proses_tenaga.vue').default);
+Vue.component('list-tenaga', require('./components/tenaga/List_tenaga.vue').default);
 
+Vue.component('tamu-asing', require('./components/tamu/Tamu_asing.vue').default);
+Vue.component('ajukan-tamu', require('./components/tamu/Ajukan_tamu.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
