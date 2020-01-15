@@ -64,7 +64,7 @@
 										<span class="icon-bar"></span>
 									</button>
                 <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                <a class="navbar-brand page-scroll sticky-logo" href="/">
                   <h1>FASKER</h1>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -345,7 +345,7 @@
                         <a href="#"><img src="{{ asset('assets_fe/img/portfolio/1.jpg')}}" alt="" /></a>
                         <div class="add-actions text-center">
                           <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="img/portfolio/1.jpg">
+                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/1.jpg')}}">
                               <h4>Business City</h4>
                               <span>Web Development</span>
                             </a>
@@ -360,7 +360,7 @@
                         <a href="#"><img src="{{ asset('assets_fe/img/portfolio/2.jpg')}}" alt="" /></a>
                         <div class="add-actions text-center">
                           <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="img/portfolio/2.jpg">
+                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/2.jpg')}}">
                               <h4>Blue Sea</h4>
                               <span>Photosho</span>
                             </a>
@@ -375,7 +375,7 @@
                         <a href="#"><img src="{{ asset('assets_fe/img/portfolio/3.jpg')}}" alt="" /></a>
                         <div class="add-actions text-center">
                           <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="img/portfolio/3.jpg">
+                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/3.jpg')}}">
                               <h4>Beautiful Nature</h4>
                               <span>Web Design</span>
                             </a>
@@ -390,7 +390,7 @@
                         <a href="#"><img src="{{ asset('assets_fe/img/portfolio/4.jpg')}}" alt="" /></a>
                         <div class="add-actions text-center">
                           <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="img/portfolio/4.jpg">
+                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/4.jpg')}}">
                               <h4>Creative Team</h4>
                               <span>Web design</span>
                             </a>
@@ -405,7 +405,7 @@
                         <a href="#"><img src="{{ asset('assets_fe/img/portfolio/5.jpg')}}" alt="" /></a>
                         <div class="add-actions text-center text-center">
                           <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="img/portfolio/5.jpg">
+                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/5.jpg')}}">
                               <h4>Beautiful Flower</h4>
                               <span>Web Development</span>
                             </a>
@@ -420,7 +420,7 @@
                         <a href="#"><img src="{{ asset('assets_fe/img/portfolio/6.jpg')}}" alt="" /></a>
                         <div class="add-actions text-center">
                           <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="img/portfolio/6.jpg">
+                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/6.jpg')}}">
                               <h4>Night Hill</h4>
                               <span>Photoshop</span>
                             </a>
