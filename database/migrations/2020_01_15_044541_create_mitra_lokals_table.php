@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMataUangTable extends Migration
+class CreateMitraLokalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateMataUangTable extends Migration
      */
     public function up()
     {
-        Schema::create('mata_uangs', function (Blueprint $table) {
+        Schema::create('mitra_lokals', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->foreign('id_instansi')->references('id')->on('instansis');
+            $table->foreign('instansi_id')->references('id')->on('instansis');
+            $table->string('pembiayaan');
+            $table->date('durasi_awal');
+            $table->date('durasi_akhir');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateMataUangTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mata_uang');
+        Schema::dropIfExists('mitra_lokals');
     }
 }

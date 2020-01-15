@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMataUangTable extends Migration
+class CreateRktLokasisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateMataUangTable extends Migration
      */
     public function up()
     {
-        Schema::create('mata_uangs', function (Blueprint $table) {
+        Schema::create('rkt_lokasis', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->foreign('id_instansi')->references('id')->on('instansis');
+            $table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->foreign('id_lokasi')->references('id')->on('master_kotas');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateMataUangTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mata_uang');
+        Schema::dropIfExists('rkt_lokasis');
     }
 }
