@@ -1,5 +1,6 @@
 <template>
-  <div class="content-wrapper">
+
+ <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -60,24 +61,24 @@
                     <td>Rencana Kerja</td>
                     <td>11-7-2014</td>
                     <td><span class="badge badge-warning">Dalam Proses</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td><span class="badge badge-warning">Dalam Proses</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td><span class="badge badge-warning">Dalam Proses</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td><span class="badge badge-warning">Dalam Proses</span></td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Rencana Kerja</td>
+                      <td>11-7-2014</td>
+                      <td><span class="badge badge-warning">Dalam Proses</span></td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>Rencana Kerja</td>
+                      <td>11-7-2014</td>
+                      <td><span class="badge badge-warning">Dalam Proses</span></td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>Rencana Kerja</td>
+                      <td>11-7-2014</td>
+                      <td><span class="badge badge-warning">Dalam Proses</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -91,13 +92,13 @@
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                 </ul>
-              </div>
-        </div>
-          <!-- /.card -->
+            </div>
+          </div>
         </div>
       </div>
-      </section>
-    </div>
+  </section>
+</div>
+
 </template>
 
 <script>

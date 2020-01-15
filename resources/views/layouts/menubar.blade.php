@@ -136,7 +136,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i><i class=""></i>
+              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
@@ -144,7 +144,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="/index" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Beranda</p>
                 </a>
@@ -152,7 +152,7 @@
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon  far fa-list-alt"></i>
               <p>
                 Manajemen Permintaan
@@ -199,7 +199,7 @@
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon  far fa-file-alt"></i>
               <p>
                 Rencana Kerja Tahunan
@@ -225,7 +225,7 @@
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon  far fa-user-circle"></i>
               <p>
                 Rekomendasi Tenaga
@@ -248,7 +248,7 @@
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon  far fa-id-badge"></i>
               <p>
                 Pemberitahuan Tamu
@@ -288,7 +288,7 @@
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon  far fa-file"></i>
               <p>
                 Monev
@@ -306,7 +306,7 @@
           </li>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon  far fa-clipboard"></i>
               <p>
                 Laporan Keuangan
@@ -324,7 +324,7 @@
           </li>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
                 Pages
@@ -357,6 +357,7 @@
          <div id="app">
 
             @yield('content')
+
           </div>
 
 

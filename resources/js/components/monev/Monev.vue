@@ -1,6 +1,6 @@
 <template>
         <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -19,13 +19,10 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
+  <section class="content">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
             <div class="card-header">
               <h3 class="card-title">Daftar Pengajuan Monev</h3>
 
@@ -38,9 +35,9 @@
                 </div>
               </div>
             </div>
-            <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 500px;">
-              <table class="table table-head-fixed">
+            
+          <div class="card-body table-responsive p-0" style="height: 500px;">
+            <table class="table table-head-fixed">
                 <thead>
                   <tr>
                     <th>No</th>
@@ -142,9 +139,9 @@
                     <td>10/01/2020 - 12/02/2020</td>
                   </tr>
                 </tbody>
-              </table>
-            </div>
-            <!-- /.card-body -->
+            </table>
+          </div>
+            
             <div class="card-footer clearfix">
               <ul class="pagination pagination-sm m-0 float-right">
                 <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
@@ -153,15 +150,13 @@
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
               </ul>
-              </div>
-        </div>
-          <!-- /.card -->
+            </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
-  <!-- /.content-wrapper -->
 </template>
 
 <script>

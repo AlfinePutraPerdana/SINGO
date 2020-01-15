@@ -1,5 +1,5 @@
 <template>
-       <!-- Content Wrapper. Contains page content -->
+      
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -22,7 +22,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
-          <div class="col-md-12">
+            <div class="col-md-12">
                 <div class="card card-primary">
                     <div class="card-header">
                         <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
@@ -62,7 +62,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="form-group">
                                     <label>Instansi</label>
                                     <select class="form-control">
                                         <option>option 1</option>
@@ -71,7 +70,6 @@
                                         <option>option 4</option>
                                         <option>option 5</option>
                                     </select>
-                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="tujuan">Tujuan Kegiatan</label>
@@ -129,19 +127,16 @@
                                 </div>   
                                     
                                 <div class="card-footer">
-                                <a class="btn btn-primary" href="/tenaga" role="button">Simpan</a>
+                                    <a class="btn btn-primary" href="/tenaga" role="button">Simpan</a>
                                 </div>
                             </div>
                         </form>
-                    </div>
-          <!-- /.col-->
                 </div>
             </div>
-        <!-- ./row -->
-      </section>
+        </div>
+    </section>
 </div>
-
-     
+  
 </template>
 
 <script>

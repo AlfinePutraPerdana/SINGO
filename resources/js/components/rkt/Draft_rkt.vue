@@ -1,6 +1,6 @@
 <template>
         <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -20,9 +20,6 @@
 
     <!-- Main content -->
     <section class="content">
-
-      <!-- Default box -->
-      <!-- /.row -->
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -99,13 +96,12 @@
                   <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                 </ul>
               </div>
-        </div>
-          <!-- /.card -->
+          </div>
         </div>
       </div>
-      </section>
- </div>
-  <!-- /.content-wrapper -->
+    </section>
+</div>
+
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 
 <template>
-<!-- Content Wrapper. Contains page content -->
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -118,26 +118,24 @@
                       </div>
                     </td>
                   </tr>
-                  
                 </tbody>
               </table>
             </div>
             <!-- /.card-body -->
-            <div class="card-footer clearfix">
-              <div class="col-md-4 float-left">
-                
-                <a href="/proses-rkt-draft" role="button" class="btn btn-primary">Kirim</a>
+              <div class="card-footer clearfix">
+                <div class="col-md-4 float-left">
+                  
+                  <a href="/proses-rkt-draft" role="button" class="btn btn-primary">Kirim</a>
+                </div>
+                  <ul class="pagination pagination-sm m-0 float-right">
+                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                  </ul>
               </div>
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
             </div>
-            </div>
-          <!-- /.card -->
         </div>
       </div>
       <div class="row">
@@ -153,20 +151,12 @@
             <div class="card-body">
               <h5>Silahkan unduh format Berita Acara Pembahasan <a href="">Disini</a></h5>
             </div>
-            <!-- /.card-body -->
           </div>
-          <!-- /.card -->
         </div>
-        <!-- ./col -->
-        
-        <!-- ./col -->
-        
-        <!-- ./col -->
       </div>
-
     </section>
 </div>
-  <!-- /.content-wrapper -->
+  
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 
 <template>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -29,16 +29,56 @@
               </div>
               <form role="form">
                 <div class="card-body">
-
-                <div class="form-group">
-                    <label for="">Pendahuluan</label>
-                    <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-
-                    </textarea>
-                </div>
-                <div class="form-group">
                   <div class="form-group">
-                    <label>Sasaran</label>
+                      <label for="">Pendahuluan</label>
+                      <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                      </textarea>
+                  </div>
+                  <div class="form-group">
+                      <label>Sasaran</label>
+                      <select class="form-control">
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                      </select>
+                    </div>
+                  <div class="form-group">
+                      <label for="tujuan">Tujuan</label>
+                      <input type="text" class="form-control" id="tujuan" placeholder="tujuan">
+                  </div>
+                  <div class="form-group">
+                      <label for="hasil">Hasil Yang Diharapkan</label>
+                      <input type="text" class="form-control" id="hasil" placeholder="hasil yang diharapkan">
+                  </div>
+                  <div class="form-group">
+                        <label>Tenaga Kerja</label>
+                        <select class="form-control">
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="peran_serta">Peran Serta Pihak Ketiga</label>
+                      <input type="text" class="form-control" id="peran" placeholder="Peran Serta Pihak Ketiga">
+                  </div>
+                  <div class="form-group">
+                        <label>Lokasi  Pelaksanaan</label>
+                        <select class="form-control">
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Pembiayaan</label>
                     <select class="form-control">
                       <option>option 1</option>
                       <option>option 2</option>
@@ -47,65 +87,14 @@
                       <option>option 5</option>
                     </select>
                   </div>
-                </div>
                   <div class="form-group">
-                    <label for="tujuan">Tujuan</label>
-                    <input type="text" class="form-control" id="tujuan" placeholder="tujuan">
-                  </div>
-                  <div class="form-group">
-                    <label for="hasil">Hasil Yang Diharapkan</label>
-                    <input type="text" class="form-control" id="hasil" placeholder="hasil yang diharapkan">
-                  </div>
-                  <div class="form-group">
-                    <div class="form-group">
-                      <label>Tenaga Kerja</label>
-                      <select class="form-control">
-                        <option>option 1</option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                        <option>option 5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="peran_serta">Peran Serta Pihak Ketiga</label>
-                    <input type="text" class="form-control" id="peran" placeholder="Peran Serta Pihak Ketiga">
-                  </div>
-                  <div class="form-group">
-                    <div class="form-group">
-                      <label>Lokasi  Pelaksanaan</label>
-                      <select class="form-control">
-                        <option>option 1</option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                        <option>option 5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-group">
-                      <label>Pembiayaan</label>
-                      <select class="form-control">
-                        <option>option 1</option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                        <option>option 5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label for="">Jadwal Pelaksanaan</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
-                        <div class="input-group-append">
-                          <span class="input-group-text">s/d</span>
-                        </div>
-                        <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                    <label for="">Jadwal Pelaksanaan</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
+                      <div class="input-group-append">
+                        <span class="input-group-text">s/d</span>
                       </div>
+                      <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                     </div>
                   </div>
                   <div class="form-group">
@@ -113,7 +102,7 @@
                     <textarea id="penutup" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
                     </textarea>
-                </div>
+                  </div>
                   <div class="form-group">
                     <label for="file">Lampiran File</label>
                     <div class="input-group">
@@ -140,17 +129,16 @@
                   </div>
                 </div>
                 <!-- /.card-body -->
-                <div class="card-footer">
-                  <a class="btn btn-primary" href="/rkt" role="button">Simpan</a>
-                </div>
-              </form>
-            </div>
-          <!-- /.col-->
+                  <div class="card-footer">
+                    <a class="btn btn-primary" href="/rkt" role="button">Simpan</a>
+                  </div>  
+            </form>
+          </div>
         </div>
-        <!-- ./row -->
-        </div>
+      </div>
     </section>  
-  </div>
+</div>
+
 </template>
 
 <script>

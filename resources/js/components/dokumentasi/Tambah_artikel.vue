@@ -1,6 +1,6 @@
 <template>
-          <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+      
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -20,9 +20,9 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="card card-primary card-outline">
-        <div class="card-body">
+  <section class="content">
+    <div class="card card-primary card-outline">
+      <div class="card-body">
           <div class="form-group">
             <label for="judul">Judul Artikel</label>
             <input class="form-control" placeholder="Judul Artikel">
@@ -35,7 +35,6 @@
               </div>
               <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
             </div>
-            <!-- /.input group -->
           </div>
           <div class="form-group">
             <label>Kategori</label>
@@ -55,21 +54,17 @@
             </div>
             <p class="help-block">Max. 32MB</p>
           </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-          <div class="float-right">
-            <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i> Kirim</button>
-          </div>
-          <button type="submit" class="btn btn-success"><i class="far fa-save"></i> Simpan</button>
-        </div>
-        <!-- /.card-footer -->
-      </div>
-      </div>
-    </section>
-  </div>
-  <!-- /.content-wrapper -->
 
-<!-- Page Script -->
+          <div class="card-footer">
+            <div class="float-right">
+              <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i> Kirim</button>
+            </div>
+              <button type="submit" class="btn btn-success"><i class="far fa-save"></i> Simpan</button>
+          </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 </template>
 

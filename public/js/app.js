@@ -2083,10 +2083,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2174,11 +2170,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2196,17 +2187,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2957,44 +2937,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -3012,11 +2954,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3257,9 +3194,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -3277,11 +3211,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
 //
 //
 //
@@ -4057,35 +3986,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -4103,10 +4003,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -4332,6 +4228,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -4349,16 +4246,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -4681,10 +4568,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -4702,18 +4585,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5022,8 +4893,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -5041,11 +4910,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5303,11 +5167,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -5325,15 +5184,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5663,10 +5513,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -5684,11 +5530,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5977,10 +5818,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -6109,10 +5946,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -6130,9 +5963,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -41854,7 +41684,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                          Ubah\n                      "
+                                "\n                            Ubah\n                        "
                               )
                             ]
                           )
@@ -41899,7 +41729,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                        Ubah\n                    "
+                                "\n                          Ubah\n                      "
                               )
                             ]
                           )
@@ -42101,7 +41931,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "form-group" }, [
               _c("div", { staticClass: "btn btn-default btn-file" }, [
                 _c("i", { staticClass: "fas fa-paperclip" }),
-                _vm._v(" Attachment\n              "),
+                _vm._v(" Attachment\r\n              "),
                 _c("input", { attrs: { type: "file", name: "attachment" } })
               ]),
               _vm._v(" "),
@@ -42236,11 +42066,11 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("th", [_vm._v("No")]),
                         _vm._v(" "),
-                        _c("th", [_vm._v("Nama Mitra Lokal")]),
+                        _c("th", [_vm._v("Nama Instansi Lokal")]),
                         _vm._v(" "),
-                        _c("th", [_vm._v("Alamat Mitra Lokal")]),
+                        _c("th", [_vm._v("Alamat Instansi Lokal")]),
                         _vm._v(" "),
-                        _c("th", [_vm._v("Nomor Registrasi")]),
+                        _c("th", [_vm._v("Nomor Izin Registrasi")]),
                         _vm._v(" "),
                         _c("th", [_vm._v("Nama Program")]),
                         _vm._v(" "),
@@ -42336,8 +42166,6 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", { staticClass: "card-footer clearfix" }, [
-                _c("div", { staticClass: " float-left" }),
-                _vm._v(" "),
                 _c(
                   "ul",
                   { staticClass: "pagination pagination-sm m-0 float-right" },
@@ -42487,7 +42315,7 @@ var staticRenderFns = [
                 "div",
                 {
                   staticClass: "card-body table-responsive p-0",
-                  staticStyle: { height: "300px" }
+                  staticStyle: { height: "350px" }
                 },
                 [
                   _c("table", { staticClass: "table table-head-fixed" }, [
@@ -42521,11 +42349,11 @@ var staticRenderFns = [
                       _c("tr", [
                         _c("td", [_vm._v("1")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Mitra Asing")]),
+                        _c("td", [_vm._v("Mitra Lokal")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
+                        _c("td", [_vm._v("Indonesia")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
+                        _c("td", [_vm._v("Bogor")]),
                         _vm._v(" "),
                         _c("td", [_vm._v("Jl Baru")]),
                         _vm._v(" "),
@@ -42552,7 +42380,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                      Ubah\n                  "
+                                "\n                        Ubah\n                    "
                               )
                             ]
                           ),
@@ -42703,42 +42531,31 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [_vm._v("Kategori")]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Kategori")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -42797,42 +42614,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -42840,67 +42648,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Durasi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Durasi")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate2"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate2"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate2"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate2"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -42973,7 +42772,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                      Ubah\n                  "
+                                "\n                        Ubah\n                    "
                               )
                             ]
                           ),
@@ -43124,42 +42923,31 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [_vm._v("Kategori")]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Kategori")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -43218,42 +43006,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -43261,67 +43040,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Durasi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Durasi")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate2"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate2"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate2"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate2"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -43394,7 +43164,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                      Ubah\n                  "
+                                "\n                        Ubah\n                    "
                               )
                             ]
                           ),
@@ -43545,42 +43315,31 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [_vm._v("Kategori")]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Kategori")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -43639,42 +43398,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -43682,67 +43432,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Durasi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Durasi")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate2"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate2"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate2"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate2"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -43815,7 +43556,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                      Ubah\n                  "
+                                "\n                        Ubah\n                    "
                               )
                             ]
                           ),
@@ -43966,42 +43707,31 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [_vm._v("Kategori")]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Kategori")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -44060,42 +43790,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -44103,67 +43824,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Durasi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Durasi")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate2"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate2"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate2"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate2"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -44236,7 +43948,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                      Ubah\n                  "
+                                "\n                        Ubah\n                    "
                               )
                             ]
                           ),
@@ -44387,42 +44099,31 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [_vm._v("Kategori")]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Kategori")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -44524,67 +44225,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Durasi")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Durasi")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate2"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate2"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate2"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate2"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -44641,7 +44333,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\n                      Tambah Mitra\n                  "
+                        "\n                        Tambah Mitra\n                  "
                       )
                     ]
                   ),
@@ -44763,25 +44455,23 @@ var staticRenderFns = [
                                   ]),
                                   _vm._v(" "),
                                   _c("div", { staticClass: "form-group" }, [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c("label", [_vm._v("Kategori")]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "select",
-                                        { staticClass: "form-control" },
-                                        [
-                                          _c("option", [_vm._v("option 1")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 2")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 3")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 4")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 5")])
-                                        ]
-                                      )
-                                    ])
+                                    _c("label", [_vm._v("Kategori")]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "select",
+                                      { staticClass: "form-control" },
+                                      [
+                                        _c("option", [_vm._v("option 1")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 2")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 3")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 4")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 5")])
+                                      ]
+                                    )
                                   ]),
                                   _vm._v(" "),
                                   _c("div", { staticClass: "form-group" }, [
@@ -44817,75 +44507,62 @@ var staticRenderFns = [
                                   ]),
                                   _vm._v(" "),
                                   _c("div", { staticClass: "form-group" }, [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c("label", [_vm._v("Pembiayaan")]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "select",
-                                        { staticClass: "form-control" },
-                                        [
-                                          _c("option", [_vm._v("option 1")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 2")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 3")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 4")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 5")])
-                                        ]
-                                      )
-                                    ])
+                                    _c("label", [_vm._v("Pembiayaan")]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "select",
+                                      { staticClass: "form-control" },
+                                      [
+                                        _c("option", [_vm._v("option 1")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 2")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 3")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 4")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 5")])
+                                      ]
+                                    )
                                   ]),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "col-md-12" }, [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c("label", { attrs: { for: "" } }, [
-                                        _vm._v("Durasi")
-                                      ]),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "" } }, [
+                                      _vm._v("Durasi")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "input-group" }, [
+                                      _c("input", {
+                                        staticClass:
+                                          "form-control startdate datetimepicker-input",
+                                        attrs: {
+                                          type: "text",
+                                          "data-toggle": "datetimepicker",
+                                          "data-target": ".startdate"
+                                        }
+                                      }),
                                       _vm._v(" "),
                                       _c(
                                         "div",
-                                        { staticClass: "input-group" },
+                                        { staticClass: "input-group-append" },
                                         [
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control startdate datetimepicker-input",
-                                            attrs: {
-                                              type: "text",
-                                              "data-toggle": "datetimepicker",
-                                              "data-target": ".startdate"
-                                            }
-                                          }),
-                                          _vm._v(" "),
                                           _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-append"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text"
-                                                },
-                                                [_vm._v("s/d")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control enddate datetimepicker-input",
-                                            attrs: {
-                                              type: "text",
-                                              "data-toggle": "datetimepicker",
-                                              "data-target": ".enddate"
-                                            }
-                                          })
+                                            "span",
+                                            { staticClass: "input-group-text" },
+                                            [_vm._v("s/d")]
+                                          )
                                         ]
-                                      )
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        staticClass:
+                                          "form-control enddate datetimepicker-input",
+                                        attrs: {
+                                          type: "text",
+                                          "data-toggle": "datetimepicker",
+                                          "data-target": ".enddate"
+                                        }
+                                      })
                                     ])
                                   ])
                                 ]
@@ -45267,20 +44944,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Sasaran")]),
+                    _c("label", [_vm._v("Sasaran")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -45315,20 +44990,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Lokasi  Pelaksanaan")]),
+                    _c("label", [_vm._v("Lokasi  Pelaksanaan")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -45348,20 +45021,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Tenaga Kerja")]),
+                    _c("label", [_vm._v("Tenaga Kerja")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -45381,18 +45052,19 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "biaya" } }, [
-                      _vm._v("Pembiayaan")
-                    ]),
+                    _c("label", [_vm._v("Pembiayaan")]),
                     _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "number",
-                        id: "biaya",
-                        placeholder: "Besar Biaya"
-                      }
-                    })
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
@@ -45593,7 +45265,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", [
                           _vm._v(
-                            "\n                      Jawa Barat\n                  "
+                            "\n                        Jawa Barat\n                    "
                           )
                         ]),
                         _vm._v(" "),
@@ -45601,13 +45273,13 @@ var staticRenderFns = [
                           _c("ul", [
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Bogor\n                          "
+                                "\n                                Kabupaten Bogor\n                            "
                               )
                             ]),
                             _vm._v(" "),
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Depok\n                          "
+                                "\n                                Kabupaten Depok\n                            "
                               )
                             ])
                           ])
@@ -45623,7 +45295,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", [
                           _vm._v(
-                            "\n                      Jawa Barat\n                  "
+                            "\n                        Jawa Barat\n                    "
                           )
                         ]),
                         _vm._v(" "),
@@ -45631,13 +45303,13 @@ var staticRenderFns = [
                           _c("ul", [
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Bogor\n                          "
+                                "\n                                Kabupaten Bogor\n                            "
                               )
                             ]),
                             _vm._v(" "),
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Depok\n                          "
+                                "\n                                Kabupaten Depok\n                            "
                               )
                             ])
                           ])
@@ -45653,7 +45325,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", [
                           _vm._v(
-                            "\n                      Jawa Barat\n                  "
+                            "\n                        Jawa Barat\n                    "
                           )
                         ]),
                         _vm._v(" "),
@@ -45661,13 +45333,13 @@ var staticRenderFns = [
                           _c("ul", [
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Bogor\n                          "
+                                "\n                                Kabupaten Bogor\n                            "
                               )
                             ]),
                             _vm._v(" "),
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Depok\n                          "
+                                "\n                                Kabupaten Depok\n                            "
                               )
                             ])
                           ])
@@ -45683,7 +45355,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", [
                           _vm._v(
-                            "\n                      Jawa Barat\n                  "
+                            "\n                        Jawa Barat\n                    "
                           )
                         ]),
                         _vm._v(" "),
@@ -45691,13 +45363,13 @@ var staticRenderFns = [
                           _c("ul", [
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Bogor\n                          "
+                                "\n                                Kabupaten Bogor\n                            "
                               )
                             ]),
                             _vm._v(" "),
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Depok\n                          "
+                                "\n                                Kabupaten Depok\n                            "
                               )
                             ])
                           ])
@@ -45713,7 +45385,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", [
                           _vm._v(
-                            "\n                      Jawa Barat\n                  "
+                            "\n                        Jawa Barat\n                    "
                           )
                         ]),
                         _vm._v(" "),
@@ -45721,13 +45393,13 @@ var staticRenderFns = [
                           _c("ul", [
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Bogor\n                          "
+                                "\n                                Kabupaten Bogor\n                            "
                               )
                             ]),
                             _vm._v(" "),
                             _c("li", [
                               _vm._v(
-                                "\n                              Kabupaten Depok\n                          "
+                                "\n                                Kabupaten Depok\n                            "
                               )
                             ])
                           ])
@@ -45865,7 +45537,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\n                      Tambah Pengajuan\n                "
+                        "\n                        Tambah Pengajuan\n                  "
                       )
                     ]
                   )
@@ -46072,12 +45744,7 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                {
-                                                  attrs: {
-                                                    for:
-                                                      "exampleFormControlSelect1"
-                                                  }
-                                                },
+                                                { attrs: { for: "propinsi1" } },
                                                 [_vm._v("Pillih Propinsi")]
                                               ),
                                               _vm._v(" "),
@@ -46085,10 +45752,7 @@ var staticRenderFns = [
                                                 "select",
                                                 {
                                                   staticClass: "form-control",
-                                                  attrs: {
-                                                    id:
-                                                      "exampleFormControlSelect1"
-                                                  }
+                                                  attrs: { id: "propinsi1" }
                                                 },
                                                 [
                                                   _c("option", [
@@ -46117,7 +45781,9 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                { attrs: { for: "kabupaten" } },
+                                                {
+                                                  attrs: { for: "kabupaten1" }
+                                                },
                                                 [_vm._v("Pilih Kabupaten")]
                                               ),
                                               _vm._v(" "),
@@ -46127,7 +45793,7 @@ var staticRenderFns = [
                                                   staticClass: "form-control",
                                                   attrs: {
                                                     multiple: "",
-                                                    id: "kabupaten"
+                                                    id: "kabupaten1"
                                                   }
                                                 },
                                                 [
@@ -46151,42 +45817,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -46194,67 +45851,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Waktu")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Waktu")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate2"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate2"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate2 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate2"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate2 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate2"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -46390,7 +46038,7 @@ var staticRenderFns = [
                                           staticClass: "modal-title",
                                           attrs: { id: "exampleModalLabel" }
                                         },
-                                        [_vm._v("Form Mitra Lokal")]
+                                        [_vm._v("Form Monev")]
                                       ),
                                       _vm._v(" "),
                                       _c(
@@ -46447,12 +46095,7 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                {
-                                                  attrs: {
-                                                    for:
-                                                      "exampleFormControlSelect1"
-                                                  }
-                                                },
+                                                { attrs: { for: "Propinsi2" } },
                                                 [_vm._v("Pillih Propinsi")]
                                               ),
                                               _vm._v(" "),
@@ -46460,10 +46103,7 @@ var staticRenderFns = [
                                                 "select",
                                                 {
                                                   staticClass: "form-control",
-                                                  attrs: {
-                                                    id:
-                                                      "exampleFormControlSelect1"
-                                                  }
+                                                  attrs: { id: "propisi2" }
                                                 },
                                                 [
                                                   _c("option", [
@@ -46492,7 +46132,9 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                { attrs: { for: "kabupaten" } },
+                                                {
+                                                  attrs: { for: "kabupaten2" }
+                                                },
                                                 [_vm._v("Pilih Kabupaten")]
                                               ),
                                               _vm._v(" "),
@@ -46502,7 +46144,7 @@ var staticRenderFns = [
                                                   staticClass: "form-control",
                                                   attrs: {
                                                     multiple: "",
-                                                    id: "kabupaten"
+                                                    id: "kabupaten2"
                                                   }
                                                 },
                                                 [
@@ -46526,42 +46168,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -46569,67 +46202,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Waktu")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Waktu")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate3 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate3"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate3 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate3"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate3 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate3"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate3 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate3"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -46765,7 +46389,7 @@ var staticRenderFns = [
                                           staticClass: "modal-title",
                                           attrs: { id: "exampleModalLabel" }
                                         },
-                                        [_vm._v("Form Mitra Lokal")]
+                                        [_vm._v("Form Monev")]
                                       ),
                                       _vm._v(" "),
                                       _c(
@@ -46822,12 +46446,7 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                {
-                                                  attrs: {
-                                                    for:
-                                                      "exampleFormControlSelect1"
-                                                  }
-                                                },
+                                                { attrs: { for: "propinsi3" } },
                                                 [_vm._v("Pillih Propinsi")]
                                               ),
                                               _vm._v(" "),
@@ -46835,10 +46454,7 @@ var staticRenderFns = [
                                                 "select",
                                                 {
                                                   staticClass: "form-control",
-                                                  attrs: {
-                                                    id:
-                                                      "exampleFormControlSelect1"
-                                                  }
+                                                  attrs: { id: "propinsi3" }
                                                 },
                                                 [
                                                   _c("option", [
@@ -46867,7 +46483,9 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                { attrs: { for: "kabupaten" } },
+                                                {
+                                                  attrs: { for: "kabupaten3" }
+                                                },
                                                 [_vm._v("Pilih Kabupaten")]
                                               ),
                                               _vm._v(" "),
@@ -46877,7 +46495,7 @@ var staticRenderFns = [
                                                   staticClass: "form-control",
                                                   attrs: {
                                                     multiple: "",
-                                                    id: "kabupaten"
+                                                    id: "kabupaten3"
                                                   }
                                                 },
                                                 [
@@ -46901,42 +46519,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -46944,67 +46553,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Waktu")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Waktu")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate4 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate4"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate4 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate4"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate4 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate4"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate4 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate4"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -47140,7 +46740,7 @@ var staticRenderFns = [
                                           staticClass: "modal-title",
                                           attrs: { id: "exampleModalLabel" }
                                         },
-                                        [_vm._v("Form Mitra Lokal")]
+                                        [_vm._v("Form Monev")]
                                       ),
                                       _vm._v(" "),
                                       _c(
@@ -47197,12 +46797,7 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                {
-                                                  attrs: {
-                                                    for:
-                                                      "exampleFormControlSelect1"
-                                                  }
-                                                },
+                                                { attrs: { for: "propinsi4" } },
                                                 [_vm._v("Pillih Propinsi")]
                                               ),
                                               _vm._v(" "),
@@ -47210,10 +46805,7 @@ var staticRenderFns = [
                                                 "select",
                                                 {
                                                   staticClass: "form-control",
-                                                  attrs: {
-                                                    id:
-                                                      "exampleFormControlSelect1"
-                                                  }
+                                                  attrs: { id: "propinsi4" }
                                                 },
                                                 [
                                                   _c("option", [
@@ -47242,7 +46834,9 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                { attrs: { for: "kabupaten" } },
+                                                {
+                                                  attrs: { for: "kabupaten4" }
+                                                },
                                                 [_vm._v("Pilih Kabupaten")]
                                               ),
                                               _vm._v(" "),
@@ -47252,7 +46846,7 @@ var staticRenderFns = [
                                                   staticClass: "form-control",
                                                   attrs: {
                                                     multiple: "",
-                                                    id: "kabupaten"
+                                                    id: "kabupaten4"
                                                   }
                                                 },
                                                 [
@@ -47276,42 +46870,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -47319,67 +46904,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Waktu")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Waktu")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate5 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate5"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate5 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate5"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate5 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate5"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate5 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate5"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -47482,7 +47058,7 @@ var staticRenderFns = [
                             },
                             [
                               _vm._v(
-                                "\n                      Ubah\n                  "
+                                "\n                      Ubah\n                    "
                               )
                             ]
                           ),
@@ -47515,7 +47091,7 @@ var staticRenderFns = [
                                           staticClass: "modal-title",
                                           attrs: { id: "exampleModalLabel" }
                                         },
-                                        [_vm._v("Form Mitra Lokal")]
+                                        [_vm._v("Form Monev")]
                                       ),
                                       _vm._v(" "),
                                       _c(
@@ -47572,12 +47148,7 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                {
-                                                  attrs: {
-                                                    for:
-                                                      "exampleFormControlSelect1"
-                                                  }
-                                                },
+                                                { attrs: { for: "propinsi5" } },
                                                 [_vm._v("Pillih Propinsi")]
                                               ),
                                               _vm._v(" "),
@@ -47585,10 +47156,7 @@ var staticRenderFns = [
                                                 "select",
                                                 {
                                                   staticClass: "form-control",
-                                                  attrs: {
-                                                    id:
-                                                      "exampleFormControlSelect1"
-                                                  }
+                                                  attrs: { id: "propinsi5" }
                                                 },
                                                 [
                                                   _c("option", [
@@ -47617,7 +47185,9 @@ var staticRenderFns = [
                                             [
                                               _c(
                                                 "label",
-                                                { attrs: { for: "kabupaten" } },
+                                                {
+                                                  attrs: { for: "kabupaten5" }
+                                                },
                                                 [_vm._v("Pilih Kabupaten")]
                                               ),
                                               _vm._v(" "),
@@ -47627,7 +47197,7 @@ var staticRenderFns = [
                                                   staticClass: "form-control",
                                                   attrs: {
                                                     multiple: "",
-                                                    id: "kabupaten"
+                                                    id: "kabupaten5"
                                                   }
                                                 },
                                                 [
@@ -47651,42 +47221,33 @@ var staticRenderFns = [
                                             "div",
                                             { staticClass: "form-group" },
                                             [
+                                              _c("label", [
+                                                _vm._v("Pembiayaan")
+                                              ]),
+                                              _vm._v(" "),
                                               _c(
-                                                "div",
-                                                { staticClass: "form-group" },
+                                                "select",
+                                                { staticClass: "form-control" },
                                                 [
-                                                  _c("label", [
-                                                    _vm._v("Pembiayaan")
+                                                  _c("option", [
+                                                    _vm._v("option 1")
                                                   ]),
                                                   _vm._v(" "),
-                                                  _c(
-                                                    "select",
-                                                    {
-                                                      staticClass:
-                                                        "form-control"
-                                                    },
-                                                    [
-                                                      _c("option", [
-                                                        _vm._v("option 1")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 2")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 3")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 4")
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c("option", [
-                                                        _vm._v("option 5")
-                                                      ])
-                                                    ]
-                                                  )
+                                                  _c("option", [
+                                                    _vm._v("option 2")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 3")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 4")
+                                                  ]),
+                                                  _vm._v(" "),
+                                                  _c("option", [
+                                                    _vm._v("option 5")
+                                                  ])
                                                 ]
                                               )
                                             ]
@@ -47694,67 +47255,58 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c(
                                             "div",
-                                            { staticClass: "col-md-12" },
+                                            { staticClass: "form-group" },
                                             [
                                               _c(
+                                                "label",
+                                                { attrs: { for: "" } },
+                                                [_vm._v("Waktu")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
                                                 "div",
-                                                { staticClass: "form-group" },
+                                                { staticClass: "input-group" },
                                                 [
-                                                  _c(
-                                                    "label",
-                                                    { attrs: { for: "" } },
-                                                    [_vm._v("Waktu")]
-                                                  ),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control startdate6 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target":
+                                                        ".startdate6"
+                                                    }
+                                                  }),
                                                   _vm._v(" "),
                                                   _c(
                                                     "div",
                                                     {
-                                                      staticClass: "input-group"
+                                                      staticClass:
+                                                        "input-group-append"
                                                     },
                                                     [
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control startdate6 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".startdate6"
-                                                        }
-                                                      }),
-                                                      _vm._v(" "),
                                                       _c(
-                                                        "div",
+                                                        "span",
                                                         {
                                                           staticClass:
-                                                            "input-group-append"
+                                                            "input-group-text"
                                                         },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "input-group-text"
-                                                            },
-                                                            [_vm._v("s/d")]
-                                                          )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c("input", {
-                                                        staticClass:
-                                                          "form-control enddate6 datetimepicker-input",
-                                                        attrs: {
-                                                          type: "text",
-                                                          "data-toggle":
-                                                            "datetimepicker",
-                                                          "data-target":
-                                                            ".enddate6"
-                                                        }
-                                                      })
+                                                        [_vm._v("s/d")]
+                                                      )
                                                     ]
-                                                  )
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    staticClass:
+                                                      "form-control enddate6 datetimepicker-input",
+                                                    attrs: {
+                                                      type: "text",
+                                                      "data-toggle":
+                                                        "datetimepicker",
+                                                      "data-target": ".enddate6"
+                                                    }
+                                                  })
                                                 ]
                                               )
                                             ]
@@ -47942,11 +47494,7 @@ var staticRenderFns = [
                                   _c("div", { staticClass: "form-group" }, [
                                     _c(
                                       "label",
-                                      {
-                                        attrs: {
-                                          for: "exampleFormControlSelect1"
-                                        }
-                                      },
+                                      { attrs: { for: "propinsi" } },
                                       [_vm._v("Pillih Propinsi")]
                                     ),
                                     _vm._v(" "),
@@ -47954,9 +47502,7 @@ var staticRenderFns = [
                                       "select",
                                       {
                                         staticClass: "form-control",
-                                        attrs: {
-                                          id: "exampleFormControlSelect1"
-                                        }
+                                        attrs: { id: "propinsi" }
                                       },
                                       [
                                         _c("option", [_vm._v("Jawa Barat")]),
@@ -48000,75 +47546,62 @@ var staticRenderFns = [
                                   ]),
                                   _vm._v(" "),
                                   _c("div", { staticClass: "form-group" }, [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c("label", [_vm._v("Pembiayaan")]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "select",
-                                        { staticClass: "form-control" },
-                                        [
-                                          _c("option", [_vm._v("option 1")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 2")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 3")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 4")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("option 5")])
-                                        ]
-                                      )
-                                    ])
+                                    _c("label", [_vm._v("Pembiayaan")]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "select",
+                                      { staticClass: "form-control" },
+                                      [
+                                        _c("option", [_vm._v("option 1")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 2")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 3")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 4")]),
+                                        _vm._v(" "),
+                                        _c("option", [_vm._v("option 5")])
+                                      ]
+                                    )
                                   ]),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "col-md-12" }, [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c("label", { attrs: { for: "" } }, [
-                                        _vm._v("Waktu")
-                                      ]),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "" } }, [
+                                      _vm._v("Waktu")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "input-group" }, [
+                                      _c("input", {
+                                        staticClass:
+                                          "form-control startdate datetimepicker-input",
+                                        attrs: {
+                                          type: "text",
+                                          "data-toggle": "datetimepicker",
+                                          "data-target": ".startdate"
+                                        }
+                                      }),
                                       _vm._v(" "),
                                       _c(
                                         "div",
-                                        { staticClass: "input-group" },
+                                        { staticClass: "input-group-append" },
                                         [
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control startdate datetimepicker-input",
-                                            attrs: {
-                                              type: "text",
-                                              "data-toggle": "datetimepicker",
-                                              "data-target": ".startdate"
-                                            }
-                                          }),
-                                          _vm._v(" "),
                                           _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-append"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text"
-                                                },
-                                                [_vm._v("s/d")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control enddate datetimepicker-input",
-                                            attrs: {
-                                              type: "text",
-                                              "data-toggle": "datetimepicker",
-                                              "data-target": ".enddate"
-                                            }
-                                          })
+                                            "span",
+                                            { staticClass: "input-group-text" },
+                                            [_vm._v("s/d")]
+                                          )
                                         ]
-                                      )
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        staticClass:
+                                          "form-control enddate datetimepicker-input",
+                                        attrs: {
+                                          type: "text",
+                                          "data-toggle": "datetimepicker",
+                                          "data-target": ".enddate"
+                                        }
+                                      })
                                     ])
                                   ])
                                 ]
@@ -49070,20 +48603,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Sasaran")]),
+                    _c("label", [_vm._v("Sasaran")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -49118,20 +48649,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Tenaga Kerja")]),
+                    _c("label", [_vm._v("Tenaga Kerja")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -49151,71 +48680,68 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Lokasi  Pelaksanaan")]),
+                    _c("label", [_vm._v("Lokasi  Pelaksanaan")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "biaya" } }, [
-                      _vm._v("Pembiayaan")
-                    ]),
+                    _c("label", [_vm._v("Pembiayaan")]),
                     _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "number",
-                        id: "biaya",
-                        placeholder: "Besar Biaya"
-                      }
-                    })
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
+                    ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "" } }, [
-                        _vm._v("Jadwal Pelaksanaan")
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Jadwal Pelaksanaan")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("input", {
+                        staticClass:
+                          "form-control startdate datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".startdate"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c("span", { staticClass: "input-group-text" }, [
+                          _vm._v("s/d")
+                        ])
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("input", {
-                          staticClass:
-                            "form-control startdate datetimepicker-input",
-                          attrs: {
-                            type: "text",
-                            "data-toggle": "datetimepicker",
-                            "data-target": ".startdate"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group-append" }, [
-                          _c("span", { staticClass: "input-group-text" }, [
-                            _vm._v("s/d")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass:
-                            "form-control enddate datetimepicker-input",
-                          attrs: {
-                            type: "text",
-                            "data-toggle": "datetimepicker",
-                            "data-target": ".enddate"
-                          }
-                        })
-                      ])
+                      _c("input", {
+                        staticClass:
+                          "form-control enddate datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".enddate"
+                        }
+                      })
                     ])
                   ]),
                   _vm._v(" "),
@@ -49394,20 +48920,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Sasaran")]),
+                    _c("label", [_vm._v("Sasaran")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -49442,20 +48966,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Tenaga Kerja")]),
+                    _c("label", [_vm._v("Tenaga Kerja")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
@@ -49475,74 +48997,68 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Lokasi  Pelaksanaan")]),
+                    _c("label", [_vm._v("Lokasi  Pelaksanaan")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Pembiayaan")]),
+                    _c("label", [_vm._v("Pembiayaan")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "" } }, [
-                        _vm._v("Jadwal Pelaksanaan")
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Jadwal Pelaksanaan")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("input", {
+                        staticClass:
+                          "form-control startdate datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".startdate"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c("span", { staticClass: "input-group-text" }, [
+                          _vm._v("s/d")
+                        ])
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("input", {
-                          staticClass:
-                            "form-control startdate datetimepicker-input",
-                          attrs: {
-                            type: "text",
-                            "data-toggle": "datetimepicker",
-                            "data-target": ".startdate"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group-append" }, [
-                          _c("span", { staticClass: "input-group-text" }, [
-                            _vm._v("s/d")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass:
-                            "form-control enddate datetimepicker-input",
-                          attrs: {
-                            type: "text",
-                            "data-toggle": "datetimepicker",
-                            "data-target": ".enddate"
-                          }
-                        })
-                      ])
+                      _c("input", {
+                        staticClass:
+                          "form-control enddate datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".enddate"
+                        }
+                      })
                     ])
                   ]),
                   _vm._v(" "),
@@ -49678,7 +49194,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "container-fluid" }, [
           _c("div", { staticClass: "row mb-2" }, [
             _c("div", { staticClass: "col-sm-6" }, [
-              _c("h1", [_vm._v("Rekomendasi Tenaga Asing")])
+              _c("h1", [_vm._v("Pemberitahuan Tamu Asing")])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6" }, [
@@ -50601,7 +50117,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "container-fluid" }, [
           _c("div", { staticClass: "row mb-2" }, [
             _c("div", { staticClass: "col-sm-6" }, [
-              _c("h1", [_vm._v("Rekomendasi Tenaga Asing")])
+              _c("h1", [_vm._v("Pemberitahuan Tamu")])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6" }, [
@@ -50651,291 +50167,283 @@ var staticRenderFns = [
                     })
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "" } }, [
-                        _vm._v("Tanggal Lahir")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("input", {
-                          staticClass:
-                            "form-control datepicker datetimepicker-input",
-                          attrs: {
-                            type: "text",
-                            "data-toggle": "datetimepicker",
-                            "data-target": ".datepicker"
-                          }
-                        })
-                      ])
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Tanggal Lahir")
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "negara" } }, [
-                        _vm._v("Asal Negara")
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("input", {
+                        staticClass:
+                          "form-control datepicker datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".datepicker"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "negara" } }, [
+                      _vm._v("Asal Negara")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        id: "negara",
+                        placeholder: "negara"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "Passport" } }, [
+                      _vm._v("Nomor Passport")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        id: "passport",
+                        placeholder: "Nomor Passport"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Masa Berlaku Passport")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("input", {
+                        staticClass:
+                          "form-control startdate2 datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".startdate2"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c("span", { staticClass: "input-group-text" }, [
+                          _vm._v("s/d")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("input", {
-                        staticClass: "form-control",
+                        staticClass:
+                          "form-control enddate2 datetimepicker-input",
                         attrs: {
                           type: "text",
-                          id: "negara",
-                          placeholder: "negara"
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".enddate2"
                         }
                       })
-                    ]),
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", [_vm._v("Instansi")]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "Passport" } }, [
-                        _vm._v("Nomor Passport")
-                      ]),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          id: "passport",
-                          placeholder: "Nomor Passport"
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-12" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", { attrs: { for: "" } }, [
-                          _vm._v("Masa Berlaku Passport")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group" }, [
-                          _c("input", {
-                            staticClass:
-                              "form-control startdate2 datetimepicker-input",
-                            attrs: {
-                              type: "text",
-                              "data-toggle": "datetimepicker",
-                              "data-target": ".startdate2"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "input-group-append" }, [
-                            _c("span", { staticClass: "input-group-text" }, [
-                              _vm._v("s/d")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass:
-                              "form-control enddate2 datetimepicker-input",
-                            attrs: {
-                              type: "text",
-                              "data-toggle": "datetimepicker",
-                              "data-target": ".enddate2"
-                            }
-                          })
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", [_vm._v("Instansi")]),
-                        _vm._v(" "),
-                        _c("select", { staticClass: "form-control" }, [
-                          _c("option", [_vm._v("option 1")]),
-                          _vm._v(" "),
-                          _c("option", [_vm._v("option 2")]),
-                          _vm._v(" "),
-                          _c("option", [_vm._v("option 3")]),
-                          _vm._v(" "),
-                          _c("option", [_vm._v("option 4")]),
-                          _vm._v(" "),
-                          _c("option", [_vm._v("option 5")])
-                        ])
-                      ]),
+                      _c("option", [_vm._v("option 2")]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", { attrs: { for: "tujuan" } }, [
-                          _vm._v("Tujuan Kegiatan")
-                        ]),
-                        _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "tujuan" } }, [
+                      _vm._v("Tujuan Kegiatan")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        id: "tujuan",
+                        placeholder: "Tujuan Kegiatan"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "jabatan" } }, [
+                      _vm._v("Jabatan")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        id: "jabatan",
+                        placeholder: "Jabatan"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "file" } }, [
+                      _vm._v("Lampirkan Foto")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("div", { staticClass: "custom-file" }, [
                         _c("input", {
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "tujuan",
-                            placeholder: "Tujuan Kegiatan"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", { attrs: { for: "jabatan" } }, [
-                          _vm._v("Jabatan")
-                        ]),
+                          staticClass: "custom-file-input",
+                          attrs: { type: "file", id: "foto" }
+                        }),
                         _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "jabatan",
-                            placeholder: "Jabatan"
-                          }
-                        })
+                        _c(
+                          "label",
+                          {
+                            staticClass: "custom-file-label",
+                            attrs: { for: "file" }
+                          },
+                          [_vm._v("Pilih File")]
+                        )
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", { attrs: { for: "file" } }, [
-                          _vm._v("Lampirkan Foto")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group" }, [
-                          _c("div", { staticClass: "custom-file" }, [
-                            _c("input", {
-                              staticClass: "custom-file-input",
-                              attrs: { type: "file", id: "foto" }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass: "custom-file-label",
-                                attrs: { for: "file" }
-                              },
-                              [_vm._v("Pilih File")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "input-group-append" }, [
-                            _c(
-                              "span",
-                              {
-                                staticClass: "input-group-text",
-                                attrs: { id: "upload" }
-                              },
-                              [_vm._v("Unggah")]
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", { attrs: { for: "file" } }, [
-                          _vm._v("Lampirkan Passport")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group" }, [
-                          _c("div", { staticClass: "custom-file" }, [
-                            _c("input", {
-                              staticClass: "custom-file-input",
-                              attrs: { type: "file", id: "passport" }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass: "custom-file-label",
-                                attrs: { for: "file" }
-                              },
-                              [_vm._v("Pilih File")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "input-group-append" }, [
-                            _c(
-                              "span",
-                              {
-                                staticClass: "input-group-text",
-                                attrs: { id: "upload" }
-                              },
-                              [_vm._v("Unggah")]
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", { attrs: { for: "file" } }, [
-                          _vm._v("Lampirkan CV")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group" }, [
-                          _c("div", { staticClass: "custom-file" }, [
-                            _c("input", {
-                              staticClass: "custom-file-input",
-                              attrs: { type: "file", id: "cv" }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass: "custom-file-label",
-                                attrs: { for: "file" }
-                              },
-                              [_vm._v("Pilih File")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "input-group-append" }, [
-                            _c(
-                              "span",
-                              {
-                                staticClass: "input-group-text",
-                                attrs: { id: "upload" }
-                              },
-                              [_vm._v("Unggah")]
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-12" }, [
-                        _c("div", { staticClass: "form-group" }, [
-                          _c("label", { attrs: { for: "" } }, [
-                            _vm._v("Lama Kegiatan")
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "input-group" }, [
-                            _c("input", {
-                              staticClass:
-                                "form-control startdate datetimepicker-input",
-                              attrs: {
-                                type: "text",
-                                "data-toggle": "datetimepicker",
-                                "data-target": ".startdate"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "input-group-append" }, [
-                              _c("span", { staticClass: "input-group-text" }, [
-                                _vm._v("s/d")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("input", {
-                              staticClass:
-                                "form-control enddate datetimepicker-input",
-                              attrs: {
-                                type: "text",
-                                "data-toggle": "datetimepicker",
-                                "data-target": ".enddate"
-                              }
-                            })
-                          ])
-                        ])
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "input-group-text",
+                            attrs: { id: "upload" }
+                          },
+                          [_vm._v("Unggah")]
+                        )
                       ])
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "card-footer" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-primary",
-                        attrs: { href: "/tamu", role: "button" }
-                      },
-                      [_vm._v("Simpan")]
-                    )
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "file" } }, [
+                      _vm._v("Lampirkan Passport")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("div", { staticClass: "custom-file" }, [
+                        _c("input", {
+                          staticClass: "custom-file-input",
+                          attrs: { type: "file", id: "passport" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "custom-file-label",
+                            attrs: { for: "file" }
+                          },
+                          [_vm._v("Pilih File")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "input-group-text",
+                            attrs: { id: "upload" }
+                          },
+                          [_vm._v("Unggah")]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "file" } }, [
+                      _vm._v("Lampirkan CV")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("div", { staticClass: "custom-file" }, [
+                        _c("input", {
+                          staticClass: "custom-file-input",
+                          attrs: { type: "file", id: "cv" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "custom-file-label",
+                            attrs: { for: "file" }
+                          },
+                          [_vm._v("Pilih File")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "input-group-text",
+                            attrs: { id: "upload" }
+                          },
+                          [_vm._v("Unggah")]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Lama Kegiatan")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("input", {
+                        staticClass:
+                          "form-control startdate datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".startdate"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c("span", { staticClass: "input-group-text" }, [
+                          _vm._v("s/d")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass:
+                          "form-control enddate datetimepicker-input",
+                        attrs: {
+                          type: "text",
+                          "data-toggle": "datetimepicker",
+                          "data-target": ".enddate"
+                        }
+                      })
+                    ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-footer" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { href: "/tamu", role: "button" }
+                    },
+                    [_vm._v("Simpan")]
+                  )
                 ])
               ])
             ])
@@ -51580,20 +51088,18 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Instansi")]),
+                    _vm._v(" "),
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("option 1")]),
                       _vm._v(" "),
-                      _c("select", { staticClass: "form-control" }, [
-                        _c("option", [_vm._v("option 1")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 2")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 3")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 4")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("option 5")])
-                      ])
+                      _c("option", [_vm._v("option 2")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 3")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 4")]),
+                      _vm._v(" "),
+                      _c("option", [_vm._v("option 5")])
                     ])
                   ]),
                   _vm._v(" "),

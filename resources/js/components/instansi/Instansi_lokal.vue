@@ -1,6 +1,6 @@
 <template>
          <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -19,13 +19,10 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
+  <section class="content">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
             <div class="card-header">
               <h3 class="card-title">Daftar Mitra Lokal</h3>
 
@@ -44,9 +41,9 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama Mitra Lokal</th>
-                    <th>Alamat Mitra Lokal</th>
-                    <th>Nomor Registrasi</th>
+                    <th>Nama Instansi Lokal</th>
+                    <th>Alamat Instansi Lokal</th>
+                    <th>Nomor Izin Registrasi</th>
                     <th>Nama Program</th>
                     <th>Pembiayaan</th>
                     <th>Durasi</th>
@@ -103,13 +100,6 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <div class=" float-left">
-                <!-- Button trigger modal -->
-
-
-                    <!-- Modal -->
-
-              </div>
                 <ul class="pagination pagination-sm m-0 float-right">
                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -117,14 +107,13 @@
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                 </ul>
-              </div>
-        </div>
-          <!-- /.card -->
+            </div>
         </div>
       </div>
-    </section>
-  </div>
-  <!-- /.content-wrapper -->
+    </div>
+  </section>
+</div>
+
 </template>
 
 <script>
