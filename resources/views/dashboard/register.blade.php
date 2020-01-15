@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition register-page"
-style="background-image: url('assets_fe/img/slider/slider3.jpg');
+style="background-image: url('{{ asset('assets_fe/img/slider/slider33.jpg')}}');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;">
