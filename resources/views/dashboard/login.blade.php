@@ -19,11 +19,12 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page" 
-style="background-image: url('assets_fe/img/slider/slider1.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;">
+<body class="hold-transition login-page" style="
+background-image: url('{{ asset('assets_fe/img/slider/slider11.jpg')}}');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;">
+<div class="bg-login"></div>
 <div class="login-box">
   <div class="login-logo">
     <a><b>Login</b> Fasker</a>
