@@ -15,9 +15,12 @@ class CreateGuestBooksTable extends Migration
     {
         Schema::create('guest_books', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('id_tenaga')->references('id')->on('master_tenaga_asings');
-            $table->foreign('tujuan_id')->references('id')->on('tujuans');
-            $table->foreign('kegiatan_id')->references('id')->on('master_kegiatans');
+           $table->unsignedBigInteger('id_tenaga');
+            // $table->foreign('id_tenaga')->references('id')->on('master_tenaga_asings');
+            $table->unsignedBigInteger('tujuan_id');
+            // $table->foreign('tujuan_id')->references('id')->on('tujuans');
+            $table->unsignedBigInteger('kegiatan_id');
+            //$table->foreign('kegiatan_id')->references('id')->on('master_kegiatans');
             $table->date('tgl_awal');
             $table->date('tgl_akhir');
             $table->string('jadwal');

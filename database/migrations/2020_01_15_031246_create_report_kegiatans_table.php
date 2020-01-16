@@ -15,8 +15,10 @@ class CreateReportKegiatansTable extends Migration
     {
         Schema::create('report_kegiatans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('kegiatan_id')->references('id')->on('master_kegiatans');
-            $table->foreign('report_id')->references('id')->on('reports');
+            $table->unsignedBigInteger('kegiatan_id');
+            // $table->foreign('kegiatan_id')->references('id')->on('master_kegiatans');
+            $table->unsignedBigInteger('report_id');
+            // $table->foreign('report_id')->references('id')->on('reports');
             $table->string('nominal_biaya');
             $table->string('lokasi');
             $table->timestamps();

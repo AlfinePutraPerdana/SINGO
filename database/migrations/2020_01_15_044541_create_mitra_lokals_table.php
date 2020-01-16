@@ -15,7 +15,8 @@ class CreateMitraLokalsTable extends Migration
     {
         Schema::create('mitra_lokals', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('instansi_id')->references('id')->on('instansis');
+            $table->unsignedBigInteger('instansi_id');
+            // $table->foreign('instansi_id')->references('id')->on('instansis');
             $table->string('pembiayaan');
             $table->date('durasi_awal');
             $table->date('durasi_akhir');

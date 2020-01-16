@@ -19,7 +19,8 @@ class CreateInstansisTable extends Migration
             $table->string('negara');
             $table->string('kota');
             $table->string('alamat');
-            $table->foreign('kategori')->references('id')->on('kategori_instansis');
+            $table->unsignedBigInteger('id_kategori');
+           // $table->foreign('id_kategori')->references('id')->on('kategori_instansis');
             $table->string('parent_id');
             $table->string('no_regis_izin');
             $table->timestamps();

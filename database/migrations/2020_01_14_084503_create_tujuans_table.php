@@ -16,7 +16,8 @@ class CreateTujuansTable extends Migration
         Schema::create('tujuans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->foreign('instansi_id')->references('id')->on('instansis');
+            $table->unsignedBigInteger('instansi_id');
+            // $table->foreign('instansi_id')->references('id')->on('instansis');
             $table->timestamps();
         });
     }

@@ -15,8 +15,10 @@ class CreateRktLokasisTable extends Migration
     {
         Schema::create('rkt_lokasis', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_lokasi')->references('id')->on('master_kotas');
+            $table->unsignedBigInteger('id_rkt');
+            // $table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->unsignedBigInteger('id_lokasi');
+            //$table->foreign('id_lokasi')->references('id')->on('master_kotas');
             $table->timestamps();
         });
     }

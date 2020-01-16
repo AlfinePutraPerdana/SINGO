@@ -15,8 +15,10 @@ class CreateRktKegiatansTable extends Migration
     {
         Schema::create('rkt_kegiatans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_kegiatan')->references('id')->on('master_kegiatans');
+            $table->unsignedBigInteger('id_rkt');
+            // $table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->unsignedBigInteger('id_kegiatan');
+            // $table->foreign('id_kegiatan')->references('id')->on('master_kegiatans');
             $table->timestamps();
         });
     }

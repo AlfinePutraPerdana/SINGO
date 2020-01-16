@@ -15,8 +15,10 @@ class CreateRktTenagaasingsTable extends Migration
     {
         Schema::create('rkt_tenagaasings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_tenagaasing')->references('id')->on('master_tenaga_asings');
+            $table->unsignedBigInteger('id_rkt');
+            //$table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->unsignedBigInteger('id_tenagaasing');
+            //$table->foreign('id_tenagaasing')->references('id')->on('master_tenaga_asings');
             $table->timestamps();
         });
     }

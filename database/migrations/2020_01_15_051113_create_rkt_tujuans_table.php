@@ -15,8 +15,10 @@ class CreateRktTujuansTable extends Migration
     {
         Schema::create('rkt_tujuans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_tujuan')->references('id')->on('tujuans');
+            $table->unsignedBigInteger('id_rkt');
+            //$table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->unsignedBigInteger('id_tujuan');
+            // $table->foreign('id_tujuan')->references('id')->on('tujuans');
             $table->timestamps();
         });
     }

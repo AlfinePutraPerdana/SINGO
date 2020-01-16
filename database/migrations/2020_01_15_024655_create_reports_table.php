@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateReportKegiatansTable extends Migration
+class CreateReportsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -36,6 +36,6 @@ class CreateReportKegiatansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('report_kegiatans');
+        Schema::dropIfExists('reports');
     }
 }

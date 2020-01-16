@@ -20,7 +20,8 @@ class CreateMasterTenagaAsingsTable extends Migration
             $table->string('no_passport');
             $table->date('tgl_berlaku_awal');
             $table->date('tgl_berlaku_akhir');
-            $table->foreign('id_instansi')->references('id')->on('instansis');
+            $table->unsignedBigInteger('id_instansi');
+            //$table->foreign('id_instansi')->references('id')->on('instansis');
             $table->string('jabatan');
             $table->string('foto');
             $table->string('upload_passpor');

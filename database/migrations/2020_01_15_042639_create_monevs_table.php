@@ -16,7 +16,8 @@ class CreateMonevsTable extends Migration
         Schema::create('monevs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-            $table->foreign('city_id')->references('id')->on('master_kota');
+            $table->unsignedBigInteger('city_id');
+            //$table->foreign('city_id')->references('id')->on('master_kotas');
             $table->date('mulai');
             $table->date('selesai');
             $table->timestamps();
