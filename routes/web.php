@@ -55,6 +55,10 @@ Route::get('/list-tenaga', function () {
     return view('mitra.ngo.tenaga.listtenaga');
 });
 
+Route::get('/history', function () {
+    return view('mitra.ngo.tenaga.historytenaga');
+});
+
 Route::get('/tamu', function () {
     return view('mitra.ngo.tamu.tamu');
 });
@@ -65,6 +69,10 @@ Route::get('/ajukan-tamu', function () {
 
 Route::get('/list-tamu', function () {
     return view('mitra.ngo.tamu.listtamu');
+});
+
+Route::get('/history', function () {
+    return view('mitra.ngo.tamu.historytamu');
 });
 
 Route::get('/revisi-tamu', function () {
@@ -99,6 +107,10 @@ Route::get('/tambah-artikel', function () {
     return view('mitra.ngo.dokumentasi.tambahartikel');
 });
 
+Route::get('/revisi-artikel', function () {
+    return view('mitra.ngo.dokumentasi.revisiartikel');
+});
+
 Route::get('/ltk', function () {
     return view('mitra.ngo.LTK.ltk');
 });
@@ -106,6 +118,19 @@ Route::get('/ltk', function () {
 Route::get('/tambah-ltk', function () {
     return view('mitra.ngo.LTK.tambahltk');
 });
+
+Route::get('/lk', function () {
+    return view('mitra.ngo.LTK.tambahkeuangan');
+});
+
+Route::get('/rik', function () {
+    return view('mitra.ngo.RIK.rik');
+});
+
+Route::get('/tambah-rik', function () {
+    return view('mitra.ngo.RIK.tambahrik');
+});
+
 
 Auth::routes();
 

@@ -6,12 +6,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Laporan Keuangan</h1>
+            <h1>Laporan Tahunan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Laporan Keuangan</li>
+              <li class="breadcrumb-item active">Laporan Tahunan</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
       <div class="col-12">
         <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Laporan Keuangan <a href="/tambah-ltk" class="badge badge-pill badge-primary">Tambah Laporan</a></h3>
+              <h3 class="card-title">Daftar Laporan Tahunan <a href="/tambah-ltk" class="badge badge-pill badge-primary">Tambah Laporan</a></h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -41,7 +41,7 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Laporan Keungan</th>
+                    <th>Laporan Tahunan</th>
                     <th>Tanggal</th>
                   </tr>
                 </thead>

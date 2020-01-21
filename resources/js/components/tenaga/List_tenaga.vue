@@ -49,6 +49,7 @@
                     <th>Tujuan Kegiatan</th>
                     <th>Jabatan</th>
                     <th>Lama Kegiatan</th>
+                    <th>History</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -62,6 +63,7 @@
                     <td>Bermanfaat</td>
                     <td>Pekerja</td>
                     <td>1 Tahun</td>
+                    <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -73,6 +75,7 @@
                     <td>Bermanfaat</td>
                     <td>Pekerja</td>
                     <td>1 Tahun</td>
+                    <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                   </tr>
                   <tr>
                     <td>3</td>
@@ -84,6 +87,7 @@
                     <td>Bermanfaat</td>
                     <td>Pekerja</td>
                     <td>1 Tahun</td>
+                    <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                   </tr>
                   <tr>
                     <td>4</td>
@@ -95,6 +99,7 @@
                     <td>Bermanfaat</td>
                     <td>Pekerja</td>
                     <td>1 Tahun</td>
+                    <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                   </tr>
                   <tr>
                     <td>5</td>
@@ -106,6 +111,7 @@
                     <td>Bermanfaat</td>
                     <td>Pekerja</td>
                     <td>1 Tahun</td>
+                    <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                   </tr>
                 </tbody>
               </table>

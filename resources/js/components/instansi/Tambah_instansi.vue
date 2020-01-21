@@ -85,45 +85,27 @@
                                         <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
                                     </div>
                                     <div class="form-group">
-                                        <label for="alamat">Negara</label>
-                                        <input type="text" class="form-control" id="negara" placeholder="Negara">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Kota</label>
-                                        <input type="text" class="form-control" id="kota" placeholder="Kota">
-                                    </div>
-                                    <div class="form-group">
                                         <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Kategori</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="registrasi">Nomor Izin Registrasi</label>
                                         <input type="text" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
                                     </div>
                                     <div class="form-group">
-                                        <label for="program">Nama Program</label>
-                                        <input type="text" class="form-control" id="program" placeholder="Nama Program">
+                                      <label>Nama Program</label>
+                                      <select class="form-control">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                      </select>
                                     </div>
                                     <div class="form-group">
-                                        <label>Pembiayaan</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                      </div>
+                                        <label for="">Pembiayaan</label>
+                                        <input type="number" class="form-control" id="biaya2">
+                                    </div>
                                     <div class="form-group">
                                           <label for="">Durasi</label>
                                           <div class="input-group">
@@ -134,11 +116,11 @@
                                             <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
                                           </div>
                                     </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                      <button type="submit" class="btn btn-success">Simpan</button>
+                                    </div>
                                 </form>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                            <button type="button" class="btn btn-success">Simpan</button>
                             </div>
                         </div>
                         </div>
@@ -160,80 +142,6 @@
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
                     </button>
-                    <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Form Instansi Lokal</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="" role="form">
-                                    <div class="form-group">
-                                        <label for="nama">Nama Mitra</label>
-                                        <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Negara</label>
-                                        <input type="text" class="form-control" id="negara" placeholder="Negara">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Kota</label>
-                                        <input type="text" class="form-control" id="kota" placeholder="Kota">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Alamat Mitra</label>
-                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Kategori</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="registrasi">Nomor Izin Registrasi</label>
-                                        <input type="text" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="program">Nama Program</label>
-                                        <input type="text" class="form-control" id="program" placeholder="Nama Program">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Pembiayaan</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                      </div>
-                                    <div class="form-group">
-                                          <label for="">Durasi</label>
-                                          <div class="input-group">
-                                            <input type="text" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
-                                            <div class="input-group-append">
-                                              <span class="input-group-text">s/d</span>
-                                            </div>
-                                            <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
-                                          </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                            <button type="button" class="btn btn-success">Simpan</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </td>
                   </tr>
                   <tr>
@@ -251,80 +159,6 @@
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
                     </button>
-                    <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Form Instansi Lokal</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="" role="form">
-                                    <div class="form-group">
-                                        <label for="nama">Nama Mitra</label>
-                                        <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Negara</label>
-                                        <input type="text" class="form-control" id="negara" placeholder="Negara">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Kota</label>
-                                        <input type="text" class="form-control" id="kota" placeholder="Kota">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Alamat Mitra</label>
-                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Kategori</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="registrasi">Nomor Izin Registrasi</label>
-                                        <input type="text" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="program">Nama Program</label>
-                                        <input type="text" class="form-control" id="program" placeholder="Nama Program">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Pembiayaan</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                      </div>
-                                    <div class="form-group">
-                                          <label for="">Durasi</label>
-                                          <div class="input-group">
-                                            <input type="text" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
-                                            <div class="input-group-append">
-                                              <span class="input-group-text">s/d</span>
-                                            </div>
-                                            <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
-                                          </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                            <button type="button" class="btn btn-success">Simpan</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </td>
                   </tr>
                   <tr>
@@ -342,80 +176,6 @@
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
                     </button>
-                    <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Form Instansi Lokal</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                  <form action="" role="form">
-                                      <div class="form-group">
-                                          <label for="nama">Nama Mitra</label>
-                                          <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="alamat">Negara</label>
-                                          <input type="text" class="form-control" id="negara" placeholder="Negara">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="alamat">Kota</label>
-                                          <input type="text" class="form-control" id="kota" placeholder="Kota">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="alamat">Alamat Mitra</label>
-                                          <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                      </div>
-                                      <div class="form-group">
-                                          <label>Kategori</label>
-                                          <select class="form-control">
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                            <option>option 3</option>
-                                            <option>option 4</option>
-                                            <option>option 5</option>
-                                          </select>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="registrasi">Nomor Izin Registrasi</label>
-                                          <input type="text" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="program">Nama Program</label>
-                                          <input type="text" class="form-control" id="program" placeholder="Nama Program">
-                                      </div>
-                                      <div class="form-group">
-                                          <label>Pembiayaan</label>
-                                          <select class="form-control">
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                            <option>option 3</option>
-                                            <option>option 4</option>
-                                            <option>option 5</option>
-                                          </select>
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="">Durasi</label>
-                                        <div class="input-group">
-                                          <input type="text" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
-                                          <div class="input-group-append">
-                                            <span class="input-group-text">s/d</span>
-                                          </div>
-                                          <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
-                                        </div>
-                                      </div>
-                                  </form>
-                              </div>
-                              <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                              <button type="button" class="btn btn-success">Simpan</button>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
                     </td>
                   </tr>
                   <tr>
@@ -433,82 +193,6 @@
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
                     </button>
-                    <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Form Instansi Lokal</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="" role="form">
-                                    <div class="form-group">
-                                        <label for="nama">Nama Mitra</label>
-                                        <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Negara</label>
-                                        <input type="text" class="form-control" id="negara" placeholder="Negara">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Kota</label>
-                                        <input type="text" class="form-control" id="kota" placeholder="Kota">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Alamat Mitra</label>
-                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Kategori</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="registrasi">Nomor Izin Registrasi</label>
-                                        <input type="text" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="program">Nama Program</label>
-                                        <input type="text" class="form-control" id="program" placeholder="Nama Program">
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="form-group">
-                                        <label>Pembiayaan</label>
-                                        <select class="form-control">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                          <label for="">Durasi</label>
-                                          <div class="input-group">
-                                            <input type="text" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
-                                            <div class="input-group-append">
-                                              <span class="input-group-text">s/d</span>
-                                            </div>
-                                            <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
-                                          </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                            <button type="button" class="btn btn-success">Simpan</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </td>
                   </tr>
                 </tbody>
@@ -538,37 +222,15 @@
                                   <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
                               </div>
                               <div class="form-group">
-                                <label for="alamat">Negara</label>
-                                <input type="text" class="form-control" id="negara" placeholder="Negara">
-                              </div>
-                              <div class="form-group">
-                                  <label for="alamat">Kota</label>
-                                  <input type="text" class="form-control" id="kota" placeholder="Kota">
-                              </div>
-                              <div class="form-group">
                                   <label for="alamat">Alamat Mitra</label>
                                   <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
-                              </div>
-                              <div class="form-group">
-                                  <label>Kategori</label>
-                                  <select class="form-control">
-                                    <option>option 1</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                    <option>option 4</option>
-                                    <option>option 5</option>
-                                  </select>
                               </div>
                               <div class="form-group">
                                   <label for="registrasi">Nomor Izin Registrasi</label>
                                   <input type="text" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
                               </div>
                               <div class="form-group">
-                                  <label for="program">Nama Program</label>
-                                  <input type="text" class="form-control" id="program" placeholder="Nama Program">
-                              </div>
-                              <div class="form-group">
-                                <label>Pembiayaan</label>
+                                  <label>Nama Program</label>
                                 <select class="form-control">
                                   <option>option 1</option>
                                   <option>option 2</option>
@@ -576,6 +238,10 @@
                                   <option>option 4</option>
                                   <option>option 5</option>
                                 </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="">Pembiayaan</label>
+                                <input type="number" class="form-control" id="biaya" placeholder="Besar nominal">
                               </div>
                               <div class="form-group">
                                 <label for="">Durasi</label>

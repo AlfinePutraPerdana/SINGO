@@ -48,6 +48,7 @@
                   <th>Tujuan Kegiatan</th>
                   <th>Tujuan Daerah</th>
                   <th>Lama Kegiatan</th>
+                  <th>History</th>
                 </tr>
               </thead>
               <tbody>
@@ -61,6 +62,7 @@
                   <td>Bermanfaat</td>
                   <td>Bogor</td>
                   <td>1 Tahun</td>
+                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>2</td>
@@ -72,6 +74,7 @@
                   <td>Bermanfaat</td>
                   <td>Bogor</td>
                   <td>2 Tahun</td>
+                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>3</td>
@@ -83,6 +86,7 @@
                   <td>Bermanfaat</td>
                   <td>Bogor</td>
                   <td>3 Tahun</td>
+                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>4</td>
@@ -94,6 +98,7 @@
                   <td>Bermanfaat</td>
                   <td>Bogor</td>
                   <td>4 Tahun</td>
+                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>5</td>
@@ -105,6 +110,7 @@
                   <td>Bermanfaat</td>
                   <td>Bogor</td>
                   <td>5 Tahun</td>
+                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
               </tbody>
             </table>

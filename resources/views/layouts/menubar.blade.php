@@ -18,7 +18,7 @@
   <!-- iCheck for checkboxes and radio inputs -->
 <link rel="stylesheet" href="{{asset('assets_be/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet">
 
   <link rel="stylesheet" href="{{asset('assets_be/plugins/summernote/summernote-bs4.css')}}">
 </head>
@@ -304,12 +304,29 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item has-treeview">
+            <a href="" class="nav-link">
+              <i class="nav-icon  fas fa-archive"></i>
+              <p>
+                Induk Kegiatan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/rik" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Daftar Rencana</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           </li>
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">
               <i class="nav-icon  far fa-clipboard"></i>
               <p>
-                Laporan Keuangan
+                Laporan Tahunan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -320,8 +337,13 @@
                   <p>Daftar Laporan</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="lk" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Laporan Keuangan</p>
+                </a>
+              </li>
             </ul>
-          </li>
           </li>
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">
@@ -403,6 +425,14 @@
       $('#pendahuluan').summernote()
       $('#penutup').summernote()
       $('#upaya').summernote()
+      $('#hasil').summernote()
+      $('#sasaran').summernote()
+      $('#tujuan').summernote()
+      $('#daerah').summernote()
+      $('#diharapkan').summernote()
+      $('#pihak').summernote()
+      $('#dana').summernote()
+      $('#lokasi').summernote()
     });
 </script>
 

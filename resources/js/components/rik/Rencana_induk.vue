@@ -1,17 +1,16 @@
 <template>
-        <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+    <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Artikel</h1>
+            <h1>Rencana Induk Kegiatan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Artikel</li>
+              <li class="breadcrumb-item active">Daftar Rencana</li>
             </ol>
           </div>
         </div>
@@ -24,7 +23,7 @@
       <div class="col-12">
         <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Artikel</h3>
+              <h3 class="card-title">Daftar Rencana Induk Kegiatan <a href="/tambah-rik" class="badge badge-pill badge-primary">Tambah Rencana</a></h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -41,66 +40,53 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Judul Artikel</th>
-                    <th>Tanggal</th>
-                    <th>Kategori</th>
-                    <th>Status</th>
-                    <th>Aksi</th>
-                    <th>Pilih Artikel</th>
+                    <th>Ruang Lingkup</th>
+                    <th>Kegiatan Prioritas</th>
+                    <th>Detil Kegiatan</th>
+                    <th>Indikator Output</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Wadezig</td>
-                    <td>20/04/1969</td>
-                    <td>Kisah Sukses</td>
-                    <td>
-                      <span class="badge badge-warning">Menunggu Verifikasi</span>
-                    </td>
-                    <td>
-                        <!-- Button trigger modal -->
-                        <a href="/revisi-artikel" class="btn btn-primary btn-sm">
-                            Ubah
-                        </a>
-                    </td>
-                    <td>
-                      <div class="icheck-success d-inline">
-                        <input type="checkbox" id="pilih2">
-                        <label for="pilih2"></label>
-                      </div>
-                    </td>
+                    <td>Fasilitas Pengembangan</td>
+                    <td>Penguatan Kapasitas</td>
+                    <td>Peningkatan Kesadaran</td>
+                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Wadigidaw</td>
-                    <td>21/07/2019</td>
-                    <td>Berita</td>
-                    <td>
-                      <span class="badge badge-danger">Revisi</span>
-                    </td>
-                    <td>
-                      <a href="/revisi-artikel" class="btn btn-primary btn-sm">
-                          Ubah
-                      </a>
-                    </td>
-                    <td>
-                      <div class="icheck-success d-inline">
-                        <input type="checkbox" id="pilih2">
-                        <label for="pilih2"></label>
-                      </div>
-                    </td>
+                    <td>Fasilitas Pengembangan</td>
+                    <td>Penguatan Kapasitas</td>
+                    <td>Peningkatan Kesadaran</td>
+                    <td>Terlaksananya Kegiatan</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Fasilitas Pengembangan</td>
+                    <td>Penguatan Kapasitas</td>
+                    <td>Peningkatan Kesadaran</td>
+                    <td>Terlaksananya Kegiatan</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Fasilitas Pengembangan</td>
+                    <td>Penguatan Kapasitas</td>
+                    <td>Peningkatan Kesadaran</td>
+                    <td>Terlaksananya Kegiatan</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Fasilitas Pengembangan</td>
+                    <td>Penguatan Kapasitas</td>
+                    <td>Peningkatan Kesadaran</td>
+                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <div class="col-md-4 float-left">
-                <!-- Button trigger modal -->
-                <a href="/tambah-artikel" class="btn btn-primary">Tambah Artikel</a>
-              </div>
-                <ul class="pagination pagination-sm m-0 float-right">
+              <ul class="pagination pagination-sm m-0 float-right">
                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -113,7 +99,6 @@
     </div>
   </section>
 </div>
-
 </template>
 
 <script>
