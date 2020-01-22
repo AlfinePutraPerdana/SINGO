@@ -33,13 +33,6 @@
 
   <!-- Responsive Stylesheet File -->
   <link href="{{ asset('assets_fe/css/responsive.css')}}" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: eBusiness
-    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -77,7 +70,7 @@
                     <a class="page-scroll" href="#home"><i class="fa fa-home" style="font-size: 25px;"></i></a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">Tentang</a>
+                    <a class="page-scroll" href="#about">Profil</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#blog">Berita</a>
@@ -187,7 +180,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h2>Tentang FASKER</h2>
+            <h2>Profil KEMENDAGRI</h2>
           </div>
         </div>
       </div>
@@ -207,35 +200,90 @@
           <div class="well-middle">
             <div class="single-well">
               <a href="#">
-                <h4 class="sec-head">Fasilitas Kerja</h4>
+                <h4 class="sec-head">Kementerian Dalam Negeri</h4>
               </a>
               <p>
-                Sistem informasi ini mendukung informasi, NGO berkolaborasi dengan pemda dalam Rencana Pembangunan Daerah (Kolaborasi dapat berupa informasi program NGO yang mendukung program pembangunan daerah)
+                Kementerian Dalam Negeri bertugas menyelenggarakan urusan pemerintahan dalam negeri untuk membantu presiden dalam menyelenggarakan pemerintahan negara.
               </p>
               <ul>
+                <h5>Visi</h5>
                 <li>
-                  <i class="fa fa-check"></i> Rencana Kerja Tahunan
+                  <i class="fa fa-check"></i> Poros jalannya pemerintahan dan politik dalam negeri.
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Laporan Tahunan dan Keuangan
+                  <i class="fa fa-check"></i> Meningkatkan pelayanan publik
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Rekomendasi Tenaga Asing
+                  <i class="fa fa-check"></i> Menegakkan demokrasi
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Pemberitahuan Tamu Asing
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Pemberdayaan Mitra Lokal
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Pengajuan Monitoring dan Evaluasi
+                  <i class="fa fa-check"></i> Menjaga integrasi bangsa
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+  
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Tentang FASKER</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a class="floatright" href="#">
+                <h4 class="sec-head">Fasilitas Kerja</h4>
+              </a>
+              <p class="floatright" style="text-align: right;">
+                Sistem informasi ini mendukung informasi, NGO berkolaborasi dengan pemda dalam Rencana Pembangunan Daerah (Kolaborasi dapat berupa informasi program NGO yang mendukung program pembangunan daerah)
+              </p>
+              <ul class="floatright" style="text-align: right;">
+                <li>
+                  Rencana Kerja Tahunan  <i class="fa fa-check"></i>
+                </li>
+                <li>
+                  Laporan Tahunan dan Keuangan  <i class="fa fa-check"></i>
+                </li>
+                <li>
+                  Rekomendasi Tenaga Asing  <i class="fa fa-check"></i>
+                </li>
+                <li>
+                  Pemberitahuan Tamu Asing  <i class="fa fa-check"></i>
+                </li>
+                <li>
+                  Pemberdayaan Mitra Lokal  <i class="fa fa-check"></i>
+                </li>
+                <li>
+                  Pengajuan Monitoring dan Evaluasi  <i class="fa fa-check"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="{{ asset('assets_fe/img/about/1.jpg')}}" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <!-- single-well end-->
       </div>
     </div>
   </div>
