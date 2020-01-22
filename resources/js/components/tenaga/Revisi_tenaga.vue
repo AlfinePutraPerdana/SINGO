@@ -72,8 +72,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="tujuan">Tujuan Kegiatan</label>
-                                <input type="text" class="form-control" id="tujuan" placeholder="Tujuan Kegiatan">
+                                <label for="">Tujuan Kegiatan</label>
+                                <textarea id="tujuan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                                
+                                </textarea>
                             </div>
                             <div class="form-group">
                                 <label for="jabatan">Jabatan</label>
@@ -82,37 +84,37 @@
                             <div class="form-group">
                                 <label for="file">Lampirkan Foto</label>
                                 <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="foto">
-                                    <label class="custom-file-label" for="file">Pilih File</label>
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="upload">Unggah</span>
-                                </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="foto">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="file">Lampirkan Passport</label>
                                 <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="passport">
-                                    <label class="custom-file-label" for="file">Pilih File</label>
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="upload">Unggah</span>
-                                </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="passport">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="file">Lampirkan CV</label>
                                 <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="cv">
-                                    <label class="custom-file-label" for="file">Pilih File</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="cv">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                    </div>
                                 </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="upload">Unggah</span>
-                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="file">Lampirkan Jobdesk</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="jobdesk">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">

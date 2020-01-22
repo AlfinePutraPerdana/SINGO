@@ -3,7 +3,7 @@
 
 @section('content')
  
-<laporan-keuangan></laporan-keuangan>
+<laporan-tahunan></laporan-tahunan>
 
 @endsection
 

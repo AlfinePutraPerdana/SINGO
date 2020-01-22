@@ -36,56 +36,68 @@
                       </textarea>
                   </div>
                   <div class="form-group">
-                      <label>Sasaran</label>
-                      <select class="form-control">
-                        <option>option 1</option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                        <option>option 5</option>
-                      </select>
-                    </div>
+                      <label for="">Sasaran</label>
+                      <textarea id="sasaran" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                      </textarea>
+                  </div>
                   <div class="form-group">
                       <label for="tujuan">Tujuan</label>
                       <input type="text" class="form-control" id="tujuan" placeholder="tujuan">
                   </div>
                   <div class="form-group">
-                      <label for="hasil">Hasil Yang Diharapkan</label>
-                      <input type="text" class="form-control" id="hasil" placeholder="hasil yang diharapkan">
+                      <label for="">Hasil Yang diharapkan</label>
+                      <textarea id="diharapkan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                      </textarea>
                   </div>
                   <div class="form-group">
-                        <label>Tenaga Kerja</label>
-                        <select class="form-control">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
-                        </select>
+                      <label for="">Tenaga Lokal </label>
+                      <input type="text" class="form-control" id="lokal" placeholder="Tenaga Lokal">
+                  </div>
+                  <div class="form-row mb-3">
+                      <div class="form-group col-md-9">
+                        <label for="">Tenaga Asing </label>
+                        <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing">
+                      </div>
+                      <div class="fom-group col-md-3">
+                        <label for="">Jumlah Tenaga</label>
+                        <input type="number" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing">
+                      </div>
                   </div>
                   <div class="form-group">
-                      <label for="peran_serta">Peran Serta Pihak Ketiga</label>
-                      <input type="text" class="form-control" id="peran" placeholder="Peran Serta Pihak Ketiga">
+                      <label for="">Peran Serta Pihak Ketiga</label>
+                      <textarea id="pihak" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                      </textarea>
                   </div>
                   <div class="form-group">
-                        <label>Lokasi  Pelaksanaan</label>
-                        <select class="form-control">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
-                        </select>
+                    <label for="">Lokasi Pelaksanaan</label>
+                      <textarea id="lokasi" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                      
+                      </textarea>
                   </div>
-                  <div class="form-group">
-                    <label>Pembiayaan</label>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label>Pembiayaan</label>
                     <select class="form-control">
-                      <option>option 1</option>
+                      <option selected>Pilih Mata Uang</option>
                       <option>option 2</option>
                       <option>option 3</option>
                       <option>option 4</option>
                       <option>option 5</option>
                     </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="">Besar Nominal</label>
+                      <input type="number" class="form-control" id="nominal" placeholder="Masukan Besaran">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="">Rincian Dana</label>
+                      <textarea id="dana" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                      </textarea>
                   </div>
                   <div class="form-group">
                     <label for="">Jadwal Pelaksanaan</label>
@@ -110,10 +122,17 @@
                         <input type="file" class="custom-file-input" id="file">
                         <label class="custom-file-label" for="file">Pilih File</label>
                       </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text" id="upload">Unggah</span>
-                      </div>
                     </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Rencana Induk Kegiatan</label>
+                    <select class="form-control">
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4</option>
+                      <option>option 5</option>
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="file">Unggah BAP</label>
@@ -122,20 +141,17 @@
                         <input type="file" class="custom-file-input" id="bap">
                         <label class="custom-file-label" for="bap">Pilih File</label>
                       </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text" id="upload">Unggah</span>
-                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- /.card-body -->
+
                   <div class="card-footer">
                     <a class="btn btn-primary" href="/rkt" role="button">Simpan</a>
                   </div>  
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
     </section>  
 </div>
 

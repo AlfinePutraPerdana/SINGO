@@ -1,7 +1,5 @@
 @extends('layouts.menubar')
 
 @section('content')
-   <revisi-tenaga></revisi-tenaga>
+    <history-tamu></history-tamu>
 @endsection
-
-

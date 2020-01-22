@@ -48,7 +48,7 @@
                   <th>Kabupaten</th>
                   <th>Waktu</th>
                   <th>Status</th>
-                  <th>Aksi</th>
+                  <th colspan="2" class="text-center">Aksi</th>
                   <th>Pilih Pengajuan</th>
                 </tr>
               </thead>
@@ -87,11 +87,16 @@
                           <div class="modal-body">
                               <form action="" role="form">
                                   <div class="form-group">
-                                      <label for="nama">Nama Program</label>
-                                      <input type="text" class="form-control" id="nama" placeholder="Nama Program">
+                                      <label for="propinsi">Pillih Program</label>
+                                      <select class="form-control" id="program1">
+                                      <option>options 1</option>
+                                      <option>options 2</option>
+                                      <option>options 3</option>
+                                      <option>options 4</option>
+                                      </select>
                                   </div>
                                   <div class="form-group">
-                                      <label for="propinsi1">Pillih Propinsi</label>
+                                      <label for="propinsi1">Pillih Propivsi</label>
                                       <select class="form-control" id="propinsi1">
                                       <option>Jawa Barat</option>
                                       <option>Jawa Timur</option>
@@ -108,16 +113,6 @@
                                       </select>
                                   </div>
                                   <div class="form-group">
-                                      <label>Pembiayaan</label>
-                                      <select class="form-control">
-                                        <option>option 1</option>
-                                        <option>option 2</option>
-                                        <option>option 3</option>
-                                        <option>option 4</option>
-                                        <option>option 5</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
                                       <label for="">Waktu</label>
                                       <div class="input-group">
                                           <input type="text" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
@@ -126,6 +121,49 @@
                                           </div>
                                           <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
                                       </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="file">Unggah jadwal</label>
+                                    <div class="input-group">
+                                      <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="jadwal1">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                          <button type="button" class="btn btn-success">Simpan</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#tanggapan">
+                      Tanggapan
+                    </button>
+                  <div class="modal fade" id="tanggapan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Unggah Tanggapan Monev</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                          </div>
+                          <div class="modal-body">
+                              <form action="" role="form">
+                                  <div class="form-group">
+                                    <label for="file">Unggah Tanggapan</label>
+                                    <div class="input-group">
+                                      <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="tanggapan">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                      </div>
+                                    </div>
                                   </div>
                               </form>
                           </div>
@@ -166,67 +204,11 @@
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                       Ubah
                   </button>
-                  <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Form Monev</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                          </div>
-                          <div class="modal-body">
-                              <form action="" role="form">
-                                  <div class="form-group">
-                                      <label for="nama">Nama Mitra</label>
-                                      <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="Propinsi2">Pillih Propinsi</label>
-                                      <select class="form-control" id="propisi2">
-                                      <option>Jawa Barat</option>
-                                      <option>Jawa Timur</option>
-                                      <option>Jawa Tengah</option>
-                                      <option>DKI Jakarta</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="kabupaten2">Pilih Kabupaten</label>
-                                      <select multiple class="form-control" id="kabupaten2">
-                                      <option>Kabupaten Bogor</option>
-                                      <option>Kabupaten Depok</option>
-                                      <option>Kabupaten Cirebon</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label>Pembiayaan</label>
-                                      <select class="form-control">
-                                        <option>option 1</option>
-                                        <option>option 2</option>
-                                        <option>option 3</option>
-                                        <option>option 4</option>
-                                        <option>option 5</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="">Waktu</label>
-                                      <div class="input-group">
-                                          <input type="text" class="form-control startdate3 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate3"/>
-                                          <div class="input-group-append">
-                                          <span class="input-group-text">s/d</span>
-                                          </div>
-                                          <input type="text" class="form-control enddate3 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate3" />
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                          <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                          <button type="button" class="btn btn-success">Simpan</button>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#tanggapan">
+                      Tanggapan
+                    </button>
                   </td>
                   <td>
                     <div class="icheck-success d-inline">
@@ -257,67 +239,11 @@
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                       Ubah
                   </button>
-                  <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Form Monev</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                          </div>
-                          <div class="modal-body">
-                              <form action="" role="form">
-                                  <div class="form-group">
-                                      <label for="nama">Nama Program</label>
-                                      <input type="text" class="form-control" id="nama" placeholder="Nama Program">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="propinsi3">Pillih Propinsi</label>
-                                      <select class="form-control" id="propinsi3">
-                                      <option>Jawa Barat</option>
-                                      <option>Jawa Timur</option>
-                                      <option>Jawa Tengah</option>
-                                      <option>DKI Jakarta</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="kabupaten3">Pilih Kabupaten</label>
-                                      <select multiple class="form-control" id="kabupaten3">
-                                      <option>Kabupaten Bogor</option>
-                                      <option>Kabupaten Depok</option>
-                                      <option>Kabupaten Cirebon</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label>Pembiayaan</label>
-                                      <select class="form-control">
-                                        <option>option 1</option>
-                                        <option>option 2</option>
-                                        <option>option 3</option>
-                                        <option>option 4</option>
-                                        <option>option 5</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="">Waktu</label>
-                                      <div class="input-group">
-                                          <input type="text" class="form-control startdate4 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate4"/>
-                                          <div class="input-group-append">
-                                          <span class="input-group-text">s/d</span>
-                                          </div>
-                                          <input type="text" class="form-control enddate4 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate4" />
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                          <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                          <button type="button" class="btn btn-success">Simpan</button>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#tanggapan">
+                      Tanggapan
+                    </button>
                   </td>
                   <td>
                     <div class="icheck-success d-inline">
@@ -348,67 +274,11 @@
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                       Ubah
                   </button>
-                  <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Form Monev</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                          </div>
-                          <div class="modal-body">
-                              <form action="" role="form">
-                                  <div class="form-group">
-                                      <label for="nama">Nama Program</label>
-                                      <input type="text" class="form-control" id="nama" placeholder="Nama Program">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="propinsi4">Pillih Propinsi</label>
-                                      <select class="form-control" id="propinsi4">
-                                      <option>Jawa Barat</option>
-                                      <option>Jawa Timur</option>
-                                      <option>Jawa Tengah</option>
-                                      <option>DKI Jakarta</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="kabupaten4">Pilih Kabupaten</label>
-                                      <select multiple class="form-control" id="kabupaten4">
-                                      <option>Kabupaten Bogor</option>
-                                      <option>Kabupaten Depok</option>
-                                      <option>Kabupaten Cirebon</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label>Pembiayaan</label>
-                                      <select class="form-control">
-                                        <option>option 1</option>
-                                        <option>option 2</option>
-                                        <option>option 3</option>
-                                        <option>option 4</option>
-                                        <option>option 5</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="">Waktu</label>
-                                      <div class="input-group">
-                                          <input type="text" class="form-control startdate5 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate5"/>
-                                          <div class="input-group-append">
-                                          <span class="input-group-text">s/d</span>
-                                          </div>
-                                          <input type="text" class="form-control enddate5 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate5" />
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                          <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                          <button type="button" class="btn btn-success">Simpan</button>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#tanggapan">
+                      Tanggapan
+                    </button>
                   </td>
                   <td>
                     <div class="icheck-success d-inline">
@@ -439,67 +309,11 @@
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                       Ubah
                     </button>
-                    <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Form Monev</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                  <form action="" role="form">
-                                      <div class="form-group">
-                                          <label for="nama">Nama Program</label>
-                                          <input type="text" class="form-control" id="nama" placeholder="Nama Program">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="propinsi5">Pillih Propinsi</label>
-                                          <select class="form-control" id="propinsi5">
-                                          <option>Jawa Barat</option>
-                                          <option>Jawa Timur</option>
-                                          <option>Jawa Tengah</option>
-                                          <option>DKI Jakarta</option>
-                                          </select>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="kabupaten5">Pilih Kabupaten</label>
-                                          <select multiple class="form-control" id="kabupaten5">
-                                          <option>Kabupaten Bogor</option>
-                                          <option>Kabupaten Depok</option>
-                                          <option>Kabupaten Cirebon</option>
-                                          </select>
-                                      </div>
-                                      <div class="form-group">
-                                          <label>Pembiayaan</label>
-                                          <select class="form-control">
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                            <option>option 3</option>
-                                            <option>option 4</option>
-                                            <option>option 5</option>
-                                          </select>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="">Waktu</label>
-                                          <div class="input-group">
-                                              <input type="text" class="form-control startdate6 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate6"/>
-                                              <div class="input-group-append">
-                                              <span class="input-group-text">s/d</span>
-                                              </div>
-                                              <input type="text" class="form-control enddate6 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate6" />
-                                          </div>
-                                      </div>
-                                  </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                <button type="button" class="btn btn-success">Simpan</button>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#tanggapan">
+                      Tanggapan
+                    </button>
                   </td>
                   <td>
                     <div class="icheck-success d-inline">
@@ -536,11 +350,16 @@
                     <div class="modal-body">
                       <form action="" role="form">
                         <div class="form-group">
-                            <label for="nama">Nama Program</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
+                            <label for="propinsi">Pillih Program</label>
+                            <select class="form-control" id="program">
+                            <option>options 1</option>
+                            <option>options 2</option>
+                            <option>options 3</option>
+                            <option>options 4</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="propinsi">Pillih Propinsi</label>
+                            <label for="propinsi">Pillih Provinsi</label>
                             <select class="form-control" id="propinsi">
                             <option>Jawa Barat</option>
                             <option>Jawa Timur</option>
@@ -557,16 +376,6 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Pembiayaan</label>
-                            <select class="form-control">
-                              <option>option 1</option>
-                              <option>option 2</option>
-                              <option>option 3</option>
-                              <option>option 4</option>
-                              <option>option 5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label for="">Waktu</label>
                             <div class="input-group">
                                 <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
@@ -575,6 +384,15 @@
                                 </div>
                                 <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                             </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="file">Unggah jadwal</label>
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="jadwal">
+                              <label class="custom-file-label" for="file">Pilih File</label>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
@@ -589,6 +407,22 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Info
+              </h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <h5>Batas Unggah Tanggapan Akan Berakhir Dua Minggu Setelah Mengirim Pengajuan</h5>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
 </div>
