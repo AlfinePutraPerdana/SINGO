@@ -20,7 +20,7 @@
   <!-- Google Font: Source Sans Pro -->
 <link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{asset('assets_be/plugins/summernote/summernote-bs4.css')}}">
+  <link rel="stylesheet" href="{{asset('assets_be/plugins/summernote/summernote-lite.css')}}">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -179,6 +179,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a href="/pajak" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ajukan Bebas Pajak</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="/tambah-mitra" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tambah Instansi Lokal</p>
@@ -314,13 +320,18 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                <a href="/draft-rik" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Rencana Induk Kegiatan</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="/rik" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Daftar Rencana</p>
+                  <p>Dokumen Induk Kegiatan</p>
                 </a>
               </li>
             </ul>
-          </li>
           </li>
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">
@@ -332,41 +343,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="ltk" class="nav-link">
+                <a href="/ltk" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Laporan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="lk" class="nav-link">
+                <a href="/lk" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Laporan Keuangan</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../examples/login.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Login</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/register.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Register</p>
-                </a>
-              </li>
-            </ul>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -408,7 +397,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('assets_be/dist/js/demo.js')}}"></script>
 <!-- Summernote -->
-<script src="{{asset('assets_be/plugins/summernote/summernote-bs4.min.js')}}"></script>
+<script src="{{asset('assets_be/plugins/summernote/summernote-lite.min.js')}}"></script>
 
 <script src="{{asset('assets_be/plugins/datepicker/libraries/moment/moment.min.js')}}"></script>
 
@@ -420,7 +409,7 @@
 
 
 <script>
-    $(function () {
+    $(document).ready(function () {
       //Add text editor
       $('#pendahuluan').summernote()
       $('#penutup').summernote()
@@ -433,6 +422,8 @@
       $('#pihak').summernote()
       $('#dana').summernote()
       $('#lokasi').summernote()
+      $('#kegiatan').summernote()
+      $('#tenaga').summernote()
     });
 </script>
 

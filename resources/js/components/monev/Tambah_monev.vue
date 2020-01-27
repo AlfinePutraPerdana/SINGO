@@ -352,10 +352,10 @@
                         <div class="form-group">
                             <label for="propinsi">Pillih Program</label>
                             <select class="form-control" id="program">
-                            <option>options 1</option>
-                            <option>options 2</option>
-                            <option>options 3</option>
-                            <option>options 4</option>
+                              <option>options 1</option>
+                              <option>options 2</option>
+                              <option>options 3</option>
+                              <option>options 4</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -394,12 +394,12 @@
                             </div>
                           </div>
                         </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                          <button type="button" class="btn btn-primary">Simpan</button>
+                        </div>
                       </form>
                     </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                        <button type="button" class="btn btn-primary">Simpan</button>
-                      </div>
                   </div>
                 </div>
               </div>

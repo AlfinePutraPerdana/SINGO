@@ -46,7 +46,6 @@
                     <th>Kategori</th>
                     <th>Status</th>
                     <th>Aksi</th>
-                    <th>Pilih Artikel</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -64,12 +63,6 @@
                             Ubah
                         </a>
                     </td>
-                    <td>
-                      <div class="icheck-success d-inline">
-                        <input type="checkbox" id="pilih2">
-                        <label for="pilih2"></label>
-                      </div>
-                    </td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -83,12 +76,6 @@
                       <a href="/revisi-artikel" class="btn btn-primary btn-sm">
                           Ubah
                       </a>
-                    </td>
-                    <td>
-                      <div class="icheck-success d-inline">
-                        <input type="checkbox" id="pilih2">
-                        <label for="pilih2"></label>
-                      </div>
                     </td>
                   </tr>
                 </tbody>

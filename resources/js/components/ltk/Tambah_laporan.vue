@@ -29,14 +29,22 @@
           <form role="form">
             <div class="card-body">
                 <div class="form-group">
-                    <label for="">Pendahuluan</label>
-                    <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-
-                    </textarea>
+                  <label for="">Judul Laporan</label>
+                  <input type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Sasaran</label>
-                    <textarea id="sasaran" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                  <label for="">Rencana Kegiatan Tahunan</label>
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>Pilih Kegiatan</option>
+                    <option value="">options 1</option>
+                    <option value="">options 2</option>
+                    <option value="">options 3</option>
+                    <option value="">options 4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Pendahuluan</label>
+                    <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
                     </textarea>
                 </div>
@@ -47,7 +55,13 @@
                     </textarea>
                 </div>
                 <div class="form-group">
-                    <label for="">Hasil Yang dicapai</label>
+                    <label for="">Sasaran</label>
+                    <textarea id="sasaran" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Hasil Yang diharapkan</label>
                     <textarea id="hasil" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
                     </textarea>
@@ -59,22 +73,16 @@
                     </textarea>
                 </div>
                 <div class="form-group">
-                  <label for="hasil">Kegiatan yang Telah dilaksanakan</label>
-                  <input type="text" class="form-control" id="kegiatan">
-                </div>
-                <div class="form-group">
-                    <label for="">Tenaga Lokal</label>
-                    <input type="text" class="form-control" placeholder="Tenaga Lokal" id="lokal">
-                </div>
-                <div class="form-group">
-                    <label for="">Tenaga Asing</label>
-                    <input type="text" class="form-control" placeholder="Tenaga Lokal" id="asing">
-                </div>
-                <div class="form-group">
-                  <label for="">Peran Serta Pihak Ketiga</label>
-                  <textarea id="pihak" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                  <label for="">Kegiatan yang Dilaksanakan</label>
+                    <textarea id="kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
-                  </textarea>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                  <label for="">Tenaga Kerja dan Ahli yang Digunakan</label>
+                    <textarea id="tenaga" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                    </textarea>
                 </div>
                 <div class="form-row mb-2">
                     <div class="col-md-6">
@@ -91,6 +99,12 @@
                       <label for="">Besar Nominal</label>
                       <input type="number" class="form-control" id="nominal" placeholder="Masukan nominal">
                     </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Rincian Anggaran</label>
+                  <textarea id="dana" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+
+                  </textarea>
                 </div>
                 <div class="form-group">
                   <label for="">Masalah dan Upaya Pemecahan</label>

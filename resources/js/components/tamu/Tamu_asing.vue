@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Ajukan Tamu Asing</li>
+              <li class="breadcrumb-item active">Pemberitahuan Tamu Asing</li>
             </ol>
           </div>
         </div>
@@ -43,12 +43,6 @@
                     <th>No</th>
                     <th>Nama</th>
                     <th>Asal Negara</th>
-                    <th>Nomor Passport</th>
-                    <th>Masa Berlaku Passport</th>
-                    <th>Instansi</th>
-                    <th>Tujuan Kegiatan</th>
-                    <th>Tujuan Daerah</th>
-                    <th>Lama Kegiatan</th>
                     <th>Status</th>
                     <th>Aksi</th>
                     <th>Pilih Tenaga</th>
@@ -59,90 +53,65 @@
                     <td>1</td>
                     <td>Andy Woods</td>
                     <td>Singapura</td>
-                    <td>9998887776666</td>
-                    <td>12-11-2020</td>
-                    <td>LSM</td>
-                    <td>Bermanfaat</td>
-                    <td>Bogor</td>
-                    <td>1 Tahun</td>
                     <td><span class="badge badge-info">Dalam Proses</span></td>
                     <td><a href="/revisi-tamu" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
-                      <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                    </div>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih1">
+                        <label for="pilih1"></label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Andy Woods</td>
                     <td>Singapura</td>
-                    <td>9998887776666</td>
-                    <td>12-11-2020</td>
-                    <td>LSM</td>
-                    <td>Bermanfaat</td>
-                    <td>Bogor</td>
-                    <td>1 Tahun</td>
                     <td><span class="badge badge-info">Dalam Proses</span></td>
                     <td><a href="/revisi-tamu" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
-                      <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                    </div>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih2">
+                        <label for="pilih2"></label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Andy Woods</td>
                     <td>Singapura</td>
-                    <td>9998887776666</td>
-                    <td>12-11-2020</td>
-                    <td>LSM</td>
-                    <td>Bermanfaat</td>
-                    <td>Bogor</td>
-                    <td>1 Tahun</td>
                     <td><span class="badge badge-info">Dalam Proses</span></td>
                     <td><a href="/revisi-tamu" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
-                      <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                    </div>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih3">
+                        <label for="pilih3"></label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Andy Woods</td>
                     <td>Singapura</td>
-                    <td>9998887776666</td>
-                    <td>12-11-2020</td>
-                    <td>LSM</td>
-                    <td>Bermanfaat</td>
-                    <td>Bogor</td>
-                    <td>1 Tahun</td>
                     <td><span class="badge badge-info">Dalam Proses</span></td>
                     <td><a href="/revisi-tamu" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
-                      <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                    </div>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih4">
+                        <label for="pilih4"></label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Andy Woods</td>
                     <td>Singapura</td>
-                    <td>9998887776666</td>
-                    <td>12-11-2020</td>
-                    <td>LSM</td>
-                    <td>Bermanfaat</td>
-                    <td>Bogor</td>
-                    <td>1 Tahun</td>
                     <td><span class="badge badge-info">Dalam Proses</span></td>
                     <td><a href="/revisi-tamu" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
-                      <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                    </div>
+                      <div class="icheck-success d-inline">
+                        <input type="checkbox" id="pilih5">
+                        <label for="pilih5"></label>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

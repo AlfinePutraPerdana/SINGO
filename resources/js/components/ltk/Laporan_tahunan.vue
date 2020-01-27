@@ -1,17 +1,17 @@
 <template>
-       
+       <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tenaga Kerja Asing</h1>
+            <h1>Laporan Tahunan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Tenaga Kerja Asing</li>
+              <li class="breadcrumb-item active">Laporan Tahunan</li>
             </ol>
           </div>
         </div>
@@ -21,10 +21,10 @@
     <!-- Main content -->
   <section class="content">
     <div class="row">
-        <div class="col-12">
-          <div class="card">
+      <div class="col-12">
+        <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Rekomendasi Tenaga Asing </h3>
+              <h3 class="card-title">Daftar Laporan Tahunan <a href="/tambah-ltk" class="badge badge-pill badge-primary">Tambah Laporan</a></h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -36,58 +36,46 @@
               </div>
             </div>
             <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 450px;">
+            <div class="card-body table-responsive p-0" style="height: 300px;">
               <table class="table table-head-fixed">
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Asal Negara</th>
-                    <th colspan="2" class="text-center">Aksi</th>
+                    <th>Laporan Tahunan</th>
+                    <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td>Laporan</td>
+                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td>Laporan</td>
+                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td>Laporan</td>
+                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td>Laporan</td>
+                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td>Laporan</td>
+                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <!-- /.card-body -->
             <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
+              <ul class="pagination pagination-sm m-0 float-right">
                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -95,12 +83,12 @@
                   <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                 </ul>
             </div>
-          </div>
+        </div>
       </div>
     </div>
   </section>
 </div>
- 
+
 </template>
 
 <script>

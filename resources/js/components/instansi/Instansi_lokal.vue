@@ -43,10 +43,7 @@
                     <th>No</th>
                     <th>Nama Instansi Lokal</th>
                     <th>Alamat Instansi Lokal</th>
-                    <th>Nomor Izin Registrasi</th>
-                    <th>Nama Program</th>
-                    <th>Pembiayaan</th>
-                    <th>Durasi</th>
+                    <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -54,46 +51,31 @@
                     <td>1</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
+                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
+                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
+                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
+                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
+                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                 </tbody>
               </table>

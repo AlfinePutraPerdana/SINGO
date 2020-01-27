@@ -1,5 +1,4 @@
 <template>
-      
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -11,8 +10,8 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="/tamu">Pemberitahuan Tamu Asing</a></li>
-            <li class="breadcrumb-item active">Tambah Tamu Asing</li>
+            <li class="breadcrumb-item"><a href="/list-tamu">Pemberitahuan Tamu Asing</a></li>
+            <li class="breadcrumb-item active">Lihat Data Tamu Asing</li>
           </ol>
         </div>
       </div>
@@ -25,7 +24,7 @@
       <div class="col-md-12">
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Form Pemberitahuan Tamu Asing</h3>
+            <h3 class="card-title">Data Pemberitahuan Tamu Asing</h3>
           </div>
             <form role="form">
               <div class="card-body">
@@ -113,7 +112,7 @@
                 </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                <a class="btn btn-primary" href="/tamu" role="button">Simpan</a>
+                <a class="btn btn-warning" href="/list-tamu" role="button">Kembali</a>
               </div>
               </div>
             </form>

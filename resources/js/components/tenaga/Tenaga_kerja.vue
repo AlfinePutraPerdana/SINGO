@@ -42,12 +42,6 @@
                                 <th>No</th>
                                 <th>Nama</th>
                                 <th>Asal Negara</th>
-                                <th>Nomor Passport</th>
-                                <th>Masa Berlaku Passport</th>
-                                <th>NGO</th>
-                                <th>Tujuan Kegiatan</th>
-                                <th>Jabatan</th>
-                                <th>Lama Kegiatan</th>
                                 <th>Status</th>
                                 <th>Aksi</th>
                                 <th>Pilih Tenaga</th>
@@ -58,12 +52,6 @@
                                 <td>1</td>
                                 <td>Andy Woods</td>
                                 <td>Singapura</td>
-                                <td>9998887776666</td>
-                                <td>12-11-2020</td>
-                                <td>LSM</td>
-                                <td>Bermanfaat</td>
-                                <td>Pekerja</td>
-                                <td>1 Tahun</td>
                                 <td><span class="badge badge-info">Dalam Proses</span></td>
                                 <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
                                 <td>
@@ -77,12 +65,6 @@
                                 <td>2</td>
                                 <td>Andy Woods</td>
                                 <td>Singapura</td>
-                                <td>9998887776666</td>
-                                <td>12-11-2020</td>
-                                <td>LSM</td>
-                                <td>Bermanfaat</td>
-                                <td>Pekerja</td>
-                                <td>1 Tahun</td>
                                 <td><span class="badge badge-info">Dalam Proses</span></td>
                                 <td><a href="revisitenaga.html" class="badge badge-pill badge-primary">Ubah</a></td>
                                 <td>
@@ -96,12 +78,6 @@
                                 <td>3</td>
                                 <td>Andy Woods</td>
                                 <td>Singapura</td>
-                                <td>9998887776666</td>
-                                <td>12-11-2020</td>
-                                <td>LSM</td>
-                                <td>Bermanfaat</td>
-                                <td>Pekerja</td>
-                                <td>1 Tahun</td>
                                 <td><span class="badge badge-info">Dalam Proses</span></td>
                                 <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
                                 <td>
@@ -115,12 +91,6 @@
                                 <td>4</td>
                                 <td>Andy Woods</td>
                                 <td>Singapura</td>
-                                <td>9998887776666</td>
-                                <td>12-11-2020</td>
-                                <td>LSM</td>
-                                <td>Bermanfaat</td>
-                                <td>Pekerja</td>
-                                <td>1 Tahun</td>
                                 <td><span class="badge badge-info">Dalam Proses</span></td>
                                 <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
                                 <td>
@@ -134,12 +104,6 @@
                                 <td>5</td>
                                 <td>Andy Woods</td>
                                 <td>Singapura</td>
-                                <td>9998887776666</td>
-                                <td>12-11-2020</td>
-                                <td>LSM</td>
-                                <td>Bermanfaat</td>
-                                <td>Pekerja</td>
-                                <td>1 Tahun</td>
                                 <td><span class="badge badge-info">Dalam Proses</span></td>
                                 <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
                                 <td>

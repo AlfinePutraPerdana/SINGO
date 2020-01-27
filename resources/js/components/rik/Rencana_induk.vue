@@ -1,5 +1,5 @@
 <template>
-    <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -40,47 +40,29 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Ruang Lingkup</th>
-                    <th>Kegiatan Prioritas</th>
-                    <th>Detil Kegiatan</th>
-                    <th>Indikator Output</th>
+                    <th>Rencana Kegiatan</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
                     <td>Fasilitas Pengembangan</td>
-                    <td>Penguatan Kapasitas</td>
-                    <td>Peningkatan Kesadaran</td>
-                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Fasilitas Pengembangan</td>
-                    <td>Penguatan Kapasitas</td>
-                    <td>Peningkatan Kesadaran</td>
-                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Fasilitas Pengembangan</td>
-                    <td>Penguatan Kapasitas</td>
-                    <td>Peningkatan Kesadaran</td>
-                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Fasilitas Pengembangan</td>
-                    <td>Penguatan Kapasitas</td>
-                    <td>Peningkatan Kesadaran</td>
-                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Fasilitas Pengembangan</td>
-                    <td>Penguatan Kapasitas</td>
-                    <td>Peningkatan Kesadaran</td>
-                    <td>Terlaksananya Kegiatan</td>
                   </tr>
                 </tbody>
               </table>

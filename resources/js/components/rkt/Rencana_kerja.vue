@@ -46,7 +46,6 @@
                   <tr>
                     <th>No</th>
                     <th>Draft Rencana</th>
-                    <th>Date</th>
                     <th>Status</th> 
                     <th>Aksi</th>
                     <th>Pilih Draft</th>
@@ -56,7 +55,6 @@
                   <tr>
                     <td>1</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
                     <td><span class="badge badge-info">Menunggu Hasil Pembahasan</span></td>
                     <td><a href="/revisi-rkt-draft" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
@@ -69,7 +67,6 @@
                   <tr>
                     <td>2</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
                     <td><span class="badge badge-warning">Menunggu Verifikasi</span></td>
                     <td><a href="/revisi-rkt-draft" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
@@ -82,7 +79,6 @@
                   <tr>
                     <td>3</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
                     <td><span class="badge badge-info">Menunggu Hasil Pembahasan</span></td>
                     <td><a href="/revisi-rkt-draft" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
@@ -95,7 +91,6 @@
                   <tr>
                     <td>4</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
                     <td><span class="badge badge-danger">Revisi</span></td>
                     <td><a href="/revisi-rkt-draft" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>
@@ -108,7 +103,6 @@
                   <tr>
                     <td>5</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
                     <td><span class="badge badge-info">Menunggu Hasil Pembahasan</span></td>
                     <td><a href="/revisi-rkt-draft" class="badge badge-pill badge-primary">Ubah</a></td>
                     <td>

@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Ajukan Tamu Asing</li>
+              <li class="breadcrumb-item active">Pemberitahuan Tamu Asing</li>
             </ol>
           </div>
         </div>
@@ -42,13 +42,7 @@
                   <th>No</th>
                   <th>Nama</th>
                   <th>Asal Negara</th>
-                  <th>Nomor Passport</th>
-                  <th>Masa Berlaku Passport</th>
-                  <th>Instansi</th>
-                  <th>Tujuan Kegiatan</th>
-                  <th>Tujuan Daerah</th>
-                  <th>Lama Kegiatan</th>
-                  <th>History</th>
+                  <th colspan="2" class="text-center">Aksi</th>
                 </tr>
               </thead>
               <tbody>
@@ -56,61 +50,36 @@
                   <td>1</td>
                   <td>Andy Woods</td>
                   <td>Singapura</td>
-                  <td>9998887776666</td>
-                  <td>12-11-2020</td>
-                  <td>LSM</td>
-                  <td>Bermanfaat</td>
-                  <td>Bogor</td>
-                  <td>1 Tahun</td>
-                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
+                  <td align="center"><a href="/data-tamu" class="badge badge-info">Lihat Data</a></td>
+                  <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Andy Woods</td>
                   <td>Singapura</td>
-                  <td>9998887776666</td>
-                  <td>12-11-2020</td>
-                  <td>LSM</td>
-                  <td>Bermanfaat</td>
-                  <td>Bogor</td>
-                  <td>2 Tahun</td>
-                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
+                  <td align="center"><a href="/data-tamu" class="badge badge-info">Lihat Data</a></td>
+                  <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>3</td>
                   <td>Andy Woods</td>
                   <td>Singapura</td>
-                  <td>9998887776666</td>
-                  <td>12-11-2020</td>
-                  <td>LSM</td>
-                  <td>Bermanfaat</td>
-                  <td>Bogor</td>
-                  <td>3 Tahun</td>
-                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
+                  <td align="center"><a href="/data-tamu" class="badge badge-info">Lihat Data</a></td>
+                  <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>4</td>
                   <td>Andy Woods</td>
                   <td>Singapura</td>
-                  <td>9998887776666</td>
-                  <td>12-11-2020</td>
-                  <td>LSM</td>
-                  <td>Bermanfaat</td>
-                  <td>Bogor</td>
-                  <td>4 Tahun</td>
-                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
+                  <td align="center"><a href="/data-tamu" class="badge badge-info">Lihat Data</a></td>
+                  <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
                 <tr>
                   <td>5</td>
                   <td>Andy Woods</td>
                   <td>Singapura</td>
-                  <td>9998887776666</td>
-                  <td>12-11-2020</td>
-                  <td>LSM</td>
-                  <td>Bermanfaat</td>
-                  <td>Bogor</td>
-                  <td>5 Tahun</td>
-                  <td><a href="/history" class="badge badge-info">Lihat History</a></td>
+                  <td align="center"><a href="/data-tamu" class="badge badge-info">Lihat Data</a></td>
+                  <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
                 </tr>
               </tbody>
             </table>

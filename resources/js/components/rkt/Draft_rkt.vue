@@ -42,46 +42,34 @@
                   <tr>
                     <th>No</th>
                     <th>Draft Rencana</th>
-                    <th>Date</th>
-                    <th>Tujuan</th>
-                    <th>Sasaran</th>
+                    <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Rencana Kerja</td>
-                    <td>11-7-2014</td>
-                    <td> Membangun</td>
-                    <td>Masyarakat</td>
+                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                 </tbody>
               </table>

@@ -42,14 +42,8 @@
                   <tr>
                     <th>No</th>
                     <th>Nama Instansi</th>
-                    <th>Negara</th>
-                    <th>Kota</th>
-                    <th>Alamat Mitra</th>
+                    <th>Alamat Instansi</th>
                     <th>Kategori</th>
-                    <th>Nomor Izin Registrasi</th>
-                    <th>Nama Program</th>
-                    <th>Pembiayaan</th>
-                    <th>Durasi</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -57,14 +51,8 @@
                   <tr>
                     <td>1</td>
                     <td>Mitra Lokal</td>
-                    <td>Indonesia</td>
-                    <td>Bogor</td>
                     <td>Jl Baru</td>
                     <td>Mitra</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -81,11 +69,11 @@
                             <div class="modal-body">
                                 <form action="" role="form">
                                     <div class="form-group">
-                                        <label for="nama">Nama Mitra</label>
+                                        <label for="nama">Nama Instansi</label>
                                         <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
                                     </div>
                                     <div class="form-group">
-                                        <label for="alamat">Alamat Mitra</label>
+                                        <label for="alamat">Alamat Instansi</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
                                     </div>
                                     <div class="form-group">
@@ -130,14 +118,8 @@
                   <tr>
                     <td>2</td>
                     <td>Mitra Lokal</td>
-                    <td>Indonesia</td>
-                    <td>Bogor</td>
                     <td>Jl Baru</td>
                     <td>Mitra</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -147,14 +129,8 @@
                   <tr>
                     <td>3</td>
                     <td>Mitra Lokal</td>
-                    <td>Indonesia</td>
-                    <td>Bogor</td>
                     <td>Jl Baru</td>
                     <td>Mitra</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -164,14 +140,8 @@
                   <tr>
                     <td>4</td>
                     <td>Mitra Lokal</td>
-                    <td>Indonesia</td>
-                    <td>Bogor</td>
                     <td>Jl Baru</td>
                     <td>Mitra</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -181,14 +151,8 @@
                   <tr>
                     <td>5</td>
                     <td>Mitra Asing</td>
-                    <td>Singapura</td>
-                    <td>Singapura</td>
                     <td>Jl Baru</td>
                     <td>Mitra</td>
-                    <td>9998887776666</td>
-                    <td>Membangun</td>
-                    <td>Rp.10.000.000</td>
-                    <td>1 Tahun</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
                         Ubah
@@ -253,11 +217,12 @@
                                   <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                                 </div>
                               </div>
+
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                  <button type="button" class="btn btn-primary">Simpan</button>
+                              </div>
                             </form>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                              <button type="button" class="btn btn-primary">Simpan</button>
                           </div>
                         </div>
                       </div>

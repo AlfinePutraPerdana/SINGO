@@ -1,6 +1,5 @@
 <template>
-    
-<div class="content-wrapper">
+    <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -11,8 +10,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="/tenaga">Rekomendasi Tenaga Asing</a></li>
-              <li class="breadcrumb-item active">Ubah Rekomendasi</li>
+              <li class="breadcrumb-item"><a href="/list-tenaga">Rekomendasi Tenaga Asing</a></li>
+              <li class="breadcrumb-item active">Lihat Data Rekomendasi</li>
             </ol>
           </div>
         </div>
@@ -25,7 +24,7 @@
             <div class="col-md-12">
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
+                        <h3 class="card-title">Data Rekomendasi Tenaga Kerja</h3>
                     </div>
                     <form role="form">
                         <div class="card-body">
@@ -35,7 +34,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="nama">Tempat Lahir</label>
-                                <input type="text" class="form-control" id="nama" placeholder="nama">
+                                <input type="text" class="form-control" id="nama" placeholder="tempat lahir">
                             </div>
                             <div class="form-group">
                                 <label for="">Tanggal Lahir</label>
@@ -58,18 +57,12 @@
                                     <div class="input-group-append">
                                     <span class="input-group-text">s/d</span>
                                     </div>
-                                    <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
+                                    <input type="text" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Instansi</label>
-                                <select class="form-control">
-                                    <option>option 1</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                    <option>option 4</option>
-                                    <option>option 5</option>
-                                </select>
+                                <input type="text" class="form-control" id="instansi">
                             </div>
                             <div class="form-group">
                                 <label for="">Tujuan Kegiatan</label>
@@ -82,7 +75,7 @@
                                 <input type="text" class="form-control" id="jabatan" placeholder="Jabatan">
                             </div>
                             <div class="form-group">
-                                <label for="file">Lampirkan Foto</label>
+                                <label for="file">Lampiran Foto</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="foto">
@@ -91,7 +84,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="file">Lampirkan Passport</label>
+                                <label for="file">Lampiran Passport</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="passport">
@@ -100,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="file">Lampirkan CV</label>
+                                <label for="file">Lampiran CV</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="cv">
@@ -109,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="file">Lampirkan Jobdesk</label>
+                                <label for="file">Lampiran Jobdesk</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="jobdesk">
@@ -129,7 +122,7 @@
                             </div>   
                                 
                             <div class="card-footer">
-                            <a class="btn btn-primary" href="/tenaga" role="button">Simpan</a>
+                            <a class="btn btn-warning" href="/list-tenaga" role="button">Kembali</a>
                             </div>
                         </div>
                     </form>
@@ -138,7 +131,6 @@
         </div>
     </section>
 </div>
-
 </template>
 
 <script>

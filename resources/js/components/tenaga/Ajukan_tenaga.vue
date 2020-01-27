@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="nama">Tempat Lahir</label>
-                                    <input type="text" class="form-control" id="nama" placeholder="nama">
+                                    <input type="text" class="form-control" id="nama" placeholder="Tempat Lahir">
                                 </div>
                                 <div class="form-group">
                                         <label for="">Tanggal Lahir</label>

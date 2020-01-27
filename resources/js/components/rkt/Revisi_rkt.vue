@@ -11,7 +11,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Rencana Kerja Tahunan</li>
+              <li class="breadcrumb-item"><a href="/rkt">Rencana Kerja Tahunan</a></li>
+              <li class="breadcrumb-item active">Ubah Draft</li>
             </ol>
           </div>
         </div>
@@ -28,6 +29,10 @@
                     </div>
               <form role="form">
                 <div class="card-body">
+                  <div class="form-group">
+                      <label for="">Judul Rencana</label>
+                      <input type="text" class="form-control">
+                  </div>
                   <div class="form-group">
                       <label for="">Pendahuluan</label>
                       <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">

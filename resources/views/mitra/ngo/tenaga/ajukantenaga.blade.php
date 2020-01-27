@@ -4,6 +4,8 @@
 
  <ajukan-tenaga></ajukan-tenaga>
  
+ 
+
 @endsection
 
 

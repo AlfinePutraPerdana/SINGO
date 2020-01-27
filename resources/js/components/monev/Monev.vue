@@ -42,101 +42,34 @@
                   <tr>
                     <th>No</th>
                     <th>Nama Program</th>
-                    <th>Propinsi</th>
-                    <th>Kabupaten</th>
-                    <th>Waktu</th>
+                    <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
                     <td>Pembangunan</td>
-                    <td>
-                        Jawa Barat
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Kabupaten Bogor
-                            </li>
-                            <li>
-                                Kabupaten Depok
-                            </li>
-                        </ul>
-                    </td>
-                    <td>10/01/2020 - 12/02/2020</td>
+                    <td><a href="/data-monev" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Pembangunan</td>
-                    <td>
-                        Jawa Barat
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Kabupaten Bogor
-                            </li>
-                            <li>
-                                Kabupaten Depok
-                            </li>
-                        </ul>
-                    </td>
-                    <td>10/01/2020 - 12/02/2020</td>
+                    <td><a href="/data-monev" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Pembangunan</td>
-                    <td>
-                        Jawa Barat
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Kabupaten Bogor
-                            </li>
-                            <li>
-                                Kabupaten Depok
-                            </li>
-                        </ul>
-                    </td>
-                    <td>10/01/2020 - 12/02/2020</td>
+                    <td><a href="/data-monev" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Pembangunan</td>
-                    <td>
-                        Jawa Barat
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Kabupaten Bogor
-                            </li>
-                            <li>
-                                Kabupaten Depok
-                            </li>
-                        </ul>
-                    </td>
-                    <td>10/01/2020 - 12/02/2020</td>
+                    <td><a href="/data-monev" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Pembangunan</td>
-                    <td>
-                        Jawa Barat
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Kabupaten Bogor
-                            </li>
-                            <li>
-                                Kabupaten Depok
-                            </li>
-                        </ul>
-                    </td>
-                    <td>10/01/2020 - 12/02/2020</td>
+                    <td><a href="/data-monev" class="badge badge-info">Lihat Data</a></td>
                   </tr>
                 </tbody>
             </table>

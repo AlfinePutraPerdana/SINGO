@@ -1,6 +1,5 @@
-
 <template>
-  
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -12,8 +11,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="/rkt">Rencana Kerja Tahunan</a></li>
-              <li class="breadcrumb-item active">Tambah Draft</li>
+              <li class="breadcrumb-item"><a href="/draft-rkt">Rencana Kerja Tahunan</a></li>
+              <li class="breadcrumb-item active">Lihat Draft</li>
             </ol>
           </div>
         </div>
@@ -26,7 +25,7 @@
           <div class="col-md-12">
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Form Rencana Kerja Tahunan</h3>
+                <h3 class="card-title">Data Rencana Kerja Tahunan</h3>
               </div>
               <form role="form">
                 <div class="card-body">
@@ -151,7 +150,7 @@
                 </div>
 
                   <div class="card-footer">
-                    <a class="btn btn-primary" href="/rkt" role="button">Simpan</a>
+                    <a class="btn btn-warning" href="/draft-rkt" role="button">Kembali</a>
                   </div>  
               </form>
             </div>

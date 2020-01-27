@@ -29,6 +29,52 @@
           <form role="form">
             <div class="card-body">
                 <div class="form-group">
+                  <label for="">Judul Laporan</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Rencana Induk Kegiatan</label>
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>pilih kegiatan</option>
+                    <option value="">options 1</option>
+                    <option value="">options 2</option>
+                    <option value="">options 3</option>
+                    <option value="">options 4</option>
+                    <option value="">options 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Rencana Kerja Tahunan</label>
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>pilih kegiatan</option>
+                    <option value="">options 1</option>
+                    <option value="">options 2</option>
+                    <option value="">options 3</option>
+                    <option value="">options 4</option>
+                    <option value="">options 5</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label for="">Pembiayaan</label>
+                    <select name="" id="" class="form-control">
+                      <option value="" selected>Pilih Mata Uang Asing</option>
+                      <option value="">options 1</option>
+                      <option value="">options 2</option>
+                      <option value="">options 3</option>
+                      <option value="">options 4</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Besar Nominal</label>
+                  <input type="number" class="form-control" placeholder="Masukan Nominal">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="">Pembiayaan(Rp)</label>
+                  <input type="number" class="form-control" placeholder="Masukan Nominal">
+                </div>
+                <div class="form-group">
                   <label for="file">Unggah Laporan Keuangan</label>
                   <div class="input-group">
                     <div class="custom-file">
@@ -40,7 +86,7 @@
             </div>
                 
             <div class="card-footer">
-              <a class="btn btn-primary" href="/ltk" role="button">Simpan</a>
+              <a class="btn btn-primary" href="/lk" role="button">Simpan</a>
             </div>
           </form>
         </div>
