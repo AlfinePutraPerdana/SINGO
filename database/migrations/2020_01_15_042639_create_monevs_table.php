@@ -18,8 +18,10 @@ class CreateMonevsTable extends Migration
             $table->string('nama');
             $table->unsignedBigInteger('city_id');
             //$table->foreign('city_id')->references('id')->on('master_kotas');
-            $table->date('mulai');
-            $table->date('selesai');
+            $table->string('jadwal');
+            $table->string('tanggapan');
+            $table->date('tgl_mulai');
+            $table->date('tgl_selesai');
             $table->timestamps();
         });
     }

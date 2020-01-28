@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRktKegiatansTable extends Migration
+class CreateRktMitraLokalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateRktKegiatansTable extends Migration
      */
     public function up()
     {
-        Schema::create('rkt_kegiatans', function (Blueprint $table) {
+        Schema::create('rkt_mitra_lokals', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_rkt');
-            // $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->unsignedBigInteger('id_kegiatan');
-            // $table->foreign('id_kegiatan')->references('id')->on('master_kegiatans');
+            $table->unsignedBigInteger('id_rkt');//
+            $table->unsignedInteger('id_instansi');//
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateRktKegiatansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rkt_kegiatans');
+        Schema::dropIfExists('rkt_mitra_lokals');
     }
 }

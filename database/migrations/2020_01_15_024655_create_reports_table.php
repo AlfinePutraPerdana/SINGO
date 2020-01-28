@@ -15,12 +15,15 @@ class CreateReportsTable extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('id_rkt');
+            $table->string('judul');
             $table->text('pendahuluan');
-            $table->string('capaian');
+            $table->text('capaian');
             $table->string('peran_serta');
             $table->text('sasaran');
             $table->text('tujuan');
-            $table->string('nominal_biaya');
+            $table->decimal('nominal_biaya',19,2);
+            $table->unsignedBigInteger('matauang_id');
             $table->text('permasalahan');
             $table->text('upaya_pemecahan');
             $table->text('penutup');

@@ -15,13 +15,18 @@ class CreateRktsTable extends Migration
     {
         Schema::create('rkts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('judul');
             $table->text('pendahuluan');
             $table->string('hasil_yang_diharapkan');
             $table->string('peran_ketiga');
             $table->string('kelompok_sasaran');
-            
+            $table->text('tujuan');
+            $table->string('tenaga_lokal');
+            $table->string('tenaga_asing');
+            $table->integer('jumlah_ta');
             $table->float('nominal_biaya');
             $table->unsignedBigInteger('mata_uang_id');
+            $table->text('lokasi');
             //$table->foreign('mata_uang_id')->references('id')->on('mata_uangs');
             $table->date('jadwal_awal');
             $table->date('jadwal_akhir');

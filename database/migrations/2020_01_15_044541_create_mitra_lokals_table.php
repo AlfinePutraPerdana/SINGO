@@ -17,7 +17,7 @@ class CreateMitraLokalsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('instansi_id');
             // $table->foreign('instansi_id')->references('id')->on('instansis');
-            $table->string('pembiayaan');
+            $table->decimal('pembiayaan',19,2);
             $table->date('durasi_awal');
             $table->date('durasi_akhir');
             $table->timestamps();
