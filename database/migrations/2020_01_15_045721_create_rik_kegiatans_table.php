@@ -15,7 +15,7 @@ class CreateRikKegiatansTable extends Migration
     {
         Schema::create('rik_kegiatans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('id_program');
+            $table->unsignedBigInteger('id_program');
             $table->string('name');
             $table->text('detail_kegiatan');
             $table->text('penerima_manfaat');

@@ -34,8 +34,6 @@ class CreateMasterTenagaAsingsTable extends Migration
             $table->text('kegiatan');
             $table->date('tgl_awal');
             $table->date('tgl_akhir');
-            $table->string('foto');
-            $table->string('upload_passport');
             $table->string('jobdesc');
             $table->string('dokumen_pendukung');
             $table->timestamps();

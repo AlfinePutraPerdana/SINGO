@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAlterForeignKey extends Migration
+class ForeignAll extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +16,7 @@ class CreateAlterForeignKey extends Migration
         //adding foreign keys to all table
         Schema::table('rkts', function (Blueprint $table) {
             $table->foreign('mata_uang_id')->references('id')->on('mata_uangs');
-
+            $table->foreign('id_program')->references('id')->on('master_programs');
         });
 
         Schema::table('rkt_tenagaasings', function (Blueprint $table) {
@@ -42,31 +42,10 @@ class CreateAlterForeignKey extends Migration
 
         });
 
-        Schema::table('rkt_sasarans', function (Blueprint $table) {
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_sasaran')->references('id')->on('sasarans');
-
-        });
 
         Schema::table('mata_uangs', function (Blueprint $table) {
             $table->foreign('id_instansi')->references('id')->on('instansis');
 
-        });
-
-        Schema::table('master_kegiatans', function (Blueprint $table) {
-            $table->foreign('instansi_id')->references('id')->on('instansis');
-
-        });
-
-        Schema::table('report_kegiatans', function (Blueprint $table) {
-            $table->foreign('kegiatan_id')->references('id')->on('master_kegiatans');
-            $table->foreign('report_id')->references('id')->on('reports');
-        });
-
-        Schema::table('guest_books', function (Blueprint $table) {
-            $table->foreign('id_tenaga')->references('id')->on('master_tenaga_asings');
-            $table->foreign('tujuan_id')->references('id')->on('tujuans');
-            $table->foreign('kegiatan_id')->references('id')->on('master_kegiatans');
         });
 
         Schema::table('instansis', function (Blueprint $table) {
@@ -81,24 +60,21 @@ class CreateAlterForeignKey extends Migration
             $table->foreign('instansi_id')->references('id')->on('instansis');
         });
 
-        Schema::table('rkt_kegiatans', function (Blueprint $table) {
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_kegiatan')->references('id')->on('master_kegiatans');
+        Schema::table('rik_kegiatans', function (Blueprint $table) {
+            $table->foreign('id_program')->references('id')->on('master_programs');
+            $table->foreign('mata_uang')->references('id')->on('mata_uangs');
         });
 
-        Schema::table('rkt_lokasis', function (Blueprint $table) {
+        Schema::table('rik_lokasis', function (Blueprint $table) {
             $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_lokasi')->references('id')->on('master_kotas');
-        });
-
-        Schema::table('rkt_tujuans', function (Blueprint $table) {
-            $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->foreign('id_tujuan')->references('id')->on('tujuans');
+            $table->foreign('id_city')->references('id')->on('master_kotas');
         });
 
         Schema::table('laporan_keuangans', function (Blueprint $table) {
             $table->foreign('id_instansi')->references('id')->on('instansis');
-
+            //$table->foreign('id_rik')->references('id')->on('riks');
+            $table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->foreign('mata_uang')->references('id')->on('mata_uangs');
         });
 
         Schema::table('pembebasan_pajaks', function (Blueprint $table) {
@@ -106,6 +82,16 @@ class CreateAlterForeignKey extends Migration
 
         });
 
+        Schema::table('ngos', function (Blueprint $table) {
+            $table->foreign('id_instansi')->references('id')->on('instansis');
+
+        });
+
+        Schema::table('rkt_mitra_lokals', function (Blueprint $table) {
+            $table->foreign('id_rkt')->references('id')->on('rkts');
+            $table->foreign('id_instansi')->references('id')->on('instansis');
+
+        });
     }
 
     /**

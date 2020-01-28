@@ -16,7 +16,7 @@ class CreateRktMitraLokalsTable extends Migration
         Schema::create('rkt_mitra_lokals', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_rkt');//
-            $table->unsignedInteger('id_instansi');//
+            $table->unsignedBigInteger('id_instansi');//
             $table->timestamps();
         });
     }
