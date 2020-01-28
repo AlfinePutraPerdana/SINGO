@@ -14,7 +14,7 @@
   <!-- Ionicons -->
 <link rel="stylesheet" href="{{asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{asset('assets_be/dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="{{asset('assets_be/dist/css/adminlte.css')}}">
   <!-- iCheck for checkboxes and radio inputs -->
 <link rel="stylesheet" href="{{asset('assets_be/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <!-- Google Font: Source Sans Pro -->

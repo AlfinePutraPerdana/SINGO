@@ -11779,7 +11779,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 [class*='sidebar-dark-'] {
-  background-color: #343a40;
+  background-color: #17a2b8;
 }
 
 [class*='sidebar-dark-'] .user-panel a:hover {
