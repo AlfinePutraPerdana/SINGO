@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMasterKegiatansTable extends Migration
+class CreatePembebasanPajaksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateMasterKegiatansTable extends Migration
      */
     public function up()
     {
-        Schema::create('master_kegiatans', function (Blueprint $table) {
+        Schema::create('pembebasan_pajaks', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-           $table->unsignedBigInteger('instansi_id');
-            // $table->foreign('instansi_id')->references('id')->on('instansis');
+            $table->unsignedBigInteger('id_instansi');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateMasterKegiatansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('master_kegiatans');
+        Schema::dropIfExists('pembebasan_pajaks');
     }
 }

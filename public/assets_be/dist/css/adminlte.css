@@ -11779,11 +11779,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 [class*='sidebar-dark-'] {
-<<<<<<< HEAD
   background-color: #ed553b;
-=======
-  background-color: #17a2b8;
->>>>>>> 6bbdc501c9e96d76dfda6335203d761a41f7f7c5
+
 }
 
 [class*='sidebar-dark-'] .user-panel a:hover {

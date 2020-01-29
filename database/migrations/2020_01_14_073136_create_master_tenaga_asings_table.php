@@ -29,6 +29,13 @@ class CreateMasterTenagaAsingsTable extends Migration
             $table->string('jenis_kelamin');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
+            $table->string('kategori');
+            $table->text('tujuan');
+            $table->text('kegiatan');
+            $table->date('tgl_awal');
+            $table->date('tgl_akhir');
+            $table->string('jobdesc');
+            $table->string('dokumen_pendukung');
             $table->timestamps();
         });
     }

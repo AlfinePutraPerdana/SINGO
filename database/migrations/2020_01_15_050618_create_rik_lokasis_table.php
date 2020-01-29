@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRktSasaransTable extends Migration
+class CreateRikLokasisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateRktSasaransTable extends Migration
      */
     public function up()
     {
-        Schema::create('rkt_sasarans', function (Blueprint $table) {
+        Schema::create('rik_lokasis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_rkt');
             // $table->foreign('id_rkt')->references('id')->on('rkts');
-            $table->unsignedBigInteger('id_sasaran');
-            // $table->foreign('id_sasaran')->references('id')->on('sasarans');
+            $table->unsignedBigInteger('id_city');
+            //$table->foreign('id_lokasi')->references('id')->on('master_kotas');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateRktSasaransTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rkt_sasarans');
+        Schema::dropIfExists('rik_lokasis');
     }
 }

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User_detail extends Model
+class Pembebasan_pajak extends Model
 {
       /**
      * The attributes that are mass assignable.
@@ -12,6 +12,6 @@ class User_detail extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'password','email','no_hp','jabatan','foto',
+        'nama', 'id_instansi','created_at','updated_at',
     ];
 }
