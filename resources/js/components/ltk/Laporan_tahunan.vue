@@ -24,7 +24,7 @@
       <div class="col-12">
         <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Laporan Tahunan <a href="/tambah-ltk" class="badge badge-pill badge-primary">Tambah Laporan</a></h3>
+              <h3 class="card-title">Daftar Laporan Tahunan <a href="/tambah-ltk" class="btn btn-sm btn-primary"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a></h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -49,27 +49,17 @@
                   <tr>
                     <td>1</td>
                     <td>Laporan</td>
-                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
+                    <td><a href="/data-laporan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Laporan</td>
-                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
+                    <td><a href="/data-laporan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Laporan</td>
-                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Laporan</td>
-                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Laporan</td>
-                    <td><a href="/data-laporan" class="badge badge-pill badge-info">Lihat Data</a></td>
+                    <td><a href="/data-laporan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   </tr>
                 </tbody>
               </table>

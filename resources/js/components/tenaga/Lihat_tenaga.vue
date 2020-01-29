@@ -11,7 +11,7 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="/list-tenaga">Rekomendasi Tenaga Asing</a></li>
-              <li class="breadcrumb-item active">Lihat Data Rekomendasi</li>
+              <li class="breadcrumb-item active">Ubah Data Rekomendasi</li>
             </ol>
           </div>
         </div>
@@ -62,7 +62,13 @@
                             </div>
                             <div class="form-group">
                                 <label>Instansi</label>
-                                <input type="text" class="form-control" id="instansi">
+                                <select class="form-control">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="">Tujuan Kegiatan</label>
@@ -122,7 +128,7 @@
                             </div>   
                                 
                             <div class="card-footer">
-                            <a class="btn btn-warning" href="/list-tenaga" role="button">Kembali</a>
+                            <a class="btn btn-primary" href="/list-tenaga" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
                             </div>
                         </div>
                     </form>

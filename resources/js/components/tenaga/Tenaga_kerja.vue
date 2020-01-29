@@ -24,7 +24,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Rekomendasi Tenaga Asing <a href="/ajukan-tenaga" class="badge badge-pill badge-primary">Tambah Rekomendasi</a></h3>
+                        <h3 class="card-title">Rekomendasi Tenaga Asing <a href="/ajukan-tenaga" class="btn btn-primary btn-sm" role="button"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a></h3>
 
                         <div class="card-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
@@ -36,97 +36,99 @@
                         </div>
                     </div>
                     <div class="card-body table-responsive p-0" style="height: 450px;">
-                        <table class="table table-head-fixed">
-                            <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>Asal Negara</th>
-                                <th>Status</th>
-                                <th>Aksi</th>
-                                <th>Pilih Tenaga</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Andy Woods</td>
-                                <td>Singapura</td>
-                                <td><span class="badge badge-info">Dalam Proses</span></td>
-                                <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
-                                <td>
-                                <div class="icheck-success d-inline">
-                                    <input type="checkbox" id="pilih1">
-                                    <label for="pilih1"></label>
+                        <form action="">
+                            <table class="table table-head-fixed">
+                                <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Asal Negara</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                    <th>Pilih</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Andy Woods</td>
+                                    <td>Singapura</td>
+                                    <td><span class="badge badge-info">Dalam Proses</span></td>
+                                    <td><a href="/revisi-tenaga" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a></td>
+                                    <td>
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" id="pilih1">
+                                        <label for="pilih1"></label>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Andy Woods</td>
+                                    <td>Singapura</td>
+                                    <td><span class="badge badge-info">Dalam Proses</span></td>
+                                    <td><a href="revisitenaga.html" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a></td>
+                                    <td>
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" id="pilih2">
+                                        <label for="pilih2"></label>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Andy Woods</td>
+                                    <td>Singapura</td>
+                                    <td><span class="badge badge-info">Dalam Proses</span></td>
+                                    <td><a href="/revisi-tenaga" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                                    <td>
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" id="pilih3">
+                                        <label for="pilih3"></label>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Andy Woods</td>
+                                    <td>Singapura</td>
+                                    <td><span class="badge badge-info">Dalam Proses</span></td>
+                                    <td><a href="/revisi-tenaga" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                                    <td>
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" id="pilih4">
+                                        <label for="pilih4"></label>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Andy Woods</td>
+                                    <td>Singapura</td>
+                                    <td><span class="badge badge-info">Dalam Proses</span></td>
+                                    <td><a href="/revisi-tenaga" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                                    <td>
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" id="pilih5">
+                                        <label for="pilih5"></label>
+                                    </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="card-footer clearfix">
+                                <div class="col-md-4 float-left">
+                                    <a href="/proses-tenaga" role="button" class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></a>
                                 </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Andy Woods</td>
-                                <td>Singapura</td>
-                                <td><span class="badge badge-info">Dalam Proses</span></td>
-                                <td><a href="revisitenaga.html" class="badge badge-pill badge-primary">Ubah</a></td>
-                                <td>
-                                <div class="icheck-success d-inline">
-                                    <input type="checkbox" id="pilih2">
-                                    <label for="pilih2"></label>
-                                </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Andy Woods</td>
-                                <td>Singapura</td>
-                                <td><span class="badge badge-info">Dalam Proses</span></td>
-                                <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
-                                <td>
-                                <div class="icheck-success d-inline">
-                                    <input type="checkbox" id="pilih3">
-                                    <label for="pilih3"></label>
-                                </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Andy Woods</td>
-                                <td>Singapura</td>
-                                <td><span class="badge badge-info">Dalam Proses</span></td>
-                                <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
-                                <td>
-                                <div class="icheck-success d-inline">
-                                    <input type="checkbox" id="pilih4">
-                                    <label for="pilih4"></label>
-                                </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Andy Woods</td>
-                                <td>Singapura</td>
-                                <td><span class="badge badge-info">Dalam Proses</span></td>
-                                <td><a href="/revisi-tenaga" class="badge badge-pill badge-primary">Ubah</a></td>
-                                <td>
-                                <div class="icheck-success d-inline">
-                                    <input type="checkbox" id="pilih5">
-                                    <label for="pilih5"></label>
-                                </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card-footer clearfix">
-                        <div class="col-md-4 float-left">
-                            <a href="/proses-tenaga" role="button" class="btn btn-primary">Kirim Rekomendasi</a>
-                        </div>
-                        <ul class="pagination pagination-sm m-0 float-right">
-                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                        </ul>
+                                <ul class="pagination pagination-sm m-0 float-right">
+                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                </ul>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

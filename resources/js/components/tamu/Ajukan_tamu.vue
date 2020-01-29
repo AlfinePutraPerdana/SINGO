@@ -77,14 +77,34 @@
                   
                   </textarea>
                 </div>
+                <div class="form-row mb-3">
+                  <div class="col-md-6">
+                    <label for="">Provinsi</label>
+                    <select name="" id="" class="custom-select" multiple>
+                      <option value="">Provinsi 1</option>
+                      <option value=""> Provinsi 2</option>
+                      <option value="">Provinsi 3</option>
+                      <option value="">Provinsi 4</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Kabupaten</label>
+                    <select name="" id="" class="custom-select" multiple>
+                      <option value="">Kabupaten 1</option>
+                      <option value="">Kabupaten 2</option>
+                      <option value="">Kabupaten 3</option>
+                      <option value="">Kabupaten 4</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="form-group">
-                  <label for="">Tujuan Daerah</label>
+                  <label for="">Detail Lokasi Kunjungan</label>
                   <textarea id="daerah" class="form-control" style="height: 300px" placeholder="Masukan Teks">
                   
                   </textarea>
                 </div>
                 <div class="form-group">
-                  <label for="">Lama Kegiatan</label>
+                  <label for="">Jadwal Kegiatan</label>
                   <div class="input-group">
                     <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
                     <div class="input-group-append">
@@ -113,7 +133,7 @@
                 </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                <a class="btn btn-primary" href="/tamu" role="button">Simpan</a>
+                <a class="btn btn-primary" href="/tamu" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
               </div>
               </div>
             </form>

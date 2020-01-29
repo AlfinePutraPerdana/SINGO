@@ -6,13 +6,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Draft Rencana Kerja Tahunan</h1>
+            <h1>Rencana Kerja Tahunan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="/draft-rkt">Rencana Kerja Tahunan</a></li>
-              <li class="breadcrumb-item active">Lihat Draft</li>
+              <li class="breadcrumb-item active">Ubah Rencana</li>
             </ol>
           </div>
         </div>
@@ -32,6 +32,16 @@
                   <div class="form-group">
                       <label for="">Judul Rencana</label>
                       <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Rencana Induk Kegiatan</label>
+                    <select class="form-control">
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4</option>
+                      <option>option 5</option>
+                    </select>
                   </div>
                   <div class="form-group">
                       <label for="">Pendahuluan</label>
@@ -83,7 +93,7 @@
                   </div>
                   <div class="form-row">
                     <div class="col-md-6">
-                      <label>Pembiayaan</label>
+                      <label>Mata Uang</label>
                     <select class="form-control">
                       <option selected>Pilih Mata Uang</option>
                       <option>option 2</option>
@@ -128,29 +138,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label>Rencana Induk Kegiatan</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="file">Unggah BAP</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="bap">
-                        <label class="custom-file-label" for="bap">Pilih File</label>
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
                   <div class="card-footer">
-                    <a class="btn btn-warning" href="/draft-rkt" role="button">Kembali</a>
+                    <a class="btn btn-primary" href="/rkt" role="button"><i class="far fa-paper-plane"></i> <b>Kirim</b></a>
                   </div>  
               </form>
             </div>

@@ -63,7 +63,7 @@ Route::get('/data-tenaga', function () {
     return view('mitra.ngo.tenaga.lihatdata');
 });
 
-Route::get('/history', function () {
+Route::get('/history-tenaga', function () {
     return view('mitra.ngo.tenaga.historytenaga');
 });
 
@@ -83,7 +83,7 @@ Route::get('/data-tamu', function () {
     return view('mitra.ngo.tamu.lihatdata');
 });
 
-Route::get('/history', function () {
+Route::get('/history-tamu', function () {
     return view('mitra.ngo.tamu.historytamu');
 });
 
@@ -155,12 +155,24 @@ Route::get('/data-laporan', function () {
     return view('mitra.ngo.LTK.lihatlaporan');
 });
 
-Route::get('/rik', function () {
-    return view('mitra.ngo.RIK.rik');
+Route::get('/dokumen-induk', function () {
+    return view('mitra.ngo.RIK.dokumeninduk');
 });
 
-Route::get('/tambah-rik', function () {
-    return view('mitra.ngo.RIK.tambahrik');
+Route::get('/tambah-dokumen', function () {
+    return view('mitra.ngo.RIK.tambahdokumen');
+});
+
+Route::get('/revisi-dokumen', function () {
+    return view('mitra.ngo.RIK.revisidokumen');
+});
+
+Route::get('/tambah-kegiatan', function () {
+    return view('mitra.ngo.RIK.tambahrencana');
+});
+
+Route::get('/revisi-kegiatan', function () {
+    return view('mitra.ngo.RIK.revisirencana');
 });
 
 Route::get('/draft-rik', function () {
@@ -169,6 +181,10 @@ Route::get('/draft-rik', function () {
 
 Route::get('/pajak', function () {
     return view('mitra.ngo.pajak.pajak');
+});
+
+Route::get('/profile', function () {
+    return view('mitra.ngo.profile.profile');
 });
 
 

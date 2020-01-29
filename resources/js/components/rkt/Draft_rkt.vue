@@ -24,7 +24,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Draft Rencana Kerja Tahunan</h3>
+              <h3 class="card-title">Rencana Kerja Tahunan</h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -41,7 +41,7 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Draft Rencana</th>
+                    <th>Judul Rencana</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -49,27 +49,27 @@
                   <tr>
                     <td>1</td>
                     <td>Rencana Kerja</td>
-                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-rkt" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Rencana Kerja</td>
-                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-rkt" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Rencana Kerja</td>
-                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-rkt" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Rencana Kerja</td>
-                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-rkt" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a></td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Rencana Kerja</td>
-                    <td><a href="/data-rkt" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-rkt" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a></td>
                   </tr>
                 </tbody>
               </table>

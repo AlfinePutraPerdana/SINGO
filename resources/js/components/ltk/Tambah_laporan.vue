@@ -101,12 +101,6 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <label for="">Rincian Anggaran</label>
-                  <textarea id="dana" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-
-                  </textarea>
-                </div>
-                <div class="form-group">
                   <label for="">Masalah dan Upaya Pemecahan</label>
                   <textarea id="upaya" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
@@ -124,9 +118,6 @@
                     <div class="custom-file">
                       <input type="file" class="custom-file-input" id="file">
                       <label class="custom-file-label" for="file">Pilih File</label>
-                    </div>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="upload">Unggah</span>
                     </div>
                   </div>
                 </div>

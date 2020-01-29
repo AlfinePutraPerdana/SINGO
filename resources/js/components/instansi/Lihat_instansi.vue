@@ -24,16 +24,16 @@
       <div class="col-md-12">
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Data Instansi</h3>
+            <h3 class="card-title">Data Mitra Lokal</h3>
           </div>
             <form role="form">
               <div class="card-body">
                 <div class="form-group">
-                  <label for="nama">Nama Instansi</label>
+                  <label for="nama">Nama Mitra</label>
                   <input type="text" class="form-control" id="nama" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="alamat">Alamat Instansi</label>
+                    <label for="alamat">Alamat Mitra</label>
                     <input type="text" class="form-control" id="alamat" placeholder="">
                 </div>
                 <div class="form-group">

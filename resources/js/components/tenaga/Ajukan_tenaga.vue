@@ -129,7 +129,7 @@
                                 </div>   
                                     
                                 <div class="card-footer">
-                                    <a class="btn btn-primary" href="/tenaga" role="button">Simpan</a>
+                                    <a class="btn btn-primary" href="/tenaga" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
                                 </div>
                             </div>
                         </form>

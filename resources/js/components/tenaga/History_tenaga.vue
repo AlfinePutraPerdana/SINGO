@@ -34,90 +34,24 @@
                         <table class="table table-head-fixed">
                             <thead>
                             <tr>
-                                <th></th>
-                                <th>Waktu</th>
-                                <th>Keterangan</th>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Tempat Lahir</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Asal Negara</th>
+                                <th>Nomor Passport</th>
+                                <th>Masa Berlaku</th>
+                                <th>Instansi</th>
+                                <th>Tujuan Kegiatan</th>
+                                <th>Jabatan</th>
+                                <th>Jadwal Kegiatan</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
                                 <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
                                 <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        </div>
-                        <!-- /.card-body -->
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                        <h3 class="card-title">Rabu, 22 January 2020</h3>
-
-                            <div class="card-tools">
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-                                <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-remove"></i></button>
-                            </div>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body table-responsive p-0" style="height: 450px;">
-                        <table class="table table-head-fixed">
-                            <thead>
-                            <tr>
-                                <th></th>
-                                <th>Waktu</th>
-                                <th>Keterangan</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><i class="far fa-clock"></i> 09.00</td>
-                                <td>Berisi Aktivitas</td>
                             </tr>
                             </tbody>
                         </table>

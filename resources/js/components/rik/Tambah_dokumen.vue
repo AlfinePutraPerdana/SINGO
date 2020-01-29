@@ -1,18 +1,18 @@
 <template>
-  
+    
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Rencana Kerja Tahunan</h1>
+            <h1>Dokumen Induk Kegiatan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="/rkt">Rencana Kerja Tahunan</a></li>
-              <li class="breadcrumb-item active">Tambah Rencana</li>
+              <li class="breadcrumb-item"><a href="#">Daftar Dokumen Induk</a></li>
+              <li class="breadcrumb-item active">Tambah Dokumen</li>
             </ol>
           </div>
         </div>
@@ -25,12 +25,12 @@
           <div class="col-md-12">
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Form Rencana Kerja Tahunan</h3>
+                <h3 class="card-title">Form Dokumen Induk Kegiatan</h3>
               </div>
               <form role="form">
                 <div class="card-body">
                   <div class="form-group">
-                      <label for="">Judul Rencana</label>
+                      <label for="">Judul Dokumen</label>
                       <input type="text" class="form-control">
                   </div>
                   <div class="form-group">
@@ -143,19 +143,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="file">Unggah BAP</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="bap">
-                        <label class="custom-file-label" for="bap">Pilih File</label>
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
                   <div class="card-footer">
-                    <a class="btn btn-primary" href="/rkt" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
+                    <a class="btn btn-primary" href="/dokumen induk" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
                   </div>  
               </form>
             </div>

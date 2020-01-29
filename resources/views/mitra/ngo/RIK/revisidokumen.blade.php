@@ -1,5 +1,7 @@
 @extends('layouts.menubar')
 
 @section('content')
-    <tambah-kegiatan></tambah-kegiatan>
+    
+<revisi-dokumen></revisi-dokumen>
+
 @endsection

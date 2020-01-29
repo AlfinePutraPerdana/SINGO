@@ -6,12 +6,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Pemberdayaan Instansi Lokal</h1>
+            <h1>Pemberdayaan Mitra Lokal</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Pemberdayaan Instansi Lokal</li>
+              <li class="breadcrumb-item active">Pemberdayaan Mitra Lokal</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
       <div class="col-12">
         <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Daftar Instansi Lokal</h3>
+              <h3 class="card-title">Daftar Mitra Lokal</h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -41,9 +41,8 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama Instansi</th>
-                    <th>Alamat Instansi</th>
-                    <th>Kategori</th>
+                    <th>Nama Mitra</th>
+                    <th>Alamat Mitra</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -52,16 +51,15 @@
                     <td>1</td>
                     <td>Mitra Lokal</td>
                     <td>Jl Baru</td>
-                    <td>Mitra</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
-                        Ubah
+                        <i class="fas fa-edit"></i> <b>Ubah</b>
                     </button>
                     <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Form Instansi Lokal</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Form Mitra Lokal</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -69,11 +67,11 @@
                             <div class="modal-body">
                                 <form action="" role="form">
                                     <div class="form-group">
-                                        <label for="nama">Nama Instansi</label>
+                                        <label for="nama">Nama Mitra</label>
                                         <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
                                     </div>
                                     <div class="form-group">
-                                        <label for="alamat">Alamat Instansi</label>
+                                        <label for="alamat">Alamat Mitra</label>
                                         <input type="text" class="form-control" id="alamat" placeholder="Alamat Mitra">
                                     </div>
                                     <div class="form-group">
@@ -119,10 +117,9 @@
                     <td>2</td>
                     <td>Mitra Lokal</td>
                     <td>Jl Baru</td>
-                    <td>Mitra</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
-                        Ubah
+                        <i class="fas fa-edit"></i> <b>Ubah</b>
                     </button>
                     </td>
                   </tr>
@@ -130,10 +127,9 @@
                     <td>3</td>
                     <td>Mitra Lokal</td>
                     <td>Jl Baru</td>
-                    <td>Mitra</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
-                        Ubah
+                        <i class="fas fa-edit"></i> <b>Ubah</b>
                     </button>
                     </td>
                   </tr>
@@ -141,10 +137,9 @@
                     <td>4</td>
                     <td>Mitra Lokal</td>
                     <td>Jl Baru</td>
-                    <td>Mitra</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
-                        Ubah
+                        <i class="fas fa-edit"></i> <b>Ubah</b>
                     </button>
                     </td>
                   </tr>
@@ -152,10 +147,9 @@
                     <td>5</td>
                     <td>Mitra Asing</td>
                     <td>Jl Baru</td>
-                    <td>Mitra</td>
                     <td>
                       <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
-                        Ubah
+                        <i class="fas fa-edit"></i> <b>Ubah</b>
                     </button>
                     </td>
                   </tr>
@@ -167,7 +161,7 @@
               <div class=" float-left">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah">
-                        Tambah Mitra
+                        <i class="fas fa-plus-circle"></i> <b>Tambah</b>
                   </button>
                     <!-- Modal -->
                     <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

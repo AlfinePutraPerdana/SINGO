@@ -54,7 +54,7 @@ Vue.component('lihat-monev', require('./components/monev/Lihat_monev.vue').defau
 Vue.component('tambah-laporan', require('./components/ltk/Tambah_laporan.vue').default);
 Vue.component('laporan-tahunan', require('./components/ltk/Laporan_tahunan.vue').default);
 Vue.component('tambah-keuangan', require('./components/ltk/Tambah_keuangan.vue').default);
-Vue.component('laporan-keuangan', require('./components/ltk/List_keuangan.vue').default);
+Vue.component('laporan-keuangan', require('./components/ltk/Laporan_keuangan.vue').default);
 Vue.component('lihat-keuangan', require('./components/ltk/Lihat_keuangan.vue').default);
 Vue.component('lihat-laporan', require('./components/ltk/Lihat_laporan.vue').default);
 
@@ -62,11 +62,17 @@ Vue.component('dok-artikel', require('./components/dokumentasi/Artikel.vue').def
 Vue.component('tambah-artikel', require('./components/dokumentasi/Tambah_artikel.vue').default);
 Vue.component('ubah-artikel', require('./components/dokumentasi/Revisi_artikel.vue').default);
 
-Vue.component('rencana-induk', require('./components/rik/Rencana_induk.vue').default);
-Vue.component('tambah-kegiatan', require('./components/rik/Tambah_rencana.vue').default);
-Vue.component('draft-rik', require('./components/rik/Draft_induk.vue').default);
+Vue.component('dokumen-induk', require('./components/rik/Dokumen_induk.vue').default);
+Vue.component('tambah-dokumen', require('./components/rik/Tambah_dokumen.vue').default);
+Vue.component('revisi-dokumen', require('./components/rik/Revisi_dokumen.vue').default);
+Vue.component('draft-rik', require('./components/rik/Rencana_induk.vue').default);
+Vue.component('rencana-induk', require('./components/rik/Tambah_induk.vue').default);
+Vue.component('revisi-induk', require('./components/rik/Revisi_induk.vue').default);
 
 Vue.component('bebas-pajak', require('./components/pajak/Pajak.vue').default);
+
+Vue.component('data-profile', require('./components/profile/Profile.vue').default);
+
 
 
 /**

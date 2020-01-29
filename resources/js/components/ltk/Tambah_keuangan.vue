@@ -86,7 +86,7 @@
             </div>
                 
             <div class="card-footer">
-              <a class="btn btn-primary" href="/lk" role="button">Simpan</a>
+              <a class="btn btn-primary" href="/lk" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
             </div>
           </form>
         </div>

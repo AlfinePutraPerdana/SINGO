@@ -41,8 +41,8 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama Instansi Lokal</th>
-                    <th>Alamat Instansi Lokal</th>
+                    <th>Nama Mitra Lokal</th>
+                    <th>Alamat Mitra Lokal</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -51,31 +51,31 @@
                     <td>1</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td>Mitra Lokal</td>
                     <td>Bogor</td>
-                    <td><a href="/data-mitra" class="badge badge-info">Lihat Data</a></td>
+                    <td><a href="/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
                   </tr>
                 </tbody>
               </table>

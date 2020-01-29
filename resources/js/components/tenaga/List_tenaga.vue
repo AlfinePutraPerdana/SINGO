@@ -41,46 +41,46 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Asal Negara</th>
+                    <th class="text-center">Nama</th>
+                    <th class="text-center">Asal Negara</th>
                     <th colspan="2" class="text-center">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td align="center">Andy Woods</td>
+                    <td align="center">Singapura</td>
+                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                    <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td align="center">Andy Woods</td>
+                    <td align="center">Singapura</td>
+                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                    <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td align="center">Andy Woods</td>
+                    <td align="center">Singapura</td>
+                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                    <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td align="center">Andy Woods</td>
+                    <td align="center">Singapura</td>
+                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                    <td><a href="/history-tenaga" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td>Andy Woods</td>
-                    <td>Singapura</td>
-                    <td align="center"><a href="/data-tenaga" class="badge badge-info">Lihat Data</a></td>
-                    <td align="center"><a href="/history" class="badge badge-info">Lihat History</a></td>
+                    <td align="center">Andy Woods</td>
+                    <td align="center">Singapura</td>
+                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                    <td><a href="/history-tenaga" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
                   </tr>
                 </tbody>
               </table>

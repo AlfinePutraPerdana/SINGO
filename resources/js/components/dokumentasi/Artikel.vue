@@ -37,64 +37,62 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 300px;">
-              <table class="table table-head-fixed">
-                <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Judul Artikel</th>
-                    <th>Tanggal</th>
-                    <th>Kategori</th>
-                    <th>Status</th>
-                    <th>Aksi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Wadezig</td>
-                    <td>20/04/1969</td>
-                    <td>Kisah Sukses</td>
-                    <td>
-                      <span class="badge badge-warning">Menunggu Verifikasi</span>
-                    </td>
-                    <td>
-                        <!-- Button trigger modal -->
+              <form action="">
+                <table class="table table-head-fixed">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Judul Artikel</th>
+                      <th>Kategori</th>
+                      <th>Status</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Kisahku</td>
+                      <td>Kisah Sukses</td>
+                      <td>
+                        <span class="badge badge-warning">Menunggu Verifikasi</span>
+                      </td>
+                      <td>
+                          <!-- Button trigger modal -->
+                          <a href="/revisi-artikel" class="btn btn-primary btn-sm">
+                              <i class="fas fa-edit"></i> <b>Ubah</b>
+                          </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Buletin</td>
+                      <td>Berita</td>
+                      <td>
+                        <span class="badge badge-danger">Revisi</span>
+                      </td>
+                      <td>
                         <a href="/revisi-artikel" class="btn btn-primary btn-sm">
-                            Ubah
+                            <i class="fas fa-edit"></i> <b>Ubah</b>
                         </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Wadigidaw</td>
-                    <td>21/07/2019</td>
-                    <td>Berita</td>
-                    <td>
-                      <span class="badge badge-danger">Revisi</span>
-                    </td>
-                    <td>
-                      <a href="/revisi-artikel" class="btn btn-primary btn-sm">
-                          Ubah
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
             </div>
-            <!-- /.card-body -->
-            <div class="card-footer clearfix">
-              <div class="col-md-4 float-left">
-                <!-- Button trigger modal -->
-                <a href="/tambah-artikel" class="btn btn-primary">Tambah Artikel</a>
-              </div>
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
-            </div>
+                  <div class="card-footer clearfix">
+                    <div class="col-md-4 float-left">
+                      <!-- Button trigger modal -->
+                      <a href="/tambah-artikel" class="btn btn-primary"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a>
+                    </div>
+                      <ul class="pagination pagination-sm m-0 float-right">
+                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                      </ul>
+                  </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
   <!-- Ionicons -->
 <link rel="stylesheet" href="{{asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{asset('assets_be/dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="{{asset('assets_be/dist/css/adminlte.css')}}">
   <!-- iCheck for checkboxes and radio inputs -->
 <link rel="stylesheet" href="{{asset('assets_be/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
@@ -26,7 +26,7 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-danger navbar-dark">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -125,7 +125,7 @@
           <img src="{{asset('assets_be/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">NGO</a>
+          <a href="/profile" class="d-block">NGO</a>
         </div>
       </div>
 
@@ -187,7 +187,7 @@
               <li class="nav-item">
                 <a href="/tambah-mitra" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Instansi Lokal</p>
+                  <p>Tambah Mitra Lokal</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -221,14 +221,6 @@
               </li>
             </ul>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/proses-rkt-draft" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sedang Proses</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">
@@ -243,12 +235,6 @@
                 <a href="/list-tenaga" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tenaga Asing</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/proses-tenaga" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sedang Diproses</p>
                 </a>
               </li>
             </ul>
@@ -268,19 +254,13 @@
                   <p>Tamu Asing</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/proses-tamu" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sedang Diproses</p>
-                </a>
-              </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon  far fa-building"></i>
               <p>
-                Instansi
+                Mitra Lokal
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -288,7 +268,7 @@
               <li class="nav-item">
                 <a href="/mitra" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Daftar Instansi Lokal</p>
+                  <p>Daftar Mitra Lokal</p>
                 </a>
               </li>
             </ul>
@@ -326,7 +306,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/rik" class="nav-link">
+                <a href="/dokumen-induk" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dokumen Induk Kegiatan</p>
                 </a>
@@ -424,6 +404,11 @@
       $('#lokasi').summernote()
       $('#kegiatan').summernote()
       $('#tenaga').summernote()
+      $('#prioritas').summernote()
+      $('#penerima').summernote()
+      $('#detil_kegiatan').summernote()
+      $('#output').summernote()
+      $('#income').summernote()
     });
 </script>
 

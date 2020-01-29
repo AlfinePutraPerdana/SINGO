@@ -34,6 +34,16 @@
                       <input type="text" class="form-control">
                   </div>
                   <div class="form-group">
+                    <label>Rencana Induk Kegiatan</label>
+                    <select class="form-control">
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4</option>
+                      <option>option 5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
                       <label for="">Pendahuluan</label>
                       <textarea id="pendahuluan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
@@ -56,10 +66,16 @@
                       </textarea>
                   </div>
                   <div class="form-group">
-                      <label for="">Tenaga Lokal </label>
-                      <input type="text" class="form-control" id="lokal" placeholder="Tenaga Lokal">
+                      <label for="">Mitra Lokal </label>
+                      <select name="" id="" class="form-control">
+                        <option value="">options 1</option>
+                        <option value="">options 2</option>
+                        <option value="">options 3</option>
+                        <option value="">options 4</option>
+                        <option value="">options 5</option>
+                      </select>
                   </div>
-                  <div class="form-row">
+                  <!-- <div class="form-row">
                       <div class="form-group col-md-9">
                         <label for="">Tenaga Asing </label>
                         <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing">
@@ -68,7 +84,7 @@
                         <label for="">Jumlah Tenaga</label>
                         <input type="number" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing">
                       </div>
-                  </div>
+                  </div> -->
                   <div class="form-group">
                       <label for="">Peran Serta Pihak Ketiga</label>
                       <textarea id="pihak" class="form-control" style="height: 300px" placeholder="Masukan Teks">
@@ -83,7 +99,7 @@
                   </div>
                   <div class="form-row mb-3">
                     <div class="col-md-6">
-                      <label>Pembiayaan</label>
+                      <label>Mata Uang</label>
                     <select class="form-control">
                       <option selected>Pilih Mata Uang</option>
                       <option>option 2</option>
@@ -132,16 +148,6 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label>Rencana Induk Kegiatan</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
                     <label for="file">Unggah BAP</label>
                     <div class="input-group">
                       <div class="custom-file">
@@ -153,7 +159,7 @@
                 </div>
                 <!-- /.card-body -->
                   <div class="card-footer">
-                    <a class="btn btn-primary" href="/rkt" role="button">Simpan</a>
+                    <a class="btn btn-primary" href="/rkt" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
                   </div>  
               </form>
                 </div>
