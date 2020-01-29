@@ -263,7 +263,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
-              <img src="{{ asset('assets_fe/mg/portfolio/web2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('assets_fe/img/portfolio/web2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a href="#">Web 2</a></h4>
                 <p>Web</p>
