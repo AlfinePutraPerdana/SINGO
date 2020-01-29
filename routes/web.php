@@ -174,6 +174,15 @@ Route::get('/pajak', function () {
 
 Auth::routes();
 
+//Fasker--Tamu
+Route::get('/verif-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.verif_tamu');
+});
+
+Route::get('/preview-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.preview_tamu');
+});
+
 //DASHBOARD
 
 Route::get('/dashboard', function(){
