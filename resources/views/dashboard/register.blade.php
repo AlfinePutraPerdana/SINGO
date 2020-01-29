@@ -1,93 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fasker  | Registrasi </title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>SINGO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset('assets_be/plugins/fontawesome-free/css/all.min.css')}}">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="{{ asset('assets_be/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('assets_be/dist/css/adminlte.min.css')}}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Favicons -->
+    <!--
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="{{ asset('assets_fe/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="{{ asset('assets_fe/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets_fe/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets_fe/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets_fe/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets_fe/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{{ asset('assets_fe/css/style.css')}}" rel="stylesheet">
+
 </head>
-<body class="hold-transition register-page"
-style="background-image: url('{{ asset('assets_fe/img/slider/slider33.jpg')}}');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;">
-<div class="register-box">
-  <div class="register-logo">
-    <a><b>Registrasi</b> Fasker</a>
-  </div>
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container">
+    
+            <div class="logo float-left">
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+                <a href="/" class="scrollto">
+                <h1>SINGO</h1>
+                </a>
+            </div>
+            <a class="btn-kembali float-right" href="/">Kembali</a>
+        </div>
+    </header>
 
-  <div class="card">
-    <div class="card-body register-card-body">
-      <p class="login-box-msg">Daftar Pengguna Baru</p>
+    <section id="intro-register" class="clearfix">
+        <div class="container">
+            <h1>Registrasi</br><span>NGO</span></h1>
+        </div>
+    </section>
 
-      <form action="../../index2.html" method="post">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nama Lengkap">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-user"></span>
+    <main>
+        <section id="register">
+            <div class="container">
+                <div class="form">
+                    <form action="" method="post" class="contactForm">
+                        <div class="form-group">
+                            <h6>Nama Organisasi</h6>
+                            <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Negara Asal</h6>
+                            <input type="text" name="nation" class="form-control" id="nation" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Nomor Registrasi Izin Prinsip</h6>
+                            <input type="text" name="nomor" class="form-control" id="nomor" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Country Director / Representative</h6>
+                            <input type="text" name="director" class="form-control" id="director" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Alamat</h6>
+                            <textarea rows="5" name="address" class="form-control" id="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <h6>Nomor Telepon</h6>
+                            <input type="tel" name="telp" class="form-control" id="telp" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Faximile</h6>
+                            <input type="tel" name="fax" class="form-control" id="fax">
+                        </div>
+                        <div class="form-group">
+                            <h6>Email</h6>
+                            <input type="email" name="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Website</h6>
+                            <input type="url" name="web" class="form-control" id="web">
+                        </div>
+                        <div class="form-group">
+                            <h6>Bidang Kerja</h6>
+                            <input type="text" name="bidang" class="form-control" id="bidang" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Tanggal Mulai Beroperasi di Indonesia</h6>
+                            <input type="date" name="date-1" class="form-control" id="date-1" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Tanggal Penandatanganan MSP Terakhir</h6>
+                            <input type="date" name="date-2" class="form-control" id="date-2" required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Lokasi Kerja Sama</h6>
+                            <input type="text" name="lokasi" class="form-control" id="lokasi" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" title="Daftar">Daftar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Masukan Kembali password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- /.col -->
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
-          </div>
-          <!-- /.col -->
-        </div>
-        <br>
-        <div class="row justify-content-around">
-          <a href="/login">Kembali</a>
-        </div>
-      </form>
-    </div>
-    <!-- /.form-box -->
-  </div><!-- /.card -->
-</div>
-<!-- /.register-box -->
+        </section>
+    </main>
 
-<!-- jQuery -->
-<script src="{{ asset('assets_be/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{ asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('assets_be/dist/js/adminlte.min.js')}}"></script>
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>SINGO</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ asset('assets_fe/clib/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/jquery/jquery-migrate.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/easing/easing.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/mobile-nav/mobile-nav.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/wow/wow.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/counterup/counterup.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/isotope/isotope.pkgd.min.js')}}"></script>
+    <script src="{{ asset('assets_fe/clib/lightbox/js/lightbox.min.js')}}"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="{{ asset('assets_fe/ccontactform/contactform.js')}}"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="{{ asset('assets_fe/cjs/main.js')}}"></script>
 </body>
 </html>

@@ -1,565 +1,475 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>FASKER</title>
+  <title>SINGO</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="{{ asset('assets_fe/img/favicon.png')}}" rel="icon">
-  <link href="{{ asset('assets_fe/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
-
+  <!--
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  -->
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="{{ asset('assets_fe/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="{{ asset('assets_fe/lib/nivo-slider/css/nivo-slider.css')}}" rel="stylesheet">
-  <link href="{{ asset('assets_fe/lib/owlcarousel/owl.carousel.css')}}" rel="stylesheet">
-  <link href="{{ asset('assets_fe/lib/owlcarousel/owl.transitions.css')}}" rel="stylesheet">
   <link href="{{ asset('assets_fe/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
   <link href="{{ asset('assets_fe/lib/animate/animate.min.css')}}" rel="stylesheet">
-  <link href="{{ asset('assets_fe/lib/venobox/venobox.css')}}" rel="stylesheet">
-
-  <!-- Nivo Slider Theme -->
-  <link href="{{ asset('assets_fe/css/nivo-slider-theme.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets_fe/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('assets_fe/css/style.css')}}" rel="stylesheet">
 
-  <!-- Responsive Stylesheet File -->
-  <link href="{{ asset('assets_fe/css/responsive.css')}}" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+<body>
 
-  <div id="preloader"></div>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
 
-  <header>
-    <!-- header-area start -->
-    <div id="sticker" class="header-area">
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="/" class="scrollto">
+          <h1>SINGO</h1>
+        </a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#portfolio">Berita</a></li>
+          <!--
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          -->
+          <li><a href="#contact">Kontak</a></li>
+          <li class="drop-down"><a href="#">Account</a>
+            <ul>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="{{ asset('assets_fe/img/intro-img.svg')}}" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2>We provide<br><span>solutions</span><br>for your NGOs!</h2>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
 
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-                <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="/">
-                  <h1>FASKER</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
-								</a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="#home"><i class="fa fa-home" style="font-size: 25px;"></i></a>
+        <header class="section-header">
+          <h3>Tentang Kami</h3>
+          <p>SINGO adalah sistem informasi yang dipersembahkan oleh Kementerian Dalam Negeri Republik Indonesia.</p>
+        </header>
+
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <p>
+              <b>Kementerian Dalam Negeri Republik Indonesia</b> mempunyai tugas menyelenggarakan urusan pemerintahan dalam negeri untuk membantu Presiden dalam menyelenggarakan pemerintahan negara.
+            </p>
+            <h3>Visi dan Misi</h3>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-check"></i></div>
+              <h4 class="title"><p>Menjadi Poros Pemerintahan Dalam Negeri</p></h4>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-check"></i></div>
+              <h4 class="title"><p>Meningkatkan Pelayanan Publik</p></h4>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.3s">
+              <div class="icon"><i class="fa fa-check"></i></div>
+              <h4 class="title"><p>Menegakkan Demokrasi</p></h4>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-check"></i></div>
+              <h4 class="title"><p>Menjaga Integrasi Bangsa</p></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+            <img src="{{ asset('assets_fe/img/logo-kemendagri.svg')}}" class="img-fluid kemendagri" alt="">
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="{{ asset('assets_fe/img/about-extra-1.svg')}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>Sistem Informasi Non-Government Organization</h4>
+            <p>
+              Sistem Informasi Non-Government Organization atau <b>SINGO</b> adalah sistem informasi yang mendukung NGO dalam berkolaborasi dengan pemda dalam Rencana Pembangunan Daerah.
+            </p>
+            <h5>Modul yang Disediakan</h5>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul>
+                  <li>
+                    <i class="fa fa-check"></i> Rencana Kerja Tahunan
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">Profil</a>
+                    <i class="fa fa-check"></i> Laporan Tahunan & Keuangan
                   </li>
                   <li>
-                    <a class="page-scroll" href="#blog">Berita</a>
-                  </li>
-                  <!--
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Drop Down<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=# >Drop Down 1</a></li>
-                      <li><a href=# >Drop Down 2</a></li>
-                    </ul>
-                  </li
-                  -->
-                  <li>
-                    <a class="page-scroll" href="#contact">Kontak</a>
-                  </li>
-                  <li>
-                      <a href="/login">Login</a>
+                    <i class="fa fa-check"></i> Rekomendasi Tenaga Asing
                   </li>
                 </ul>
               </div>
-              <!-- navbar-collapse -->
-            </nav>
-            <!-- END: Navigation -->
+              <div class="col-sm-6">
+                <ul>
+                  <li>
+                    <i class="fa fa-check"></i> Pemberitahuan Tamu Asing
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Pemberdayaan Mitra Lokal
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Monitoring & Evaluasi
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- header-area end -->
-  </header>
-  <!-- header end -->
 
-  <!-- Start Slider Area -->
-  <div id="home" class="slider-area">
-    <div class="bend niceties preview-2">
-      <div id="ensign-nivoslider" class="slides">
-        <img src="{{ asset('assets_fe/img/slider/slider1.jpg')}}" alt="" title="#slider-direction-1" />
-        <img src="{{ asset('assets_fe/img/slider/slider2.jpg')}}" alt="" title="#slider-direction-2" />
-        <img src="{{ asset('assets_fe/img/slider/slider3.jpg')}}" alt="" title="#slider-direction-3" />
-      </div>
+        </div>
 
-      <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Fasilitas Kerja</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Sistem Informasi Pendukung Rencana Pembangunan Daerah</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+    </section><!-- #about -->
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Fasilitas Kerja</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Sistem Informasi Pendukung Rencana Pembangunan Daerah</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="clearfix">
+      <div class="container">
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Fasilitas Kerja</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Sistem Informasi Pendukung Rencana Pembangunan Daerah</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Slider Area -->
+        <header class="section-header">
+          <h3 class="section-title">Berita Terbaru</h3>
+        </header>
 
-  <!-- Start About area -->
-  <div id="about" class="about-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Profil KEMENDAGRI</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- single-well start-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-left">
-            <div class="single-well">
-              <a href="#">
-								  <img src="{{ asset('assets_fe/img/about/1.jpg')}}" alt="">
-								</a>
-            </div>
-          </div>
-        </div>
-        <!-- single-well end-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-middle">
-            <div class="single-well">
-              <a href="#">
-                <h4 class="sec-head">Kementerian Dalam Negeri</h4>
-              </a>
-              <p>
-                Kementerian Dalam Negeri bertugas menyelenggarakan urusan pemerintahan dalam negeri untuk membantu presiden dalam menyelenggarakan pemerintahan negara.
-              </p>
-              <ul>
-                <h5>Visi</h5>
-                <li>
-                  <i class="fa fa-check"></i> Poros jalannya pemerintahan dan politik dalam negeri.
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Meningkatkan pelayanan publik
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Menegakkan demokrasi
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Menjaga integrasi bangsa
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- End col-->
-      </div>
-    </div>
-  </div>
-  <!-- End About area -->
-  
-  <!-- Start About area -->
-  <div id="about" class="about-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Tentang FASKER</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-middle">
-            <div class="single-well">
-              <a class="floatright" href="#">
-                <h4 class="sec-head">Fasilitas Kerja</h4>
-              </a>
-              <p class="floatright" style="text-align: right;">
-                Sistem informasi ini mendukung informasi, NGO berkolaborasi dengan pemda dalam Rencana Pembangunan Daerah (Kolaborasi dapat berupa informasi program NGO yang mendukung program pembangunan daerah)
-              </p>
-              <ul class="floatright" style="text-align: right;">
-                <li>
-                  Rencana Kerja Tahunan  <i class="fa fa-check"></i>
-                </li>
-                <li>
-                  Laporan Tahunan dan Keuangan  <i class="fa fa-check"></i>
-                </li>
-                <li>
-                  Rekomendasi Tenaga Asing  <i class="fa fa-check"></i>
-                </li>
-                <li>
-                  Pemberitahuan Tamu Asing  <i class="fa fa-check"></i>
-                </li>
-                <li>
-                  Pemberdayaan Mitra Lokal  <i class="fa fa-check"></i>
-                </li>
-                <li>
-                  Pengajuan Monitoring dan Evaluasi  <i class="fa fa-check"></i>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- End col-->
-        <!-- single-well start-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-left">
-            <div class="single-well">
-              <a href="#">
-								  <img src="{{ asset('assets_fe/img/about/1.jpg')}}" alt="">
-								</a>
-            </div>
-          </div>
-        </div>
-        <!-- single-well end-->
-      </div>
-    </div>
-  </div>
-  <!-- End About area -->
+        <div class="row portfolio-container">
 
-  <!-- Start Blog Area -->
-  <div id="blog" class="blog-area">
-    <div class="blog-inner area-padding">
-      <div class="blog-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Berita Terbaru</h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="tab-menu">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="active">
-                <a href="#p-view-1" role="tab" data-toggle="tab">Berita</a>
-              </li>
-              <li>
-                <a href="#p-view-2" role="tab" data-toggle="tab">Kisah Sukses</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content">
-            <div class="tab-pane active" id="p-view-1">
-              <div class="tab-inner">
-                <div class="row">
-                  <!-- Start Left Blog -->
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single-blog">
-                      <div class="single-blog-img">
-                        <a href="/blog">
-                            <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt="">
-                          </a>
-                      </div>
-                      <div class="blog-meta">
-                        <span class="comments-type">
-                            <i class="fa fa-comment-o"></i>
-                            <a href="#">13 comments</a>
-                          </span>
-                        <span class="date-type">
-                            <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-                          </span>
-                      </div>
-                      <div class="blog-text">
-                        <h4>
-                          <a href="/blog">Assumenda repud eum veniam</a>
-                          </h4>
-                        <p>
-                          Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
-                        </p>
-                      </div>
-                      <span>
-                          <a href="/blog" class="ready-btn">Read more</a>
-                        </span>
-                    </div>
-                    <!-- Start single blog -->
-                  </div>
-                  <!-- End Left Blog-->
-                  <!-- Start Left Blog -->
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single-blog">
-                      <div class="single-blog-img">
-                        <a href="/blog">
-                            <img src="{{ asset('assets_fe/img/blog/2.jpg')}}" alt="">
-                          </a>
-                      </div>
-                      <div class="blog-meta">
-                        <span class="comments-type">
-                            <i class="fa fa-comment-o"></i>
-                            <a href="#">130 comments</a>
-                          </span>
-                        <span class="date-type">
-                            <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-                          </span>
-                      </div>
-                      <div class="blog-text">
-                        <h4>
-                          <a href="/blog">Explicabo magnam quibusdam.</a>
-                          </h4>
-                        <p>
-                          Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
-                        </p>
-                      </div>
-                      <span>
-                          <a href="/blog" class="ready-btn">Read more</a>
-                        </span>
-                    </div>
-                    <!-- Start single blog -->
-                  </div>
-                  <!-- End Left Blog-->
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="p-view-2">
-              <div class="tab-inner">
-                <div class="row">
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="single-awesome-project">
-                      <div class="awesome-img">
-                        <a href="#"><img src="{{ asset('assets_fe/img/portfolio/1.jpg')}}" alt="" /></a>
-                        <div class="add-actions text-center">
-                          <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/1.jpg')}}">
-                              <h4>Business City</h4>
-                              <span>Web Development</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 photo">
-                    <div class="single-awesome-project">
-                      <div class="awesome-img">
-                        <a href="#"><img src="{{ asset('assets_fe/img/portfolio/2.jpg')}}" alt="" /></a>
-                        <div class="add-actions text-center">
-                          <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/2.jpg')}}">
-                              <h4>Blue Sea</h4>
-                              <span>Photosho</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 design">
-                    <div class="single-awesome-project">
-                      <div class="awesome-img">
-                        <a href="#"><img src="{{ asset('assets_fe/img/portfolio/3.jpg')}}" alt="" /></a>
-                        <div class="add-actions text-center">
-                          <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/3.jpg')}}">
-                              <h4>Beautiful Nature</h4>
-                              <span>Web Design</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 photo development">
-                    <div class="single-awesome-project">
-                      <div class="awesome-img">
-                        <a href="#"><img src="{{ asset('assets_fe/img/portfolio/4.jpg')}}" alt="" /></a>
-                        <div class="add-actions text-center">
-                          <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/4.jpg')}}">
-                              <h4>Creative Team</h4>
-                              <span>Web design</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 development">
-                    <div class="single-awesome-project">
-                      <div class="awesome-img">
-                        <a href="#"><img src="{{ asset('assets_fe/img/portfolio/5.jpg')}}" alt="" /></a>
-                        <div class="add-actions text-center text-center">
-                          <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/5.jpg')}}">
-                              <h4>Beautiful Flower</h4>
-                              <span>Web Development</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 design photo">
-                    <div class="single-awesome-project">
-                      <div class="awesome-img">
-                        <a href="#"><img src="{{ asset('assets_fe/img/portfolio/6.jpg')}}" alt="" /></a>
-                        <div class="add-actions text-center">
-                          <div class="project-dec">
-                            <a class="venobox" data-gall="myGallery" href="{{ asset('assets_fe/img/portfolio/6.jpg')}}">
-                              <h4>Night Hill</h4>
-                              <span>Photoshop</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/app1.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/app1.jpg')}}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Blog -->
 
-  <!-- Start contact Area -->
-  <div id="contact" class="contact-area">
-    <div class="contact-inner area-padding">
-      <div class="contact-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Kontak Kami</h2>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/web3.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/web3.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/app2.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/app2.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/card2.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Card 2</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/card2.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/mg/portfolio/web2.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web 2</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/web2.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/app3.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/app3.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/card1.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/card1.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/card3.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Card 3</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/card3.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets_fe/img/portfolio/web1.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="{{ asset('assets_fe/img/portfolio/web1.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="row">
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-mobile"></i>
-                <p>
-                  Call: +1 5589 55488 55<br>
-                  <span>Monday-Friday (9am-5pm)</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-envelope-o"></i>
-                <p>
-                  Email: info@example.com<br>
-                  <span>Web: www.example.com</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-map-marker"></i>
-                <p>
-                  Location: A108 Adam Street<br>
-                  <span>NY 535022, USA</span>
-                </p>
-              </div>
-            </div>
-          </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
+
         <div class="row">
 
-          <!-- Start Google Map -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <!-- Start Map -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <!-- End Map -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- End Google Map -->
 
-          <!-- Start  contact -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form contact-form">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h3>Kontak Kami</h3>
+        </div>
+
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-6">
+            <div class="map mb-4 mb-lg-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4717.214048199167!2d106.82880419552595!3d-6.172460646646389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30b7ec7f0aeb8f12!2sKementerian%20Dalam%20Negeri%20Republik%20Indonesia!5e0!3m2!1sid!2sid!4v1580195984657!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-6 info">
+                <i class="ion-ios-location-outline"></i>
+                <p>Jl. Medan Merdeka Utara No. 7, Jakarta Pusat 10110</p>
+              </div>
+              <div class="col-md-6 info">
+                <i class="ion-ios-email-outline"></i>
+                <p>pusdatin@kemendagri.go.id</p>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>(021) 3450038</p>
+              </div>
+            </div>
+
+            <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
               <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
@@ -569,53 +479,50 @@
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
               </form>
             </div>
           </div>
-          <!-- End Left contact -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Contact Area -->
 
-  <!-- Start Footer bottom Area -->
-  <footer>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>FASKER</strong>. All Rights Reserved
-              </p>
-            </div>
-          </div>
         </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>SINGO</strong>. All Rights Reserved
       </div>
     </div>
-  </footer>
+  </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
   <script src="{{ asset('assets_fe/lib/jquery/jquery.min.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/bootstrap/js/bootstrap.min.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/venobox/venobox.min.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/knob/jquery.knob.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/wow/wow.min.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/parallax/parallax.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{ asset('assets_fe/lib/easing/easing.min.js')}}"></script>
-  <script src="{{ asset('assets_fe/lib/nivo-slider/js/jquery.nivo.slider.js')}}" type="text/javascript"></script>
-  <script src="{{ asset('assets_fe/lib/appear/jquery.appear.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/mobile-nav/mobile-nav.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/wow/wow.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/waypoints/waypoints.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/counterup/counterup.min.js')}}"></script>
+  <script src="{{ asset('assets_fe/lib/owlcarousel/owl.carousel.min.js')}}"></script>
   <script src="{{ asset('assets_fe/lib/isotope/isotope.pkgd.min.js')}}"></script>
-
+  <script src="{{ asset('assets_fe/lib/lightbox/js/lightbox.min.js')}}"></script>
   <!-- Contact Form JavaScript File -->
   <script src="{{ asset('assets_fe/contactform/contactform.js')}}"></script>
 
+  <!-- Template Main Javascript File -->
   <script src="{{ asset('assets_fe/js/main.js')}}"></script>
-</body>
 
+</body>
 </html>
