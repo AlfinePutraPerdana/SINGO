@@ -365,11 +365,11 @@
 
   <!-- Content Wrapper. Contains page content -->
 
-         <div id="app">
+         
 
             @yield('content')
 
-          </div>
+          
 
 
 

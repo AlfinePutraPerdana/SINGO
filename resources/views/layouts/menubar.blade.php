@@ -379,11 +379,11 @@
 <!-- Bootstrap 4 -->
 <script src="{{asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('assets_be/dist/js/adminlte.min.js')}}"></script>
+<script src="{{asset('assets_be/dist/js/adminlte.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('assets_be/dist/js/demo.js')}}"></script>
 <!-- Summernote -->
-<script src="{{asset('assets_be/plugins/summernote/summernote-lite.min.js')}}"></script>
+<script src="{{asset('assets_be/plugins/summernote/summernote-lite.js')}}"></script>
 
 <script src="{{asset('assets_be/plugins/datepicker/libraries/moment/moment.min.js')}}"></script>
 
