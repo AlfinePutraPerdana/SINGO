@@ -6435,6 +6435,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -7257,6 +7268,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -44358,7 +44379,11 @@ var staticRenderFns = [
                         staticClass: "btn btn-warning",
                         attrs: { href: "/mitra", role: "button" }
                       },
-                      [_vm._v("Kembali")]
+                      [
+                        _c("i", { staticClass: "fas fa-chevron-left" }),
+                        _vm._v(" "),
+                        _c("b", [_vm._v("Kembali")])
+                      ]
                     )
                   ])
                 ])
@@ -47556,6 +47581,226 @@ var staticRenderFns = [
                   )
                 ]),
                 _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "modal fade",
+                    attrs: {
+                      id: "tambah",
+                      tabindex: "-1",
+                      role: "dialog",
+                      "aria-labelledby": "exampleModalLabel",
+                      "aria-hidden": "true"
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "modal-dialog",
+                        attrs: { role: "document" }
+                      },
+                      [
+                        _c("div", { staticClass: "modal-content" }, [
+                          _c("div", { staticClass: "modal-header" }, [
+                            _c(
+                              "h5",
+                              {
+                                staticClass: "modal-title",
+                                attrs: { id: "exampleModalLabel" }
+                              },
+                              [_vm._v("Form Pengajuan Monev")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "close",
+                                attrs: {
+                                  type: "button",
+                                  "data-dismiss": "modal",
+                                  "aria-label": "Close"
+                                }
+                              },
+                              [
+                                _c(
+                                  "span",
+                                  { attrs: { "aria-hidden": "true" } },
+                                  [_vm._v("×")]
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "modal-body" }, [
+                            _c(
+                              "form",
+                              { attrs: { action: "", role: "form" } },
+                              [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c("label", { attrs: { for: "propinsi" } }, [
+                                    _vm._v("Nama Program")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "select",
+                                    {
+                                      staticClass: "form-control",
+                                      attrs: { id: "program" }
+                                    },
+                                    [
+                                      _c("option", [_vm._v("options 1")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("options 2")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("options 3")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("options 4")])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c("label", { attrs: { for: "propinsi" } }, [
+                                    _vm._v("Pillih Provinsi")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "select",
+                                    {
+                                      staticClass: "form-control",
+                                      attrs: { id: "propinsi" }
+                                    },
+                                    [
+                                      _c("option", [_vm._v("Jawa Barat")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("Jawa Timur")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("Jawa Tengah")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("DKI Jakarta")])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c("label", { attrs: { for: "kabupaten" } }, [
+                                    _vm._v("Pilih Kabupaten")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "select",
+                                    {
+                                      staticClass: "form-control",
+                                      attrs: { multiple: "", id: "kabupaten" }
+                                    },
+                                    [
+                                      _c("option", [_vm._v("Kabupaten Bogor")]),
+                                      _vm._v(" "),
+                                      _c("option", [_vm._v("Kabupaten Depok")]),
+                                      _vm._v(" "),
+                                      _c("option", [
+                                        _vm._v("Kabupaten Cirebon")
+                                      ])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c("label", { attrs: { for: "" } }, [
+                                    _vm._v("Waktu")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "input-group" }, [
+                                    _c("input", {
+                                      staticClass:
+                                        "form-control startdate datetimepicker-input",
+                                      attrs: {
+                                        type: "text",
+                                        "data-toggle": "datetimepicker",
+                                        "data-target": ".startdate"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      { staticClass: "input-group-append" },
+                                      [
+                                        _c(
+                                          "span",
+                                          { staticClass: "input-group-text" },
+                                          [_vm._v("s/d")]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass:
+                                        "form-control enddate datetimepicker-input",
+                                      attrs: {
+                                        type: "text",
+                                        "data-toggle": "datetimepicker",
+                                        "data-target": ".enddate"
+                                      }
+                                    })
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c("label", { attrs: { for: "file" } }, [
+                                    _vm._v("Unggah jadwal")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "input-group" }, [
+                                    _c("div", { staticClass: "custom-file" }, [
+                                      _c("input", {
+                                        staticClass: "custom-file-input",
+                                        attrs: { type: "file", id: "jadwal" }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass: "custom-file-label",
+                                          attrs: { for: "file" }
+                                        },
+                                        [_vm._v("Pilih File")]
+                                      )
+                                    ])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "modal-footer" }, [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass: "btn btn-secondary",
+                                      attrs: {
+                                        type: "button",
+                                        "data-dismiss": "modal"
+                                      }
+                                    },
+                                    [_c("b", [_vm._v("Tutup")])]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass: "btn btn-primary",
+                                      attrs: { type: "button" }
+                                    },
+                                    [_c("b", [_vm._v("Simpan")])]
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
                 _c("div", { staticClass: "card-tools" }, [
                   _c(
                     "div",
@@ -48294,243 +48539,6 @@ var staticRenderFns = [
                       _c("i", { staticClass: "far fa-paper-plane" }),
                       _vm._v(" "),
                       _c("b", [_vm._v("Kirim")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "modal fade",
-                      attrs: {
-                        id: "tambah",
-                        tabindex: "-1",
-                        role: "dialog",
-                        "aria-labelledby": "exampleModalLabel",
-                        "aria-hidden": "true"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "modal-dialog",
-                          attrs: { role: "document" }
-                        },
-                        [
-                          _c("div", { staticClass: "modal-content" }, [
-                            _c("div", { staticClass: "modal-header" }, [
-                              _c(
-                                "h5",
-                                {
-                                  staticClass: "modal-title",
-                                  attrs: { id: "exampleModalLabel" }
-                                },
-                                [_vm._v("Form Pengajuan Monev")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "button",
-                                {
-                                  staticClass: "close",
-                                  attrs: {
-                                    type: "button",
-                                    "data-dismiss": "modal",
-                                    "aria-label": "Close"
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "span",
-                                    { attrs: { "aria-hidden": "true" } },
-                                    [_vm._v("×")]
-                                  )
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "modal-body" }, [
-                              _c(
-                                "form",
-                                { attrs: { action: "", role: "form" } },
-                                [
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "propinsi" } },
-                                      [_vm._v("Nama Program")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "select",
-                                      {
-                                        staticClass: "form-control",
-                                        attrs: { id: "program" }
-                                      },
-                                      [
-                                        _c("option", [_vm._v("options 1")]),
-                                        _vm._v(" "),
-                                        _c("option", [_vm._v("options 2")]),
-                                        _vm._v(" "),
-                                        _c("option", [_vm._v("options 3")]),
-                                        _vm._v(" "),
-                                        _c("option", [_vm._v("options 4")])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "propinsi" } },
-                                      [_vm._v("Pillih Provinsi")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "select",
-                                      {
-                                        staticClass: "form-control",
-                                        attrs: { id: "propinsi" }
-                                      },
-                                      [
-                                        _c("option", [_vm._v("Jawa Barat")]),
-                                        _vm._v(" "),
-                                        _c("option", [_vm._v("Jawa Timur")]),
-                                        _vm._v(" "),
-                                        _c("option", [_vm._v("Jawa Tengah")]),
-                                        _vm._v(" "),
-                                        _c("option", [_vm._v("DKI Jakarta")])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "kabupaten" } },
-                                      [_vm._v("Pilih Kabupaten")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "select",
-                                      {
-                                        staticClass: "form-control",
-                                        attrs: { multiple: "", id: "kabupaten" }
-                                      },
-                                      [
-                                        _c("option", [
-                                          _vm._v("Kabupaten Bogor")
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("option", [
-                                          _vm._v("Kabupaten Depok")
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("option", [
-                                          _vm._v("Kabupaten Cirebon")
-                                        ])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c("label", { attrs: { for: "" } }, [
-                                      _vm._v("Waktu")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "input-group" }, [
-                                      _c("input", {
-                                        staticClass:
-                                          "form-control startdate datetimepicker-input",
-                                        attrs: {
-                                          type: "text",
-                                          "data-toggle": "datetimepicker",
-                                          "data-target": ".startdate"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group-append" },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "input-group-text" },
-                                            [_vm._v("s/d")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass:
-                                          "form-control enddate datetimepicker-input",
-                                        attrs: {
-                                          type: "text",
-                                          "data-toggle": "datetimepicker",
-                                          "data-target": ".enddate"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c("label", { attrs: { for: "file" } }, [
-                                      _vm._v("Unggah jadwal")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "input-group" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "custom-file" },
-                                        [
-                                          _c("input", {
-                                            staticClass: "custom-file-input",
-                                            attrs: {
-                                              type: "file",
-                                              id: "jadwal"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "custom-file-label",
-                                              attrs: { for: "file" }
-                                            },
-                                            [_vm._v("Pilih File")]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "modal-footer" }, [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass: "btn btn-secondary",
-                                        attrs: {
-                                          type: "button",
-                                          "data-dismiss": "modal"
-                                        }
-                                      },
-                                      [_c("b", [_vm._v("Tutup")])]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass: "btn btn-primary",
-                                        attrs: { type: "button" }
-                                      },
-                                      [_c("b", [_vm._v("Simpan")])]
-                                    )
-                                  ])
-                                ]
-                              )
-                            ])
-                          ])
-                        ]
-                      )
                     ]
                   )
                 ])
@@ -51055,21 +51063,6 @@ var staticRenderFns = [
                     })
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "" } }, [
-                      _vm._v("Tenaga Lokal ")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "lokal",
-                        placeholder: "Tenaga Lokal"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
                   _c("div", { staticClass: "form-row mb-3" }, [
                     _c("div", { staticClass: "form-group col-md-9" }, [
                       _c("label", { attrs: { for: "" } }, [
@@ -53138,7 +53131,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "card" }, [
               _c("div", { staticClass: "card-header" }, [
                 _c("h3", { staticClass: "card-title" }, [
-                  _vm._v("Data Tamu Asing")
+                  _vm._v("History Data Tamu Asing")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-tools" }, [
@@ -53582,6 +53575,36 @@ var staticRenderFns = [
                         _c("input", {
                           staticClass: "custom-file-input",
                           attrs: { type: "file", id: "file" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "custom-file-label",
+                            attrs: { for: "file" }
+                          },
+                          [_vm._v("Pilih File")]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "d-flex flex-row" }, [
+                      _c("label", { attrs: { for: "" } }, [
+                        _vm._v("Unggah Perpanjang Masa ")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "text-danger" }, [
+                        _vm._v(" *keterangan")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("div", { staticClass: "custom-file" }, [
+                        _c("input", {
+                          staticClass: "custom-file-input",
+                          attrs: { type: "file", id: "masa" }
                         }),
                         _vm._v(" "),
                         _c(
@@ -55478,7 +55501,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "card" }, [
               _c("div", { staticClass: "card-header" }, [
                 _c("h3", { staticClass: "card-title" }, [
-                  _vm._v("selasa, 21 January 2020")
+                  _vm._v("History Data Tenaga Asing")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-tools" }, [
@@ -55900,6 +55923,36 @@ var staticRenderFns = [
                           "data-target": ".enddate"
                         }
                       })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "d-flex flex-row" }, [
+                      _c("label", { attrs: { for: "" } }, [
+                        _vm._v("Unggah Perpanjang Masa ")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "text-danger" }, [
+                        _vm._v(" *keterangan")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("div", { staticClass: "custom-file" }, [
+                        _c("input", {
+                          staticClass: "custom-file-input",
+                          attrs: { type: "file", id: "masa" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "custom-file-label",
+                            attrs: { for: "file" }
+                          },
+                          [_vm._v("Pilih File")]
+                        )
+                      ])
                     ])
                   ]),
                   _vm._v(" "),
@@ -57299,91 +57352,73 @@ var staticRenderFns = [
                           ])
                         ])
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-footer clearfix" }, [
-                      _c("div", { staticClass: "col-md-4 float-left" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "btn btn-primary",
-                            attrs: { href: "/proses-tenaga", role: "button" }
-                          },
-                          [
-                            _c("i", { staticClass: "far fa-paper-plane" }),
-                            _vm._v(" "),
-                            _c("b", [_vm._v("Kirim")])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "ul",
-                        {
-                          staticClass:
-                            "pagination pagination-sm m-0 float-right"
-                        },
-                        [
-                          _c("li", { staticClass: "page-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "page-link",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("«")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "page-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "page-link",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("1")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "page-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "page-link",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("2")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "page-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "page-link",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("3")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "page-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "page-link",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("»")]
-                            )
-                          ])
-                        ]
-                      )
                     ])
                   ])
                 ]
-              )
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-footer clearfix" }, [
+                _c("div", { staticClass: "col-md-4 float-left" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { href: "/proses-tenaga", role: "button" }
+                    },
+                    [
+                      _c("i", { staticClass: "far fa-paper-plane" }),
+                      _vm._v(" "),
+                      _c("b", [_vm._v("Kirim")])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  { staticClass: "pagination pagination-sm m-0 float-right" },
+                  [
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("«")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("1")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("2")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("3")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        { staticClass: "page-link", attrs: { href: "#" } },
+                        [_vm._v("»")]
+                      )
+                    ])
+                  ]
+                )
+              ])
             ])
           ])
         ])

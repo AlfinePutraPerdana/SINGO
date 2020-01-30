@@ -65,10 +65,10 @@
 
                       </textarea>
                   </div>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                       <label for="">Tenaga Lokal </label>
                       <input type="text" class="form-control" id="lokal" placeholder="Tenaga Lokal">
-                  </div>
+                  </div> -->
                   <div class="form-row mb-3">
                       <div class="form-group col-md-9">
                         <label for="">Tenaga Asing </label>

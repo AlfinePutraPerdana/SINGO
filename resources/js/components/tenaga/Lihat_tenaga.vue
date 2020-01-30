@@ -126,7 +126,17 @@
                                     <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                                 </div>
                             </div>   
-                                
+                            <div class="form-group">
+                                <div class="d-flex flex-row">
+                                   <label for="">Unggah Perpanjang Masa </label> <p class="text-danger"> *keterangan</p>
+                                </div>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="masa">
+                                        <label class="custom-file-label" for="file">Pilih File</label>
+                                    </div>
+                                </div>
+                            </div> 
                             <div class="card-footer">
                             <a class="btn btn-primary" href="/list-tenaga" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
                             </div>

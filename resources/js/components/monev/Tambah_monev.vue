@@ -27,7 +27,71 @@
               <h3 class="card-title">Daftar Pengajuan Monev <a href="#"  type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#tambah">
                         <i class="fas fa-plus-circle"></i> <b>Tambah</b>
                   </a></h3>
-
+                <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Form Pengajuan Monev</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="" role="form">
+                        <div class="form-group">
+                            <label for="propinsi">Nama Program</label>
+                            <select class="form-control" id="program">
+                              <option>options 1</option>
+                              <option>options 2</option>
+                              <option>options 3</option>
+                              <option>options 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="propinsi">Pillih Provinsi</label>
+                            <select class="form-control" id="propinsi">
+                            <option>Jawa Barat</option>
+                            <option>Jawa Timur</option>
+                            <option>Jawa Tengah</option>
+                            <option>DKI Jakarta</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="kabupaten">Pilih Kabupaten</label>
+                            <select multiple class="form-control" id="kabupaten">
+                            <option>Kabupaten Bogor</option>
+                            <option>Kabupaten Depok</option>
+                            <option>Kabupaten Cirebon</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Waktu</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
+                                <div class="input-group-append">
+                                <span class="input-group-text">s/d</span>
+                                </div>
+                                <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="file">Unggah jadwal</label>
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="jadwal">
+                              <label class="custom-file-label" for="file">Pilih File</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Tutup</b></button>
+                          <button type="button" class="btn btn-primary"><b>Simpan</b></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -213,71 +277,7 @@
                 <!-- Button trigger modal -->
                 <a href="" role="button" class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></a>
                     <!-- Modal -->
-              <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Form Pengajuan Monev</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <form action="" role="form">
-                        <div class="form-group">
-                            <label for="propinsi">Nama Program</label>
-                            <select class="form-control" id="program">
-                              <option>options 1</option>
-                              <option>options 2</option>
-                              <option>options 3</option>
-                              <option>options 4</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="propinsi">Pillih Provinsi</label>
-                            <select class="form-control" id="propinsi">
-                            <option>Jawa Barat</option>
-                            <option>Jawa Timur</option>
-                            <option>Jawa Tengah</option>
-                            <option>DKI Jakarta</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="kabupaten">Pilih Kabupaten</label>
-                            <select multiple class="form-control" id="kabupaten">
-                            <option>Kabupaten Bogor</option>
-                            <option>Kabupaten Depok</option>
-                            <option>Kabupaten Cirebon</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Waktu</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
-                                <div class="input-group-append">
-                                <span class="input-group-text">s/d</span>
-                                </div>
-                                <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="file">Unggah jadwal</label>
-                          <div class="input-group">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="jadwal">
-                              <label class="custom-file-label" for="file">Pilih File</label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Tutup</b></button>
-                          <button type="button" class="btn btn-primary"><b>Simpan</b></button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

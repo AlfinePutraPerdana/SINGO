@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <a class="btn btn-warning" href="/mitra" role="button">Kembali</a>
+                    <a class="btn btn-warning" href="/mitra" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
                 </div>
               <!-- /.card-body -->
               </div>

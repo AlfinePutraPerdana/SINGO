@@ -187,6 +187,9 @@ Route::get('/profile', function () {
     return view('mitra.ngo.profile.profile');
 });
 
+Route::get('/logout', function () {
+    return view('mitra.ngo.logout.logout');
+});
 
 Auth::routes();
 
