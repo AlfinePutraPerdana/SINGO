@@ -11779,7 +11779,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 [class*='sidebar-dark-'] {
-  background-color: #ed5565;
+  background-color: #7e191e;
 
 }
 
@@ -13204,7 +13204,7 @@ body.text-sm .control-sidebar {
 }
 
 .navbar-danger {
-  background-color: #da4453;
+  background-color: #7e191e;
 }
 
 .navbar-navy {
