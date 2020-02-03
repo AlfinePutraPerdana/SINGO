@@ -11,6 +11,8 @@
 |
 */
 
+// NGO
+
 Route::get('/', function () {
     return view('dashboard.index');
 });
@@ -190,6 +192,73 @@ Route::get('/profile', function () {
 Route::get('/logout', function () {
     return view('mitra.ngo.logout.logout');
 });
+
+// Satker
+
+Route::get('/satker/rkt', function () {
+    return view('mitra.satker.RKT.rkt');
+});
+
+Route::get('/satker/draft-rkt', function () {
+    return view('mitra.satker.RKT.draftrkt');
+});
+
+Route::get('/satker/data-rkt', function () {
+    return view('mitra.satker.RKT.lihatdata');
+});
+
+Route::get('/satker/verifikasi', function () {
+    return view('mitra.satker.RKT.verifrktdraft');
+});
+
+Route::get('/satker/tenaga', function () {
+    return view('mitra.satker.tenaga.tenaga');
+});
+
+Route::get('/satker/ajukan-tenaga', function () {
+    return view('mitra.satker.tenaga.ajukantenaga');
+});
+
+Route::get('/satker/revisi-tenaga', function () {
+    return view('mitra.satker.tenaga.revisitenaga');
+});
+
+Route::get('/satker/list-tenaga', function () {
+    return view('mitra.satker.tenaga.listtenaga');
+});
+
+Route::get('/satker/data-tenaga', function () {
+    return view('mitra.satker.tenaga.lihatdata');
+});
+
+Route::get('/satker/history-tenaga', function () {
+    return view('mitra.satker.tenaga.historytenaga');
+});
+
+Route::get('/satker/tamu', function () {
+    return view('mitra.satker.tamu.tamu');
+});
+
+Route::get('/satker/ajukan-tamu', function () {
+    return view('mitra.satker.tamu.ajukantamu');
+});
+
+Route::get('/satker/list-tamu', function () {
+    return view('mitra.satker.tamu.listtamu');
+});
+
+Route::get('/satker/data-tamu', function () {
+    return view('mitra.satker.tamu.lihatdata');
+});
+
+Route::get('/satker/istory-tamu', function () {
+    return view('mitra.satker.tamu.historytamu');
+});
+
+Route::get('/satker/revisi-tamu', function () {
+    return view('mitra.satker.tamu.revisitamu');
+});
+
 
 Auth::routes();
 

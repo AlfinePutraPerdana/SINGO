@@ -19,61 +19,85 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
+//-----NGO------
+
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('proses-rencana-kerja', require('./components/rkt/Proses_rkt_draft.vue').default);
-Vue.component('rencana-kerja', require('./components/rkt/Rencana_kerja.vue').default);
-Vue.component('tambah-rencana', require('./components/rkt/Tambah_rkt.vue').default);
-Vue.component('revisi-rencana', require('./components/rkt/Revisi_rkt.vue').default);
-Vue.component('draft-rencana', require('./components/rkt/Draft_rkt.vue').default);
-Vue.component('lihat-rencana', require('./components/rkt/Lihat_draft.vue').default);
+Vue.component('proses-rencana-kerja', require('./components/ngo/rkt/Proses_rkt_draft.vue').default);
+Vue.component('rencana-kerja', require('./components/ngo/rkt/Rencana_kerja.vue').default);
+Vue.component('tambah-rencana', require('./components/ngo/rkt/Tambah_rkt.vue').default);
+Vue.component('revisi-rencana', require('./components/ngo/rkt/Revisi_rkt.vue').default);
+Vue.component('draft-rencana', require('./components/ngo/rkt/Draft_rkt.vue').default);
+Vue.component('lihat-rencana', require('./components/ngo/rkt/Lihat_draft.vue').default);
 
-Vue.component('tenaga-kerja', require('./components/tenaga/Tenaga_kerja.vue').default);
-Vue.component('ajukan-tenaga', require('./components/tenaga/Ajukan_tenaga.vue').default);
-Vue.component('revisi-tenaga', require('./components/tenaga/Revisi_tenaga.vue').default);
-Vue.component('proses-tenaga', require('./components/tenaga/Proses_tenaga.vue').default);
-Vue.component('list-tenaga', require('./components/tenaga/List_tenaga.vue').default);
-Vue.component('history-tenaga', require('./components/tenaga/History_tenaga.vue').default);
-Vue.component('lihat-tenaga', require('./components/tenaga/Lihat_tenaga.vue').default);
+Vue.component('tenaga-kerja', require('./components/ngo/tenaga/Tenaga_kerja.vue').default);
+Vue.component('ajukan-tenaga', require('./components/ngo/tenaga/Ajukan_tenaga.vue').default);
+Vue.component('revisi-tenaga', require('./components/ngo/tenaga/Revisi_tenaga.vue').default);
+Vue.component('proses-tenaga', require('./components/ngo/tenaga/Proses_tenaga.vue').default);
+Vue.component('list-tenaga', require('./components/ngo/tenaga/List_tenaga.vue').default);
+Vue.component('history-tenaga', require('./components/ngo/tenaga/History_tenaga.vue').default);
+Vue.component('lihat-tenaga', require('./components/ngo/tenaga/Lihat_tenaga.vue').default);
 
-Vue.component('tamu-asing', require('./components/tamu/Tamu_asing.vue').default);
-Vue.component('ajukan-tamu', require('./components/tamu/Ajukan_tamu.vue').default);
-Vue.component('revisi-tamu', require('./components/tamu/Revisi_tamu.vue').default);
-Vue.component('proses-tamu', require('./components/tamu/Proses_tamu.vue').default);
-Vue.component('list-tamu', require('./components/tamu/List_tamu.vue').default);
-Vue.component('history-tamu', require('./components/tamu/History_tamu.vue').default);
-Vue.component('lihat-tamu', require('./components/tamu/Lihat_tamu.vue').default);
+Vue.component('tamu-asing', require('./components/ngo/tamu/Tamu_asing.vue').default);
+Vue.component('ajukan-tamu', require('./components/ngo/tamu/Ajukan_tamu.vue').default);
+Vue.component('revisi-tamu', require('./components/ngo/tamu/Revisi_tamu.vue').default);
+Vue.component('proses-tamu', require('./components/ngo/tamu/Proses_tamu.vue').default);
+Vue.component('list-tamu', require('./components/ngo/tamu/List_tamu.vue').default);
+Vue.component('history-tamu', require('./components/ngo/tamu/History_tamu.vue').default);
+Vue.component('lihat-tamu', require('./components/ngo/tamu/Lihat_tamu.vue').default);
 
-Vue.component('instansi-lokal', require('./components/instansi/Instansi_lokal.vue').default);
-Vue.component('tambah-instansi', require('./components/instansi/Tambah_instansi.vue').default);
-Vue.component('lihat-instansi', require('./components/instansi/Lihat_instansi.vue').default);
+Vue.component('instansi-lokal', require('./components/ngo/instansi/Instansi_lokal.vue').default);
+Vue.component('tambah-instansi', require('./components/ngo/instansi/Tambah_instansi.vue').default);
+Vue.component('lihat-instansi', require('./components/ngo/instansi/Lihat_instansi.vue').default);
 
-Vue.component('list-monev', require('./components/monev/Monev.vue').default);
-Vue.component('tambah-monev', require('./components/monev/Tambah_monev.vue').default);
-Vue.component('lihat-monev', require('./components/monev/Lihat_monev.vue').default);
+Vue.component('list-monev', require('./components/ngo/monev/Monev.vue').default);
+Vue.component('tambah-monev', require('./components/ngo/monev/Tambah_monev.vue').default);
+Vue.component('lihat-monev', require('./components/ngo/monev/Lihat_monev.vue').default);
 
-Vue.component('tambah-laporan', require('./components/ltk/Tambah_laporan.vue').default);
-Vue.component('laporan-tahunan', require('./components/ltk/Laporan_tahunan.vue').default);
-Vue.component('tambah-keuangan', require('./components/ltk/Tambah_keuangan.vue').default);
-Vue.component('laporan-keuangan', require('./components/ltk/Laporan_keuangan.vue').default);
-Vue.component('lihat-keuangan', require('./components/ltk/Lihat_keuangan.vue').default);
-Vue.component('lihat-laporan', require('./components/ltk/Lihat_laporan.vue').default);
+Vue.component('tambah-laporan', require('./components/ngo/ltk/Tambah_laporan.vue').default);
+Vue.component('laporan-tahunan', require('./components/ngo/ltk/Laporan_tahunan.vue').default);
+Vue.component('tambah-keuangan', require('./components/ngo/ltk/Tambah_keuangan.vue').default);
+Vue.component('laporan-keuangan', require('./components/ngo/ltk/Laporan_keuangan.vue').default);
+Vue.component('lihat-keuangan', require('./components/ngo/ltk/Lihat_keuangan.vue').default);
+Vue.component('lihat-laporan', require('./components/ngo/ltk/Lihat_laporan.vue').default);
 
-Vue.component('dok-artikel', require('./components/dokumentasi/Artikel.vue').default);
-Vue.component('tambah-artikel', require('./components/dokumentasi/Tambah_artikel.vue').default);
-Vue.component('ubah-artikel', require('./components/dokumentasi/Revisi_artikel.vue').default);
+Vue.component('dok-artikel', require('./components/ngo/dokumentasi/Artikel.vue').default);
+Vue.component('tambah-artikel', require('./components/ngo/dokumentasi/Tambah_artikel.vue').default);
+Vue.component('ubah-artikel', require('./components/ngo/dokumentasi/Revisi_artikel.vue').default);
 
-Vue.component('dokumen-induk', require('./components/rik/Dokumen_induk.vue').default);
-Vue.component('tambah-dokumen', require('./components/rik/Tambah_dokumen.vue').default);
-Vue.component('revisi-dokumen', require('./components/rik/Revisi_dokumen.vue').default);
-Vue.component('draft-rik', require('./components/rik/Rencana_induk.vue').default);
-Vue.component('rencana-induk', require('./components/rik/Tambah_induk.vue').default);
-Vue.component('revisi-induk', require('./components/rik/Revisi_induk.vue').default);
+Vue.component('dokumen-induk', require('./components/ngo/rik/Dokumen_induk.vue').default);
+Vue.component('tambah-dokumen', require('./components/ngo/rik/Tambah_dokumen.vue').default);
+Vue.component('revisi-dokumen', require('./components/ngo/rik/Revisi_dokumen.vue').default);
+Vue.component('draft-rik', require('./components/ngo/rik/Rencana_induk.vue').default);
+Vue.component('rencana-induk', require('./components/ngo/rik/Tambah_induk.vue').default);
+Vue.component('revisi-induk', require('./components/ngo/rik/Revisi_induk.vue').default);
 
-Vue.component('bebas-pajak', require('./components/pajak/Pajak.vue').default);
+Vue.component('bebas-pajak', require('./components/ngo/pajak/Pajak.vue').default);
 
-Vue.component('data-profile', require('./components/profile/Profile.vue').default);
+Vue.component('data-profile', require('./components/ngo/profile/Profile.vue').default);
 
 
+//-----Satker------
+
+Vue.component('rencana-kerja', require('./components/satker/rkt/Rencana_kerja.vue').default);
+Vue.component('verif-rencana', require('./components/satker/rkt/Verif_rkt.vue').default);
+Vue.component('draft-rencana', require('./components/satker/rkt/Draft_rkt.vue').default);
+Vue.component('lihat-rencana', require('./components/satker/rkt/Lihat_draft.vue').default);
+
+Vue.component('tenaga-kerja', require('./components/satker/tenaga/Tenaga_kerja.vue').default);
+Vue.component('ajukan-tenaga', require('./components/satker/tenaga/Ajukan_tenaga.vue').default);
+Vue.component('revisi-tenaga', require('./components/satker/tenaga/Revisi_tenaga.vue').default);
+Vue.component('proses-tenaga', require('./components/satker/tenaga/Proses_tenaga.vue').default);
+Vue.component('list-tenaga', require('./components/satker/tenaga/List_tenaga.vue').default);
+Vue.component('history-tenaga', require('./components/satker/tenaga/History_tenaga.vue').default);
+Vue.component('lihat-tenaga', require('./components/satker/tenaga/Lihat_tenaga.vue').default);
+
+Vue.component('tamu-asing', require('./components/satker/tamu/Tamu_asing.vue').default);
+Vue.component('ajukan-tamu', require('./components/satker/tamu/Ajukan_tamu.vue').default);
+Vue.component('revisi-tamu', require('./components/satker/tamu/Revisi_tamu.vue').default);
+Vue.component('proses-tamu', require('./components/satker/tamu/Proses_tamu.vue').default);
+Vue.component('list-tamu', require('./components/satker/tamu/List_tamu.vue').default);
+Vue.component('history-tamu', require('./components/satker/tamu/History_tamu.vue').default);
+Vue.component('lihat-tamu', require('./components/satker/tamu/Lihat_tamu.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
