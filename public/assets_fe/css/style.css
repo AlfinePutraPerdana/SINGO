@@ -280,6 +280,89 @@ h6 {
   text-decoration: none;
 }
 
+/* ---------- NEWS SECTION --------------------------------------------------- */
+#news{
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#news .side-column{
+  background: #f9f9f9 none repeat scroll 0 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+#news .side-column h4{
+  border-bottom: 1px solid #ddd;
+  color: #444;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding: 15px 10px;
+  text-transform: uppercase;
+}
+
+#news .single-post{
+  border-bottom: 1px solid #ddd;
+  display: block;
+  overflow: hidden;
+  padding: 15px 10px;
+}
+
+#news .news-thumbnail{
+  display: inline-block;
+  float: left;
+  padding: 0 5px;
+  width: 35%;
+}
+
+#news .news-headline{
+  display: inline-block;
+  float: left;
+  width: 65%;
+  padding-left: 10px;
+}
+
+#news p{
+  margin: 0 0 15px;
+  color: #444;
+}
+
+#news p a{
+  color: #444;
+  font-size: 15px;
+}
+
+#news p a:hover{
+  color: #007bff;
+  transition: 0.5s;
+}
+
+#news .content-news{
+  margin-bottom: 40px;
+}
+
+#news .meta{
+  border-bottom: 1px dotted #fff;
+  padding: 10px 0;
+}
+
+#news .comments-type>a, .date-type, .blog-meta span.comments-type {
+  color: #333;
+  letter-spacing: 1px;
+  margin-right: 5px;
+}
+
+#news .news-text h4{
+  color: #444;
+  margin-bottom: 15px;
+}
+
+
+/* ---------- LOGIN SECTION --------------------------------------------------*/
 #intro-login {
   width: 100%;
   position: relative;
