@@ -1,4 +1,5 @@
 @extends('layouts.menufasker')
+@extends('layouts.menufasker')
 
 
 @section('content')
@@ -8,12 +9,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Verifikasi Tamu Asing</h1>
+            <h1>Tamu Asing</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-              <li class="breadcrumb-item active">Verifikasi Tamu Asing</li>
+              <li class="breadcrumb-item active">Daftar Tamu Asing</li>
             </ol>
           </div>
         </div>
@@ -29,7 +30,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Pemberitahuan Tamu Asing <span></span></h3>
+              <h3 class="card-title">Daftar Tamu Asing <span></span></h3>
 
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -725,9 +726,6 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <div class="col-md-4 float-left">
-                <a href="/master-tamu" role="button" class="btn btn-block btn-primary"><i class="far fa-check-square"></i>   Verifikasi</a>
-              </div>
                 <ul class="pagination pagination-sm m-0 float-right">
                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>

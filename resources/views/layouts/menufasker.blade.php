@@ -161,45 +161,39 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/rkt" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Rencana Kerja</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="/tenaga" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Ajukan Tenaga Asing</p>
+                  <p>Pengajuan Tenaga Asing</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tamu" class="nav-link">
+                <a href="/verif-tamu" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Ajukan Tamu Asing</p>
+                  <p>Pengajuan Tamu Asing</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/pajak" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Ajukan Bebas Pajak</p>
+                  <p>Pengajuan Bebas Pajak</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tambah-mitra" class="nav-link">
+                <a href="/Pengajuan-mitra" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Instansi Lokal</p>
+                  <p>Pengajuan Instansi Lokal</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tambah-monev" class="nav-link">
+                <a href="/Pengajuan-monev" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Pengajuan Monev</p>
+                  <p>Pengajuan Pengajuan Monev</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/artikel" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Dokumentasi</p>
+                  <p>Pengajuan Dokumentasi</p>
                 </a>
               </li>
             </ul>
@@ -221,15 +215,6 @@
               </li>
             </ul>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/proses-rkt-draft" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sedang Proses</p>
-                </a>
-              </li>
-            </ul>
-          </li>
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">
               <i class="nav-icon  far fa-user-circle"></i>
@@ -263,15 +248,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/list-tamu" class="nav-link">
+                <a href="/master-tamu" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tamu Asing</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/proses-tamu" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sedang Diproses</p>
                 </a>
               </li>
             </ul>
