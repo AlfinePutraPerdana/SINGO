@@ -267,8 +267,8 @@ Route::get('/verif-tamu', function () {
     return view('mitra.Fasker.Tamu_asing.verif_tamu');
 });
 
-Route::get('/preview-tamu', function () {
-    return view('mitra.Fasker.Tamu_asing.preview_tamu');
+Route::get('/master-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.master_tamu');
 });
 
 //DASHBOARD
