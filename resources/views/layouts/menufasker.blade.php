@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fasker-Verif Tamu</title>
+  <title>Fasker</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -161,7 +161,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/tenaga" class="nav-link">
+                <a href="/verif-tenaga-asing" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pengajuan Tenaga Asing</p>
                 </a>
@@ -225,7 +225,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/list-tenaga" class="nav-link">
+                <a href="/master-tenaga-asing" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tenaga Asing</p>
                 </a>

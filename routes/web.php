@@ -262,7 +262,9 @@ Route::get('/satker/revisi-tamu', function () {
 
 Auth::routes();
 
+//-------FASKER------
 //Fasker--Tamu
+
 Route::get('/verif-tamu', function () {
     return view('mitra.Fasker.Tamu_asing.verif_tamu');
 });
@@ -271,6 +273,18 @@ Route::get('/master-tamu', function () {
     return view('mitra.Fasker.Tamu_asing.master_tamu');
 });
 
+Route::get('/history-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.history_tamu');
+});
+
+//Fasker--Tenaga
+Route::get('/verif-tenaga-asing', function () {
+    return view('mitra.Fasker.Tenaga_asing.verif_tenaga_asing');
+});
+
+Route::get('/master-tenaga-asing', function () {
+    return view('mitra.Fasker.Tenaga_asing.master_tenaga_asing');
+});
 //DASHBOARD
 
 Route::get('/dashboard', function(){

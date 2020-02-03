@@ -60,7 +60,8 @@
                         <td>
                         <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
                             <i class="far fa-eye"></i><b> Lihat Form</b>
-                        </button></td>
+                        </button>
+                        </td>
                         <div class="modal fade" id="pratinjau" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -137,11 +138,12 @@
                                               <p>Lampiran.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
                                             </div>
                                             <div class="form-group">
-                                            <label>Keterangan Koreksi :</label>
-                                            <br />
-                                            <textarea placeholder="Tuliskan Hal Yang Perlu Dikoreksi" style="width:100%; resize: none;">
+                                                <label>Keterangan Koreksi :</label>
+                                                <br />
+                                                <textarea placeholder="Tuliskan Hal Yang Perlu Dikoreksi" style="width:100%; resize: none;">
 
-                                            </textarea>
+                                                </textarea>
+                                            </div>
                                           <!-- /.card-body -->
                                           <div class="card-footer">
 
