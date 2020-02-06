@@ -101,7 +101,7 @@
               <div class="single-post">
                 <div class="news-thumbnail">
                   <a href="#">
-                    <img src="" alt=>
+                    <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt=>
                   </a>
                 </div>
                 <div class="news-headline">
@@ -114,12 +114,12 @@
               <div class="single-post">
                 <div class="news-thumbnail">
                   <a href="#">
-                    <img src="" alt=>
+                    <img src="{{ asset('assets_fe/img/blog/2.jpg')}}" alt=>
                   </a>
                 </div>
                 <div class="news-headline">
                   <p>
-                    <a href="#">lorem ipsum</a>
+                    <a href="#">Dolor Sit Amet</a>
                   </p>
                 </div>
               </div>
@@ -135,7 +135,7 @@
 
                   <div class="content-img">
                     <a href="#">
-                      <img src="" alt=>
+                      <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt=>
                     </a>
                   </div>
 
@@ -149,9 +149,6 @@
                     <h4>Lorem Ipsum</h4>
                     <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.</p>
                   </div>
-                  <span>
-                    <a href="#" class="btn btn-outline-primary">More</a>
-                  </span>
 
                 </div>
               </div>
