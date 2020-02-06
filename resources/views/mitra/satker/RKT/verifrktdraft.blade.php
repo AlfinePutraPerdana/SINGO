@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <verif-rencana></verif-rencana>
+  <verif-rkt></verif-rkt>
   
 @endsection
 

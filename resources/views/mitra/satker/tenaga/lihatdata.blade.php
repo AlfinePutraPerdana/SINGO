@@ -2,14 +2,7 @@
 
 @section('content')
 
-    <lihat-tenaga></lihat-tenaga>
+    <lihat-tenaga-asing></lihat-tenaga-asing>
 
 @endsection
 
-<script>
-
- $(document).ready(function() {
-    ('#tujuan').summernote('disable')
- })
-
-</script>

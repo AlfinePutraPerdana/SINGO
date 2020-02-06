@@ -1,5 +1,5 @@
 @extends('layouts.menubarsatker')
 
 @section('content')
-    <lihat-rencana></lihat-rencana>
+    <lihat-rkt></lihat-rkt>
 @endsection

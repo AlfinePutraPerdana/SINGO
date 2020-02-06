@@ -79,10 +79,6 @@
                   </tbody>
                 </table>
                 <div class="card-footer clearfix">
-                  <div class="col-md-4 float-left">
-                    
-                   
-                  </div>
                     <ul class="pagination pagination-sm m-0 float-right">
                       <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                       <li class="page-item"><a class="page-link" href="#">1</a></li>

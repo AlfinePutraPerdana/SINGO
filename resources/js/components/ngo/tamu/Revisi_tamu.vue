@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <label>Instansi</label>
+                  <label>Mitra</label>
                   <select class="form-control">
                     <option>option 1</option>
                     <option>option 2</option>

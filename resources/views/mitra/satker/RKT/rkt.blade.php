@@ -2,7 +2,7 @@
 
 @section('content')
 
- <rencana-kerja></rencana-kerja>
+ <rencana-tahunan></rencana-tahunan>
 
 
 @endsection

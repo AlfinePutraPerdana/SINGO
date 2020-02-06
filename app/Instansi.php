@@ -2,6 +2,7 @@
 
 namespace App;
 
+
 use Illuminate\Database\Eloquent\Model;
 
 class instansi extends Model
@@ -15,4 +16,8 @@ class instansi extends Model
         'nama', 'negara','kota','alamat','kategori','parent_id','no_regis_izin',
         'created_at','updated_at',
     ];
+
+    public function mitra_lokal(){
+        return $this->hasOne('App\Mitra_lokal');
+    }
 }

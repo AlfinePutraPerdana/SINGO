@@ -41,7 +41,7 @@
                                 <th>Asal Negara</th>
                                 <th>Nomor Passport</th>
                                 <th>Masa Berlaku</th>
-                                <th>Instansi</th>
+                                <th>Mitra</th>
                                 <th>Tujuan Kunjungan</th>
                                 <th>Provinsi</th>
                                 <th>Kabupaten</th>

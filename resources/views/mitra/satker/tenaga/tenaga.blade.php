@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <tenaga-kerja></tenaga-kerja>
+  <tenaga-kerja-asing></tenaga-kerja-asing>
   
 @endsection
 

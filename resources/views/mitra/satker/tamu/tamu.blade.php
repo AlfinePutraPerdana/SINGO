@@ -3,7 +3,7 @@
 
 @section('content')
 
-<tamu-asing></tamu-asing>
+<tamu-asing-asing></tamu-asing-asing>
 
 @endsection
 

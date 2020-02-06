@@ -42,6 +42,7 @@
                   <th>No</th>
                   <th class="text-center">Nama</th>
                   <th class="text-center">Asal Negara</th>
+                  <th class="text-center">Mitra</th>
                   <th colspan="2" class="text-center">Aksi</th>
                 </tr>
               </thead>
@@ -50,6 +51,7 @@
                   <td>1</td>
                   <td align="center">Andy Woods</td>
                   <td align="center">Singapura</td>
+                  <td align="center">NGO</td>
                   <td align="right"><a href="/satker/data-tamu" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   <td><a href="/satker/history-tamu" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>History</b></a></td>
                 </tr>
@@ -57,6 +59,7 @@
                   <td>2</td>
                   <td align="center">Andy Woods</td>
                   <td align="center">Singapura</td>
+                  <td align="center">NGO</td>
                   <td align="right"><a href="/satker/data-tamu" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   <td><a href="/satker/history-tamu" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>History</b></a></td>
                 </tr>
@@ -64,6 +67,7 @@
                   <td>3</td>
                   <td align="center">Andy Woods</td>
                   <td align="center">Singapura</td>
+                  <td align="center">NGO</td>
                   <td align="right"><a href="/satker/data-tamu" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   <td><a href="/satker/history-tamu" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>History</b></a></td>
                 </tr>
@@ -71,6 +75,7 @@
                   <td>4</td>
                   <td align="center">Andy Woods</td>
                   <td align="center">Singapura</td>
+                  <td align="center">NGO</td>
                   <td align="right"><a href="/satker/data-tamu" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   <td><a href="/satker/history-tamu" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>History</b></a></td>
                 </tr>
@@ -78,6 +83,7 @@
                   <td>5</td>
                   <td align="center">Andy Woods</td>
                   <td align="center">Singapura</td>
+                  <td align="center">NGO</td>
                   <td align="right"><a href="/satker/data-tamu" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   <td><a href="/satker/history-tamu" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>History</b></a></td>
                 </tr>

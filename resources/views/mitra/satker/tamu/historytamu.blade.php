@@ -1,5 +1,5 @@
 @extends('layouts.menubarsatker')
 
 @section('content')
-    <history-tamu></history-tamu>
+    <history-tamu-asing></history-tamu-asing>
 @endsection

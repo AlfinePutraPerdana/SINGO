@@ -41,7 +41,7 @@
                                 <th>Asal Negara</th>
                                 <th>Nomor Passport</th>
                                 <th>Masa Berlaku</th>
-                                <th>Instansi</th>
+                                <th>Mitra</th>
                                 <th>Tujuan Kegiatan</th>
                                 <th>Jabatan</th>
                                 <th>Jadwal Kegiatan</th>

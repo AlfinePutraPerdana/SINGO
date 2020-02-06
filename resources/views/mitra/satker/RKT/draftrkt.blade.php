@@ -3,7 +3,7 @@
 
 @section('content')
 
-  <draft-rencana> </draft-rencana>
+  <draft-rkt> </draft-rkt>
   
 @endsection
 

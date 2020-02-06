@@ -2,7 +2,7 @@
 
 @section('content')
 
- <ajukan-tenaga></ajukan-tenaga>
+ <ajukan-tenaga-asing></ajukan-tenaga-asing>
  
  
 

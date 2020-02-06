@@ -97,9 +97,21 @@ Route::get('/proses-tamu', function () {
     return view('mitra.ngo.tamu.prosestamu');
 });
 
-Route::get('/tambah-mitra', function () {
-    return view('mitra.ngo.mitra.tambahmitra');
-});
+Route::get('/tambah-mitra', 'MitraController@index');
+
+Route::post('/tambah-mitra', 'MitraController@store');
+
+Route::get('/tambah-mitra/{id}/edit', 'MitraController@edit');
+
+Route::post('/tambah-mitra/{id}/update', 'MitraController@update');
+
+// Route::get('/tambah-mitra', 'Mitra2Controller@index');
+
+// Route::post('/tambah-mitra', 'Mitra2Controller@store');
+
+// Route::get('/tambah-mitra/{id}', 'Mitra2Controller@edit');
+
+// Route::post('/tambah-mitra/update', 'Mitra2Controller@update');
 
 Route::get('/data-mitra', function () {
     return view('mitra.ngo.mitra.lihatmitra');
@@ -251,7 +263,7 @@ Route::get('/satker/data-tamu', function () {
     return view('mitra.satker.tamu.lihatdata');
 });
 
-Route::get('/satker/istory-tamu', function () {
+Route::get('/satker/history-tamu', function () {
     return view('mitra.satker.tamu.historytamu');
 });
 
