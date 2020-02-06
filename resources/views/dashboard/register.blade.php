@@ -77,10 +77,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <h6>Alamat</h6>
-                            <textarea rows="5" name="address" class="form-control" id="address" required></textarea>
-                        </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
@@ -118,6 +114,10 @@
                                     <input type="text" name="lokasi" class="form-control" id="lokasi" required>
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <h6>Alamat</h6>
+                            <textarea rows="5" name="address" class="form-control" id="address" required></textarea>
                         </div>
                         <br>
                         <div class="text-center">
