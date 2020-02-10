@@ -78,26 +78,24 @@ Vue.component('data-profile', require('./components/ngo/profile/Profile.vue').de
 
 //-----Satker------
 
-Vue.component('rencana-kerja', require('./components/satker/rkt/Rencana_kerja.vue').default);
-Vue.component('verif-rencana', require('./components/satker/rkt/Verif_rkt.vue').default);
-Vue.component('draft-rencana', require('./components/satker/rkt/Draft_rkt.vue').default);
-Vue.component('lihat-rencana', require('./components/satker/rkt/Lihat_draft.vue').default);
+Vue.component('rencana-tahunan', require('./components/satker/rkt/Rencana_kerja.vue').default);
+Vue.component('verif-rkt', require('./components/satker/rkt/Verif_rkt.vue').default);
+Vue.component('draft-rkt', require('./components/satker/rkt/Draft_rkt.vue').default);
+Vue.component('lihat-rkt', require('./components/satker/rkt/Lihat_draft.vue').default);
 
-Vue.component('tenaga-kerja', require('./components/satker/tenaga/Tenaga_kerja.vue').default);
-Vue.component('ajukan-tenaga', require('./components/satker/tenaga/Ajukan_tenaga.vue').default);
-Vue.component('revisi-tenaga', require('./components/satker/tenaga/Revisi_tenaga.vue').default);
-Vue.component('proses-tenaga', require('./components/satker/tenaga/Proses_tenaga.vue').default);
-Vue.component('list-tenaga', require('./components/satker/tenaga/List_tenaga.vue').default);
-Vue.component('history-tenaga', require('./components/satker/tenaga/History_tenaga.vue').default);
-Vue.component('lihat-tenaga', require('./components/satker/tenaga/Lihat_tenaga.vue').default);
+Vue.component('tenaga-kerja-asing', require('./components/satker/tenaga/Tenaga_kerja.vue').default);
+Vue.component('ajukan-tenaga-asing', require('./components/satker/tenaga/Ajukan_tenaga.vue').default);
+Vue.component('revisi-tenaga-asing', require('./components/satker/tenaga/Revisi_tenaga.vue').default);
+Vue.component('list-tenaga-asing', require('./components/satker/tenaga/List_tenaga.vue').default);
+Vue.component('history-tenaga-asing', require('./components/satker/tenaga/History_tenaga.vue').default);
+Vue.component('lihat-tenaga-asing', require('./components/satker/tenaga/Lihat_tenaga.vue').default);
 
-Vue.component('tamu-asing', require('./components/satker/tamu/Tamu_asing.vue').default);
-Vue.component('ajukan-tamu', require('./components/satker/tamu/Ajukan_tamu.vue').default);
-Vue.component('revisi-tamu', require('./components/satker/tamu/Revisi_tamu.vue').default);
-Vue.component('proses-tamu', require('./components/satker/tamu/Proses_tamu.vue').default);
-Vue.component('list-tamu', require('./components/satker/tamu/List_tamu.vue').default);
-Vue.component('history-tamu', require('./components/satker/tamu/History_tamu.vue').default);
-Vue.component('lihat-tamu', require('./components/satker/tamu/Lihat_tamu.vue').default);
+Vue.component('tamu-asing-asing', require('./components/satker/tamu/Tamu_asing.vue').default);
+Vue.component('ajukan-tamu-asing', require('./components/satker/tamu/Ajukan_tamu.vue').default);
+Vue.component('revisi-tamu-asing', require('./components/satker/tamu/Revisi_tamu.vue').default);
+Vue.component('list-tamu-asing', require('./components/satker/tamu/List_tamu.vue').default);
+Vue.component('history-tamu-asing', require('./components/satker/tamu/History_tamu.vue').default);
+Vue.component('lihat-tamu-asing', require('./components/satker/tamu/Lihat_tamu.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

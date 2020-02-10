@@ -3,7 +3,7 @@
 
 @section('content')
  
-<ajukan-tamu></ajukan-tamu>
+<ajukan-tamu-asing></ajukan-tamu-asing>
 
 @endsection
 

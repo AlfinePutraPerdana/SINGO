@@ -2709,6 +2709,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -6576,6 +6577,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -7550,6 +7556,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -8399,10 +8411,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -9047,128 +9055,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -10020,134 +9906,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -47558,7 +47316,7 @@ var staticRenderFns = [
                                   staticClass: "modal-title",
                                   attrs: { id: "exampleModalLabel" }
                                 },
-                                [_vm._v("Form Instansi Lokal")]
+                                [_vm._v("Form Mitra Lokal")]
                               ),
                               _vm._v(" "),
                               _c(
@@ -47584,7 +47342,13 @@ var staticRenderFns = [
                             _c("div", { staticClass: "modal-body" }, [
                               _c(
                                 "form",
-                                { attrs: { action: "", role: "form" } },
+                                {
+                                  attrs: {
+                                    action: "/tambah-mitra",
+                                    role: "form",
+                                    method: "POST"
+                                  }
+                                },
                                 [
                                   _c("div", { staticClass: "form-group" }, [
                                     _c("label", { attrs: { for: "nama" } }, [
@@ -47595,6 +47359,7 @@ var staticRenderFns = [
                                       staticClass: "form-control",
                                       attrs: {
                                         type: "text",
+                                        name: "nama",
                                         id: "nama",
                                         placeholder: "Nama Mitra"
                                       }
@@ -47610,6 +47375,7 @@ var staticRenderFns = [
                                       staticClass: "form-control",
                                       attrs: {
                                         type: "text",
+                                        name: "alamat",
                                         id: "alamat",
                                         placeholder: "Alamat Mitra"
                                       }
@@ -47627,6 +47393,7 @@ var staticRenderFns = [
                                       staticClass: "form-control",
                                       attrs: {
                                         type: "text",
+                                        name: "no_izin_regis",
                                         id: "registrasi",
                                         placeholder: "Nomor Registrasi"
                                       }
@@ -47725,7 +47492,7 @@ var staticRenderFns = [
                                       "button",
                                       {
                                         staticClass: "btn btn-primary",
-                                        attrs: { type: "button" }
+                                        attrs: { type: "submit" }
                                       },
                                       [_vm._v("Simpan")]
                                     )
@@ -55471,7 +55238,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -55787,7 +55554,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("th", [_vm._v("Masa Berlaku")]),
                         _vm._v(" "),
-                        _c("th", [_vm._v("Instansi")]),
+                        _c("th", [_vm._v("Mitra")]),
                         _vm._v(" "),
                         _c("th", [_vm._v("Tujuan Kunjungan")]),
                         _vm._v(" "),
@@ -56014,7 +55781,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -56362,6 +56129,10 @@ var staticRenderFns = [
                           _vm._v("Asal Negara")
                         ]),
                         _vm._v(" "),
+                        _c("th", { staticClass: "text-center" }, [
+                          _vm._v("Mitra")
+                        ]),
+                        _vm._v(" "),
                         _c(
                           "th",
                           {
@@ -56383,6 +56154,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -56427,6 +56202,10 @@ var staticRenderFns = [
                           _vm._v("Singapura")
                         ]),
                         _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
+                        ]),
+                        _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
                           _c(
                             "a",
@@ -56467,6 +56246,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -56551,6 +56334,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -57073,7 +56860,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -57852,7 +57639,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -58157,7 +57944,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("th", [_vm._v("Masa Berlaku")]),
                         _vm._v(" "),
-                        _c("th", [_vm._v("Instansi")]),
+                        _c("th", [_vm._v("Mitra")]),
                         _vm._v(" "),
                         _c("th", [_vm._v("Tujuan Kegiatan")]),
                         _vm._v(" "),
@@ -58362,7 +58149,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -58699,6 +58486,10 @@ var staticRenderFns = [
                           _vm._v("Asal Negara")
                         ]),
                         _vm._v(" "),
+                        _c("th", { staticClass: "text-center" }, [
+                          _vm._v("Mitra")
+                        ]),
+                        _vm._v(" "),
                         _c(
                           "th",
                           {
@@ -58720,6 +58511,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -58764,6 +58559,10 @@ var staticRenderFns = [
                           _vm._v("Singapura")
                         ]),
                         _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
+                        ]),
+                        _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
                           _c(
                             "a",
@@ -58806,6 +58605,10 @@ var staticRenderFns = [
                           _vm._v("Singapura")
                         ]),
                         _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
+                        ]),
+                        _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
                           _c(
                             "a",
@@ -58846,6 +58649,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -58891,6 +58698,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -59422,7 +59233,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -60876,8 +60687,6 @@ var staticRenderFns = [
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "card-footer clearfix" }, [
-                      _c("div", { staticClass: "col-md-4 float-left" }),
-                      _vm._v(" "),
                       _c(
                         "ul",
                         {
@@ -61523,7 +61332,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -61839,7 +61648,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("th", [_vm._v("Masa Berlaku")]),
                         _vm._v(" "),
-                        _c("th", [_vm._v("Instansi")]),
+                        _c("th", [_vm._v("Mitra")]),
                         _vm._v(" "),
                         _c("th", [_vm._v("Tujuan Kunjungan")]),
                         _vm._v(" "),
@@ -62066,7 +61875,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -62414,6 +62223,10 @@ var staticRenderFns = [
                           _vm._v("Asal Negara")
                         ]),
                         _vm._v(" "),
+                        _c("th", { staticClass: "text-center" }, [
+                          _vm._v("Mitra")
+                        ]),
+                        _vm._v(" "),
                         _c(
                           "th",
                           {
@@ -62437,6 +62250,10 @@ var staticRenderFns = [
                           _vm._v("Singapura")
                         ]),
                         _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
+                        ]),
+                        _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
                           _c(
                             "a",
@@ -62477,6 +62294,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -62521,6 +62342,10 @@ var staticRenderFns = [
                           _vm._v("Singapura")
                         ]),
                         _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
+                        ]),
+                        _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
                           _c(
                             "a",
@@ -62561,6 +62386,10 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("td", { attrs: { align: "center" } }, [
                           _vm._v("Singapura")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
                         ]),
                         _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
@@ -62605,6 +62434,10 @@ var staticRenderFns = [
                           _vm._v("Singapura")
                         ]),
                         _vm._v(" "),
+                        _c("td", { attrs: { align: "center" } }, [
+                          _vm._v("NGO")
+                        ]),
+                        _vm._v(" "),
                         _c("td", { attrs: { align: "right" } }, [
                           _c(
                             "a",
@@ -62633,271 +62466,6 @@ var staticRenderFns = [
                               _c("b", [_vm._v("History")])
                             ]
                           )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-footer clearfix" }, [
-                _c(
-                  "ul",
-                  { staticClass: "pagination pagination-sm m-0 float-right" },
-                  [
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("«")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("1")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("2")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("3")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("»")]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=template&id=0f5951f0&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=template&id=0f5951f0& ***!
-  \**************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "content-wrapper" }, [
-      _c("section", { staticClass: "content-header" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "row mb-2" }, [
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("h1", [_vm._v("Pemberitahuan Tamu Asing")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
-                _c("li", { staticClass: "breadcrumb-item" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "breadcrumb-item active" }, [
-                  _vm._v("Sedang Proses")
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12" }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", { staticClass: "card-title" }, [
-                  _vm._v("Pemberitahuan Tamu Asing")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "card-tools" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "input-group input-group-sm",
-                      staticStyle: { width: "150px" }
-                    },
-                    [
-                      _c("input", {
-                        staticClass: "form-control float-right",
-                        attrs: {
-                          type: "text",
-                          name: "table_search",
-                          placeholder: "Search"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "input-group-append" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-default",
-                            attrs: { type: "submit" }
-                          },
-                          [_c("i", { staticClass: "fas fa-search" })]
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "card-body table-responsive p-0",
-                  staticStyle: { height: "300px" }
-                },
-                [
-                  _c("table", { staticClass: "table table-head-fixed" }, [
-                    _c("thead", [
-                      _c("tr", [
-                        _c("th", [_vm._v("No")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Nama")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Asal Negara")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Tujuan Daerah")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Lama Kegiatan")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Status")])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [_vm._v("1")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Bogor")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("1 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("2")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Bogor")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("2 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("3")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Bogor")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("3 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("4")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Bogor")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("4 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("5")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Bogor")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("5 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
                         ])
                       ])
                     ])
@@ -63125,7 +62693,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -63901,7 +63469,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -64139,7 +63707,7 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "breadcrumb-item" }, [
-                  _c("a", { attrs: { href: "/list-tenaga" } }),
+                  _c("a", { attrs: { href: "/satker/list-tenaga" } }),
                   _vm._v(" Tenaga Kerja Asing")
                 ]),
                 _vm._v(" "),
@@ -64411,7 +63979,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -64776,7 +64344,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-primary",
-                              attrs: { href: "/data-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/data-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "fas fa-edit" }),
@@ -64791,7 +64362,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-info",
-                              attrs: { href: "/history-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/history-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "far fa-eye" }),
@@ -64818,7 +64392,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-primary",
-                              attrs: { href: "/data-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/data-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "fas fa-edit" }),
@@ -64833,7 +64410,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-info",
-                              attrs: { href: "/history-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/history-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "far fa-eye" }),
@@ -64860,7 +64440,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-primary",
-                              attrs: { href: "/data-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/data-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "fas fa-edit" }),
@@ -64875,7 +64458,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-info",
-                              attrs: { href: "/history-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/history-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "far fa-eye" }),
@@ -64902,7 +64488,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-primary",
-                              attrs: { href: "/data-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/data-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "fas fa-edit" }),
@@ -64917,7 +64506,7 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-info",
-                              attrs: { href: "/history-tenaga" }
+                              attrs: { href: "/satker/history-tenaga" }
                             },
                             [
                               _c("i", {
@@ -64947,7 +64536,10 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-primary",
-                              attrs: { href: "/data-tenaga", role: "button" }
+                              attrs: {
+                                href: "/satker/data-tenaga",
+                                role: "button"
+                              }
                             },
                             [
                               _c("i", { staticClass: "fas fa-edit" }),
@@ -64962,7 +64554,7 @@ var staticRenderFns = [
                             "a",
                             {
                               staticClass: "btn btn-sm btn-info",
-                              attrs: { href: "/history-tenaga" }
+                              attrs: { href: "/satker/history-tenaga" }
                             },
                             [
                               _c("i", {
@@ -64973,271 +64565,6 @@ var staticRenderFns = [
                               _c("b", [_vm._v("History")])
                             ]
                           )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-footer clearfix" }, [
-                _c(
-                  "ul",
-                  { staticClass: "pagination pagination-sm m-0 float-right" },
-                  [
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("«")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("1")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("2")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("3")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "page-item" }, [
-                      _c(
-                        "a",
-                        { staticClass: "page-link", attrs: { href: "#" } },
-                        [_vm._v("»")]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=template&id=2b463ada&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=template&id=2b463ada& ***!
-  \******************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "content-wrapper" }, [
-      _c("section", { staticClass: "content-header" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "row mb-2" }, [
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("h1", [_vm._v("Rekomendasi Tenaga Asing")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
-                _c("li", { staticClass: "breadcrumb-item" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "breadcrumb-item active" }, [
-                  _vm._v("Sedang Proses")
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12" }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", { staticClass: "card-title" }, [
-                  _vm._v("Rekomendasi Tenaga Asing")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "card-tools" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "input-group input-group-sm",
-                      staticStyle: { width: "150px" }
-                    },
-                    [
-                      _c("input", {
-                        staticClass: "form-control float-right",
-                        attrs: {
-                          type: "text",
-                          name: "table_search",
-                          placeholder: "Search"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "input-group-append" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-default",
-                            attrs: { type: "submit" }
-                          },
-                          [_c("i", { staticClass: "fas fa-search" })]
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "card-body table-responsive p-0",
-                  staticStyle: { height: "300px" }
-                },
-                [
-                  _c("table", { staticClass: "table table-head-fixed" }, [
-                    _c("thead", [
-                      _c("tr", [
-                        _c("th", [_vm._v("No")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Nama")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Asal Negara")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Jabatan")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Lama Kegiatan")]),
-                        _vm._v(" "),
-                        _c("th", [_vm._v("Status")])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [_vm._v("1")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Pekerja")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("1 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("2")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Pekerja")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("2 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("3")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Pekerja")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("3 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("4")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Pekerja")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("4 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("5")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Andy Woods")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Singapura")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Pekerja")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("5 Tahun")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c("span", { staticClass: "badge badge-warning" }, [
-                            _vm._v("Dalam Proses")
-                          ])
                         ])
                       ])
                     ])
@@ -65471,7 +64798,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Instansi")]),
+                    _c("label", [_vm._v("Mitra")]),
                     _vm._v(" "),
                     _c("select", { staticClass: "form-control" }, [
                       _c("option", [_vm._v("option 1")]),
@@ -78317,24 +77644,22 @@ Vue.component('revisi-induk', __webpack_require__(/*! ./components/ngo/rik/Revis
 Vue.component('bebas-pajak', __webpack_require__(/*! ./components/ngo/pajak/Pajak.vue */ "./resources/js/components/ngo/pajak/Pajak.vue")["default"]);
 Vue.component('data-profile', __webpack_require__(/*! ./components/ngo/profile/Profile.vue */ "./resources/js/components/ngo/profile/Profile.vue")["default"]); //-----Satker------
 
-Vue.component('rencana-kerja', __webpack_require__(/*! ./components/satker/rkt/Rencana_kerja.vue */ "./resources/js/components/satker/rkt/Rencana_kerja.vue")["default"]);
-Vue.component('verif-rencana', __webpack_require__(/*! ./components/satker/rkt/Verif_rkt.vue */ "./resources/js/components/satker/rkt/Verif_rkt.vue")["default"]);
-Vue.component('draft-rencana', __webpack_require__(/*! ./components/satker/rkt/Draft_rkt.vue */ "./resources/js/components/satker/rkt/Draft_rkt.vue")["default"]);
-Vue.component('lihat-rencana', __webpack_require__(/*! ./components/satker/rkt/Lihat_draft.vue */ "./resources/js/components/satker/rkt/Lihat_draft.vue")["default"]);
-Vue.component('tenaga-kerja', __webpack_require__(/*! ./components/satker/tenaga/Tenaga_kerja.vue */ "./resources/js/components/satker/tenaga/Tenaga_kerja.vue")["default"]);
-Vue.component('ajukan-tenaga', __webpack_require__(/*! ./components/satker/tenaga/Ajukan_tenaga.vue */ "./resources/js/components/satker/tenaga/Ajukan_tenaga.vue")["default"]);
-Vue.component('revisi-tenaga', __webpack_require__(/*! ./components/satker/tenaga/Revisi_tenaga.vue */ "./resources/js/components/satker/tenaga/Revisi_tenaga.vue")["default"]);
-Vue.component('proses-tenaga', __webpack_require__(/*! ./components/satker/tenaga/Proses_tenaga.vue */ "./resources/js/components/satker/tenaga/Proses_tenaga.vue")["default"]);
-Vue.component('list-tenaga', __webpack_require__(/*! ./components/satker/tenaga/List_tenaga.vue */ "./resources/js/components/satker/tenaga/List_tenaga.vue")["default"]);
-Vue.component('history-tenaga', __webpack_require__(/*! ./components/satker/tenaga/History_tenaga.vue */ "./resources/js/components/satker/tenaga/History_tenaga.vue")["default"]);
-Vue.component('lihat-tenaga', __webpack_require__(/*! ./components/satker/tenaga/Lihat_tenaga.vue */ "./resources/js/components/satker/tenaga/Lihat_tenaga.vue")["default"]);
-Vue.component('tamu-asing', __webpack_require__(/*! ./components/satker/tamu/Tamu_asing.vue */ "./resources/js/components/satker/tamu/Tamu_asing.vue")["default"]);
-Vue.component('ajukan-tamu', __webpack_require__(/*! ./components/satker/tamu/Ajukan_tamu.vue */ "./resources/js/components/satker/tamu/Ajukan_tamu.vue")["default"]);
-Vue.component('revisi-tamu', __webpack_require__(/*! ./components/satker/tamu/Revisi_tamu.vue */ "./resources/js/components/satker/tamu/Revisi_tamu.vue")["default"]);
-Vue.component('proses-tamu', __webpack_require__(/*! ./components/satker/tamu/Proses_tamu.vue */ "./resources/js/components/satker/tamu/Proses_tamu.vue")["default"]);
-Vue.component('list-tamu', __webpack_require__(/*! ./components/satker/tamu/List_tamu.vue */ "./resources/js/components/satker/tamu/List_tamu.vue")["default"]);
-Vue.component('history-tamu', __webpack_require__(/*! ./components/satker/tamu/History_tamu.vue */ "./resources/js/components/satker/tamu/History_tamu.vue")["default"]);
-Vue.component('lihat-tamu', __webpack_require__(/*! ./components/satker/tamu/Lihat_tamu.vue */ "./resources/js/components/satker/tamu/Lihat_tamu.vue")["default"]);
+Vue.component('rencana-tahunan', __webpack_require__(/*! ./components/satker/rkt/Rencana_kerja.vue */ "./resources/js/components/satker/rkt/Rencana_kerja.vue")["default"]);
+Vue.component('verif-rkt', __webpack_require__(/*! ./components/satker/rkt/Verif_rkt.vue */ "./resources/js/components/satker/rkt/Verif_rkt.vue")["default"]);
+Vue.component('draft-rkt', __webpack_require__(/*! ./components/satker/rkt/Draft_rkt.vue */ "./resources/js/components/satker/rkt/Draft_rkt.vue")["default"]);
+Vue.component('lihat-rkt', __webpack_require__(/*! ./components/satker/rkt/Lihat_draft.vue */ "./resources/js/components/satker/rkt/Lihat_draft.vue")["default"]);
+Vue.component('tenaga-kerja-asing', __webpack_require__(/*! ./components/satker/tenaga/Tenaga_kerja.vue */ "./resources/js/components/satker/tenaga/Tenaga_kerja.vue")["default"]);
+Vue.component('ajukan-tenaga-asing', __webpack_require__(/*! ./components/satker/tenaga/Ajukan_tenaga.vue */ "./resources/js/components/satker/tenaga/Ajukan_tenaga.vue")["default"]);
+Vue.component('revisi-tenaga-asing', __webpack_require__(/*! ./components/satker/tenaga/Revisi_tenaga.vue */ "./resources/js/components/satker/tenaga/Revisi_tenaga.vue")["default"]);
+Vue.component('list-tenaga-asing', __webpack_require__(/*! ./components/satker/tenaga/List_tenaga.vue */ "./resources/js/components/satker/tenaga/List_tenaga.vue")["default"]);
+Vue.component('history-tenaga-asing', __webpack_require__(/*! ./components/satker/tenaga/History_tenaga.vue */ "./resources/js/components/satker/tenaga/History_tenaga.vue")["default"]);
+Vue.component('lihat-tenaga-asing', __webpack_require__(/*! ./components/satker/tenaga/Lihat_tenaga.vue */ "./resources/js/components/satker/tenaga/Lihat_tenaga.vue")["default"]);
+Vue.component('tamu-asing-asing', __webpack_require__(/*! ./components/satker/tamu/Tamu_asing.vue */ "./resources/js/components/satker/tamu/Tamu_asing.vue")["default"]);
+Vue.component('ajukan-tamu-asing', __webpack_require__(/*! ./components/satker/tamu/Ajukan_tamu.vue */ "./resources/js/components/satker/tamu/Ajukan_tamu.vue")["default"]);
+Vue.component('revisi-tamu-asing', __webpack_require__(/*! ./components/satker/tamu/Revisi_tamu.vue */ "./resources/js/components/satker/tamu/Revisi_tamu.vue")["default"]);
+Vue.component('list-tamu-asing', __webpack_require__(/*! ./components/satker/tamu/List_tamu.vue */ "./resources/js/components/satker/tamu/List_tamu.vue")["default"]);
+Vue.component('history-tamu-asing', __webpack_require__(/*! ./components/satker/tamu/History_tamu.vue */ "./resources/js/components/satker/tamu/History_tamu.vue")["default"]);
+Vue.component('lihat-tamu-asing', __webpack_require__(/*! ./components/satker/tamu/Lihat_tamu.vue */ "./resources/js/components/satker/tamu/Lihat_tamu.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -81980,75 +81305,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/satker/tamu/Proses_tamu.vue":
-/*!*************************************************************!*\
-  !*** ./resources/js/components/satker/tamu/Proses_tamu.vue ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Proses_tamu_vue_vue_type_template_id_0f5951f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proses_tamu.vue?vue&type=template&id=0f5951f0& */ "./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=template&id=0f5951f0&");
-/* harmony import */ var _Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proses_tamu.vue?vue&type=script&lang=js& */ "./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Proses_tamu_vue_vue_type_template_id_0f5951f0___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Proses_tamu_vue_vue_type_template_id_0f5951f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/satker/tamu/Proses_tamu.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses_tamu.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=template&id=0f5951f0&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=template&id=0f5951f0& ***!
-  \********************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_template_id_0f5951f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses_tamu.vue?vue&type=template&id=0f5951f0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tamu/Proses_tamu.vue?vue&type=template&id=0f5951f0&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_template_id_0f5951f0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tamu_vue_vue_type_template_id_0f5951f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/satker/tamu/Revisi_tamu.vue":
 /*!*************************************************************!*\
   !*** ./resources/js/components/satker/tamu/Revisi_tamu.vue ***!
@@ -82458,75 +81714,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_List_tenaga_vue_vue_type_template_id_79b918d0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_List_tenaga_vue_vue_type_template_id_79b918d0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/satker/tenaga/Proses_tenaga.vue":
-/*!*****************************************************************!*\
-  !*** ./resources/js/components/satker/tenaga/Proses_tenaga.vue ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Proses_tenaga_vue_vue_type_template_id_2b463ada___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proses_tenaga.vue?vue&type=template&id=2b463ada& */ "./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=template&id=2b463ada&");
-/* harmony import */ var _Proses_tenaga_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proses_tenaga.vue?vue&type=script&lang=js& */ "./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Proses_tenaga_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Proses_tenaga_vue_vue_type_template_id_2b463ada___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Proses_tenaga_vue_vue_type_template_id_2b463ada___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/satker/tenaga/Proses_tenaga.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tenaga_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses_tenaga.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tenaga_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=template&id=2b463ada&":
-/*!************************************************************************************************!*\
-  !*** ./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=template&id=2b463ada& ***!
-  \************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tenaga_vue_vue_type_template_id_2b463ada___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses_tenaga.vue?vue&type=template&id=2b463ada& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/satker/tenaga/Proses_tenaga.vue?vue&type=template&id=2b463ada&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tenaga_vue_vue_type_template_id_2b463ada___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_tenaga_vue_vue_type_template_id_2b463ada___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

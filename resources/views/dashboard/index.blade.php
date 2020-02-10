@@ -94,7 +94,7 @@
       </div>
 
       <div class="intro-info">
-        <h2>We provide<br><span>solutions</span><br>for your NGOs!</h2>
+        <h2>We provide<br>Solutions<br>for your NGOs!</h2>
       </div>
 
     </div>

@@ -3,7 +3,7 @@
 
 @section('content')
 
-<list-tenaga></list-tenaga>
+<list-tenaga-asing></list-tenaga-asing>
 
 @endsection
 

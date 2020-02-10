@@ -1,7 +1,7 @@
 @extends('layouts.menubarsatker')
 
 @section('content')
-   <revisi-tenaga></revisi-tenaga>
+   <revisi-tenaga-asing></revisi-tenaga-asing>
 @endsection
 
 

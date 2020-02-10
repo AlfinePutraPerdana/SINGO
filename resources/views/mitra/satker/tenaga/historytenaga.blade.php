@@ -1,5 +1,5 @@
 @extends('layouts.menubarsatker')
 
 @section('content')
-    <history-tenaga></history-tenaga>
+    <history-tenaga-asing></history-tenaga-asing>
 @endsection

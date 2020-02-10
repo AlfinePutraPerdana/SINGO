@@ -2,6 +2,6 @@
 
 @section('content')
     
-    <lihat-tamu></lihat-tamu>
+    <lihat-tamu-asing></lihat-tamu-asing>
     
 @endsection
