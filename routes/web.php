@@ -285,6 +285,16 @@ Route::get('/verif-tenaga-asing', function () {
 Route::get('/master-tenaga-asing', function () {
     return view('mitra.Fasker.Tenaga_asing.master_tenaga_asing');
 });
+
+Route::get('/history-tenaga-asing', function () {
+    return view('mitra.Fasker.Tenaga_asing.history_tenaga');
+});
+
+//Fasker--NGO
+Route::get('/verif-akun', function () {
+    return view('mitra.Fasker.Ngo.verif_ngo');
+});
+
 //DASHBOARD
 
 Route::get('/dashboard', function(){
