@@ -419,6 +419,9 @@
       $('#detil_kegiatan').summernote()
       $('#output').summernote()
       $('#income').summernote()
+      $('#capaian').summernote()
+      $('#peran').summernote()
+      $('#masalah').summernote()
     });
 </script>
 

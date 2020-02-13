@@ -141,13 +141,19 @@ Route::get('/revisi-artikel', function () {
     return view('mitra.ngo.dokumentasi.revisiartikel');
 });
 
-Route::get('/ltk', function () {
-    return view('mitra.ngo.LTK.ltk');
-});
+// ---------- Laporan Tahunan Dan Keuangan
 
-Route::get('/tambah-ltk', function () {
-    return view('mitra.ngo.LTK.tambahltk');
-});
+Route::get('/ltk', 'ReportController@index');
+
+Route::get('/ltk/new', 'ReportController@new');
+
+Route::post('/ltk/store', 'ReportController@store');
+
+Route::get('/ltk/edit/{id}', 'ReportController@edit');
+
+Route::get('/ltk/delete/{id}', 'ReportController@delete');
+
+Route::post('/ltk/update', 'ReportController@update');
 
 Route::get('/lk', function () {
     return view('mitra.ngo.LTK.keuangan');
@@ -164,6 +170,8 @@ Route::get('/data-keuangan', function () {
 Route::get('/data-laporan', function () {
     return view('mitra.ngo.LTK.lihatlaporan');
 });
+
+// ------------------------------------------
 
 Route::get('/dokumen-induk', function () {
     return view('mitra.ngo.RIK.dokumeninduk');
