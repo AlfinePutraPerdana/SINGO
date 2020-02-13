@@ -66,7 +66,7 @@
                                       <td><a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a></td>
                                       <td>
                                       <div class="icheck-success d-inline">
-                                          <input  type="checkbox" id="{{ $ten->id }}">
+                                          <input type="checkbox" id="{{ $ten->id }}">
                                           <label for="{{ $ten->id }}"></label>
                                       </div>
                                       </td>
