@@ -8,6 +8,28 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+
+import App from './App.vue';
+Vue.use(VueAxios, axios);
+
+import Tambah_instansi from './components/ngo/instansi/Tambah_instansi.vue';
+
+const routes = [
+    {
+        name: 'Tambah',
+        path: '/tambah-mitra',
+        component: Tambah_mitra
+    }
+];
+
+const router = new VueRouter({ mode: 'history', routes: routes});
+const app = new Vue(Vue.util.extend({ router }, App)).$mount('#app');
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

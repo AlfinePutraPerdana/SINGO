@@ -31,12 +31,14 @@
               <h3 class="card-title">Daftar Mitra Lokal</h3>
 
               <div class="card-tools">
+                <form method="GET" action="/tambah-mitra">
                 <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                  <input type="text" name="search" class="form-control float-right" placeholder="Search">
                   <div class="input-group-append">
                     <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                   </div>
                 </div>
+              </form>
               </div>
             </div>
             <!-- /.card-header -->
@@ -61,7 +63,7 @@
                         <td align="center">{{ $m -> nama }}</td>
                         <td align="center">{{ $m -> alamat }}</td>
                         <td>
-                        <a href="/edit/{{$m -> id}}" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ubah">
+                        <a href="tambah-mitra/{{$m -> id }}/edit" type="button" class="btn btn-primary btn-sm" >
                                 <i class="fas fa-edit"></i> <b>Ubah</b>
                             </a>
                         </td>
@@ -141,7 +143,7 @@
                     <!-- Modal edit -->
                     {{-- @yield('modal_edit') --}}
 
-                    <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    {{-- <div class="modal fade" id="ubah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                       <div class="modal-content">
                           <div class="modal-header">
@@ -202,17 +204,18 @@
                           </div>
                       </div>
                       </div>
-                  </div>
+                  </div> --}}
                     
 
 
               </div>
                 <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  {{-- <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link"  href="{{$mitra->links()}}">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li> --}}
+                  {{ $mitra -> links() }}
                 </ul>
             </div>
         </div>

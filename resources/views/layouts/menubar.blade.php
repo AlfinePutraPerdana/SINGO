@@ -19,7 +19,10 @@
   <!-- iCheck for checkboxes and radio inputs -->
 <link rel="stylesheet" href="{{asset('assets_be/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
-<link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet">
+{{-- <link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet"> --}}
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Open+Sans|Poppins|Roboto|Sriracha&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="{{asset('assets_be/plugins/summernote/summernote-lite.css')}}">
 </head>
@@ -378,7 +381,7 @@
 
 <script src="{{asset('assets_be/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
-<script src="{{asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('assets_be/dist/js/adminlte.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
@@ -430,6 +433,13 @@
     //Money Euro
     $('[data-mask]').inputmask()
   });
+</script>
+
+<script type="application/javascript">
+  $('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop();
+   $(this).siblings('.custom-file-label').addClass('selected').html(fileName);
+});
 </script>
 
 

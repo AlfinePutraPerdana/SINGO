@@ -19,15 +19,20 @@ class MitraController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
-        $mitra = Instansi::all();
+        if($request->has('search')){
+            $mitra = Instansi::where('nama','LIKE','%' .$request->search. '%')->paginate(5);
+        }else{
 
-        $lokal = Mitra_lokal::all();
+            $mitra = Instansi::paginate(5);
+        }
+
+        // $lokal = Mitra_lokal::all();
         // $mitra = DB::table('instansis')->get();
 
-            return view('mitra.ngo.mitra.tambahmitra', ['mitra' => $mitra,'lokal' => $lokal]);
+            return view('mitra.ngo.mitra.tambahmitra', ['mitra' => $mitra]);
         
     }
 
@@ -51,16 +56,40 @@ class MitraController extends Controller
     {
         //
 
-        Instansi::create($request->all());
+       $instansi = Instansi::create([
+            'nama' => $request -> nama,
+            'alamat' => $request -> alamat,
+            'no_regis_izin' => $request -> no_regis_izin
+        ]);
 
-        Mitra_lokal::create($request->all());
+        $id_instansi = $instansi -> id;
+
+
+
+       $mitra_lokal = Mitra_lokal::create([
+           'instansi_id' => $id_instansi,
+           'pembiayaan' => $request -> pembiayaan,
+           'durasi_awal' => $request -> durasi_awal,
+           'durasi_akhir' => $request -> durasi_akhir
+       ]);
+
+       return redirect('/tambah-mitra');
+
         // DB::table('instansis')->insert([
         //     'nama' => $request -> nama,
         //     'alamat' => $request -> alamat,
         //     'no_regis_izin' => $request -> no_regis_izin
         // ]);
 
-        return redirect('/tambah-mitra');
+        // DB::table('mitra_lokal')->insert([
+        //     'id' => $request -> instansi_id,
+        //     'pembiayaan' => $request -> pembiayaan,
+        //     'durasi_awal' => $request -> durasi_awal,
+        //     'durasi_akhir' => $request -> durasi_akhir
+             
+        // ]);
+
+        
         
     }
 
@@ -75,6 +104,8 @@ class MitraController extends Controller
         //
     }
 
+   
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -84,13 +115,19 @@ class MitraController extends Controller
     public function edit($id)
     {
         //
-        $mitra = Instansi::find($id);
 
-        $lokal = Mitra_lokal::find($id);
+        $mitra = Instansi::join('mitra_lokals as mitra', 'mitra.instansi_id','=','instansis.id')
+                            ->select('mitra.id as mitra_id','instansis.id as instansi_id','nama','alamat','no_regis_izin','mitra.pembiayaan','mitra.durasi_awal','mitra.durasi_akhir')
+                            ->where('instansis.id','=',$id)
+                            ->first();
+
+        // $lokal = Mitra_lokal::find($id);
 
         // $mitra = DB::table('instansis')->where('id', $id)->get();
+        
+        // $lokal = DB::table('mitra_lokals')->where('id', $id)->get();
 
-        return view('mitra.ngo.mitra.edit', ['mitra' => $mitra,'lokal' => $lokal]); 
+        return view('mitra.ngo.mitra.edit', ['mitra' => $mitra]); 
 
     }
 
@@ -101,25 +138,82 @@ class MitraController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(Request $request)
     {
         //
 
-        $mitra = Instansi::find($id);
+        // $mitra = Instansi::find($id);
 
-        $lokal = Mitra_lokal::find($id);
+        // $mitra = Instansi::join('mitra_lokals', 'mitra_lokals.instansi_id','=','instansis.id')
+        //                     ->where('instansis.id','=', $id)
+        //                     ->update([
+        //                         'nama' => $request -> nama,
+        //                         'alamat' => $request -> alamat,
+        //                         'no_regis_izin' => $request -> no_regis_izin,
+        //                         'pembiayaan' => $request -> pembiayaan,
+        //                         'durasi_awal' => $request -> durasi_awal,
+        //                         'durasi_akhir' => $request -> durasi_akhir
 
-        $mitra->update($request->all());
+        //                     ]);
+
+                $instansi = Instansi::where('id',$request-> id)
+                            ->update([
+                                'nama' => $request -> nama,
+                                'alamat' => $request -> alamat,
+                                'no_regis_izin' => $request -> no_regis_izin
+                            ]);
+
+                $mitra_lokal = Mitra_lokal::where('id',$request -> id)
+                                ->update([
+                                    'pembiayaan' => $request -> pembiayaan,
+                                    'durasi_awal' => $request -> durasi_awal,
+                                    'durasi_akhir' => $request -> durasi_akhir
+                                ]);
+
+        // $lokal = Mitra_lokal::where('mitra_id', $request -> id)
+        //                     ->update([
+        //                         'pembiayaan' => $request -> pembiayaan,
+        //                         'durasi_awal' => $request -> durasi_awal,
+        //                         'durasi_akhir'  => $request-> durasi_akhir
+        //                     ]);
+
         
-        $lokal->update($request->all());
 
-        $mitra->save($request->all());
+        // $mitra->update([
+        //     'nama' => $request -> nama,
+        //     'alamat' => $request -> alamat,
+        //     'no_regis_izin' => $request -> no_regis_izin
+            
+        // ]);
+
+        // $lokal = Mitra_lokal::find($id);
+
+        // $mitra->update([
+        //     'nama' => $request -> nama,
+        //     'alamat' => $request -> alamat,
+        //     'no_regis_izin' => $request -> no_regis_izin
+        // ]);
         
-        $lokal->save($request->all());
+        // $mitra->update([
+        //     'pembiayaan' => $request -> pembiayaan,
+        //     'durasi_awal' => $request -> durasi_awal,
+        //     'durasi_akhir' => $request -> durasi_akhir
+        // ]);
+
+        // $mitra->save($request->all());
+        
+        // $lokal->save($request->all());
+
         // $mitra = DB::table('instansis')->where('id', $request->id)->update([
         //     'nama' => $request -> nama,
         //     'alamat' => $request -> alamat,
         //     'no_regis_izin' => $request -> no_regis_izin
+        // ]);
+
+        // $lokal = DB::table('mitra_lokals')->where('id',$request->id)->update([
+        //     'pembiayaan' => $request -> pembiayaan,
+        //     'durasi_awal' => $request -> durasi_awal,
+        //     'durasi_akhir' => $request -> durasi_akhir
         // ]);
 
         return redirect('/tambah-mitra');

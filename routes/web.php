@@ -13,6 +13,8 @@
 
 // NGO
 
+use App\Http\Controllers\TenagaController;
+
 Route::get('/', function () {
     return view('dashboard.index');
 });
@@ -41,13 +43,15 @@ Route::get('/proses-rkt-draft', function () {
     return view('mitra.ngo.RKT.prosesrktdraft');
 });
 
-Route::get('/tenaga', function () {
-    return view('mitra.ngo.tenaga.tenaga');
-});
+Route::get('/tenaga', 'TenagaController@index');
 
-Route::get('/ajukan-tenaga', function () {
-    return view('mitra.ngo.tenaga.ajukantenaga');
-});
+Route::get('/ajukan-tenaga', 'TenagaController@create' );
+
+Route::post('/tenaga', 'TenagaController@store' );
+
+Route::get('/tenaga/{id}/edit', 'TenagaController@edit' );
+
+Route::post('/tenaga/{id}/update', 'TenagaController@update' );
 
 Route::get('/revisi-tenaga', function () {
     return view('mitra.ngo.tenaga.revisitenaga');
@@ -103,15 +107,7 @@ Route::post('/tambah-mitra', 'MitraController@store');
 
 Route::get('/tambah-mitra/{id}/edit', 'MitraController@edit');
 
-Route::post('/tambah-mitra/{id}/update', 'MitraController@update');
-
-// Route::get('/tambah-mitra', 'Mitra2Controller@index');
-
-// Route::post('/tambah-mitra', 'Mitra2Controller@store');
-
-// Route::get('/tambah-mitra/{id}', 'Mitra2Controller@edit');
-
-// Route::post('/tambah-mitra/update', 'Mitra2Controller@update');
+Route::post('/tambah-mitra/update', 'MitraController@update');
 
 Route::get('/data-mitra', function () {
     return view('mitra.ngo.mitra.lihatmitra');
@@ -314,3 +310,5 @@ Route::get('/news', function(){
 Route::get('/blog-details', function(){
     return view('dashboard.blog-details');
 });
+
+// Route::get('/')

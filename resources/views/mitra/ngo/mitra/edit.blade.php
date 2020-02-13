@@ -1,35 +1,50 @@
 @extends('layouts.menubar')
 
-@extends('mitra.ngo.mitra.tambahmitra')
-
-@section('modal_edit')
-
-
-<div class="modal fade" id="/edit/{{$m -> id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Form Mitra Lokal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+@section('content')
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Pemberdayaan Mitra Lokal</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="/tambah-mitra">Tambah Mitra</a></li>
+              <li class="breadcrumb-item active">Ubah Mitra</li>
+            </ol>
+          </div>
         </div>
-        <div class="modal-body">
-            @foreach ($mitra as $m)
-            <form action="/tambah-mitra/{{$m->id}}/update" role="form" method="POST">
-                    @csrf
-                    <input type="text" name="id" value="{{ $m -> id }}"> <br/>
-                    <div class="form-group">
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Form Pemberdayaan Mitra</h3>
+              </div>
+              {{-- @foreach ($mitra as $m) --}}
+              <form role="form" action="/tambah-mitra/update" method="POST">
+                @csrf
+                <div class="card-body">
+                  <input type="hidden" name="id" class="form-control" id="id" value="{{ $mitra -> mitra_id }}"> 
+                  <input type="hidden" name="id" class="form-control" id="id" value="{{ $mitra -> instansi_id }}"> 
+                  <div class="form-group">
                         <label for="nama">Nama Mitra</label>
-                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Mitra" value="{{ $m -> nama }}">
+                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Mitra" value="{{ $mitra -> nama }}">
                     </div>
                     <div class="form-group">
                         <label for="alamat">Alamat Mitra</label>
-                        <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat Mitra" value="{{ $m -> alamat }}" >
+                        <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat Mitra" value="{{ $mitra -> alamat }}" >
                     </div>
                     <div class="form-group">
                         <label for="registrasi">Nomor Izin Registrasi</label>
-                        <input type="text" name="no_regis_izin" class="form-control" id="registrasi" placeholder="Nomor Registrasi" value="{{ $m -> no_regis_izin }}">
+                        <input type="text" name="no_regis_izin" class="form-control" id="registrasi" placeholder="Nomor Registrasi" value="{{ $mitra -> no_regis_izin }}">
                     </div>
                     <div class="form-group">
                     <label>Nama Program</label>
@@ -41,31 +56,28 @@
                         <option>option 5</option>
                     </select>
                     </div>
-                    @foreach ($lokal as $item)
                     <div class="form-group">
                         <label for="">Pembiayaan</label>
-                        <input type="number" name="pembiayaan" class="form-control" id="biaya2" value="{{$item -> pembiayaan}}">
+                    <input type="number" name="pembiayaan" value="{{$mitra -> pembiayaan}}" class="form-control" id="biaya2" >
                     </div>
                     <div class="form-group">
                         <label for="">Durasi</label>
                         <div class="input-group">
-                            <input type="text" name="durasi_awal" value="{{$item -> durasi_awal}}" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
+                            <input type="text" name="durasi_awal" value="{{$mitra -> durasi_awal}}" class="form-control startdate2 " data-toggle="datetimepicker" data-target=".startdate2"/>
                             <div class="input-group-append">
                             <span class="input-group-text">s/d</span>
                             </div>
-                            <input type="text" name="durasi_akhir" value="{{$item -> durasi_akhir}}" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
+                            <input type="text" name="durasi_akhir" value="{{$mitra -> durasi_akhir}}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" />
                         </div>
                     </div>
-                    @endforeach
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                        <button type="submit" class="btn btn-success">Simpan</button>
-                    </div>
-                </form>
-            @endforeach
+                  <div class="card-footer">
+                    <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
+                  </div>  
+              </form>
+              {{-- @endforeach --}}
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
-</div>    
+    </section>  
+</div>
 @endsection
-
