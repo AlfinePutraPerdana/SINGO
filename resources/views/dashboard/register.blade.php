@@ -29,6 +29,7 @@
     <link href="{{ asset('assets_fe/css/style.css')}}" rel="stylesheet">
 
 </head>
+
 <body>
     <header id="header" class="fixed-top">
         <div class="container">
@@ -135,7 +136,8 @@
                 &copy; Copyright <strong>SINGO</strong>. All Rights Reserved
             </div>
         </div>
-    </footer><!-- #footer -->
+    </footer>
+    <!-- #footer -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- Uncomment below i you want to use a preloader -->
