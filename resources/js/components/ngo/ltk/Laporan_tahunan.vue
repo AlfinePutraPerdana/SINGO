@@ -46,21 +46,17 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @php
+                    $no = 1;
+                  @endphp
+                  
+                  @foreach ( lt )
                   <tr>
-                    <td>1</td>
-                    <td>Laporan</td>
-                    <td><a href="/data-laporan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                    <td>{{ no++}}</td>
+                    <td>{{ id }}</td>
+                    <td><a href="/data-laporan/{{id}}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                   </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Laporan</td>
-                    <td><a href="/data-laporan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Laporan</td>
-                    <td><a href="/data-laporan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                  </tr>
+                  @endforeach
                 </tbody>
               </table>
             </div>
