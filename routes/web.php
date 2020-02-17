@@ -307,6 +307,57 @@ Route::get('/verif-akun', function () {
     return view('mitra.Fasker.Ngo.verif_ngo');
 });
 
+Route::get('/master-ngo', function () {
+    return view('mitra.Fasker.Ngo.master_ngo');
+});
+
+//Fasker--MitraLokal
+Route::get('/verif-mitra-lokal', function () {
+    return view('mitra.Fasker.Mitra_lokal.verif_mitra');
+});
+
+Route::get('/master-mitra-lokal', function () {
+    return view('mitra.Fasker.Mitra_lokal.master_mitra');
+});
+
+//Fasker--Dokumentasi
+Route::get('/master-artikel', function () {
+    return view('mitra.Fasker.Dokumentasi.master_mitra');
+});
+
+Route::get('/verif-artikel', function () {
+    return view('mitra.Fasker.Dokumentasi.master_mitra');
+});
+
+//Fasker--Monev
+Route::get('/master-monev', function () {
+    return view('mitra.Fasker.Monev.master_monev');
+});
+
+Route::get('/verif-monev', function () {
+    return view('mitra.Fasker.Monev.verif_monev');
+});
+
+//Fasker--Rkt
+Route::get('/verif-rkt', function () {
+    return view('mitra.Fasker.Rkt.verif_rkt');
+});
+
+Route::get('/master-rkt', function () {
+    return view('mitra.Fasker.Rkt.master_rkt');
+});
+
+//Fasker--Rik
+Route::get('/master-rik', function () {
+    return view('mitra.Fasker.RIK.master_rik');
+});
+
+//Fasker--Pajak
+Route::get('/verif-bebas-pajak', function () {
+    return view('mitra.Fasker.Bebas_pajak.verif_pajak');
+});
+///////////////////////////////////////////////////
+
 //DASHBOARD
 
 Route::get('/dashboard', function(){
