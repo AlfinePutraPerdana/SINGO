@@ -18,6 +18,10 @@ class Master_tenaga_asing extends Model
 'id_instansi','jabatan','foto','upload_passpor',
 'cv_resume','jenis_kelamin','tempat_lahir','tanggal_lahir',
 'kategori','tujuan','kegiatan','tgl_awal','tgl_akhir','foto',
-'upload_passport','jobdesc','dokumen_pendukung','created_at','updated_at',
+'upload_passport','jobdesc','dokumen_pendukung','status','created_at','updated_at',
     ];
+
+    public function instansi(){
+        return $this->belongsTo('App\Instansi','id_instansi');
+    }
 }
