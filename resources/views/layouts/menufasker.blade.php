@@ -13,10 +13,16 @@
   <link rel="stylesheet" href="{{asset('assets_fas/plugins/datepicker/libraries/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}">
   <!-- Ionicons -->
 <link rel="stylesheet" href="{{asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
+
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{asset('assets_fas/dist/css/adminlte.css')}}">
+
   <!-- iCheck for checkboxes and radio inputs -->
 <link rel="stylesheet" href="{{asset('assets_fas/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+
+<!-- Toastr -->
+<link rel="stylesheet" href="{{asset('assets_fas/plugins/toastr/toastr.min.css')}}">
+
   <!-- Google Font: Source Sans Pro -->
 <link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet">
 
@@ -402,6 +408,8 @@
 
 <script src="{{asset('assets_fas/plugins/datepicker/js/custom.js')}}"></script>
 
+<script src="{{ asset('assets_fas/plugins/toastr/toastr.min.js') }}"></script>
+
 <script src="{{asset('assets_fas/plugins/inputmask/min/jquery.inputmask.bundle.min.js')}}"></script>
 
 
@@ -421,6 +429,7 @@
       $('#lokasi').summernote()
       $('#kegiatan').summernote()
       $('#tenaga').summernote()
+      $('#catatan').summernote()
     });
 </script>
 
@@ -435,6 +444,12 @@
     //Money Euro
     $('[data-mask]').inputmask()
   });
+</script>
+
+<script>  
+  @if (Session::has('sukses'))
+      toastr.success("{{Session::get('sukses')}}","Sukses");                    
+   @endif
 </script>
 
 

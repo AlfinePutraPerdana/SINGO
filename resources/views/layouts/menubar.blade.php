@@ -430,6 +430,7 @@
       $('#capaian').summernote()
       $('#peran').summernote()
       $('#masalah').summernote()
+      $('#catatan').summernote()
     });
 </script>
 

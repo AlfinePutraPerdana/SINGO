@@ -1,4 +1,4 @@
-@extends('layouts.menubar')
+@extends('layouts.menufasker')
 
 @section('content')
    
@@ -30,7 +30,7 @@
                         <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                     </div>
                     <div class="card-body">
-                         <form action="" method="post" enctype="multipart/form-data" >
+                         <form action="/verif-tenaga-asing/{{$tenaga -> id }}/verifikasi" method="post" enctype="multipart/form-data" >
                             {{ csrf_field() }}
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
@@ -155,16 +155,25 @@
                                 <div class="form-group">
                                     <label for="">Lama Kegiatan</label>
                                     <div class="input-group">
-                                        <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate"/>
+                                        <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" id="tgl_awal" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate"/>
                                         <div class="input-group-append">
                                            <span class="input-group-text">s/d</span>
                                         </div>
                                          <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" />
                                     </div>
-                                </div>   
+                                </div> 
+                                <div class="form-group">
+                                    <label for="">Catatan</label>
+                                    <textarea id="catatan" name="catatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                                            {!! $tenaga->catatan !!}
+                                    </textarea>
+                                </div>  
                                     
                                 <div class="card-footer">
-                                    <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
+                                  <div class="d-flex justify-content-between">
+                                    <button class="btn btn-danger" name="revisi[]" type="submit"><i class="fas fa-sync-alt"></i> <b>Revisi</b></button>
+                                    <button class="btn btn-success" name="setuju[]" type="submit"><i class="far fa-check-circle"></i> <b>Setuju</b></button>
+                                  </div>
                                 </div>
                             </div>
                         </form>
@@ -173,5 +182,6 @@
         </div>
     </section>
 </div>
+
 
 @endsection

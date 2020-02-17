@@ -8,7 +8,7 @@ use App\Master_tenaga_asing;
 
 use App\Instansi;
 
-class Verif_tenagaController extends Controller
+class Master_tenagaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +17,11 @@ class Verif_tenagaController extends Controller
      */
     public function index()
     {
-        $tenagas = Master_tenaga_asing::where('status','1')->latest()->paginate(5);
+        $tenagas = Master_tenaga_asing::where('status','3')->latest()->paginate(5);
 
         $instansis = Instansi::all();
 
-        return view('mitra.Fasker.Tenaga_asing.verif_tenaga_asing',['tenagas' => $tenagas,'instansis'=> $instansis]);
+        return view('mitra.ngo.tenaga.listtenaga',['tenagas' => $tenagas,'instansis'=>$instansis]);
     }
 
     /**
@@ -53,12 +53,7 @@ class Verif_tenagaController extends Controller
      */
     public function show($id)
     {
-        $tenaga = Master_tenaga_asing::find($id);
-
-        $instansis = Instansi::all();
-
-        return view('mitra.Fasker.Tenaga_asing.formverif',['tenaga' => $tenaga,'instansis'=>$instansis]);
-
+        //
     }
 
     /**
@@ -79,29 +74,9 @@ class Verif_tenagaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function send(Request $request, $id)
+    public function update(Request $request, $id)
     {
-        
-        
-        if ($request->revisi) {
-            $revisi = Master_tenaga_asing::find($id);
-            $revisi->update([
-                'catatan'=>$request->catatan,
-                'status'=> 2
-            ]);
-        }
-        
-        if ($request->setuju) {
-            $setuju = Master_tenaga_asing::find($id);
-            $setuju->update([
-                'status'=> 3
-            ]);
-        }
-        
-        
-        
-
-        return redirect('/verif-tenaga-asing')->with('sukses','Data Berhasil di Verifikasi');
+        //
     }
 
     /**

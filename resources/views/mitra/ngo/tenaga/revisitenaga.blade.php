@@ -105,7 +105,7 @@
                                       <input type="text" name="jabatan" value="{{$tenaga -> jabatan }}" class="form-control" id="jabatan" placeholder="Jabatan">
                                   </div>
                                   <div class="form-group">
-                                      <label for="foto">Lampirkan Foto</label></br>
+                                      <label for="foto">Lampirkan Foto</label>
                                       <p for="foto">File yang tersimpan  : {{$tenaga -> foto }}</p>
                                       <div class="custom-file">
                                           <label class="custom-file-label" for="foto" >Pilih File</label>
@@ -161,7 +161,17 @@
                                           </div>
                                            <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" />
                                       </div>
-                                  </div>   
+                                  </div> 
+                                  @if ($tenaga->status == 2)
+                                    <div class="form-group">
+                                        <label for="">Catatan</label>
+                                        <textarea id="catatan" name="catatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                                             {!! $tenaga->catatan !!}
+                                        </textarea>
+                                    </div> 
+                                  @else
+                                      
+                                  @endif  
                                       
                                   <div class="card-footer">
                                       <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>

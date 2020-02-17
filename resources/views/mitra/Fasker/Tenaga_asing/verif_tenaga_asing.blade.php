@@ -58,7 +58,7 @@
                                     <td>{{$tenaga->nama}}</td>
                                     <td>{{$tenaga->kewarganegaraan}}</td>
                                     <td>{{$tenaga->instansi->nama}}</td>
-                                    <td><a href="/verif_tenaga_asing/{{$tenaga->id}}/verifkasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
+                                    <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
                                     @endforeach
                                 </tr>
                                         <div class="modal fade" id="pratinjau" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

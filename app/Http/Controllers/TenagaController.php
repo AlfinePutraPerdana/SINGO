@@ -25,7 +25,7 @@ class TenagaController extends Controller
             $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')->paginate(5);
         }else{
             
-            $tenaga = Master_tenaga_asing::paginate(5);
+            $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest()->paginate(5);
         }
 
         return view('mitra.ngo.tenaga.tenaga',['tenaga' => $tenaga]);
@@ -103,7 +103,8 @@ class TenagaController extends Controller
                 'jobdesc' => $nama_jobdesc,
                 'dokumen_pendukung' => $nama_dokumen,
                 'tgl_awal' => $request -> tgl_awal,
-                'tgl_akhir' => $request -> tgl_akhir
+                'tgl_akhir' => $request -> tgl_akhir,
+                'status' => 0
 
         ]);
 
@@ -226,7 +227,8 @@ class TenagaController extends Controller
                 'jobdesc' => $nama_jobdesc,
                 'dokumen_pendukung' => $nama_dokumen,
                 'tgl_awal' => $request -> tgl_awal,
-                'tgl_akhir' => $request -> tgl_akhir
+                'tgl_akhir' => $request -> tgl_akhir,
+                'catatan' => $request -> catatan
 
         ]);
 
@@ -253,6 +255,8 @@ class TenagaController extends Controller
                     ]);
                  
             }
+        }else{
+            return redirect('/tenaga');
         }
        
            

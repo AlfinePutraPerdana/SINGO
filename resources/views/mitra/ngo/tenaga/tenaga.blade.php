@@ -66,23 +66,30 @@
                                       <td>
                                         @if ($ten->status == 1)
                                              <span class="badge badge-info">Dalam Proses</span>      
-                                        @else ($ten->status == NULL)
-                                            <span></span>
+                                        @elseif ($ten->status == 2)
+                                          <span class="badge badge-danger">Revisi</span>
+                                        @else 
+                                          <span></span> 
                                         @endif 
                                       </td> 
                                       <td>
-                                        @if ($ten->status == NULL)
-                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a></td>  
-                                        @else ($ten->status == 1)
-                                            <span></span>
+                                        @if ($ten->status == 0)
+                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a> 
+                                        @elseif ($ten->status == 2)
+                                           <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a>
+                                        @else
+                                           <span></span>
                                         @endif  
                                       <td>
                                       <div class="icheck-success d-inline">
                                           @if ($ten->status == NULL)
                                             <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
                                             <label for="{{ $ten->id }}"></label>
-                                          @else ($ten->status == 1)
-                                              <span></span>
+                                          @elseif ($ten->status == 2)
+                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                            <label for="{{ $ten->id }}"></label>
+                                          @else
+                                            <span></span>
                                           @endif
                                       </div>
                                       </td>
