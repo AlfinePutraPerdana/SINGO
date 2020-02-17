@@ -160,6 +160,12 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="/verif-akun" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Verifikasi Akun NGO</p>
+                    </a>
+                </li>
               <li class="nav-item">
                 <a href="/verif-tenaga-asing" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -173,13 +179,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/pajak" class="nav-link">
+                <a href="/verif-bebas-pajak" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pengajuan Bebas Pajak</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/Pengajuan-mitra" class="nav-link">
+                <a href="/verif-mitra-lokal" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pengajuan Instansi Lokal</p>
                 </a>
@@ -271,6 +277,14 @@
                 </a>
               </li>
             </ul>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="/master-ngo" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Daftar NGO</p>
+                  </a>
+                </li>
+              </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">

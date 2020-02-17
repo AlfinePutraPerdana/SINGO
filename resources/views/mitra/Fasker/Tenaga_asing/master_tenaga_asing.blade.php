@@ -43,7 +43,8 @@
                     <th>No</th>
                     <th class="text-center">Nama</th>
                     <th class="text-center">Asal Negara</th>
-                    <th colspan="2" class="text-center">Aksi</th>
+                    <th class="text-center">Mitra</th>
+                    <th class="text-center">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -51,36 +52,36 @@
                     <td>1</td>
                     <td align="center">Andy Woods</td>
                     <td align="center">Singapura</td>
-                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                    <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                    <td align="center">UNESCO</td>
+                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td align="center">Andy Woods</td>
                     <td align="center">Singapura</td>
-                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                    <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                    <td align="center">UNESCO</td>
+                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td align="center">Andy Woods</td>
                     <td align="center">Singapura</td>
-                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                    <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                    <td align="center">UNESCO</td>
+                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td align="center">Andy Woods</td>
                     <td align="center">Singapura</td>
-                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                    <td><a href="/history-tenaga" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
+                    <td align="center">UNESCO</td>
+                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
                   </tr>
                   <tr>
                     <td>5</td>
                     <td align="center">Andy Woods</td>
                     <td align="center">Singapura</td>
-                    <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                    <td><a href="/history-tenaga" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
+                    <td align="center">UNESCO</td>
+                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
                   </tr>
                 </tbody>
               </table>

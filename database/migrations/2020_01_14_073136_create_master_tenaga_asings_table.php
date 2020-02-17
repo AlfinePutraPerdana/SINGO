@@ -36,6 +36,8 @@ class CreateMasterTenagaAsingsTable extends Migration
             $table->date('tgl_akhir');
             $table->string('jobdesc');
             $table->string('dokumen_pendukung');
+            $table->integer('status');
+            $table->text('catatan');
             $table->timestamps();
         });
     }
