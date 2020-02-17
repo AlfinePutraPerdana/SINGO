@@ -122,7 +122,7 @@
                                                                     <label for="file">Lampirkan Passport</label>
                                                                     <div class="input-group">
                                                                         <div class="custom-file">
-                                                                            <p>Passport.PDF</p>
+                                                                            <p>Passport.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -130,7 +130,7 @@
                                                                     <label for="file">Lampirkan CV</label>
                                                                     <div class="input-group">
                                                                         <div class="custom-file">
-                                                                            <p>CV.PDF</p>
+                                                                            <p>CV.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -138,7 +138,7 @@
                                                                     <label for="file">Lampirkan Jobdesc</label>
                                                                     <div class="input-group">
                                                                         <div class="custom-file">
-                                                                            <p>Jobdesc.PDF</p>
+                                                                            <p>Jobdesc.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
