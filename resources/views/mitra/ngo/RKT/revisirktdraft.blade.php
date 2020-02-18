@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <revisi-rkt></revisi-rkt>
+  <revisi-rencana></revisi-rencana>
   
 @endsection
 

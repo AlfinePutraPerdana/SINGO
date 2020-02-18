@@ -30,7 +30,7 @@ class TenagaController extends Controller
 
         return view('mitra.ngo.tenaga.tenaga',['tenaga' => $tenaga]);
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *

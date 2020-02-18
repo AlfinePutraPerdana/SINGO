@@ -412,6 +412,7 @@
 
 <script src="{{asset('assets_fas/plugins/inputmask/min/jquery.inputmask.bundle.min.js')}}"></script>
 
+@stack('script')
 
 <script>
     $(document).ready(function () {

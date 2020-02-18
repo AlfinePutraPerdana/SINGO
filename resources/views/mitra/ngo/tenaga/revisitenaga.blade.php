@@ -14,7 +14,7 @@
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="/tenaga">Rekomendasi Tenaga Asing</a></li>
-                <li class="breadcrumb-item active">Tambah Rekomendasi</li>
+                <li class="breadcrumb-item active">Ubah Rekomendasi</li>
               </ol>
             </div>
           </div>
@@ -105,63 +105,58 @@
                                       <input type="text" name="jabatan" value="{{$tenaga -> jabatan }}" class="form-control" id="jabatan" placeholder="Jabatan">
                                   </div>
                                   <div class="form-group">
+                                    <label for="">Lama Kegiatan</label>
+                                    <div class="input-group">
+                                        <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate"/>
+                                        <div class="input-group-append">
+                                           <span class="input-group-text">s/d</span>
+                                        </div>
+                                         <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" />
+                                    </div>
+                                </div> 
+                                  <div class="form-group">
                                       <label for="foto">Lampirkan Foto</label>
-                                      <p for="foto">File yang tersimpan  : {{$tenaga -> foto }}</p>
                                       <div class="custom-file">
-                                          <label class="custom-file-label" for="foto" >Pilih File</label>
+                                          <label class="custom-file-label" for="foto" >{{$tenaga -> foto }}</label>
                                           <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto">
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="lampirpassport">Lampirkan Passport</label>
-                                      <p for="foto">File yang tersimpan  : {{$tenaga -> upload_passpor }}</p>
                                       <div class="input-group">
                                           <div class="custom-file">
-                                              <label class="custom-file-label" for="lampirpassport">Pilih File</label>
+                                              <label class="custom-file-label" for="lampirpassport">{{$tenaga -> upload_passpor }}</label>
                                               <input type="file" name="upload_passpor" value="{{$tenaga -> upload_passpor }}" class="custom-file-input" id="lampirpassport">
                                           </div>
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="file">Lampirkan CV</label>
-                                      <p for="foto">File yang tersimpan  : {{$tenaga -> cv_resume }}</p>
                                       <div class="input-group">
                                           <div class="custom-file">
                                               <input type="file" name="cv_resume" value="{{$tenaga -> cv_resume }}" class="custom-file-input" id="cv">
-                                              <label class="custom-file-label" for="file">Pilih File</label>
+                                              <label class="custom-file-label" for="file">{{$tenaga -> cv_resume }}</label>
                                           </div>
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="file">Lampirkan Jobdesk</label>
-                                      <p for="foto">File yang tersimpan  : {{$tenaga -> jobdesc }}</p>
                                       <div class="input-group">
                                           <div class="custom-file">
                                               <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk">
-                                              <label class="custom-file-label" for="file">Pilih File</label>
+                                              <label class="custom-file-label" for="file">{{$tenaga -> jobdesc }}</label>
                                           </div>
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="file">File Pendukung</label>
-                                      <p for="foto">File yang tersimpan  : {{$tenaga -> dokumen_pendukung }}</p>
                                       <div class="input-group">
                                           <div class="custom-file">
                                               <input type="file" name="dokumen_pendukung" value="{{$tenaga -> dokumen_pendukung }}" class="custom-file-input" id="">
-                                              <label class="custom-file-label" for="file">Pilih File</label>
+                                              <label class="custom-file-label" for="file">{{$tenaga -> dokumen_pendukung }}</label>
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="form-group">
-                                      <label for="">Lama Kegiatan</label>
-                                      <div class="input-group">
-                                          <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate"/>
-                                          <div class="input-group-append">
-                                             <span class="input-group-text">s/d</span>
-                                          </div>
-                                           <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" />
-                                      </div>
-                                  </div> 
                                   @if ($tenaga->status == 2)
                                     <div class="form-group">
                                         <label for="">Catatan</label>
