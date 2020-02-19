@@ -30,7 +30,7 @@
                         <h3 class="card-title">Rekomendasi Tenaga Asing <a href="/ajukan-tenaga" class="btn btn-primary btn-sm" role="button"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a></h3>
 
                         <div class="card-tools">
-                            <form action="/tenaga" method="GET">
+                            <form action="/tenaga" method="POST">
                                 <div class="input-group input-group-sm" style="width: 150px;">
                                     <input type="text" name="search" class="form-control float-right" placeholder="Search">
                                     <div class="input-group-append">
@@ -40,8 +40,9 @@
                             </form>
                         </div>
                     </div>
+                    <form action="/tenaga/send" method="POST"  enctype="multipart/form-data">
                     <div class="card-body table-responsive p-0" style="height: 350px;">
-                        <form action="">
+                            {{ csrf_field() }}
                             <table class="table table-head-fixed">
                                 <thead>
                                 <tr>
@@ -62,32 +63,59 @@
                                   <td>{{$no++}}</td>
                                   <td>{{$ten -> nama}}</td>
                                       <td>{{ $ten -> kewarganegaraan }}</td>
-                                      <td><span class="badge badge-info">Dalam Proses</span></td>
-                                      <td><a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a></td>
+                                      <td>
+                                        @if ($ten->status == 1)
+                                             <span class="badge badge-info">Dalam Proses</span>      
+                                        @elseif ($ten->status == 2)
+                                          <span class="badge badge-danger">Revisi</span>
+                                        @else 
+                                          <span></span> 
+                                        @endif 
+                                      </td> 
+                                      <td>
+                                        @if ($ten->status == 0)
+                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a> 
+                                        @elseif ($ten->status == 2)
+                                           <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a>
+                                        @else
+                                           <span></span>
+                                        @endif  
                                       <td>
                                       <div class="icheck-success d-inline">
-                                          <input type="checkbox" id="{{ $ten->id }}">
-                                          <label for="{{ $ten->id }}"></label>
+                                          @if ($ten->status == NULL)
+                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                            <label for="{{ $ten->id }}"></label>
+                                          @elseif ($ten->status == 2)
+                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                            <label for="{{ $ten->id }}"></label>
+                                          @else
+                                            <span></span>
+                                          @endif
                                       </div>
                                       </td>
                                   </tr>  
                                   @endforeach
                                 </tbody>
                             </table>
-                        </form>
-                    </div>
+                            
+                        
+                        </div>
                         <div class="card-footer clearfix">
-                            <div class="col-md-4 float-left">
-                                <a href="/proses-tenaga" role="button" class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></a>
-                            </div>
+                            
+                                {{-- <a href="{{ url('/tenaga/send') }}" role="button" class="btn btn-primary">kirim</a> --}}
+                                <button  type="submit"  class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
+                            
+                            <ul class="pagination pagination-sm m-0 float-right">
                                 {{ $tenaga->links() }}
                             </ul>
                         </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>   
 </div>
+
   
 @endsection
 

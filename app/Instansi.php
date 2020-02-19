@@ -20,4 +20,8 @@ class instansi extends Model
     public function mitra_lokal(){
         return $this->hasOne('App\Mitra_lokal');
     }
+
+    public function master_tenaga_asing(){
+        return $this->hasMany('App\Master_tenaga_asing');
+    }
 }

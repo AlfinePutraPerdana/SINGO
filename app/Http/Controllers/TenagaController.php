@@ -25,12 +25,12 @@ class TenagaController extends Controller
             $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')->paginate(5);
         }else{
             
-            $tenaga = Master_tenaga_asing::paginate(5);
+            $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest()->paginate(5);
         }
 
         return view('mitra.ngo.tenaga.tenaga',['tenaga' => $tenaga]);
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -57,17 +57,17 @@ class TenagaController extends Controller
         //
 
         $foto = $request -> file('foto');
-        $nama_foto = $foto->getClientOriginalName();
+        $nama_foto = time().'_'.$foto->getClientOriginalName();
         $lokasi_foto = 'foto';
         $foto -> move($lokasi_foto,$nama_foto);
 
         $passport = $request -> file('upload_passpor');
-        $nama_passport = $passport->getClientOriginalName();
+        $nama_passport = time().'_'.$passport->getClientOriginalName();
         $lokasi_passport = 'passport';
         $passport -> move($lokasi_passport, $nama_passport);
         
         $cv = $request -> file('cv_resume');
-        $nama_cv = $cv->getClientOriginalName();
+        $nama_cv = time().'_'.$cv->getClientOriginalName();
         $lokasi_cv = 'cv';
         $cv -> move($lokasi_cv, $nama_cv);
         
@@ -77,10 +77,11 @@ class TenagaController extends Controller
         $jobdesc -> move($lokasi_jobdesc, $nama_jobdesc);
         
         $dokumen = $request -> file('dokumen_pendukung');
-        $nama_dokumen = $dokumen->getClientOriginalName();
+        $nama_dokumen = time().'_'.$dokumen->getClientOriginalName();
         $lokasi_dokumen = 'dokumen pendukung';
         $dokumen -> move($lokasi_dokumen, $nama_dokumen);
-            
+        
+
 
            $tenaga =  Master_tenaga_asing::create([
                 'nama' => $request -> nama,
@@ -102,11 +103,12 @@ class TenagaController extends Controller
                 'jobdesc' => $nama_jobdesc,
                 'dokumen_pendukung' => $nama_dokumen,
                 'tgl_awal' => $request -> tgl_awal,
-                'tgl_akhir' => $request -> tgl_akhir
+                'tgl_akhir' => $request -> tgl_akhir,
+                'status' => 0
 
         ]);
 
-        return redirect('/tenaga');
+        return redirect('/tenaga')->with('sukses','Data Berhasil ditambah');
     }
 
     /**
@@ -225,11 +227,12 @@ class TenagaController extends Controller
                 'jobdesc' => $nama_jobdesc,
                 'dokumen_pendukung' => $nama_dokumen,
                 'tgl_awal' => $request -> tgl_awal,
-                'tgl_akhir' => $request -> tgl_akhir
+                'tgl_akhir' => $request -> tgl_akhir,
+                'catatan' => $request -> catatan
 
         ]);
 
-        return redirect('/tenaga');
+        return redirect('/tenaga')->with('sukses','Data Berhasil diupdate');
     }
 
     /**
@@ -238,8 +241,28 @@ class TenagaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function send(Request $request)
     {
         //
+        
+
+        if($request->tenaga != null ){
+            foreach ($request->tenaga as $tenaga_val){
+                $tenaga = Master_tenaga_asing::find($tenaga_val);
+                $tenaga->update([
+                    'status'=> 1,
+                    
+                    ]);
+                 
+            }
+        }else{
+            return redirect('/tenaga');
+        }
+       
+           
+        
+
+        return redirect('/tenaga')->with('sukses','Data Berhasil dikirim');
+
     }
 }

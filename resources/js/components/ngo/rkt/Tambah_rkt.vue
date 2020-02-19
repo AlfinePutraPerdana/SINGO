@@ -74,7 +74,7 @@
                         <option value="">options 4</option>
                       </select>
                   </div>
-                  <!-- <div class="form-row mb-3">
+                  <div class="form-row mb-3">
                       <div class="form-group col-md-9">
                         <label for="">Tenaga Asing </label>
                         <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing">
@@ -83,7 +83,7 @@
                         <label for="">Jumlah Tenaga</label>
                         <input type="number" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing">
                       </div>
-                  </div> -->
+                  </div>
                   <div class="form-group">
                       <label for="">Peran Serta Pihak Ketiga</label>
                       <textarea id="pihak" class="form-control" style="height: 300px" placeholder="Masukan Teks">

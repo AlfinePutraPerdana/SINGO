@@ -26,7 +26,7 @@ class MitraController extends Controller
             $mitra = Instansi::where('nama','LIKE','%' .$request->search. '%')->paginate(5);
         }else{
 
-            $mitra = Instansi::paginate(5);
+            $mitra = Instansi::latest()->paginate(5);
         }
 
         // $lokal = Mitra_lokal::all();

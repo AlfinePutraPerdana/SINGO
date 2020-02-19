@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Pengajuan Rekomendasi Tenaga Kerja Asing</h1>
+            <h1>Rekomendasi Tenaga Kerja Asing</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body table-responsive p-0" style="height: 450px;">
+                    <div class="card-body table-responsive p-0" style="height: 350px;">
                         <form action="">
                             <table class="table table-head-fixed">
                                 <thead>
@@ -46,18 +46,21 @@
                                     <th>Asal Negara</th>
                                     <th>Mitra</th>
                                     <th>Aksi</th>
-                                    <th>Pilih</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                    @php
+                                        $no = 1;
+                                    @endphp
+                                    @foreach ($tenagas as $tenaga)
                                 <tr>
-                                    <td>1</td>
-                                    <td>Andy Woods</td>
-                                    <td>Singapura</td>
-                                    <td>UNESCO</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b>
-                                    </td>
+                                    <td>{{$no++}}</td>
+                                    <td>{{$tenaga->nama}}</td>
+                                    <td>{{$tenaga->kewarganegaraan}}</td>
+                                    <td>{{$tenaga->instansi->nama}}</td>
+                                    <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
+                                    @endforeach
+                                </tr>
                                         <div class="modal fade" id="pratinjau" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
@@ -164,76 +167,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <td>
-                                        <div class="icheck-success d-inline">
-                                            <input type="checkbox" id="pilih1">
-                                            <label for="pilih1"></label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Andy Woods</td>
-                                    <td>Singapura</td>
-                                    <td>UNESCO</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih2">
-                                        <label for="pilih2"></label>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Andy Woods</td>
-                                    <td>Singapura</td>
-                                    <td>UNESCO</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></a></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih3">
-                                        <label for="pilih3"></label>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Andy Woods</td>
-                                    <td>Singapura</td>
-                                    <td>UNESCO</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></a></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih4">
-                                        <label for="pilih4"></label>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Andy Woods</td>
-                                    <td>Singapura</td>
-                                    <td>UNESCO</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></a></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih5">
-                                        <label for="pilih5"></label>
-                                    </div>
-                                    </td>
-                                </tr>
+                                   
                                 </tbody>
                             </table>
                         </form>
                     </div>
                         <div class="card-footer clearfix">
                             <div class="col-md-4 float-left">
-                                <a href="/master-tenaga-asing" role="button" class="btn btn-block btn-primary"><i class="far fa-check-square"></i>   Verifikasi</a>
+                                {{-- <a href="/master-tamu" role="button" class="btn btn-block btn-primary"><i class="far fa-check-square"></i>   Verifikasi</a> --}}
                             </div>
                             <ul class="pagination pagination-sm m-0 float-right">
                             <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
@@ -249,6 +190,5 @@
     </section>
 </div>
 
-</template>
 
 @endsection
