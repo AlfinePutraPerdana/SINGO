@@ -170,6 +170,7 @@
                                       
                                   <div class="card-footer">
                                       <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
+                                      <a class="btn btn-warning" href="/tenaga" role="button">Kembali</a>
                                   </div>
                               </div>
                           </form>

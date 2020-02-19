@@ -73,7 +73,7 @@ class MitraController extends Controller
            'durasi_akhir' => $request -> durasi_akhir
        ]);
 
-       return redirect('/tambah-mitra');
+       return redirect('/tambah-mitra')->with('sukses','Data Berhasil ditambah');
 
         // DB::table('instansis')->insert([
         //     'nama' => $request -> nama,
@@ -216,7 +216,7 @@ class MitraController extends Controller
         //     'durasi_akhir' => $request -> durasi_akhir
         // ]);
 
-        return redirect('/tambah-mitra');
+        return redirect('/tambah-mitra')->with('sukses','Data Berhasil di Update');
 
         
     }

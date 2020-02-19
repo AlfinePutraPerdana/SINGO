@@ -72,7 +72,7 @@ class TenagaController extends Controller
         $cv -> move($lokasi_cv, $nama_cv);
         
         $jobdesc = $request -> file('jobdesc');
-        $nama_jobdesc = $jobdesc->getClientOriginalName();
+        $nama_jobdesc = time().'_'.$jobdesc->getClientOriginalName();
         $lokasi_jobdesc = 'jobdesc';
         $jobdesc -> move($lokasi_jobdesc, $nama_jobdesc);
         
