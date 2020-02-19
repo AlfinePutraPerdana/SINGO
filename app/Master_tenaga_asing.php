@@ -18,7 +18,7 @@ class Master_tenaga_asing extends Model
 'id_instansi','jabatan','foto','upload_passpor',
 'cv_resume','jenis_kelamin','tempat_lahir','tanggal_lahir',
 'kategori','tujuan','kegiatan','tgl_awal','tgl_akhir','foto',
-'upload_passport','jobdesc','dokumen_pendukung','status','catatan','created_at','updated_at'
+'upload_passport','jobdesc','dokumen_pendukung','status','status_keaktifan','file_perpanjangan','catatan','created_at','updated_at'
     ];
 
     public function instansi(){
