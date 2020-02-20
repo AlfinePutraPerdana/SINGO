@@ -155,13 +155,11 @@ Route::get('/lk/new', 'LapUangController@new');
 
 Route::post('/lk/store', 'LapUangController@store');
 
-Route::get('/data-keuangan', function () {
-    return view('mitra.ngo.LTK.lihatkeuangan');
-});
+Route::get('/lk/edit/{id}', 'LapUangController@edit');
 
-Route::get('/data-laporan', function () {
-    return view('mitra.ngo.LTK.lihatlaporan');
-});
+Route::post('/lk/update', 'LapUangController@update');
+
+Route::get('lk/delete/{id}', 'LapUangController@delete');
 
 // ------------------------------------------
 
