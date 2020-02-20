@@ -31,7 +31,7 @@
             <h3 class="card-title">Form Laporan Tahunan</h3>
           </div>
           @foreach($data as $d)
-          <form action="/ltk/update" role="form" method="post">
+          <form action="/ltk/update" role="form" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
             <div class="card-body">
               <div class="form-group">

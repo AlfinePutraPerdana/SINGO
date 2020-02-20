@@ -139,7 +139,7 @@ Route::get('/revisi-artikel', function () {
     return view('mitra.ngo.dokumentasi.revisiartikel');
 });
 
-// ---------- Laporan Tahunan Dan Keuangan
+// ---------- Laporan Tahunan Dan Keuangan -------------------
 
 Route::get('/ltk', 'ReportController@index');
 
@@ -153,13 +153,11 @@ Route::get('/ltk/delete/{id}', 'ReportController@delete');
 
 Route::post('/ltk/update', 'ReportController@update');
 
-Route::get('/lk', function () {
-    return view('mitra.ngo.LTK.keuangan');
-});
+Route::get('/lk', 'LapUangController@index');
 
-Route::get('/tambah-laporan', function () {
-    return view('mitra.ngo.LTK.tambahkeuangan');
-});
+Route::get('/lk/new', 'LapUangController@new');
+
+Route::post('/lk/store', 'LapUangController@store');
 
 Route::get('/data-keuangan', function () {
     return view('mitra.ngo.LTK.lihatkeuangan');

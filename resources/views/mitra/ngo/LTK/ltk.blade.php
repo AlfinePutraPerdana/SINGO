@@ -60,7 +60,7 @@
                     <td>{{ $lt -> judul }}</td>
                     <td>
                       <a href="/ltk/edit/{{$lt -> id}}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a>
-                      <a style="color:#fff" class="btn btn-sm btn-danger" onclick="destroy()"><i class="fas fa-eraser"></i> <b>Hapus</b></a>
+                      <a style="color:#fff" class="btn btn-sm btn-danger" onclick="return confirm('Anda Yakin?')" href="/ltk/delete/{{$lt -> id}}"><i class="fas fa-eraser"></i> <b>Hapus</b></a>
                     </td>
                   </tr>
                   @endforeach
@@ -81,14 +81,6 @@
     </div>
   </section>
 </div>
-
-<script>
-  function destroy(){
-    if(confirm("Hapus Laporan?")){
-      window.location="/ltk/delete/{{ $lt -> id }}";
-    }
-  }
-</script>
 
 @endsection
 
