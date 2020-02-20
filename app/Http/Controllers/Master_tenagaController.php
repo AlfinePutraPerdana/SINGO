@@ -8,6 +8,8 @@ use App\Master_tenaga_asing;
 
 use App\Instansi;
 
+use Symfony\Component\HttpFoundation\File\File;
+
 class Master_tenagaController extends Controller
 {
     /**
@@ -64,7 +66,11 @@ class Master_tenagaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tenaga = Master_tenaga_asing::find($id);
+
+        $instansis = Instansi::all();
+
+        return view('mitra.ngo.tenaga.lihatdata',['tenaga' => $tenaga,'instansis'=>$instansis]);
     }
 
     /**
@@ -76,7 +82,111 @@ class Master_tenagaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $tenaga = Master_tenaga_asing::find($id);
+
+        if(empty($request->file('foto')))
+        {
+            $nama_foto = $tenaga->foto;
+        }else
+        {
+            $foto = $request -> file('foto');
+            $foto_lama = $tenaga->foto;
+            File::delete('foto/'.$foto_lama);
+            $nama_foto = time().'_'.$foto->getClientOriginalName();
+            $lokasi_foto = 'foto';
+            $foto -> move($lokasi_foto,$nama_foto);
+        }
+
+        if(empty($request->file('upload_passpor'))){
+            $nama_passport = $tenaga -> upload_passpor;
+        }else{
+            $passport = $request -> file('upload_passpor');
+            $passport_lama = $tenaga->upload_passpor;
+            File::delete('passport/'.$passport_lama);
+            $nama_passport = time().'_'.$passport->getClientOriginalName();
+            $lokasi_passport = 'passport';
+            $passport -> move($lokasi_passport, $nama_passport);
+        }
+
+        if(empty($request->file('cv_resume'))){
+            $nama_cv = $tenaga -> cv_resume;
+        }else{
+            $cv = $request -> file('cv_resume');
+            $cv_lama = $tenaga->cv_resume;
+            File::delete('cv/'.$cv_lama);
+            $nama_cv = time().'_'.$cv->getClientOriginalName();
+            $lokasi_cv = 'cv';
+            $cv -> move($lokasi_cv, $nama_cv);
+        }
+
+        if(empty($request->file('jobdesc'))){
+            $nama_jobdesc = $tenaga -> jobdesc;
+        }else{
+            $jobdesc = $request -> file('jobdesc');
+            $jobdesc_lama = $tenaga->jobdesc;
+            File::delete('jobdesc/'.$jobdesc_lama);
+            $nama_jobdesc = time().'_'.$jobdesc->getClientOriginalName();
+            $lokasi_jobdesc = 'jobdesc';
+            $jobdesc -> move($lokasi_jobdesc, $nama_jobdesc);
+        }
+        
+        if(empty($request->file('dokumen_pendukung'))){
+            $nama_dokumen = $tenaga -> dokumen_pendukung;
+        }else{
+            $dokumen = $request -> file('dokumen_pendukung');
+            $dokumen_lama = $tenaga->dokumen_pendukung;
+            File::delete('dokumen/'.$dokumen_lama);
+            $nama_dokumen = time().'_'.$dokumen->getClientOriginalName();
+            $lokasi_dokumen = 'dokumen pendukung';
+            $dokumen -> move($lokasi_dokumen, $nama_dokumen);
+        }
+        
+        if(($request->file('file_perpanjangan'))){
+            $masa = $request -> file('file_perpanjangan');
+            $nama_file = time().'_'.$masa->getClientOriginalName();
+            $lokasi_file = 'perpanjang masa';
+            $masa -> move($lokasi_file, $nama_file);
+        }elseif (empty($request->file('file_perpanjangan'))){
+            
+            $nama_file = $tenaga -> file_perpanjangan;
+        }else {
+            
+                $masa = $request -> file('file_perpanjangan');
+                $file_lama = $tenaga->file_perpanjangan;
+                File::delete('perpanjang masa/'.$file_lama);
+                $nama_file = time().'_'.$masa->getClientOriginalName();
+                $lokasi_file = 'perpanjang masa';
+                $masa -> move($lokasi_file, $nama_file);
+        }
+        
+
+
+        $tenaga->update([
+                'nama' => $request -> nama,
+                'jenis_kelamin' => $request -> jenis_kelamin,
+                'tempat_lahir'  => $request -> tempat_lahir,
+                'tanggal_lahir' => $request -> tanggal_lahir,
+                'kewarganegaraan' => $request -> kewarganegaraan,
+                'no_passport' => $request -> no_passport,
+                'tgl_berlaku_awal' => $request -> tgl_berlaku_awal,
+                'tgl_berlaku_akhir' => $request -> tgl_berlaku_akhir,
+                'id_instansi' => $request -> id_instansi,
+                'kategori' => $request -> kategori,
+                'tujuan' => $request -> tujuan,
+                'kegiatan' => $request -> kegiatan,
+                'jabatan' => $request -> jabatan,
+                'foto' => $nama_foto,
+                'upload_passpor' => $nama_passport,
+                'cv_resume' => $nama_cv,
+                'jobdesc' => $nama_jobdesc,
+                'dokumen_pendukung' => $nama_dokumen,
+                'file_perpanjangan' => $nama_file,
+                'tgl_awal' => $request -> tgl_awal,
+                'tgl_akhir' => $request -> tgl_akhir
+
+        ]);
+
+        return redirect('/list-tenaga')->with('sukses','Data berhasil DI Update');
     }
 
     /**

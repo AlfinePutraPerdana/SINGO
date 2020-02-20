@@ -102,6 +102,16 @@
                                     <input type="text" name="jabatan" class="form-control" id="jabatan" placeholder="Jabatan">
                                 </div>
                                 <div class="form-group">
+                                    <label for="">Lama Kegiatan</label>
+                                    <div class="input-group">
+                                        <input type="text" name="tgl_awal" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
+                                        <div class="input-group-append">
+                                        <span class="input-group-text">s/d</span>
+                                        </div>
+                                        <input type="text" name="tgl_akhir" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="foto">Lampirkan Foto</label>
                                     <div class="custom-file">
                                         <label class="custom-file-label" for="foto" >Pilih File</label>
@@ -142,16 +152,6 @@
                                             <input type="file" name="dokumen_pendukung" class="custom-file-input" id="">
                                             <label class="custom-file-label" for="file">Pilih File</label>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Lama Kegiatan</label>
-                                    <div class="input-group">
-                                        <input type="text" name="tgl_awal" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
-                                        <div class="input-group-append">
-                                        <span class="input-group-text">s/d</span>
-                                        </div>
-                                        <input type="text" name="tgl_akhir" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                                     </div>
                                 </div>
                                    

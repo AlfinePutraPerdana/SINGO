@@ -59,9 +59,11 @@ Route::get('/revisi-tenaga', function () {
     return view('mitra.ngo.tenaga.revisitenaga');
 });
 
-
-
 Route::get('/list-tenaga', 'Master_tenagaController@index');
+
+Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
+
+Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
 Route::get('/data-tenaga', function () {
     return view('mitra.ngo.tenaga.lihatdata');
@@ -296,9 +298,11 @@ Route::get('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@show')
 
 Route::post('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@send');
 
-Route::get('/master-tenaga-asing', function () {
-    return view('mitra.Fasker.Tenaga_asing.master_tenaga_asing');
-});
+Route::get('/master-tenaga-asing', 'Master_tenaga_faskerController@index');
+
+Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edit');
+
+Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
 
 Route::get('/history-tenaga-asing', function () {
     return view('mitra.Fasker.Tenaga_asing.history_tenaga');
