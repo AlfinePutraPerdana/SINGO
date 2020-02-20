@@ -55,21 +55,17 @@ Route::post('/tenaga/send', 'TenagaController@send');
 
 Route::post('/tenaga/{id}/update', 'TenagaController@update' );
 
-Route::get('/revisi-tenaga', function () {
-    return view('mitra.ngo.tenaga.revisitenaga');
-});
-
-
-
 Route::get('/list-tenaga', 'Master_tenagaController@index');
+
+Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
+
+Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
 Route::get('/data-tenaga', function () {
     return view('mitra.ngo.tenaga.lihatdata');
 });
 
-Route::get('/history-tenaga', function () {
-    return view('mitra.ngo.tenaga.historytenaga');
-});
+Route::get('list-tenaga/{id}/history-tenaga', 'HistoryController@show');
 
 Route::get('/tamu', function () {
     return view('mitra.ngo.tamu.tamu');
@@ -139,7 +135,7 @@ Route::get('/revisi-artikel', function () {
     return view('mitra.ngo.dokumentasi.revisiartikel');
 });
 
-// ---------- Laporan Tahunan Dan Keuangan
+// ---------- Laporan Tahunan Dan Keuangan -------------------
 
 Route::get('/ltk', 'ReportController@index');
 
@@ -153,21 +149,17 @@ Route::get('/ltk/delete/{id}', 'ReportController@delete');
 
 Route::post('/ltk/update', 'ReportController@update');
 
-Route::get('/lk', function () {
-    return view('mitra.ngo.LTK.keuangan');
-});
+Route::get('/lk', 'LapUangController@index');
 
-Route::get('/tambah-laporan', function () {
-    return view('mitra.ngo.LTK.tambahkeuangan');
-});
+Route::get('/lk/new', 'LapUangController@new');
 
-Route::get('/data-keuangan', function () {
-    return view('mitra.ngo.LTK.lihatkeuangan');
-});
+Route::post('/lk/store', 'LapUangController@store');
 
-Route::get('/data-laporan', function () {
-    return view('mitra.ngo.LTK.lihatlaporan');
-});
+Route::get('/lk/edit/{id}', 'LapUangController@edit');
+
+Route::post('/lk/update', 'LapUangController@update');
+
+Route::get('lk/delete/{id}', 'LapUangController@delete');
 
 // ------------------------------------------
 
@@ -298,9 +290,11 @@ Route::get('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@show')
 
 Route::post('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@send');
 
-Route::get('/master-tenaga-asing', function () {
-    return view('mitra.Fasker.Tenaga_asing.master_tenaga_asing');
-});
+Route::get('/master-tenaga-asing', 'Master_tenaga_faskerController@index');
+
+Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edit');
+
+Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
 
 Route::get('/history-tenaga-asing', function () {
     return view('mitra.Fasker.Tenaga_asing.history_tenaga');

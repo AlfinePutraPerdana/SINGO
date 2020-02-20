@@ -44,45 +44,33 @@
                     <th class="text-center">Nama</th>
                     <th class="text-center">Asal Negara</th>
                     <th class="text-center">Mitra</th>
-                    <th class="text-center">Aksi</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center" colspan="2">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
+                  @php
+                      $no=1;
+                  @endphp
                   <tr>
-                    <td>1</td>
-                    <td align="center">Andy Woods</td>
-                    <td align="center">Singapura</td>
-                    <td align="center">UNESCO</td>
+                    @foreach ($tenagas as $tenaga)
+                    <td>{{$no++}}</td>
+                    <td align="center">{{$tenaga->nama}}</td>
+                    <td align="center">{{$tenaga->kewarganegaraan}}</td>
+                    <td align="center">{{$tenaga->instansi->nama}}</td>
+                    <td align="center">
+                      @if ($tenaga->status_keaktifan == "Aktif")
+                        <span class="badge badge-info">Aktif</span>
+                      @elseif ($tenaga->status_keaktifan == "Non-Aktif")
+                        <span class="badge badge-danger">Non-Aktif</span>
+                      @else
+                        <span></span>
+                      @endif
+                    </td>
+                    <td align="right"><a href="/master-tenaga-asing/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
                     <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td align="center">Andy Woods</td>
-                    <td align="center">Singapura</td>
-                    <td align="center">UNESCO</td>
-                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td align="center">Andy Woods</td>
-                    <td align="center">Singapura</td>
-                    <td align="center">UNESCO</td>
-                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td align="center">Andy Woods</td>
-                    <td align="center">Singapura</td>
-                    <td align="center">UNESCO</td>
-                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td align="center">Andy Woods</td>
-                    <td align="center">Singapura</td>
-                    <td align="center">UNESCO</td>
-                    <td align="center"><a href="/history-tenaga-asing" class="btn btn-sm btn-info"><i class="far fa-eye" role="button"></i> <b>History</b></a></td>
-                  </tr>
+                  </tr>  
+                    @endforeach
                 </tbody>
               </table>
             </div>

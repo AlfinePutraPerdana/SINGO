@@ -52,6 +52,7 @@
                     <th class="text-center">Nama</th>
                     <th class="text-center">Asal Negara</th>
                     <th class="text-center">Mitra</th>
+                    <th class="text-center">Status</th>
                     <th colspan="2" class="text-center">Aksi</th>
                   </tr>
                 </thead>
@@ -62,8 +63,21 @@
                       <td align="center">{{$tenaga->nama}}</td>
                       <td align="center">{{$tenaga->kewarganegaraan}}</td>
                       <td align="center">{{$tenaga->instansi->nama}}</td>
-                      <td align="right"><a href="/data-tenaga" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                      <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                      <td align="center">
+                        @if ($tenaga->status_keaktifan == "Aktif")
+                          <span class="badge badge-info">Aktif</span>
+                        @elseif ($tenaga->status_keaktifan == "Non-Aktif")
+                          <span class="badge badge-danger">Non-Aktif</span>
+                        @else
+                          <span></span>
+                        @endif</td>
+                        @if ($tenaga->status_keaktifan == "Aktif")
+                          <td align="right"><a href="/list-tenaga/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                      <td><a href="/list-tenaga/{{$tenaga->id}}/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                        @else
+                          <td></td>
+                          <td></td>
+                        @endif
                     </tr> 
                     @endforeach
                 </tbody>

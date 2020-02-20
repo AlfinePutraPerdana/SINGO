@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
 use App\Report;
-
-use App\Laporan_keuangan;
 
 class ReportController extends Controller
 {
@@ -23,6 +22,12 @@ class ReportController extends Controller
     }
 
     public function store(Request $request){
+
+        $lampiran = $request -> file('lampiran');
+        $nama_lampiran = time().'_'.$lampiran->getClientOriginalName();
+        $lokasi_lampiran = 'LTK_Lampiran';
+        $lampiran -> move($lokasi_lampiran, $nama_lampiran);
+        
         $create = Report::create([
             'judul'=>$request -> judul,
             'id_rkt'=>$request -> id_rkt,
@@ -36,7 +41,7 @@ class ReportController extends Controller
             'permasalahan'=>$request -> permasalahan,
             'upaya_pemecahan'=>$request -> upaya_pemecahan,
             'penutup'=>$request -> penutup,
-            'lampiran'=>$request -> lampiran
+            'lampiran'=>$nama_lampiran
         ]);
 
         return redirect('/ltk');
@@ -52,10 +57,16 @@ class ReportController extends Controller
         $index = Report::find($request -> id);
 
         if(empty($request -> file('lampiran'))){
-            $lampiran = $index -> lampiran;
+            $nama_lampiran = $index -> lampiran;
         }
         else{
+            $file_lama = $index -> lampiran;
+            File::delete('LTK_Lampiran/'.$file_lama);
             $lampiran = $request ->file('lampiran');
+            $nama_lampiran = time().'_'.$lampiran -> getClientOriginalName();
+            $lokasi_lampiran = 'LTK_Lampiran';
+            $lampiran -> move($lokasi_lampiran, $nama_lampiran);
+
         }
 
         $index->update([
@@ -71,13 +82,17 @@ class ReportController extends Controller
             'permasalahan'=>$request -> permasalahan,
             'upaya_pemecahan'=>$request -> upaya_pemecahan,
             'penutup'=>$request -> penutup,
-            'lampiran'=>$lampiran
+            'lampiran'=>$nama_lampiran
         ]);
 
         return redirect('/ltk');
     }
 
     public function delete($id){
+        $index = Report::find($id);
+        $nama_file = $index -> lampiran;
+
+        File::delete('LTK_Lampiran/'.$nama_file);
         $data = DB::table('Reports')->where('id', $id)->delete();
 
         return redirect('/ltk');

@@ -1,7 +1,6 @@
 @extends('layouts.menufasker')
 
 @section('content')
-   
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -13,8 +12,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Rekomendasi Tenaga Asing</a></li>
-              <li class="breadcrumb-item active">Verifikasi Rekomendasi</li>
+              <li class="breadcrumb-item"><a href="/tenaga">Rekomendasi Tenaga Asing</a></li>
+              <li class="breadcrumb-item active">Ubah Rekomendasi</li>
             </ol>
           </div>
         </div>
@@ -30,7 +29,7 @@
                         <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                     </div>
                     <div class="card-body">
-                         <form action="/verif-tenaga-asing/{{$tenaga -> id }}/verifikasi" method="post" enctype="multipart/form-data" >
+                         <form action="/master-tenaga-asing/{{$tenaga->id}}/update" method="post" enctype="multipart/form-data" >
                             {{ csrf_field() }}
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
@@ -90,13 +89,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="kegiatan">Kegiatan</label>
-                                    <textarea name="kegiatan"  id="kegiatan" class="form-control" style="height: 300px" readonly>
+                                    <textarea name="kegiatan"  id="kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
                                      {!! $tenaga->kegiatan !!}
                                     </textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Tujuan Kegiatan</label>
-                                    <textarea name="tujuan2"  id="tujuan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                                    <textarea name="tujuan"  id="tujuan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
                                            {!! $tenaga->tujuan !!}
                                     </textarea>
                                 </div>
@@ -105,77 +104,69 @@
                                     <input type="text" name="jabatan" value="{{$tenaga -> jabatan }}" class="form-control" id="jabatan" placeholder="Jabatan" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Lama Kegiatan</label>
-                                    <div class="input-group">
-                                        <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" id="tgl_awal" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate" disabled/>
-                                        <div class="input-group-append">
-                                           <span class="input-group-text">s/d</span>
-                                        </div>
-                                         <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" disabled/>
+                                  <label for="">Lama Kegiatan</label>
+                                  <div class="input-group">
+                                      <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate" disabled/>
+                                      <div class="input-group-append">
+                                         <span class="input-group-text">s/d</span>
+                                      </div>
+                                       <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" disabled />
+                                  </div>
+                              </div> 
+                                <div class="form-group">
+                                    <label for="foto">Lampirkan Foto</label>
+                                    <div class="custom-file">
+                                        <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto" disabled>
+                                        <label class="custom-file-label" for="foto" >{{$tenaga -> foto }}</label>
                                     </div>
-                                </div> 
-                                <div class="form-group">
-                                    <label for="foto">Lampiran Foto</label></br>
-                                    <p for="foto">Silahkan Unduh File  : <a class="btn btn-info btn-sm" role="button" href="{{url('foto/'.$tenaga->foto)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a> </p>
-                                    {{-- <div class="custom-file">
-                                        <label class="custom-file-label" for="foto" >Pilih File</label>
-                                        <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto">
-                                    </div> --}}
                                 </div>
                                 <div class="form-group">
-                                    <label for="lampirpassport">Lampiran Passport</label>
-                                    <p for="lampirpassport">Silahkan Unduh File  : <a class="btn btn-info btn-sm" role="button" href="{{url('passport/'.$tenaga->upload_passpor)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a></p>
-                                    
-                                    {{-- <div class="input-group">
+                                    <label for="lampirpassport">Lampirkan Passport</label>
+                                    <div class="input-group">
                                         <div class="custom-file">
-                                            <label class="custom-file-label" for="lampirpassport">Pilih File</label>
-                                            <input type="file" name="upload_passpor" value="{{$tenaga -> upload_passpor }}" class="custom-file-input" id="lampirpassport">
+                                            <input type="file" name="upload_passpor" value="{{$tenaga -> upload_passpor }}" class="custom-file-input" id="lampirpassport" disabled>
+                                            <label class="custom-file-label" for="lampirpassport">{{$tenaga -> upload_passpor }}</label>
                                         </div>
-                                    </div> --}}
-                                    
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="file">Lampiran CV</label>
-                                    <p for="foto">Silahkan Unduh File  : <a class="btn btn-info btn-sm" role="button" href="{{url('cv/'.$tenaga->cv_resume)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a> </p>
-                                    {{-- <div class="input-group">
+                                    <label for="file">Lampirkan CV</label>
+                                    <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" name="cv_resume" value="{{$tenaga -> cv_resume }}" class="custom-file-input" id="cv">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
+                                            <input type="file" name="cv_resume" value="{{$tenaga -> cv_resume }}" class="custom-file-input" id="cv" disabled>
+                                            <label class="custom-file-label" for="file">{{$tenaga -> cv_resume }}</label>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="file">Lampiran Jobdesk</label>
-                                    <p for="foto">Silahkan Unduh File  : <a class="btn btn-info btn-sm" role="button" href="{{url('jobdesc/'.$tenaga->jobdesc)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a> </p>
-                                    {{-- <div class="input-group">
+                                    <label for="file">Lampirkan Jobdesk</label>
+                                    <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
+                                            <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk" disabled>
+                                            <label class="custom-file-label" for="file">{{$tenaga -> jobdesc }}</label>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="file">File Pendukung</label>
-                                    <p for="foto">Silahkan Unduh File   : <a class="btn btn-info btn-sm" role="button" href="{{url('dokumen pendukung/'.$tenaga->dokumen_pendukung)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a> </p>
-                                    {{-- <div class="input-group">
+                                    <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" name="dokumen_pendukung" value="{{$tenaga -> dokumen_pendukung }}" class="custom-file-input" id="">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
+                                            <input type="file" name="dokumen_pendukung" value="{{$tenaga -> dokumen_pendukung }}" class="custom-file-input" disabled>
+                                            <label class="custom-file-label" for="file">{{$tenaga -> dokumen_pendukung }}</label>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Catatan</label>
-                                    <textarea id="catatan" name="catatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-                                            {!! $tenaga->catatan !!}
-                                    </textarea>
-                                </div>  
+                                    <label for="status_keaktifan">Status</label>
+                                    <select name="status_keaktifan" class="form-control">
+                                      <option value="Non-Aktif" @if ($tenaga->status_keaktifan == "Non-Aktif") selected @endif>Non-Aktif</option>
+                                      <option value="Aktif" @if ($tenaga->status_keaktifan == "Aktif") selected @endif>Aktif</option>
+                                    </select>
+                                </div>
                                     
                                 <div class="card-footer">
-                                  <div class="d-flex justify-content-between">
-                                    <button class="btn btn-danger" name="revisi[]" type="submit"><i class="fas fa-sync-alt"></i> <b>Revisi</b></button>
-                                    <button class="btn btn-success" name="setuju[]" type="submit"><i class="far fa-check-circle"></i> <b>Setuju</b></button>
-                                  </div>
+                                    <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
+                                    <a class="btn btn-warning" href="/master-tenaga-asing" role="button">Kembali</a>
                                 </div>
                             </div>
                         </form>
@@ -184,7 +175,6 @@
         </div>
     </section>
 </div>
-
 @endsection
 
 @push('script')

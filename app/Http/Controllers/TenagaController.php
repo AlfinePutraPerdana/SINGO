@@ -61,10 +61,14 @@ class TenagaController extends Controller
         $lokasi_foto = 'foto';
         $foto -> move($lokasi_foto,$nama_foto);
 
+       
+
         $passport = $request -> file('upload_passpor');
         $nama_passport = time().'_'.$passport->getClientOriginalName();
         $lokasi_passport = 'passport';
         $passport -> move($lokasi_passport, $nama_passport);
+
+        
         
         $cv = $request -> file('cv_resume');
         $nama_cv = time().'_'.$cv->getClientOriginalName();
@@ -72,7 +76,7 @@ class TenagaController extends Controller
         $cv -> move($lokasi_cv, $nama_cv);
         
         $jobdesc = $request -> file('jobdesc');
-        $nama_jobdesc = $jobdesc->getClientOriginalName();
+        $nama_jobdesc = time().'_'.$jobdesc->getClientOriginalName();
         $lokasi_jobdesc = 'jobdesc';
         $jobdesc -> move($lokasi_jobdesc, $nama_jobdesc);
         

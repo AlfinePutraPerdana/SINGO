@@ -31,7 +31,7 @@
           <div class="card-header">
             <h3 class="card-title">Form Laporan Tahunan</h3>
           </div>
-          <form action="/ltk/store" role="form" method="post">
+          <form action="/ltk/store" role="form" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
             <div class="card-body">
                 <div class="form-group">
