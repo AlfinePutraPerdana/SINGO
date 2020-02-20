@@ -73,7 +73,7 @@
                         @endif</td>
                         @if ($tenaga->status_keaktifan == "Aktif")
                           <td align="right"><a href="/list-tenaga/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                          <td><a href="/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                      <td><a href="/list-tenaga/{{$tenaga->id}}/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                         @else
                           <td></td>
                           <td></td>

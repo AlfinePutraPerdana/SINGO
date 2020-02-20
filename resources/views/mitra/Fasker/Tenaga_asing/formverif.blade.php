@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="lampirpassport">Lampiran Passport</label>
-                                    <p for="foto">Silahkan Unduh File  : <a class="btn btn-info btn-sm" role="button" href="{{url('passport/'.$tenaga->upload_passpor)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a></p>
+                                    <p for="lampirpassport">Silahkan Unduh File  : <a class="btn btn-info btn-sm" role="button" href="{{url('passport/'.$tenaga->upload_passpor)}}" target="_blank"><i class="fas fa-file-download"></i> <b>Download</b></a></p>
                                     
                                     {{-- <div class="input-group">
                                         <div class="custom-file">

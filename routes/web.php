@@ -55,10 +55,6 @@ Route::post('/tenaga/send', 'TenagaController@send');
 
 Route::post('/tenaga/{id}/update', 'TenagaController@update' );
 
-Route::get('/revisi-tenaga', function () {
-    return view('mitra.ngo.tenaga.revisitenaga');
-});
-
 Route::get('/list-tenaga', 'Master_tenagaController@index');
 
 Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
@@ -69,9 +65,7 @@ Route::get('/data-tenaga', function () {
     return view('mitra.ngo.tenaga.lihatdata');
 });
 
-Route::get('/history-tenaga', function () {
-    return view('mitra.ngo.tenaga.historytenaga');
-});
+Route::get('list-tenaga/{id}/history-tenaga', 'HistoryController@show');
 
 Route::get('/tamu', function () {
     return view('mitra.ngo.tamu.tamu');

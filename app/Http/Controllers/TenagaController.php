@@ -61,10 +61,14 @@ class TenagaController extends Controller
         $lokasi_foto = 'foto';
         $foto -> move($lokasi_foto,$nama_foto);
 
+       
+
         $passport = $request -> file('upload_passpor');
         $nama_passport = time().'_'.$passport->getClientOriginalName();
         $lokasi_passport = 'passport';
         $passport -> move($lokasi_passport, $nama_passport);
+
+        
         
         $cv = $request -> file('cv_resume');
         $nama_cv = time().'_'.$cv->getClientOriginalName();

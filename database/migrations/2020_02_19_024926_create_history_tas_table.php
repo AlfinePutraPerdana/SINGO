@@ -15,6 +15,7 @@ class CreateHistoryTasTable extends Migration
     {
         Schema::create('history_tas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('id_tenaga');
             $table->string('nama');
             $table->string('kewarganegaraan');
             $table->string('no_passport');
@@ -40,6 +41,10 @@ class CreateHistoryTasTable extends Migration
             $table->string('file_perpanjangan')->nullable();
             $table->text('catatan')->nullable();
             $table->timestamps();
+        });
+
+        Schema::table('history_tas', function (Blueprint $table) {
+            $table->foreign('id_instansi')->references('id')->on('instansis');
         });
     }
 
