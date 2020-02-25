@@ -56,6 +56,20 @@ class MitraController extends Controller
     {
         //
 
+        $pesan = [
+            'required' => ':attribute wajib di isi'
+        ];
+
+        $this->validate($request,[
+            'nama' => 'required',
+            'alamat' => 'required',
+            'no_regis_izin' => 'required',
+            'pembiayaan' => 'required',
+           'durasi_awal' => 'required',
+           'durasi_akhir' => 'required'
+
+        ],$pesan);
+
        $instansi = Instansi::create([
             'nama' => $request -> nama,
             'alamat' => $request -> alamat,

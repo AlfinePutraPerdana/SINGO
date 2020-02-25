@@ -73,7 +73,7 @@
                         @endif</td>
                         @if ($tenaga->status_keaktifan == "Aktif")
                           <td align="right"><a href="/list-tenaga/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                      <td><a href="/list-tenaga/{{$tenaga->id}}/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                          <td><a href="/list-tenaga/{{$tenaga->id}}/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
                         @else
                           <td></td>
                           <td></td>
@@ -86,11 +86,7 @@
             <!-- /.card-body -->
             <div class="card-footer clearfix">
                 <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                  {{ $tenagas->links() }}
                 </ul>
             </div>
           </div>

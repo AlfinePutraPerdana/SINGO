@@ -159,10 +159,12 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="file">Unggah Perpanjang Masa</label>
+                                        <div class="d-flex flex-row">
+                                            <label for="masa">Unggah Perpanjang Masa </label><p class="text-danger pl-2">*keterangan</p>
+                                         </div>
                                         <div class="input-group">
                                             <div class="custom-file">
-                                                <input type="file" name="file_perpanjangan" value="{{$tenaga -> file_perpanjangan }}" class="custom-file-input">
+                                                <input type="file" id="masa" name="file_perpanjangan" value="{{$tenaga -> file_perpanjangan }}" class="custom-file-input">
                                                 <label class="custom-file-label" for="file">{{$tenaga -> file_perpanjangan }}</label>
                                             </div>
                                         </div>
@@ -177,8 +179,8 @@
                                     
                                         
                                     <div class="card-footer">
-                                        <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
-                                        <a class="btn btn-warning" href="/list-tenaga" role="button">Kembali</a>
+                                        <a class="btn btn-warning" href="/list-tenaga" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
+                                        <button class="btn btn-primary" type="submit"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
                                     </div>
                                 </div>
                             </form>

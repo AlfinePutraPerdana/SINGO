@@ -48,9 +48,8 @@ class HistoryController extends Controller
     public function show($id)
     {
         
-        $historis = History_ta::get()->where('id',$id);
-        
-                
+       
+        $historis = History_ta::where('id_tenaga',$id)->latest('updated_at')->paginate(5); 
 
         return view('mitra.ngo.tenaga.historytenaga',['historis' => $historis]);
     }
