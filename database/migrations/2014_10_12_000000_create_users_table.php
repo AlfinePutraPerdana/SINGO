@@ -22,11 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('username');
             $table->string('no_hp',12);
-            $table->string('jabatan');
-            $table->string('foto');
             $table->string('status');
-            $table->string('level');
-
             $table->rememberToken();
             $table->timestamps();
         });
