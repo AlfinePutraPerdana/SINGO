@@ -364,9 +364,10 @@ Route::get('/dashboard', function(){
 Route::get('/login', function(){
     return view('dashboard.login');
 });
-Route::get('/register', function(){
-    return view('dashboard.register');
-});
+//REGISTRATION
+Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
+Route::post('/register','RegisterController@Register');
+
 Route::get('/news', function(){
     return view('dashboard.news');
 });
