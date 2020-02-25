@@ -33,7 +33,7 @@
 <body>
     <header id="header" class="fixed-top">
         <div class="container">
-    
+
             <div class="logo float-left">
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
@@ -47,7 +47,7 @@
 
     <section id="intro-register" class="clearfix">
         <div class="container">
-            <h1>Registrasi</br><span>NGO</span></h1>
+            <h1>Registrasi<br /><span>NGO</span></h1>
         </div>
     </section>
 
@@ -55,16 +55,38 @@
         <section id="register">
             <div class="container">
                 <div class="form">
-                    <form action="" method="post" class="contactForm">
-                        <div class="row">
+                <form method="POST" action="/register" class="contactForm">
+                     {{ csrf_field() }}
+                    <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <h6>Nama Organisasi</h6>
-                                    <input type="text" name="name" class="form-control" id="name" required>
+                                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukan Nama Organisasi" required autofocus>
+                                    @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+
                                 </div>
                                 <div class="form-group">
+                                    <h6>Password</h6>
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required >
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                </div>
+
+                                <div class="form-group">
+                                    <h6>Konfirmasi Password</h6>
+                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required >
+                                </div>
+
+                                <div class="form-group">
                                     <h6>Negara Asal</h6>
-                                    <input type="text" name="nation" class="form-control" id="nation" required>
+                                    <input type="text" name="negara" class="form-control" id="negara" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
