@@ -24,6 +24,7 @@ class CreateNgosTable extends Migration
             $table->date('mulai_beroperasi');
             $table->date('tgl_ttd_msp');
             $table->string('lokasi_kerja_sama');
+            $table->string('country_director');
             $table->timestamps();
         });
     }
