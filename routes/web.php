@@ -100,13 +100,9 @@ Route::get('/tambah-mitra/{id}/edit', 'MitraController@edit');
 
 Route::post('/tambah-mitra/update', 'MitraController@update');
 
-Route::get('/data-mitra', function () {
-    return view('mitra.ngo.mitra.lihatmitra');
-});
+Route::get('/mitra/{id}/data-mitra', 'Master_mitraController@show' );
 
-Route::get('/mitra', function () {
-    return view('mitra.ngo.mitra.mitra');
-});
+Route::get('/mitra', 'Master_mitraController@index' );
 
 Route::get('/tambah-monev', 'MonevController@index');
 

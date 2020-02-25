@@ -17,13 +17,22 @@ class Master_tenagaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
+        if ($request->has('search')) {
 
-        $instansis = Instansi::all();
+            $tenagas = Master_tenaga_asing::where('nama','LIKE','%' .$request->search. '%')
+                ->where('status','3')
+                ->latest('updated_at')
+                ->paginate(5);
 
-        return view('mitra.ngo.tenaga.listtenaga',['tenagas' => $tenagas,'instansis'=>$instansis]);
+        } else {
+            
+            $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
+            
+        }
+
+        return view('mitra.ngo.tenaga.listtenaga',['tenagas' => $tenagas]);
     }
 
     /**

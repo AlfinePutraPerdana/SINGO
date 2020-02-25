@@ -132,7 +132,7 @@ class MitraController extends Controller
 
         $mitra = Instansi::join('mitra_lokals as mitra', 'mitra.instansi_id','=','instansis.id')
                             ->select('mitra.id as mitra_id','instansis.id as instansi_id','nama','alamat','no_regis_izin','mitra.pembiayaan','mitra.durasi_awal','mitra.durasi_akhir')
-                            ->where('instansis.id','=',$id)
+                            ->where('instansis.id',$id)
                             ->first();
 
         // $lokal = Mitra_lokal::find($id);
