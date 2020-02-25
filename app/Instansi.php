@@ -24,4 +24,8 @@ class instansi extends Model
     public function master_tenaga_asing(){
         return $this->hasMany('App\Master_tenaga_asing');
     }
+
+    public function history_ta(){
+        return $this->hasMany('App\History_ta');
+    }
 }

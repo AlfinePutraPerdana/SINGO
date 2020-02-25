@@ -17,7 +17,7 @@ class Master_tenaga_faskerController extends Controller
      */
     public function index()
     {
-        $tenagas = Master_tenaga_asing::where('status','3')->latest()->paginate(5);
+        $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
 
         $instansis = Instansi::all();
 

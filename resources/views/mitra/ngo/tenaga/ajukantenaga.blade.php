@@ -34,67 +34,76 @@
                     <div class="card-body">
                         <form action="/tenaga" method="post" enctype="multipart/form-data" >
                             {{ csrf_field() }}
+                            @if (count($errors) > 0)
+                            <div class="alert alert-danger" role="alert">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="nama">
+                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="nama" value="{{old('nama')}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Jenis Kelamin</label>
-                                    <input type="text" name="jenis_kelamin" class="form-control" id="jenis_kelamin" placeholder="Jenis Kelamin">
+                                    <label for="jenis kelamin">Jenis Kelamin</label>
+                                    <input type="text" name="jenis_kelamin" class="form-control" id="jenis kelamin" placeholder="Jenis Kelamin" value="{{old('jenis_kelamin')}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Tempat Lahir</label>
-                                    <input type="text" name="tempat_lahir" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir">
+                                    <label for="tempat lahir">Tempat Lahir</label>
+                                    <input type="text" name="tempat_lahir" class="form-control" id="tempat lahir" placeholder="Tempat Lahir"value="{{old('tempat_lahir')}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Tanggal Lahir</label>
+                                    <label for="tanggal lahir">Tanggal Lahir</label>
                                     <div class="input-group">
-                                        <input type="text" name="tanggal_lahir" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker" />
+                                        <input type="text" name="tanggal_lahir" id="tanggal lahir" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker" value="{{old('tanggal_lahir')}}" />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="negara">Asal Negara</label>
-                                    <input type="text" name="kewarganegaraan" class="form-control" id="negara" placeholder="negara">
+                                    <input type="text" name="kewarganegaraan" class="form-control" id="negara" placeholder="negara" value="{{old('kewarganegaraan')}}">
                                 </div>
                                 <div class="form-group">
                                     <label for="Passport">Nomor Passport</label>
-                                    <input type="text" name="no_passport" class="form-control" id="passport" placeholder="Nomor Passport">
+                                    <input type="text" name="no_passport" class="form-control" id="passport" placeholder="Nomor Passport" value="{{old('no_passport')}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Masa Berlaku Passport</label>
+                                    <label for="berlaku">Masa Berlaku Passport</label>
                                     <div class="input-group">
-                                        <input type="text" name="tgl_berlaku_awal" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2"/>
+                                        <input type="text" name="tgl_berlaku_awal" id="berlaku" class="form-control startdate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate2" value="{{old('tgl_berlaku_awal')}}"/>
                                         <div class="input-group-append">
                                         <span class="input-group-text">s/d</span>
                                         </div>
-                                        <input type="text" name="tgl_berlaku_akhir" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" />
+                                        <input type="text" name="tgl_berlaku_akhir" class="form-control enddate2 datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate2" value="{{old('tgl_berlaku_akhir')}}"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Mitra</label>
                                     <select name="id_instansi" class="form-control">
                                         @foreach ($instansis as $instansi)
-                                             <option value="{{$instansi -> id}}"> {{ $instansi -> nama}} </option>
+                                             <option value="{{$instansi -> id}}" {{(old('id_instansi') == $instansi -> id) ? 'selected' : ''}}> {{ $instansi -> nama}} </option>
                                         @endforeach
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="kategori">Kategori</label>
                                     <select name="kategori" class="form-control">
-                                      <option value="Tenaga">Tenaga</option>
-                                      <option value="Tamu">Tamu</option>
+                                      <option value="Tenaga"{{ (old('kategori') == 'Tenaga') ? 'selected' : '' }}>Tenaga</option>
+                                      <option value="Tamu" {{ (old('kategori') == 'Tamu') ? 'selected' : '' }}>Tamu</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="kegiatan">Kegiatan</label>
                                     <textarea name="kegiatan"  id="kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-                                     
+                                      {!! old('kegiatan') !!}
                                     </textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Tujuan Kegiatan</label>
+                                    <label for="tujuan">Tujuan Kegiatan</label>
                                     <textarea name="tujuan" id="tujuan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-                                    
+                                        {!! old('tujuan') !!}
                                     </textarea>
                                 </div>
                                 <div class="form-group">
@@ -102,20 +111,20 @@
                                     <input type="text" name="jabatan" class="form-control" id="jabatan" placeholder="Jabatan">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Lama Kegiatan</label>
+                                    <label for="lama kegiatan">Lama Kegiatan</label>
                                     <div class="input-group">
-                                        <input type="text" name="tgl_awal" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
+                                        <input type="text" name="tgl_awal" id="lama kegiatan" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate" value="{{old('tgl_awal')}}"/>
                                         <div class="input-group-append">
                                         <span class="input-group-text">s/d</span>
                                         </div>
-                                        <input type="text" name="tgl_akhir" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                                        <input type="text" name="tgl_akhir" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" value="{{old('tgl_akhir')}}"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="foto">Lampirkan Foto</label>
                                     <div class="custom-file">
                                         <label class="custom-file-label" for="foto" >Pilih File</label>
-                                        <input type="file" name="foto" class="custom-file-input" id="foto" aria-describedby="foto">
+                                        <input type="file" name="foto" class="custom-file-input" id="foto" aria-describedby="foto" value="{{old('foto')}}">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -128,28 +137,39 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="file">Lampirkan CV</label>
+                                    <label for="cv">Lampirkan CV</label>
                                     <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" name="cv_resume" class="custom-file-input" id="cv">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
+                                            <label class="custom-file-label" id="cv">Pilih File</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="file">Lampirkan Jobdesk</label>
+                                    <label for="jobdesk">Lampirkan Jobdesk</label>
                                     <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" name="jobdesc" class="custom-file-input" id="jobdesk">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
+                                            <label class="custom-file-label" for="jobdesk">Pilih File</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="file">File Pendukung</label>
+                                    <label for="dokumen">File Pendukung</label>
                                     <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" name="dokumen_pendukung" class="custom-file-input" id="">
+                                            <input type="file" name="dokumen_pendukung" class="custom-file-input" id="dokumen">
+                                            <label class="custom-file-label" for="dokumen">Pilih File</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="d-flex flex-row">
+                                        <label for="masa">Unggah Perpanjang Masa </label><p class="text-danger pl-2">*keterangan</p>
+                                     </div>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" id="masa" name="file_perpanjangan" class="custom-file-input">
                                             <label class="custom-file-label" for="file">Pilih File</label>
                                         </div>
                                     </div>

@@ -8,6 +8,8 @@ use App\Master_tenaga_asing;
 
 use App\Instansi;
 
+use Response;
+
 class Verif_tenagaController extends Controller
 {
     /**
@@ -57,7 +59,16 @@ class Verif_tenagaController extends Controller
 
         $instansis = Instansi::all();
 
+        // $nama_passport = $tenaga->upload_passpor;
+        // $path = public_path('passport/'.$nama_passport);
+
         
+
+        // return Response::make(base64_decode($path), 200, [
+        // 'Content-Type' => 'application/pdf',
+        // 'Content-Disposition' => 'inline; filename="'.$nama_passport.'"']);
+
+        // return response()->file($path);
 
         return view('mitra.Fasker.Tenaga_asing.formverif',['tenaga' => $tenaga,'instansis'=>$instansis]);
 

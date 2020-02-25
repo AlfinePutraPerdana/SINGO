@@ -20,4 +20,8 @@ class History_ta extends Model
 'kategori','tujuan','kegiatan','tgl_awal','tgl_akhir','foto',
 'upload_passport','jobdesc','dokumen_pendukung','status','status_keaktifan','file_perpanjangan','catatan','created_at','updated_at'
     ];
+
+    public function instansi(){
+        return $this->belongsTo('App\Instansi','id_instansi');
+    }
 }

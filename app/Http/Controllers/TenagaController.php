@@ -56,6 +56,37 @@ class TenagaController extends Controller
     {
         //
 
+        $pesan = [
+            'required' => ':attribute Wajib di Isi',
+            'mimes' => ':attribute Harus File pdf',
+            'image' => ':attribute Harus File Gambar',
+            'max' => ':attribute file Maksimal 3mb'
+        ];
+
+        $this->validate($request,[
+                'nama' => 'required',
+                'jenis_kelamin' => 'required',
+                'tempat_lahir'  => 'required',
+                'tanggal_lahir' => 'required',
+                'kewarganegaraan' => 'required',
+                'no_passport' => 'required',
+                'tgl_berlaku_awal' => 'required',
+                'tgl_berlaku_akhir' => 'required',
+                'id_instansi' => 'required',
+                'kategori' => 'required',
+                'tujuan' => 'required',
+                'kegiatan' => 'required',
+                'jabatan' => 'required',
+                'tgl_awal' => 'required',
+                'tgl_akhir' => 'required',
+                'foto' => 'required|image|max:3000',
+                'upload_passpor' => 'required|mimes:pdf|max:3000',
+                'cv_resume' => 'required|mimes:pdf|max:3000',
+                'jobdesc' => 'required|mimes:pdf|max:3000',
+                'dokumen_pendukung' => 'required|mimes:pdf|max:3000'
+                
+        ],$pesan);
+
         $foto = $request -> file('foto');
         $nama_foto = time().'_'.$foto->getClientOriginalName();
         $lokasi_foto = 'foto';
@@ -108,7 +139,8 @@ class TenagaController extends Controller
                 'dokumen_pendukung' => $nama_dokumen,
                 'tgl_awal' => $request -> tgl_awal,
                 'tgl_akhir' => $request -> tgl_akhir,
-                'status' => 0
+                'status' => 0,
+                'status_keaktifan' => 'Non-Aktif'
 
         ]);
 

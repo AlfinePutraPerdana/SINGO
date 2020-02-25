@@ -61,9 +61,6 @@ Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
 
 Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
-Route::get('/data-tenaga', function () {
-    return view('mitra.ngo.tenaga.lihatdata');
-});
 
 Route::get('list-tenaga/{id}/history-tenaga', 'HistoryController@show');
 
@@ -368,9 +365,10 @@ Route::get('/dashboard', function(){
 Route::get('/login', function(){
     return view('dashboard.login');
 });
-Route::get('/register', function(){
-    return view('dashboard.register');
-});
+//REGISTRATION
+Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
+Route::post('/register','RegisterController@Register');
+
 Route::get('/news', function(){
     return view('dashboard.news');
 });
