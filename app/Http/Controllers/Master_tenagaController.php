@@ -19,7 +19,7 @@ class Master_tenagaController extends Controller
      */
     public function index()
     {
-        $tenagas = Master_tenaga_asing::where('status','3')->latest()->paginate(5);
+        $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
 
         $instansis = Instansi::all();
 
@@ -182,11 +182,13 @@ class Master_tenagaController extends Controller
                 'dokumen_pendukung' => $nama_dokumen,
                 'file_perpanjangan' => $nama_file,
                 'tgl_awal' => $request -> tgl_awal,
-                'tgl_akhir' => $request -> tgl_akhir
+                'tgl_akhir' => $request -> tgl_akhir,
+                'status' => 1,
+                'status_keaktifan' => 'Non-Aktif'
 
         ]);
 
-        return redirect('/list-tenaga')->with('sukses','Data berhasil DI Update');
+        return redirect('/list-tenaga')->with('sukses','Data berhasil di Kirim');
     }
 
     /**

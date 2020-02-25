@@ -61,9 +61,6 @@ Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
 
 Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
-Route::get('/data-tenaga', function () {
-    return view('mitra.ngo.tenaga.lihatdata');
-});
 
 Route::get('list-tenaga/{id}/history-tenaga', 'HistoryController@show');
 
@@ -111,9 +108,9 @@ Route::get('/mitra', function () {
     return view('mitra.ngo.mitra.mitra');
 });
 
-Route::get('/tambah-monev', function () {
-    return view('mitra.ngo.monev.tambahmonev');
-});
+Route::get('/tambah-monev', 'MonevController@index');
+
+Route::post('/tambah-monev/store', 'MonevController@store');
 
 Route::get('/data-monev', function () {
     return view('mitra.ngo.monev.lihatmonev');

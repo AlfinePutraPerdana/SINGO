@@ -35,36 +35,62 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body table-responsive p-0" style="height: 450px;">
-                        <table class="table table-head-fixed">
-                            <thead>
-                                @php
-                                    $no = 1;
+                            <table class="table table-head-fixed">
+                                <thead>
+                                    @php
+                                        $no = 1;
 
-                                @endphp
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>Tempat Lahir</th>
-                                <th>Tanggal Lahir</th>
-                                <th>Asal Negara</th>
-                                <th>Nomor Passport</th>
-                                <th>Masa Berlaku pasport</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($historis as $histori)
+                                    @endphp
                                 <tr>
-                                    <td>{{$no++}}</td>
-                                    <td>{{$histori -> nama}}</td>
-                                    <td>{{$histori -> tempat_lahir}}</td>
-                                    <td>{{$histori -> tanggal_lahir}}</td>
-                                    <td>{{$histori -> kewarganegaraan}}</td>
-                                    <td>{{$histori -> no_passport}}</td>
-                                    <td>{{$histori-> tgl_berlaku_awal}} s/d {{$histori-> tgl_berlaku_akhir}}</td>
-                                </tr>    
-                                @endforeach
-                            </tbody>
-                        </table>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>Tempat Lahir</th>
+                                    <th>Tanggal Lahir</th>
+                                    <th>Asal Negara</th>
+                                    <th>Nomor Passport</th>
+                                    <th>Masa Berlaku pasport</th>
+                                    <th>Mitra</th>
+                                    <th>Jabatan</th>
+                                    <th>Lama Kegiatan</th>
+                                    <th>File Foto</th>
+                                    <th>File Passport</th>
+                                    <th>File Cv</th>
+                                    <th>File Jobdesc</th>
+                                    <th>File Pendukung</th>
+                                    <th>File Perpanjangan</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($historis as $histori)
+                                    <tr>
+                                        <td>{{$no++}}</td>
+                                        <td>{{$histori -> nama}}</td>
+                                        <td>{{$histori -> jenis_kelamin}}</td>
+                                        <td>{{$histori -> tempat_lahir}}</td>
+                                        <td>{{$histori -> tanggal_lahir}}</td>
+                                        <td>{{$histori -> kewarganegaraan}}</td>
+                                        <td>{{$histori -> no_passport}}</td>
+                                        <td>{{$histori-> tgl_berlaku_awal}} s/d {{$histori-> tgl_berlaku_akhir}}</td>
+                                        <td>{{$histori->instansi->nama}}</td>
+                                        <td>{{$histori -> jabatan}}</td>
+                                        <td>{{$histori -> tgl_awal}} s/d {{$histori -> tgl_akhir}}</td>
+                                        <td>{{$histori -> foto}}</td>
+                                        <td>{{$histori -> upload_passpor}}</td>
+                                        <td>{{$histori -> cv_resume}}</td>
+                                        <td>{{$histori -> jobdesc}}</td>
+                                        <td>{{$histori -> dokumen_pendukung}}</td>
+                                        <td>{{$histori -> file_perpanjangan}}</td>
+                                    </tr>    
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer clearfix">
+                            <a class="btn btn-warning" href="/list-tenaga" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
+                            <div class="pagination pagination-sm m-0 float-right">
+                                {{ $historis->links() }}
+                            </div>
                         </div>
                         <!-- /.card-body -->
                     </div>
