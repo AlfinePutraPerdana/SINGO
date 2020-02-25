@@ -113,11 +113,15 @@ Route::get('/mitra', function () {
 
 Route::get('/tambah-monev', 'MonevController@index');
 
+Route::get('/tambah-monev/new', 'MonevController@new');
+
 Route::post('/tambah-monev/store', 'MonevController@store');
 
-Route::get('/data-monev', function () {
-    return view('mitra.ngo.monev.lihatmonev');
-});
+Route::get('/edit-monev', 'MonevController@edit');
+
+Route::post('/edit-monev/update', 'MonevController@update');
+
+Route::get('/delete-monev', 'MonevController@delete');
 
 Route::get('/monev', function () {
     return view('mitra.ngo.monev.monev');
