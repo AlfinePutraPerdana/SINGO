@@ -108,9 +108,9 @@ Route::get('/mitra', function () {
     return view('mitra.ngo.mitra.mitra');
 });
 
-Route::get('/tambah-monev', function () {
-    return view('mitra.ngo.monev.tambahmonev');
-});
+Route::get('/tambah-monev', 'MonevController@index');
+
+Route::post('/tambah-monev/store', 'MonevController@store');
 
 Route::get('/data-monev', function () {
     return view('mitra.ngo.monev.lihatmonev');
