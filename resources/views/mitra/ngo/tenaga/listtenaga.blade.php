@@ -67,15 +67,15 @@
                       <td align="center">{{$tenaga->instansi->nama}}</td>
                       <td align="center">
                         @if ($tenaga->status_keaktifan == "Aktif")
-                          <span class="badge badge-info">Aktif</span>
+                          <span class="badge badge-info"><i class="far fa-check-circle"></i> Aktif</span>
                         @elseif ($tenaga->status_keaktifan == "Non-Aktif")
-                          <span class="badge badge-danger">Non-Aktif</span>
+                          <span class="badge badge-danger"><i class="fas fa-ban"></i> Non-Aktif</span>
                         @else
                           <span></span>
                         @endif</td>
                         @if ($tenaga->status_keaktifan == "Aktif")
                           <td align="right"><a href="/list-tenaga/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                          <td><a href="/list-tenaga/{{$tenaga->id}}/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="far fa-eye"></i> <b>History</b></a></td>
+                          <td><a href="/list-tenaga/{{$tenaga->id}}/history-tenaga" class="btn btn-sm btn-info" role="button"><i class="fas fa-history"></i> <b>History</b></a></td>
                         @else
                           <td></td>
                           <td></td>

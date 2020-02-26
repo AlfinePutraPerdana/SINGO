@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Master_tenaga_asing;
 
+use App\History_ta;
+
 use App\Instansi;
 
 class Master_tenaga_faskerController extends Controller
@@ -15,13 +17,22 @@ class Master_tenaga_faskerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
+        if ($request->has('search')) {
 
-        $instansis = Instansi::all();
+            $tenagas = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')
+                                             ->where('status','3')
+                                             ->latest('updated_at')
+                                             ->paginate(5);
 
-        return view('mitra.Fasker.Tenaga_asing.master_tenaga_asing',['tenagas' => $tenagas,'instansis'=>$instansis]);
+        } else {
+           
+            $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
+            
+        }
+
+        return view('mitra.Fasker.Tenaga_asing.master_tenaga_asing',['tenagas' => $tenagas]);
     }
 
     /**
@@ -51,9 +62,24 @@ class Master_tenaga_faskerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function history(Request $request ,$id)
     {
-        //
+        if ($request->has('search')) {
+            
+            $historis = History_ta::where('nama','Like','%'.$request->search.'%')
+                                    ->where('id_tenaga',$id)
+                                    ->latest('updated_at')
+                                    ->paginate(5); 
+
+        } else {
+            
+            $historis = History_ta::where('id_tenaga',$id)->latest('updated_at')->paginate(5);
+        }
+
+        
+
+        return view('mitra.Fasker.Tenaga_asing.history_tenaga',['historis' => $historis]); 
+        
     }
 
     /**

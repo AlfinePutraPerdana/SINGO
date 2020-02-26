@@ -61,8 +61,7 @@ Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
 
 Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
-
-Route::get('list-tenaga/{id}/history-tenaga', 'HistoryController@show');
+Route::get('list-tenaga/{id}/history-tenaga', 'Master_tenagaController@history');
 
 Route::get('/tamu', function () {
     return view('mitra.ngo.tamu.tamu');
@@ -293,9 +292,7 @@ Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edi
 
 Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
 
-Route::get('/history-tenaga-asing', function () {
-    return view('mitra.Fasker.Tenaga_asing.history_tenaga');
-});
+Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@history');
 
 //Fasker--NGO
 Route::get('/verif-akun', function () {
