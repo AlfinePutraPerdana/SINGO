@@ -55,8 +55,8 @@
         <section id="register">
             <div class="container">
                 <div class="form">
-                    <form method="POST" action="/register" class="contactForm">
-                        {{ csrf_field() }}
+                    <form action="/register-post" method="post" class="contactForm" role="form">
+                        {{csrf_field()}}
                         <div class="row"><h3>Informasi Akun</h3></div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -97,7 +97,7 @@
                                 </div>
                                 <div class="form-group">
                                     <h6>Nomor Telepon</h6>
-                                    <input type="number" class="form-control" name="telp_user" id="telp-user">
+                                    <input type="tel" class="form-control" name="telp_user" id="telp-user">
                                 </div>
                             </div>
                         </div>
