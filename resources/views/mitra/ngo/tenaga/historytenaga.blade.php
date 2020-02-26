@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/list-tenaga"></a> Tenaga Kerja Asing</li>
+                    <li class="breadcrumb-item"><a href="/list-tenaga">Tenaga Kerja Asing</a></li>
                     <li class="breadcrumb-item active">History Tenaga Kerja Asing</li>
                     </ol>
                 </div>
@@ -28,16 +28,19 @@
                         <div class="card-header">
                         <h3 class="card-title">History Data Tenaga Asing</h3>
 
-                            <div class="card-tools">
-                                <form action="" method="GET">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                      <input type="text" name="search" class="form-control float-right" placeholder="Search">
-                                      <div class="input-group-append">
-                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                                      </div>
-                                    </div>
-                                 </form>
-                            </div>
+                        <div class="card-tools">
+                            @foreach ($historis as $item)
+                            <form action="/list-tenaga/{{$item->id_tenaga}}/history-tenaga" method="GET">
+                                @endforeach
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                  <input type="text" name="search" class="form-control float-right" placeholder="Search">
+                                  <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                                  </div>
+                                </div>
+                             </form>
+                            
+                        </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body table-responsive p-0" style="height: 450px;">
@@ -65,6 +68,7 @@
                                     <th>File Jobdesc</th>
                                     <th>File Pendukung</th>
                                     <th>File Perpanjangan</th>
+                                    <th>Status</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -87,6 +91,7 @@
                                         <td>{{$histori -> jobdesc}}</td>
                                         <td>{{$histori -> dokumen_pendukung}}</td>
                                         <td>{{$histori -> file_perpanjangan}}</td>
+                                        <td>{{$histori -> status_keaktifan}}</td>
                                     </tr>    
                                     @endforeach
                                 </tbody>

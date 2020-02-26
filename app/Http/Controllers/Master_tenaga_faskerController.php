@@ -62,7 +62,7 @@ class Master_tenaga_faskerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request ,$id)
+    public function history(Request $request ,$id)
     {
         if ($request->has('search')) {
             
@@ -76,10 +76,7 @@ class Master_tenaga_faskerController extends Controller
             $historis = History_ta::where('id_tenaga',$id)->latest('updated_at')->paginate(5);
         }
 
-        if ($request->has('refresh')) {
-            
-            $historis = History_ta::where('id_tenaga',$id)->latest('updated_at')->paginate(5);
-        }
+        
 
         return view('mitra.Fasker.Tenaga_asing.history_tenaga',['historis' => $historis]); 
         

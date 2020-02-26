@@ -61,8 +61,7 @@ Route::get('/list-tenaga/{id}/edit', 'Master_tenagaController@edit');
 
 Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
-
-Route::get('list-tenaga/{id}/history-tenaga', 'HistoryController@show');
+Route::get('list-tenaga/{id}/history-tenaga', 'Master_tenagaController@history');
 
 Route::get('/tamu', function () {
     return view('mitra.ngo.tamu.tamu');
@@ -293,7 +292,7 @@ Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edi
 
 Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
 
-Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@show');
+Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@history');
 
 //Fasker--NGO
 Route::get('/verif-akun', function () {
@@ -360,8 +359,8 @@ Route::get('/login', function(){
     return view('dashboard.login');
 });
 //REGISTRATION
-Route::get('/register','RegisterController@Showregisterform');
-Route::post('/register-post','RegisterController@Register');
+Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
+Route::post('/register','RegisterController@Register');
 
 Route::get('/news', function(){
     return view('dashboard.news');

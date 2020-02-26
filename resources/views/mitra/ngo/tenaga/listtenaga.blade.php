@@ -67,9 +67,9 @@
                       <td align="center">{{$tenaga->instansi->nama}}</td>
                       <td align="center">
                         @if ($tenaga->status_keaktifan == "Aktif")
-                          <span class="badge badge-info"><i class="far fa-check-circle"></i> <strong>Aktif</strong></span>
+                          <span class="badge badge-info"><i class="far fa-check-circle"></i> Aktif</span>
                         @elseif ($tenaga->status_keaktifan == "Non-Aktif")
-                          <span class="badge badge-danger">Non-Aktif</span>
+                          <span class="badge badge-danger"><i class="fas fa-ban"></i> Non-Aktif</span>
                         @else
                           <span></span>
                         @endif</td>

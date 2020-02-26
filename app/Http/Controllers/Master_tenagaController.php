@@ -8,6 +8,8 @@ use App\Master_tenaga_asing;
 
 use App\Instansi;
 
+use App\History_ta;
+
 use Symfony\Component\HttpFoundation\File\File;
 
 class Master_tenagaController extends Controller
@@ -62,9 +64,23 @@ class Master_tenagaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function history(Request $request,$id)
     {
-        //
+        
+        
+        if ($request->has('search')) {
+            
+            $historis = History_ta::where('nama','Like','%'.$request->search.'%')
+                                    ->where('id_tenaga',$id)
+                                    ->latest('updated_at')
+                                    ->paginate(5); 
+
+        } else {
+            
+            $historis = History_ta::where('id_tenaga',$id)->latest('updated_at')->paginate(5);
+        }
+
+        return view('mitra.ngo.tenaga.historytenaga',['historis' => $historis]); 
     }
 
     /**

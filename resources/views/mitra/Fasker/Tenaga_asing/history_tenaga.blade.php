@@ -67,6 +67,7 @@
                                 <th>File Jobdesc</th>
                                 <th>File Pendukung</th>
                                 <th>File Perpanjangan</th>
+                                <th>Status</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -89,6 +90,7 @@
                                     <td>{{$histori -> jobdesc}}</td>
                                     <td>{{$histori -> dokumen_pendukung}}</td>
                                     <td>{{$histori -> file_perpanjangan}}</td>
+                                    <td>{{$histori -> status_keaktifan}}</td>
                                 </tr>    
                                 @endforeach
                             </tbody>
