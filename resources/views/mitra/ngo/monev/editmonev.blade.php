@@ -14,7 +14,7 @@
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="/tambah-monev">Daftar Pengajuan Monev</a></li>
-            <li class="breadcrumb-item active">Tambah Monev</li>
+            <li class="breadcrumb-item active">Edit Monev</li>
           </ol>
         </div>
       </div>
@@ -29,13 +29,15 @@
           <div class="card-header">
             <h3 class="card-title">Data Monev</h3>
           </div>
-            <form action="/tambah-monev/store" method="post" role="form" enctype="multipart/form-data">
+            <form action="/edit-monev/update" method="post" role="form" enctype="multipart/form-data">
+            @foreach ($data as $d)
             {{ csrf_field() }}
               <div class="card-body">
+                <input type="hidden" name="id" value="{{ $d -> id}}">
                 <input type="hidden" name="tanggapan" value="0">
                 <div class="form-group">
                     <label>Nama Program</label>
-                    <input type="text" name="nama" class="form-control">
+                    <input type="text" name="nama" class="form-control" value="{{ $d -> nama }}">
                 </div>
                 <div class="form-group">
                     <label for="kabupaten">Kabupaten</label>
@@ -44,11 +46,11 @@
                 <div class="form-group">
                   <label for="">Waktu</label>
                   <div class="input-group">
-                    <input type="text" name="tgl_mulai" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
+                    <input type="text" name="tgl_mulai" value="{{ $d -> tgl_mulai }}" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate" />
                     <div class="input-group-append">
                       <span class="input-group-text">s/d</span>
                     </div>
-                    <input type="text" name="tgl_selesai" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                    <input type="text" name="tgl_selesai" value="{{ $d -> tgl_selesai }}" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                   </div>
                 </div>
                 <div class="form-group">
@@ -56,7 +58,7 @@
                   <div class="input-group">
                     <div class="custom-file">
                       <input name="jadwal" type="file" class="custom-file-input" id="jadwal">
-                      <label class="custom-file-label" for="file">Pilih File</label>
+                      <label class="custom-file-label" for="file">{{ $d -> jadwal }}</label>
                     </div>
                   </div>
                 </div>
@@ -66,6 +68,7 @@
                 </div>
               <!-- /.card-body -->
               </div>
+            @endforeach
             </form>
         </div>
       </div>
