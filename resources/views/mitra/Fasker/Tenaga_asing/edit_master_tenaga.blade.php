@@ -165,8 +165,8 @@
                                 </div>
                                     
                                 <div class="card-footer">
+                                    <a class="btn btn-warning" href="/master-tenaga-asing" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
                                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
-                                    <a class="btn btn-warning" href="/master-tenaga-asing" role="button">Kembali</a>
                                 </div>
                             </div>
                         </form>

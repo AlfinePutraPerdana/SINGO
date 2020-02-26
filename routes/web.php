@@ -293,9 +293,7 @@ Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edi
 
 Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
 
-Route::get('/history-tenaga-asing', function () {
-    return view('mitra.Fasker.Tenaga_asing.history_tenaga');
-});
+Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@show');
 
 //Fasker--NGO
 Route::get('/verif-akun', function () {

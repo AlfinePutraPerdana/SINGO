@@ -29,8 +29,14 @@
                         <h3 class="card-title">History Data Tenaga Asing</h3>
 
                             <div class="card-tools">
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-                                <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-remove"></i></button>
+                                <form action="" method="GET">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                      <input type="text" name="search" class="form-control float-right" placeholder="Search">
+                                      <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                                      </div>
+                                    </div>
+                                 </form>
                             </div>
                         </div>
                         <!-- /.card-header -->
