@@ -55,8 +55,8 @@
         <section id="register">
             <div class="container">
                 <div class="form">
-                    <form method="POST" action="/register" class="contactForm">
-                        {{ csrf_field() }}
+                    <form action="/register-post" method="post" class="contactForm" role="form">
+                        {{csrf_field()}}
                         <div class="row"><h3>Informasi Akun</h3></div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -68,6 +68,12 @@
                                     <h6>Email</h6>
                                     <input type="email" class="form-control" name="email_user" id="email-user" required>
                                 </div>
+                                <div class="form-group">
+                                    <h6>Nama Lengkap</h6>
+                                    <input type="text" class="form-control" name="name_user" id="name_user" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <h6>Password</h6>
                                     <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="password" required>
@@ -81,23 +87,9 @@
                                     <h6>Konfirmasi Password</h6>
                                     <input type="password" class="form-control" name="password_confirmation" id="password-confirm" required>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <h6>Nama Lengkap</h6>
-                                    <input type="text" class="form-control" name="name_user" id="name_user" required>
-                                </div>
-                                <div class="form-group">
-                                    <h6>Country Director/Representative</h6>
-                                    <input type="text" class="form-control" name="country_director" id="country_director" required>
-                                </div>
-                                <div class="form-group">
-                                    <h6>Instansi</h6>
-                                    <input type="text" class="form-control" name="instansi" id="instansi">
-                                </div>
                                 <div class="form-group">
                                     <h6>Nomor Telepon</h6>
-                                    <input type="number" class="form-control" name="telp_user" id="telp-user">
+                                    <input type="tel" class="form-control" name="telp_user" id="telp-user">
                                 </div>
                             </div>
                         </div>
