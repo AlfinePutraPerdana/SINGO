@@ -9,13 +9,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah Artikel</h1>
+            <h1>Edit Artikel</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="/artikel">Artikel</a></li>
-              <li class="breadcrumb-item active">Tambah Artikel</li>
+              <li class="breadcrumb-item active">Edit Artikel</li>
             </ol>
           </div>
         </div>
@@ -26,12 +26,14 @@
   <section class="content">
     <div class="card card-primary card-outline">
       <div class="card-body">
-        <form action="/artikel/store" method="post" role="form" enctype="multipart/form-data">
+        <form action="/artikel/update" method="post" role="form" enctype="multipart/form-data">
+        @foreach ($data as $d)
         {{ csrf_field() }}
-          <input type="hidden" name="status" value="0">
+          <input type="hidden" name="id" value="{{ $d -> id }}">
+          <input type="hidden" name="status" value="{{ $d -> status_verif }}">
           <div class="form-group">
             <label for="judul">Judul Artikel</label>
-            <input class="form-control" name="judul" placeholder="Judul Artikel">
+            <input class="form-control" name="judul" value="{{ $d -> judul}}">
           </div>
           <div class="form-group">
             <label>Kategori</label>
@@ -44,6 +46,7 @@
           </div>
           <div class="form-group">
               <textarea name="artikel" id="compose-textarea" class="form-control" style="height: 300px">
+              {{ $d -> artikel }}
               </textarea>
           </div>
           <div class="form-group">
@@ -51,7 +54,7 @@
             <div class="input-group">
                 <div class="custom-file">
                     <input name="foto" type="file" class="custom-file-input" id="foto">
-                    <label class="custom-file-label" for="file">Pilih Foto</label>
+                    <label class="custom-file-label" for="file">{{ $d -> foto }}</label>
                 </div>
             </div>
           </div>
@@ -60,7 +63,7 @@
             <div class="input-group">
                 <div class="custom-file">
                     <input name="video" type="file" class="custom-file-input" id="video">
-                    <label class="custom-file-label" for="file">Pilih Video</label>
+                    <label class="custom-file-label" for="file">{{ $d-> video }}</label>
                 </div>
             </div>
           </div>
@@ -68,6 +71,7 @@
           <div class="card-footer">
             <input type="submit" class="btn btn-primary">
           </div>
+        @endforeach
         </form>
       </div>
     </div>

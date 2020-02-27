@@ -123,7 +123,7 @@ Route::get('/monev', function () {
 
 Route::get('/artikel', 'NewsController@index');
 
-Route::get('/artikel/baru', 'NewsController@new');
+Route::get('/artikel/tambah', 'NewsController@new');
 
 Route::post('/artikel/store', 'NewsController@store');
 

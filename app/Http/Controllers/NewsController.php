@@ -23,16 +23,26 @@ class NewsController extends Controller
 
     public function store(Request $request){
         //Foto
-        $foto = $request -> file('foto');
-        $nama_foto = time().'_'.$foto -> getClientOriginalName();
-        $foto -> move('Artikel/foto', $nama_foto);
+        if(empty($request -> file('foto'))){
+            $nama_foto = null;
+        }
+        else{
+            $foto = $request -> file('foto');
+            $nama_foto = time().'_'.$foto -> getClientOriginalName();
+            $foto -> move('Artikel_file/foto', $nama_foto);
+        }
 
         //Video
-        $video = $request -> file('video');
-        $nama_video = time().'_'.$video -> getClientOriginalName();
-        $video -> move('Artikel/video', $nama_video);
+        if(empty($request -> file('video'))){
+            $nama_video = null;
+        }
+        else{
+            $video = $request -> file('video');
+            $nama_video = time().'_'.$video -> getClientOriginalName();
+            $video -> move('Artikel_file/video', $nama_video);
+        }
 
-        $create = Arikel::create([
+        $create = Artikel::create([
             'id' => $request -> id,
             'judul' => $request -> judul,
             'artikel' => $request -> artikel,
@@ -48,11 +58,11 @@ class NewsController extends Controller
     public function edit($id){
         $data = DB::table('Artikels')->where('id', $id)->get();
 
-        return view('mitra.ngo.dokumentasi.editartikel');
+        return view('mitra.ngo.dokumentasi.editartikel', ['data' => $data]);
     }
 
-    public function update(Request $requst){
-        $index = Artikel::find($requst -> id);
+    public function update(Request $request){
+        $index = Artikel::find($request -> id);
 
         //Foto
         if(empty($request -> file('foto'))){
@@ -60,10 +70,10 @@ class NewsController extends Controller
         }
         else{
             $foto_lama = $index -> foto;
-            File::delete('Artikel/foto/'.$foto_lama);
+            File::delete('Artikel_file/foto/'.$foto_lama);
             $foto = $request -> file('foto');
             $nama_foto = time().'_'.$foto -> getClientOriginalName();
-            $foto -> move('Artikel/foto', $nama_foto);
+            $foto -> move('Artikel_file/foto', $nama_foto);
         }
 
         //Video
@@ -72,10 +82,10 @@ class NewsController extends Controller
         }
         else{
             $video_lama = $index -> video;
-            File::delete('Artikel/video/'.$video_lama);
+            File::delete('Artikel_file/video/'.$video_lama);
             $video = $request -> file('video');
             $nama_video = time().'_'.$video -> getClientOriginalName();
-            $video -> move('Artikel/video', $nama_video);
+            $video -> move('Artikel_file/video', $nama_video);
         }
 
         $index -> update([
@@ -95,8 +105,8 @@ class NewsController extends Controller
         $nama_foto = $index -> foto;
         $nama_video = $index -> video;
 
-        File::delete('Artikel/foto/'.$nama_foto);
-        File::delete('Artikel/video/'.$nama_video);
+        File::delete('Artikel_file/foto/'.$nama_foto);
+        File::delete('Artikel_file/video/'.$nama_video);
         $data = DB::table('artikels')->where('id', $id)->delete();
 
         return redirect('/artikel');
