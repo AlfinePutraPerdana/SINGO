@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
 use App\Ngo;
+use App\Kategori_instansi;
 use App\Instansi;
 
 class RegisterController extends Controller
@@ -19,9 +20,11 @@ class RegisterController extends Controller
     {
         $this->validation($request);
 
+
         $instansi=Instansi::create([
             'nama' => $request -> name,
             'negara' => $request -> negara,
+            'kota'=> 'Bogor',
             'alamat' => $request -> address,
             'no_regis_izin' => $request -> nomor,
 
@@ -36,10 +39,10 @@ class RegisterController extends Controller
             'email' => $request -> email,
             'website' => $request -> web,
             'bidang_kerja' => $request -> bidang,
-            'mulai_beroperasi' => $request -> date-1,
-            'tgl_ttd_msp' => $request -> date-2,
-            'lokasi_kerja_sana' => $request -> lokasi,
-            'country_director' => $request -> country_director
+            'mulai_beroperasi' => $request -> tgloperasi,
+            'tgl_ttd_msp' => $request -> tglmsp,
+            'lokasi_kerja_sama' => $request -> lokasi,
+            'country_director' => $request -> director
 
         ]);
 
@@ -53,7 +56,7 @@ class RegisterController extends Controller
             'status' =>0
 
         ]);
-        return redirect('/')->with('Sukses','Akun anda segera di proses');
+        return view('dashboard.index')->with('Sukses','Akun anda segera di proses');
 
     }
 

@@ -55,7 +55,7 @@
         <section id="register">
             <div class="container">
                 <div class="form">
-                    <form action="/register-post" method="post" class="contactForm" role="form">
+                    <form action="/register" method="post" class="contactForm" role="form">
                         {{csrf_field()}}
                         <div class="row"><h3>Informasi Akun</h3></div>
                         <div class="row">
@@ -150,11 +150,11 @@
                                 </div>
                                 <div class="form-group">
                                     <h6>Tanggal Mulai Beroperasi di Indonesia</h6>
-                                    <input type="date" name="date-1" class="form-control" id="date-1" required>
+                                    <input type="date" name="tgloperasi" class="form-control" id="tgloperasi" required>
                                 </div>
                                 <div class="form-group">
                                     <h6>Tanggal Penandatanganan MSP Terakhir</h6>
-                                    <input type="date" name="date-2" class="form-control" id="date-2" required>
+                                    <input type="date" name="tglmsp" class="form-control" id="tglmsp" required>
                                 </div>
                                 <div class="form-group">
                                     <h6>Lokasi Kerja Sama</h6>

@@ -21,7 +21,7 @@ class CreateInstansisTable extends Migration
             $table->string('alamat');
             $table->unsignedBigInteger('id_kategori');
            // $table->foreign('id_kategori')->references('id')->on('kategori_instansis');
-            $table->string('parent_id');
+            $table->string('parent_id')->nullable();
             $table->string('no_regis_izin');
             $table->timestamps();
         });

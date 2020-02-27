@@ -18,6 +18,20 @@ class CreateKategoriInstansisTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+        DB::table('kategori_instansis')->insert(
+            array(
+                'id' => 1,
+                'name' => 'NGO'
+            )
+        );
+
+        DB::table('kategori_instansis')->insert(
+            array(
+                'id' => 2,
+                'name' => 'Mitra lokal'
+            )
+        );
     }
 
     /**
