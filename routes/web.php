@@ -119,17 +119,19 @@ Route::get('/monev', function () {
     return view('mitra.ngo.monev.monev');
 });
 
-Route::get('/artikel', function () {
-    return view('mitra.ngo.dokumentasi.artikel');
-});
+//----------- ARTIKEL -----------
 
-Route::get('/tambah-artikel', function () {
-    return view('mitra.ngo.dokumentasi.tambahartikel');
-});
+Route::get('/artikel', 'NewsController@index');
 
-Route::get('/revisi-artikel', function () {
-    return view('mitra.ngo.dokumentasi.revisiartikel');
-});
+Route::get('/artikel/tambah', 'NewsController@new');
+
+Route::post('/artikel/store', 'NewsController@store');
+
+Route::get('/artikel/edit/{id}', 'NewsController@edit');
+
+Route::post('/artikel/update', 'NewsController@update');
+
+Route::get('/artikel/delete/{id}', 'NewsController@delete');
 
 // ---------- Laporan Tahunan Dan Keuangan -------------------
 
