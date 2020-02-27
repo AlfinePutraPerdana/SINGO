@@ -403,8 +403,11 @@
 
 <script src="{{ asset('assets_be/plugins/toastr/toastr.min.js') }}"></script>
 
+<script src="{{ asset('assets_be/dist/js/parsley.js') }}"></script>
+
 <script src="{{asset('assets_be/plugins/inputmask/min/jquery.inputmask.bundle.min.js')}}"></script>
 
+@stack('script')
 
 <script>
     $(document).ready(function () {
