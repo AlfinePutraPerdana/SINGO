@@ -32,7 +32,7 @@
                         <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                     </div>
                     <div class="card-body">
-                        <form action="/tenaga" method="post" enctype="multipart/form-data" >
+                        <form action="/tenaga" method="post" enctype="multipart/form-data" autocomplete="off" >
                             {{ csrf_field() }}
                             @if (count($errors) > 0)
                             <div class="alert alert-danger" role="alert">
@@ -174,8 +174,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                   
-                                    
+
+
                                 <div class="card-footer">
                                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
                                 </div>
@@ -186,7 +186,7 @@
         </div>
     </section>
 </div>
- 
+
 
 
 @endsection
