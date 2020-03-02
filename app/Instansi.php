@@ -13,7 +13,7 @@ class instansi extends Model
      * @var array
      */
     protected $fillable = [
-        'nama', 'negara','kota','alamat','kategori','parent_id','no_regis_izin',
+        'nama', 'negara','kota','alamat','id_kategori','parent_id','no_regis_izin',
         'created_at','updated_at',
     ];
 

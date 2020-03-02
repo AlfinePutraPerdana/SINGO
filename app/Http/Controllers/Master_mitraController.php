@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Instansi;
-
  use App\Mitra_lokal;
 
 class Master_mitraController extends Controller
