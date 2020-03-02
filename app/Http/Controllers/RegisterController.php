@@ -16,26 +16,16 @@ class RegisterController extends Controller
         return view('dashboard.register');
     }
 
-
-
     public function Register(Request $request)
     {
-        $this->validate($request, [
-            'name' => 'required|max:255|unique:instansis,nama',
-            'email' => 'required|email|max:255',
-            'password' => 'required|confirmed|max:255',
-            'negara' => 'required|max:255',
-            'nomor' => 'required'
-        ]);
+        $this->validation($request);
 
-        $kategori= Kategori_instansi::where('id',1)->first();
 
         $instansi=Instansi::create([
             'nama' => $request -> name,
             'negara' => $request -> negara,
             'kota'=> 'Bogor',
             'alamat' => $request -> address,
-            'id_kategori'=>$kategori->id,
             'no_regis_izin' => $request -> nomor,
 
         ]);
@@ -66,11 +56,24 @@ class RegisterController extends Controller
             'status' =>0
 
         ]);
+        return view('dashboard.index')->with('Sukses','Akun anda segera di proses');
 
+<<<<<<< HEAD
 
         return redirect('register')->withSuccess('Berhasil');
 
+=======
+>>>>>>> parent of b9037e6... updettt
     }
 
-
+    public function validation($request)
+    {
+        return $this->validate($request, [
+            'name' => 'required|max:255|unique:instansis,nama',
+            'email' => 'required|email|max:255',
+            'password' => 'required|confirmed|max:255',
+            'negara' => 'required|max:255',
+            'nomor' => 'required'
+        ]);
+    }
 }

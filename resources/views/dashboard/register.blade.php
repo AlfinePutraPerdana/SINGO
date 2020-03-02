@@ -55,22 +55,8 @@
         <section id="register">
             <div class="container">
                 <div class="form">
-                    <form action="register-post" method="post" class="contactForm" role="form">
+                    <form action="/register" method="post" class="contactForm" role="form">
                         {{csrf_field()}}
-                        @if (session('success'))
-                            <div class="alert alert-success" role="alert">
-                                {{session('success')}}
-                            </div>
-                            @endif
-                        @if (count($errors)>0)
-                            <div class="alert alert-danger" role="alert">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
                         <div class="row"><h3>Informasi Akun</h3></div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -90,8 +76,12 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <h6>Password</h6>
-                                    <input type="password" class="form-control" name="password" id="password" required>
-
+                                    <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="password" required>
+                                    @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
                                 </div>
                                 <div class="form-group">
                                     <h6>Konfirmasi Password</h6>
@@ -110,7 +100,12 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <h6>Nama Organisasi</h6>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Masukan Nama Organisasi" required autofocus>
+                                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukan Nama Organisasi" required autofocus>
+                                    @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
 
                                 </div>
                                 <div class="form-group">
@@ -168,7 +163,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <h6>Alamat Kantor</h6>
+                            <h6>Alamat</h6>
                             <textarea rows="5" name="address" class="form-control" id="address" required></textarea>
                         </div>
                         <br>
