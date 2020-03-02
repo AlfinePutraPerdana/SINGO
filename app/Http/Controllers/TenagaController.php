@@ -39,7 +39,7 @@ class TenagaController extends Controller
     public function create()
     {
         //
-        $instansis = Instansi::all();
+        $instansis = Instansi::all()->where('id_kategori',2);
 
         $kategoris = ['Tamu', 'Tenaga'];
 

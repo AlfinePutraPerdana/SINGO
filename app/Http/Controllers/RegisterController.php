@@ -69,6 +69,7 @@ class RegisterController extends Controller
 
 
         return redirect('register')->withSuccess('Berhasil');
+
     }
 
 

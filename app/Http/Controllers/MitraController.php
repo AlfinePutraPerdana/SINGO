@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 use App\Instansi;
 
+use App\Kategori_instansi;
+
 use App\Mitra_lokal;
 
 
@@ -22,11 +24,18 @@ class MitraController extends Controller
     public function index(Request $request)
     {
         //
+
+        
+
         if($request->has('search')){
-            $mitra = Instansi::where('nama','LIKE','%' .$request->search. '%')->paginate(5);
+              
+            $mitra = Instansi::where('id_kategori',2)
+                            ->where('nama','LIKE','%' .$request->search. '%')
+                            ->paginate(5);
+
         }else{
 
-            $mitra = Instansi::latest()->paginate(5);
+            $mitra = Instansi::where('id_kategori',2)->latest()->paginate(5);
         }
 
         // $lokal = Mitra_lokal::all();
@@ -70,10 +79,16 @@ class MitraController extends Controller
 
         ],$pesan);
 
+        
+        
+      $lokal = Kategori_instansi::where('id',2)->first();
+
        $instansi = Instansi::create([
             'nama' => $request -> nama,
             'alamat' => $request -> alamat,
-            'no_regis_izin' => $request -> no_regis_izin
+            'no_regis_izin' => $request -> no_regis_izin,
+            'id_kategori' =>$lokal->id
+
         ]);
 
         $id_instansi = $instansi -> id;

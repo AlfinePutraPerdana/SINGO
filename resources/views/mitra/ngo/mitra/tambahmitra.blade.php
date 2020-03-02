@@ -91,7 +91,7 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form action="/tambah-mitra" role="form" method="POST">
+                            <form action="/tambah-mitra" id="formmitra" data-parsley-validate role="form" method="POST">
                              {{ csrf_field() }}
                              @if (count($errors) > 0)
                             <div class="alert alert-danger" role="alert">
@@ -104,15 +104,15 @@
                             @endif
                                 <div class="form-group">
                                     <label for="nama">Nama Mitra</label>
-                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Mitra">
+                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Mitra" data-parsley-required data-parsley-trigger="keyup">
                                 </div>
                                 <div class="form-group">
                                     <label for="alamat">Alamat Mitra</label>
-                                    <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat Mitra">
+                                    <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat Mitra" data-parsley-required data-parsley-trigger="keyup">
                                 </div>
                                 <div class="form-group">
                                     <label for="registrasi">Nomor Izin Registrasi</label>
-                                    <input type="text" name="no_regis_izin" class="form-control" id="registrasi" placeholder="Nomor Registrasi">
+                                    <input type="text" name="no_regis_izin" class="form-control" id="registrasi" placeholder="Nomor Registrasi" data-parsley-required data-parsley-trigger="keyup">
                                 </div>
                                 <div class="form-group">
                                     <label>Nama Program</label>
@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="">Pembiayaan</label>
-                                  <input type="number" name="pembiayaan" class="form-control" id="biaya" placeholder="Besar nominal">
+                                  <input type="number" name="pembiayaan" class="form-control" id="biaya" placeholder="Besar nominal" data-parsley-required data-parsley-trigger="keyup">
                                 </div>
                                 <div class="form-group">
                                   <label for="">Durasi</label>
@@ -135,7 +135,7 @@
                                     <div class="input-group-append">
                                       <span class="input-group-text">s/d</span>
                                     </div>
-                                    <input type="text" name="durasi_akhir" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                                    <input type="text" name="durasi_akhir" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
                                   </div>
                                 </div>
 
@@ -219,11 +219,6 @@
 
               </div>
                 <ul class="pagination pagination-sm m-0 float-right">
-                  {{-- <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link"  href="{{$mitra->links()}}">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li> --}}
                   {{ $mitra -> links() }}
                 </ul>
             </div>
@@ -236,5 +231,11 @@
 
 @endsection
 
-
+@push('script')
+    <script>
+      $(document).ready(function(){
+        $('#formmitra').parsley();
+      })
+    </script>
+@endpush
 

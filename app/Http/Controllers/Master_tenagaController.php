@@ -93,7 +93,7 @@ class Master_tenagaController extends Controller
     {
         $tenaga = Master_tenaga_asing::find($id);
 
-        $instansis = Instansi::all();
+        $instansis = Instansi::all()->where('id_kategori',2);
 
         return view('mitra.ngo.tenaga.lihatdata',['tenaga' => $tenaga,'instansis'=>$instansis]);
     }
