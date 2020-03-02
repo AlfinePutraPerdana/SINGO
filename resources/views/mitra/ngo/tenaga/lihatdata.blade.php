@@ -31,33 +31,31 @@
                             <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                         </div>
                         <div class="card-body">
-                             <form action="/list-tenaga/{{$tenaga -> id}}/update" method="post" enctype="multipart/form-data" >
+                             <form action="/list-tenaga/{{$tenaga -> id}}/update" method="post" enctype="multipart/form-data" data-parsley-validate >
                                 {{ csrf_field() }}
                                     <div class="form-group">
                                         <label for="nama">Nama</label>
-                                         <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="nama" >
+                                         <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="nama" data-parsley-required data-parsley-trigger="keyup" >
                                     </div>
                                     <div class="form-group">
                                         <label for="jenis_kelamin">Jenis Kelamin</label>
-                                        <input type="text" name="jenis_kelamin" value="{{$tenaga -> jenis_kelamin }}" class="form-control" id="jenis_kelamin" placeholder="Jenis Kelamin">
+                                        <input type="text" name="jenis_kelamin" value="{{$tenaga -> jenis_kelamin }}" class="form-control" id="jenis_kelamin" placeholder="Jenis Kelamin" data-parsley-required data-parsley-trigger="keyup">
                                     </div>
                                     <div class="form-group">
                                         <label for="tempat_lahir">Tempat Lahir</label>
-                                        <input type="text" name="tempat_lahir" value="{{$tenaga -> tempat_lahir }}" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir">
+                                        <input type="text" name="tempat_lahir" value="{{$tenaga -> tempat_lahir }}" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir" data-parsley-required data-parsley-trigger="keyup">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Tanggal Lahir</label>
-                                        <div class="input-group">
-                                            <input type="text" name="tanggal_lahir" value="{{$tenaga -> tanggal_lahir }}" class="form-control datepicker" data-toggle="datetimepicker" data-target=".datepicker" />
-                                        </div>
+                                            <input type="text" name="tanggal_lahir" value="{{$tenaga -> tanggal_lahir }}" class="form-control datepicker" data-toggle="datetimepicker" data-target=".datepicker" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup" />
                                     </div>
                                     <div class="form-group">
                                         <label for="negara">Asal Negara</label>
-                                        <input type="text" name="kewarganegaraan" value="{{$tenaga -> kewarganegaraan }}" class="form-control" id="negara" placeholder="negara">
+                                        <input type="text" name="kewarganegaraan" value="{{$tenaga -> kewarganegaraan }}" class="form-control" id="negara" placeholder="negara" data-parsley-required data-parsley-trigger="keyup">
                                     </div>
                                     <div class="form-group">
                                         <label for="Passport">Nomor Passport</label>
-                                        <input type="text" name="no_passport" value="{{$tenaga -> no_passport }}" class="form-control" id="passport" placeholder="Nomor Passport">
+                                        <input type="text" name="no_passport" value="{{$tenaga -> no_passport }}" class="form-control" id="passport" placeholder="Nomor Passport" data-parsley-required data-parsley-trigger="keyup">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Masa Berlaku Passport</label>
@@ -66,12 +64,12 @@
                                             <div class="input-group-append">
                                             <span class="input-group-text">s/d</span>
                                             </div>
-                                            <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" />
+                                            <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Mitra</label>
-                                        <select name="id_instansi" class="form-control">
+                                        <select name="id_instansi" class="form-control" data-parsley-required data-parsley-trigger="keyup">
                                             @foreach ($instansis as $instansi)
                                                  <option 
                                                      value="{{$instansi -> id}}"
@@ -84,26 +82,26 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="kategori">Kategori</label>
-                                        <select name="kategori" class="form-control">
+                                        <select name="kategori" class="form-control" data-parsley-required data-parsley-trigger="keyup">
                                           <option value="Tenaga" @if ($tenaga->kategori == 'Tenaga') selected @endif>Tenaga</option>
                                           <option value="Tamu" @if ($tenaga->kategori == 'Tamu') selected @endif>Tamu</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="kegiatan">Kegiatan</label>
-                                        <textarea name="kegiatan"  id="kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                                        <textarea name="kegiatan"  id="kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks" data-parsley-required data-parsley-trigger="keyup">
                                          {!! $tenaga->kegiatan !!}
                                         </textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="">Tujuan Kegiatan</label>
-                                        <textarea name="tujuan"  id="tujuan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                                        <textarea name="tujuan"  id="tujuan" class="form-control" style="height: 300px" placeholder="Masukan Teks" data-parsley-required data-parsley-trigger="keyup">
                                                {!! $tenaga->tujuan !!}
                                         </textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="jabatan">Jabatan</label>
-                                        <input type="text" name="jabatan" value="{{$tenaga -> jabatan }}" class="form-control" id="jabatan" placeholder="Jabatan">
+                                        <input type="text" name="jabatan" value="{{$tenaga -> jabatan }}" class="form-control" id="jabatan" placeholder="Jabatan" data-parsley-required data-parsley-trigger="keyup">
                                     </div>
                                     <div class="form-group">
                                       <label for="">Lama Kegiatan</label>
@@ -112,7 +110,7 @@
                                           <div class="input-group-append">
                                              <span class="input-group-text">s/d</span>
                                           </div>
-                                           <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" />
+                                           <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup" />
                                       </div>
                                   </div> 
                                     <div class="form-group">

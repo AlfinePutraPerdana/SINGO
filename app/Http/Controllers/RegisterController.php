@@ -13,13 +13,19 @@ class RegisterController extends Controller
 {
     public function Showregisterform()
     {
+        $ngo = Kategori_instansi::where('id',1)->first();
+
+        
+
         return view('dashboard.register');
     }
 
     public function Register(Request $request)
     {
-        $this->validation($request);
+        
+        $ngo = Kategori_instansi::where('id',1)->first();
 
+        $mitra = Kategori_instansi::where('id',2)->first();
 
         $instansi=Instansi::create([
             'nama' => $request -> name,
@@ -27,8 +33,11 @@ class RegisterController extends Controller
             'kota'=> 'Bogor',
             'alamat' => $request -> address,
             'no_regis_izin' => $request -> nomor,
-
+            'id_kategori' => $ngo
+            
         ]);
+
+       
 
         $id_instansi = $instansi -> id;
 
@@ -56,18 +65,9 @@ class RegisterController extends Controller
             'status' =>0
 
         ]);
-        return view('dashboard.index')->with('Sukses','Akun anda segera di proses');
+        return redirect('/register')->with('Sukses','Akun anda segera di proses');
 
     }
 
-    public function validation($request)
-    {
-        return $this->validate($request, [
-            'name' => 'required|max:255|unique:instansis,nama',
-            'email' => 'required|email|max:255',
-            'password' => 'required|confirmed|max:255',
-            'negara' => 'required|max:255',
-            'nomor' => 'required'
-        ]);
-    }
+    
 }
