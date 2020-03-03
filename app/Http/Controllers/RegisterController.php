@@ -68,7 +68,7 @@ class RegisterController extends Controller
         ]);
 
 
-        return redirect('register')->withSuccess('Berhasil');
+        return redirect('/dashboard')->withSuccess('Berhasil');
 
     }
 

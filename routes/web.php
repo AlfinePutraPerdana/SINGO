@@ -354,9 +354,8 @@ Route::get('/verif-bebas-pajak', function () {
 
 //DASHBOARD
 
-Route::get('/dashboard', function(){
-    return view('dashboard.index');
-})->name('index');
+Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
+
 Route::get('/login', function(){
     return view('dashboard.login');
 });
