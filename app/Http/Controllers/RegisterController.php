@@ -57,6 +57,7 @@ class RegisterController extends Controller
 
         ]);
         return view('dashboard.index')->with('Sukses','Akun anda segera di proses');
+
     }
 
     public function validation($request)
