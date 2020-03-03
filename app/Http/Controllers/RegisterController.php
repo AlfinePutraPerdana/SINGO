@@ -57,16 +57,6 @@ class RegisterController extends Controller
 
         ]);
         return view('dashboard.index')->with('Sukses','Akun anda segera di proses');
-
-<<<<<<< HEAD
-
-        return redirect('register')->withSuccess('Berhasil');
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of b9037e6... updettt
-=======
->>>>>>> parent of b911250... Merge branch 'master' of https://gitlab.com/fasker/main-project2
     }
 
     public function validation($request)
