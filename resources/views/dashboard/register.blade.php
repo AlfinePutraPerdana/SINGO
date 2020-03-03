@@ -62,7 +62,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <h6>Username</h6>
-                                    <input type="text" class="form-control" name="username" id="username" required>
+                                    <input type="text" class="form-control" name="username" id="username" required autofocus>
                                 </div>
                                 <div class="form-group">
                                     <h6>Email</h6>
@@ -100,7 +100,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <h6>Nama Organisasi</h6>
-                                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukan Nama Organisasi" required autofocus>
+                                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukan Nama Organisasi" required>
                                     @error('name')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
