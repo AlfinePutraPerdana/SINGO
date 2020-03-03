@@ -19,19 +19,20 @@ class Verif_tenagaController extends Controller
      */
     public function index(Request $request)
     {
-       if($request->has('search')){
-
-        $tenagas = Master_tenaga_asing::where('nama','Like','%'.$request->search.'%')
-                                        ->where('status','1')
-                                        ->latest('updated_at')
-                                        ->paginate(5);
-
-       }else{
-
-        $tenagas = Master_tenaga_asing::where('status','1')->latest('updated_at')->paginate(5);
-       }
-       
         
+        if($request->has('search')){
+
+            $tenagas = Master_tenaga_asing::where('nama','Like','%'.$request->search.'%')
+                                            ->where('status','1')
+                                            ->latest('updated_at')
+                                            ->paginate(5);
+    
+           }else{
+    
+            $tenagas = Master_tenaga_asing::where('status','1')->latest('updated_at')->paginate(5);
+            
+           }
+
         $instansis = Instansi::all();
 
         return view('mitra.Fasker.Tenaga_asing.verif_tenaga_asing',['tenagas' => $tenagas,'instansis'=> $instansis]);

@@ -10,8 +10,6 @@ use App\History_ta;
 
 use App\Instansi;
 
-use App\Kategori_instansi;
-
 class Master_tenaga_faskerController extends Controller
 {
     /**
@@ -44,7 +42,7 @@ class Master_tenaga_faskerController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**

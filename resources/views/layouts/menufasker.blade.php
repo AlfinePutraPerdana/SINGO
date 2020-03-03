@@ -242,6 +242,12 @@
                   <p>Tenaga Asing</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/proses-tenaga" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sedang Diproses</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">

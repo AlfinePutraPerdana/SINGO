@@ -30,11 +30,11 @@
                           <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                       </div>
                       <div class="card-body">
-                           <form action="/tenaga/{{$tenaga -> id}}/update" method="post" id="revisitenaga" enctype="multipart/form-data" data-parsley-validate>
+                           <form action="/tenaga/{{$tenaga -> id}}/update" method="post" enctype="multipart/form-data" id="revisitenaga" enctype="multipart/form-data" data-parsley-validate>
                               {{ csrf_field() }}
                                   <div class="form-group">
-                                      <label for="nama">Nama Lengkap</label>
-                                       <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="Nama Lengkap" data-parsley-required data-parsley-trigger="keyup" >
+                                      <label for="nama">Nama</label>
+                                       <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="nama" data-parsley-required data-parsley-trigger="keyup">
                                   </div>
                                   <div class="form-group">
                                       <label for="jenis_kelamin">Jenis Kelamin</label>
@@ -52,7 +52,7 @@
                                   </div>
                                   <div class="form-group">
                                       <label for="negara">Asal Negara</label>
-                                      <input type="text" name="kewarganegaraan" value="{{$tenaga -> kewarganegaraan }}" class="form-control" id="negara" placeholder="negara" data-parsley-required data-parsley-trigger="keyup">
+                                      <input type="text" name="kewarganegaraan" value="{{$tenaga -> kewarganegaraan }}" class="form-control" id="negara" placeholder="Negara" data-parsley-required data-parsley-trigger="keyup">
                                   </div>
                                   <div class="form-group">
                                       <label for="Passport">Nomor Passport</label>
@@ -107,43 +107,39 @@
                                   <div class="form-group">
                                     <label for="">Lama Kegiatan</label>
                                     <div class="input-group">
-                                        <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate" />
+                                        <input type="text" name="tgl_awal" value="{{$tenaga -> tgl_awal}}" class="form-control startdate " data-toggle="datetimepicker" data-target=".startdate"/>
                                         <div class="input-group-append">
                                            <span class="input-group-text">s/d</span>
                                         </div>
-                                         <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
+                                         <input type="text" name="tgl_akhir" value="{{$tenaga -> tgl_akhir}}" class="form-control enddate " data-toggle="datetimepicker" data-target=".enddate" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup" />
                                     </div>
                                 </div> 
                                   <div class="form-group">
                                       <label for="foto">Lampirkan Foto</label>
                                       <div class="custom-file">
                                           <label class="custom-file-label" for="foto" >{{$tenaga -> foto }}</label>
-                                          <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto" >
+                                          <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto">
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="lampirpassport">Lampirkan Passport</label>
                                       <div class="input-group">
-                                          <div class="custom-file">
                                               <label class="custom-file-label" for="lampirpassport">{{$tenaga -> upload_passpor }}</label>
                                               <input type="file" name="upload_passpor" value="{{$tenaga -> upload_passpor }}" class="custom-file-input" id="lampirpassport">
                                           </div>
-                                      </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="file">Lampirkan CV</label>
                                       <div class="input-group">
-                                          <div class="custom-file">
+                                          <label class="custom-file-label" for="file">{{$tenaga -> cv_resume }}</label>
                                               <input type="file" name="cv_resume" value="{{$tenaga -> cv_resume }}" class="custom-file-input" id="cv">
-                                              <label class="custom-file-label" for="file">{{$tenaga -> cv_resume }}</label>
                                           </div>
-                                      </div>
                                   </div>
                                   <div class="form-group">
                                       <label for="file">Lampirkan Jobdesk</label>
                                       <div class="input-group">
                                           <div class="custom-file">
-                                              <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk">
+                                              <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk" >
                                               <label class="custom-file-label" for="file">{{$tenaga -> jobdesc }}</label>
                                           </div>
                                       </div>
@@ -191,7 +187,11 @@
       </section>
   </div>
 
+  
+
+
 @endsection
+
 
 @push('script')
     <script>
@@ -201,4 +201,3 @@
         });
     </script>
 @endpush
-

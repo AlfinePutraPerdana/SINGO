@@ -169,6 +169,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                   
                                 </tbody>
                             </table>
                         </form>
@@ -177,8 +178,9 @@
                             <div class="col-md-4 float-left">
                                 {{-- <a href="/master-tamu" role="button" class="btn btn-block btn-primary"><i class="far fa-check-square"></i>   Verifikasi</a> --}}
                             </div>
+
                             {{ $tenagas->links() }}
-                            </ul>
+                            
                         </div>
                 </div>
             </div>

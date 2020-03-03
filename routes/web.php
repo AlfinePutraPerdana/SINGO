@@ -354,14 +354,16 @@ Route::get('/verif-bebas-pajak', function () {
 
 //DASHBOARD
 
+
 Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
+
 
 Route::get('/login', function(){
     return view('dashboard.login');
 });
 //REGISTRATION
 Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
-Route::post('/register-post','RegisterController@Register');
+Route::post('/register','RegisterController@Register');
 
 Route::get('/news', function(){
     return view('dashboard.news');
