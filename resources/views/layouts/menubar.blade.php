@@ -27,7 +27,7 @@
   <!-- Google Font: Source Sans Pro -->
 {{-- <link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet"> --}}
 
-<link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Open+Sans|Poppins|Roboto|Sriracha&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Roboto|Sriracha&display=swap" rel="stylesheet">
 
 
   <link rel="stylesheet" href="{{asset('assets_be/plugins/summernote/summernote-lite.css')}}">
@@ -407,7 +407,7 @@
 
 <script src="{{ asset('assets_be/dist/js/parsley.js') }}"></script>
 
-@stack('script')
+
 
 <script>
     $(document).ready(function () {
@@ -417,13 +417,13 @@
       $('#upaya').summernote()
       $('#hasil').summernote()
       $('#sasaran').summernote()
-      $('#tujuan').summernote()
+      $('#tujuan').summernote({placeholder: 'Masukan Teks...'})
       $('#daerah').summernote()
       $('#diharapkan').summernote()
       $('#pihak').summernote()
       $('#dana').summernote()
       $('#lokasi').summernote()
-      $('#kegiatan').summernote()
+      $('#kegiatan').summernote({placeholder: 'Masukan Teks...'})
       $('#tenaga').summernote()
       $('#prioritas').summernote()
       $('#penerima').summernote()

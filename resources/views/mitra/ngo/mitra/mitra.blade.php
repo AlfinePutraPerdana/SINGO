@@ -42,12 +42,9 @@
               </div>
             </div>
             <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 300px;">
+            <div class="card-body table-responsive p-0" style="height: 350px;">
               <table class="table table-head-fixed">
                 <thead>
-                    @php
-                        $no= 1;
-                    @endphp
                   <tr>
                     <th>No</th>
                     <th class="text-center">Nama Mitra Lokal</th>
@@ -58,7 +55,7 @@
                 <tbody>
                     @foreach ($mitras as $mitra)
                     <tr>
-                        <td>{{$no++}}</td>
+                        <td>{{($mitras->currentPage() - 1)*$mitras->perPage()+$loop->iteration}}</td>
                         <td class="text-center">{{$mitra->nama}}</td>
                         <td class="text-center">{{$mitra->alamat}}</td>
                         <td class="text-center"><a href="/mitra/{{$mitra->id}}/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>

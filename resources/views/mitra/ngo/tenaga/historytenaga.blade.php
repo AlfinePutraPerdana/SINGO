@@ -43,13 +43,9 @@
                         </div>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body table-responsive p-0" style="height: 450px;">
+                        <div class="card-body table-responsive p-0" style="height: 550px;">
                             <table class="table table-head-fixed">
                                 <thead>
-                                    @php
-                                        $no = 1;
-
-                                    @endphp
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
@@ -74,7 +70,7 @@
                                 <tbody>
                                     @foreach ($historis as $histori)
                                     <tr>
-                                        <td>{{$no++}}</td>
+                                        <td>{{($historis->currentPage()-1)*$historis->perPage()+$loop->iteration}}</td>
                                         <td>{{$histori -> nama}}</td>
                                         <td>{{$histori -> jenis_kelamin}}</td>
                                         <td>{{$histori -> tempat_lahir}}</td>

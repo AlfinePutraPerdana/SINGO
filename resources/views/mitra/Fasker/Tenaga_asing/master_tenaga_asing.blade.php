@@ -56,7 +56,7 @@
                   @endphp
                   <tr>
                     @foreach ($tenagas as $tenaga)
-                    <td>{{$no++}}</td>
+                    <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
                     <td align="center">{{$tenaga->nama}}</td>
                     <td align="center">{{$tenaga->kewarganegaraan}}</td>
                     <td align="center">{{$tenaga->instansi->nama}}</td>

@@ -55,12 +55,9 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                  @php
-                                      $no = 1;
-                                  @endphp
                                   @foreach ($tenaga as $ten)
                                   <tr>
-                                  <td>{{$no++}}</td>
+                                  <td>{{($tenaga->currentPage() - 1)*$tenaga->perPage()+$loop->iteration}}</td>
                                   <td>{{$ten -> nama}}</td>
                                       <td>{{ $ten -> kewarganegaraan }}</td>
                                       <td>

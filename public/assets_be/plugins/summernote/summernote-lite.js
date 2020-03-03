@@ -8067,7 +8067,7 @@
               ['color', ['color']],
               ['para', ['ul', 'ol', 'paragraph']],
               ['table', ['table']],
-              ['insert', ['link', 'picture', 'video']],
+              ['insert', ['link','video']],
               ['view', ['fullscreen', 'codeview', 'help']],
           ],
           // popover

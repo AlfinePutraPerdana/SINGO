@@ -30,11 +30,11 @@
                           <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                       </div>
                       <div class="card-body">
-                           <form action="/tenaga/{{$tenaga -> id}}/update" method="post" enctype="multipart/form-data" id="revisitenaga" enctype="multipart/form-data" data-parsley-validate>
+                           <form action="/tenaga/{{$tenaga -> id}}/update" method="post" enctype="multipart/form-data"  enctype="multipart/form-data" data-parsley-validate>
                               {{ csrf_field() }}
                                   <div class="form-group">
                                       <label for="nama">Nama</label>
-                                       <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="nama" data-parsley-required data-parsley-trigger="keyup">
+                                       <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="Nama Lengkap" data-parsley-required data-parsley-trigger="keyup">
                                   </div>
                                   <div class="form-group">
                                       <label for="jenis_kelamin">Jenis Kelamin</label>
@@ -47,7 +47,7 @@
                                   <div class="form-group">
                                       <label for="">Tanggal Lahir</label>
                                       <div class="input-group">
-                                          <input type="text" name="tanggal_lahir" value="{{$tenaga -> tanggal_lahir }}" class="form-control datepicker" data-toggle="datetimepicker" data-target=".datepicker" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
+                                          <input type="text" name="tanggal_lahir" value="{{$tenaga -> tanggal_lahir }}" placeholder="yyyy/mm/dd" class="form-control datepicker" data-toggle="datetimepicker" data-target=".datepicker" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
                                       </div>
                                   </div>
                                   <div class="form-group">
@@ -61,11 +61,11 @@
                                   <div class="form-group">
                                       <label for="">Masa Berlaku Passport</label>
                                       <div class="input-group">
-                                          <input type="text" name="tgl_berlaku_awal" value="{{$tenaga -> tgl_berlaku_awal }}" class="form-control startdate2 " data-toggle="datetimepicker" data-target=".startdate2"/>
+                                          <input type="text" name="tgl_berlaku_awal" value="{{$tenaga -> tgl_berlaku_awal }}" placeholder="yyyy/mm/dd" class="form-control startdate2 " data-toggle="datetimepicker" data-target=".startdate2"/>
                                           <div class="input-group-append">
                                           <span class="input-group-text">s/d</span>
                                           </div>
-                                          <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup" />
+                                          <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" placeholder="yyyy/mm/dd" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup" />
                                       </div>
                                   </div>
                                   <div class="form-group">
@@ -77,7 +77,8 @@
                                                       @if ($instansi -> id === $tenaga-> id_instansi)
                                                           selected
                                                       @endif
-                                                      > {{ $instansi -> nama}} </option>
+                                                      > {{ $instansi -> nama}} 
+                                                </option>
                                           @endforeach
                                       </select>
                                   </div>
@@ -176,8 +177,8 @@
                                   @endif  
                                       
                                   <div class="card-footer">
+                                      <a class="btn btn-warning" href="/tenaga" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
                                       <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
-                                      <a class="btn btn-warning" href="/tenaga" role="button">Kembali</a>
                                   </div>
                               </div>
                           </form>
@@ -187,17 +188,4 @@
       </section>
   </div>
 
-  
-
-
 @endsection
-
-
-@push('script')
-    <script>
-        $(document).ready(function(){
-
-            $('#revisitenaga').parsley();
-        });
-    </script>
-@endpush

@@ -23,10 +23,11 @@ class TenagaController extends Controller
         //
         if($request->has('search'))
         {
-            $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')->paginate(5);
+            $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')
+                                            ->latest('update_at')->paginate(5);
         }else{
             
-            $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest()->paginate(5);
+            $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest('updated_at')->paginate(5);
         }
 
         return view('mitra.ngo.tenaga.tenaga',['tenaga' => $tenaga]);
