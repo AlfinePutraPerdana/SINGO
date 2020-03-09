@@ -111,4 +111,12 @@ class NewsController extends Controller
 
         return redirect('/artikel');
     }
+
+    public function frontview($id){
+        $news = Artikel::all();
+
+        $data = DB::table('Artikels')->where('id', $id)->get();
+
+        return view('dashboard.news', ['news' => $news], ['data' => $data]);
+    }
 }
