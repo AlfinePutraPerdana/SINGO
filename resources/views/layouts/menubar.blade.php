@@ -117,7 +117,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-success elevation-4">
+  <aside class="main-sidebar sidebar-dark-danger elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="{{asset('assets_be/dist/img/AdminLTELogo.png')}}"
@@ -161,8 +161,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('open')">
+            <a href="" class="nav-link @yield('permintaan')" >
               <i class="nav-icon  far fa-list-alt"></i>
               <p>
                 Manajemen Permintaan
@@ -177,7 +177,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tenaga" class="nav-link">
+                <a href="/tenaga" class="nav-link @yield('tambah-tenaga')" >
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ajukan Tenaga Asing</p>
                 </a>
@@ -195,7 +195,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tambah-mitra" class="nav-link">
+                <a href="/tambah-mitra" class="nav-link @yield('tambah-mitra')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tambah Mitra Lokal</p>
                 </a>
@@ -203,7 +203,7 @@
               <li class="nav-item">
                 <a href="/tambah-monev" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Pengajuan Monev</p>
+                  <p>Pengajuan Monev</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -232,8 +232,8 @@
             </ul>
             </a>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-tenaga')">
+            <a href="" class="nav-link @yield('rekomendasi')">
               <i class="nav-icon  far fa-user-circle"></i>
               <p>
                 Rekomendasi Tenaga
@@ -242,7 +242,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/list-tenaga" class="nav-link">
+                <a href="/list-tenaga" class="nav-link @yield('list-tenaga')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tenaga Asing</p>
                 </a>
@@ -266,8 +266,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-mitra')">
+            <a href="#" class="nav-link @yield('mitra-lokal')" >
               <i class="nav-icon  far fa-building"></i>
               <p>
                 Mitra Lokal
@@ -276,7 +276,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/mitra" class="nav-link">
+                <a href="/mitra" class="nav-link @yield('daftar-mitra')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Mitra Lokal</p>
                 </a>
@@ -407,7 +407,7 @@
 
 <script src="{{ asset('assets_be/dist/js/parsley.js') }}"></script>
 
-
+@stack('script')
 
 <script>
     $(document).ready(function () {

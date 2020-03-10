@@ -1,5 +1,12 @@
 @extends('layouts.menubar')
 
+@section('permintaan','active')
+
+@section('open','menu-open')
+
+@section('tambah-tenaga','active')
+    
+
 @section('content')
 
   {{-- <tenaga-kerja></tenaga-kerja> --}}
@@ -30,7 +37,7 @@
                         <h3 class="card-title">Rekomendasi Tenaga Asing <a href="/ajukan-tenaga" class="btn btn-primary btn-sm" role="button"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a></h3>
 
                         <div class="card-tools">
-                            <form action="/tenaga" method="POST">
+                            <form action="/tenaga" method="GET">
                                 <div class="input-group input-group-sm" style="width: 150px;">
                                     <input type="text" name="search" class="form-control float-right" placeholder="Search">
                                     <div class="input-group-append">
@@ -55,43 +62,49 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                  @foreach ($tenaga as $ten)
-                                  <tr>
-                                  <td>{{($tenaga->currentPage() - 1)*$tenaga->perPage()+$loop->iteration}}</td>
-                                  <td>{{$ten -> nama}}</td>
-                                      <td>{{ $ten -> kewarganegaraan }}</td>
-                                      <td>
-                                        @if ($ten->status == 1)
-                                             <span class="badge badge-info">Dalam Proses</span>      
-                                        @elseif ($ten->status == 2)
-                                          <span class="badge badge-danger">Revisi</span>
-                                        @else 
-                                          <span></span> 
-                                        @endif 
-                                      </td> 
-                                      <td>
-                                        @if ($ten->status == 0)
-                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a> 
-                                        @elseif ($ten->status == 2)
-                                           <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a>
-                                        @else
-                                           <span></span>
-                                        @endif  
-                                      <td>
-                                      <div class="icheck-success d-inline">
-                                          @if ($ten->status == NULL)
-                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
-                                            <label for="{{ $ten->id }}"></label>
+                                  @if ($tenaga->isEmpty())
+                                    <tr align="center">
+                                      <td colspan="6" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                                    </tr>
+                                  @else
+                                    @foreach ($tenaga as $ten)
+                                    <tr>
+                                    <td>{{($tenaga->currentPage() - 1)*$tenaga->perPage()+$loop->iteration}}</td>
+                                    <td>{{$ten -> nama}}</td>
+                                        <td>{{ $ten -> kewarganegaraan }}</td>
+                                        <td>
+                                          @if ($ten->status == 1)
+                                              <span class="badge badge-info">Dalam Proses</span>      
                                           @elseif ($ten->status == 2)
-                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
-                                            <label for="{{ $ten->id }}"></label>
+                                            <span class="badge badge-danger">Revisi</span>
+                                          @else 
+                                            <span></span> 
+                                          @endif 
+                                        </td> 
+                                        <td>
+                                          @if ($ten->status == 0)
+                                              <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a> 
+                                          @elseif ($ten->status == 2)
+                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a>
                                           @else
                                             <span></span>
-                                          @endif
-                                      </div>
-                                      </td>
-                                  </tr>  
-                                  @endforeach
+                                          @endif  
+                                        <td>
+                                        <div class="icheck-success d-inline">
+                                            @if ($ten->status == NULL)
+                                              <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                              <label for="{{ $ten->id }}"></label>
+                                            @elseif ($ten->status == 2)
+                                              <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                              <label for="{{ $ten->id }}"></label>
+                                            @else
+                                              <span></span>
+                                            @endif
+                                        </div>
+                                        </td>
+                                    </tr>  
+                                    @endforeach
+                                  @endif
                                 </tbody>
                             </table>
                             

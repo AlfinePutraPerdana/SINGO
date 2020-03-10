@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('list-tenaga','active')
+
 @section('content')
     {{-- <history-tenaga></history-tenaga> --}}
 

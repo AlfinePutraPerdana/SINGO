@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('open','menu-open')
+
+@section('permintaan','active')
+
+@section('tambah-tenaga','active')
+
 @section('content')
 
  {{-- <ajukan-tenaga></ajukan-tenaga> --}}
@@ -48,8 +54,17 @@
                                     <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Lengkap" value="{{old('nama')}}"  data-parsley-required data-parsley-trigger="keyup">
                                 </div>
                                 <div class="form-group">
-                                    <label for="jenis kelamin">Jenis Kelamin</label>
-                                    <input type="text" name="jenis_kelamin" class="form-control" id="jenis kelamin" placeholder="Jenis Kelamin" value="{{old('jenis_kelamin')}}"  data-parsley-required data-parsley-trigger="keyup">
+                                    {{-- <label for="jenis kelamin">Jenis Kelamin</label>
+                                    <input type="text" name="jenis_kelamin" class="form-control" id="jenis kelamin" placeholder="Jenis Kelamin" value="{{old('jenis_kelamin')}}"  data-parsley-required data-parsley-trigger="keyup"> --}}
+                                    <label class="mb-3">Jenis Kelamin</label></br>
+                                    <div class="icheck-primary  d-inline  mr-5">
+                                        <input type="radio"  id="radio1" name="jenis_kelamin" {{ (old('jenis_kelamin') == 'Pria') ? 'checked' : '' }} checked value="Pria" >
+                                        <label for="radio1">Pria</label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio"  id="radio2" name="jenis_kelamin" {{ (old('jenis_kelamin') == 'Wanita') ? 'checked' : '' }} value="Wanita">
+                                        <label for="radio2">Wanita</label>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="tempat lahir">Tempat Lahir</label>
@@ -88,7 +103,8 @@
                                         @endforeach
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                
+                                <div class="form-group" >
                                     <label for="kategori">Kategori</label>
                                     <select name="kategori" class="form-control"  id="kategori" data-parsley-required data-parsley-trigger="keyup">
                                       <option value="">Pilih Kategori</option>
@@ -110,7 +126,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="jabatan">Jabatan</label>
-                                    <input type="text" name="jabatan" class="form-control" id="jabatan" placeholder="Jabatan"  data-parsley-required data-parsley-trigger="keyup">
+                                    <input type="text" name="jabatan" class="form-control" id="jabatan" placeholder="Jabatan" value="{{ old('jabatan') }}"  data-parsley-required data-parsley-trigger="keyup">
                                 </div>
                                 <div class="form-group">
                                     <label for="lama kegiatan">Lama Kegiatan</label>
@@ -183,15 +199,3 @@
 
 @endsection
 
-@push('script')
-   
-<script>
-    $(document).ready(function(){
-    
-     $('#formtenaga').parsley();
-     
-    
-    });
-</script>
-
-@endpush

@@ -24,11 +24,17 @@ class TenagaController extends Controller
         if($request->has('search'))
         {
             $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')
-                                            ->latest('update_at')->paginate(5);
+                                            ->wherein('status',[0,1,2])
+                                            ->latest('updated_at')
+                                            ->paginate(5);
+            
+             $tenaga->appends($request->only('search'));
+
         }else{
             
             $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest('updated_at')->paginate(5);
         }
+        
 
         return view('mitra.ngo.tenaga.tenaga',['tenaga' => $tenaga]);
     }
@@ -61,6 +67,10 @@ class TenagaController extends Controller
         $pesan = [
             'required' => ':attribute Wajib di Isi',
             'mimes' => ':attribute Harus File pdf',
+            'upload_passpor.mimes' => 'Lampirkan Passport Harus File pdf',
+            'cv_resume.mimes' => 'Lampirkan CV Harus File pdf',
+            'jobdesc.mimes' => 'Lampirkan Jobdesk Harus File pdf',
+            'jobdesc.mimes' => 'Lampirkan Jobdesk Harus File pdf',
             'image' => ':attribute Harus File Gambar',
             'max' => ':attribute file Maksimal 3mb'
         ];

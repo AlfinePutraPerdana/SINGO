@@ -1,5 +1,10 @@
 @extends('layouts.menubar')
 
+@section('menu-mitra','menu-open')
+
+@section('mitra-lokal','active')
+
+@section('daftar-mitra','active')
 
 @section('content')
 
@@ -53,6 +58,11 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @if ($mitras->isEmpty())
+                  <tr align="center">
+                    <td colspan="4" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                  </tr>
+                  @else
                     @foreach ($mitras as $mitra)
                     <tr>
                         <td>{{($mitras->currentPage() - 1)*$mitras->perPage()+$loop->iteration}}</td>
@@ -61,6 +71,7 @@
                         <td class="text-center"><a href="/mitra/{{$mitra->id}}/data-mitra" class="btn btn-sm btn-info"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
                     </tr>
                   @endforeach
+                  @endif
                 </tbody>
               </table>
             </div>

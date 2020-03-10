@@ -1,5 +1,11 @@
 @extends('layouts.menufasker')
 
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('data-tenaga','active')
+
 @section('content')
 
 <div class="content-wrapper">
@@ -97,7 +103,7 @@
                         </table>
                     </div>
                     <div class="card-footer clearfix">
-                        <a class="btn btn-warning" href="/master-tenaga-asing" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
+                        <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
                         <div class="pagination pagination-sm m-0 float-right">
                            {{ $historis->links() }}
                         </div>

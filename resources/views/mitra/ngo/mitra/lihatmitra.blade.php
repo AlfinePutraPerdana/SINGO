@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('menu-mitra','menu-open')
+
+@section('mitra-lokal','active')
+
+@section('daftar-mitra','active')
+
 @section('content')
     
 {{-- <lihat-instansi></lihat-instansi> --}}
@@ -65,7 +71,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <a class="btn btn-warning" href="/mitra" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
+                    <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
                 </div>
               <!-- /.card-body -->
               </div>

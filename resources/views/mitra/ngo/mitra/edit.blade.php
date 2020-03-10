@@ -1,5 +1,12 @@
 @extends('layouts.menubar')
 
+@section('permintaan','active')
+
+@section('open','menu-open')
+
+@section('tambah-mitra','active')
+ 
+    
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -71,7 +78,7 @@
                         </div>
                     </div>
                   <div class="card-footer">
-                    <a class="btn btn-warning" href="/tambah-mitra" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
+                    <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
                   </div>  
               </form>

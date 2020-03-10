@@ -26,9 +26,13 @@ class Master_tenaga_faskerController extends Controller
                                              ->latest('updated_at')
                                              ->paginate(5);
 
+             $tenagas->appends($request->only('search'));
+
         } else {
            
             $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
+
+            $tenagas->appends($request->only('search'));  
             
         }
 

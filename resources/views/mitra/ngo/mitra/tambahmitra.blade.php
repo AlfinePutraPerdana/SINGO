@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('permintaan','active')
+
+@section('open','menu-open')
+
+@section('tambah-mitra','active')
+
 @section('content')
 
  {{-- <tambah-instansi></tambah-instansi> --}}
@@ -54,18 +60,24 @@
                   
                 </thead>
                 <tbody>
-                    @foreach ($mitra as $m)
-                      <tr>
-                        <td>{{ ($mitra->currentPage() - 1)*$mitra->perPage()+$loop->iteration }}</td>
-                        <td align="center">{{ $m -> nama }}</td>
-                        <td align="center">{{ $m -> alamat }}</td>
-                        <td>
-                        <a href="tambah-mitra/{{$m -> id }}/edit" type="button" class="btn btn-primary btn-sm" >
-                                <i class="fas fa-edit"></i> <b>Ubah</b>
-                            </a>
-                        </td>
-                    </tr>
-                    @endforeach
+                     @if ($mitra->isEmpty())
+                          <tr align="center">
+                            <td colspan="4" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                          </tr>
+                     @else
+                        @foreach ($mitra as $m)
+                          <tr>
+                            <td>{{ ($mitra->currentPage() - 1)*$mitra->perPage()+$loop->iteration }}</td>
+                            <td align="center">{{ $m -> nama }}</td>
+                            <td align="center">{{ $m -> alamat }}</td>
+                            <td>
+                            <a href="tambah-mitra/{{$m -> id }}/edit" type="button" class="btn btn-primary btn-sm" >
+                                    <i class="fas fa-edit"></i> <b>Ubah</b>
+                                </a>
+                            </td>
+                        </tr>
+                        @endforeach
+                     @endif
                     
                 </tbody>
               </table>

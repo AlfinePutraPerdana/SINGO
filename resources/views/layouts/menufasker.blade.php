@@ -113,7 +113,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-success elevation-4">
+  <aside class="main-sidebar sidebar-dark-warning elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="{{asset('assets_fas/dist/img/AdminLTELogo.png')}}"
@@ -157,8 +157,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-open')">
+            <a href="#" class="nav-link @yield('menu-verif')">
               <i class="nav-icon  far fa-list-alt"></i>
               <p>
                 Verifikasi
@@ -173,7 +173,7 @@
                     </a>
                 </li>
               <li class="nav-item">
-                <a href="/verif-tenaga-asing" class="nav-link">
+                <a href="/verif-tenaga-asing" class="nav-link @yield('verif-tenaga')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pengajuan Tenaga Asing</p>
                 </a>
@@ -199,7 +199,7 @@
               <li class="nav-item">
                 <a href="/Pengajuan-monev" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Pengajuan Pengajuan Monev</p>
+                  <p>Pengajuan Monev</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -227,8 +227,8 @@
               </li>
             </ul>
             </a>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-tenaga')">
+            <a href="" class="nav-link @yield('rekomendasi')">
               <i class="nav-icon  far fa-user-circle"></i>
               <p>
                 Rekomendasi Tenaga
@@ -237,7 +237,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/master-tenaga-asing" class="nav-link">
+                <a href="/master-tenaga-asing" class="nav-link @yield('data-tenaga')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tenaga Asing</p>
                 </a>

@@ -1,4 +1,11 @@
 @extends('layouts.menufasker')
+
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('data-tenaga','active')
+
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->

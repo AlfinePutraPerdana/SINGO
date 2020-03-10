@@ -75,6 +75,8 @@ class Master_tenagaController extends Controller
                                     ->latest('updated_at')
                                     ->paginate(5); 
 
+            $historis->appends($request->only('search'));
+
         } else {
             
             $historis = History_ta::where('id_tenaga',$id)->latest('updated_at')->paginate(5);

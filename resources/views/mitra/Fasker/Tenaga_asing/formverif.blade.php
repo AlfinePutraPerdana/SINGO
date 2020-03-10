@@ -1,5 +1,11 @@
 @extends('layouts.menufasker')
 
+@section('menu-open','menu-open')
+
+@section('menu-verif','active')
+
+@section('verif-tenaga','active')
+
 @section('content')
    
 <div class="content-wrapper">
@@ -37,8 +43,17 @@
                                      <input type="text" name="nama" value="{{$tenaga -> nama }}" class="form-control" id="nama" placeholder="nama" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="jenis_kelamin">Jenis Kelamin</label>
-                                    <input type="text" name="jenis_kelamin" value="{{$tenaga -> jenis_kelamin }}" class="form-control" id="jenis_kelamin" placeholder="Jenis Kelamin" readonly>
+                                    {{-- <label for="jenis_kelamin">Jenis Kelamin</label>
+                                    <input type="text" name="jenis_kelamin" value="{{$tenaga -> jenis_kelamin }}" class="form-control" id="jenis_kelamin" placeholder="Jenis Kelamin" readonly> --}}
+                                    <label class="mb-3">Jenis Kelamin</label></br>
+                                    <div class="icheck-primary  d-inline mr-5 mt-3">
+                                        <input type="radio"  id="radio1" name="jenis_kelamin"  @if ($tenaga->jenis_kelamin == 'Pria') checked @endif disabled>
+                                        <label for="radio1">Pria</label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio"  id="radio2" name="jenis_kelamin" @if ($tenaga->jenis_kelamin == 'Wanita') checked @endif disabled>
+                                        <label for="radio2">Wanita</label>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="tempat_lahir">Tempat Lahir</label>

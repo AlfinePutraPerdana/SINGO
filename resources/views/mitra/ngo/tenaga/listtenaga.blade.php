@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('list-tenaga','active')
+
 
 @section('content')
 
@@ -56,6 +62,11 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @if ($tenagas->isEmpty())
+                    <tr align="center">
+                      <td colspan="6" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+                  @else
                     @foreach ($tenagas as $tenaga)
                     <tr>
                       <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
@@ -77,8 +88,9 @@
                           <td></td>
                           <td></td>
                         @endif
-                    </tr> 
-                    @endforeach
+                      </tr> 
+                      @endforeach
+                    @endif
                 </tbody>
               </table>
             </div>
