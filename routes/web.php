@@ -15,9 +15,7 @@
 
 use App\Http\Controllers\TenagaController;
 
-Route::get('/', function () {
-    return view('dashboard.index');
-});
+Route::get('/', 'DashboardController@index');
 
 Route::get('/rkt', function () {
     return view('mitra.ngo.RKT.rkt');
@@ -132,6 +130,8 @@ Route::get('/artikel/edit/{id}', 'NewsController@edit');
 Route::post('/artikel/update', 'NewsController@update');
 
 Route::get('/artikel/delete/{id}', 'NewsController@delete');
+
+Route::get('/news/{id}', 'NewsController@frontview');
 
 // ---------- Laporan Tahunan Dan Keuangan -------------------
 
@@ -352,12 +352,6 @@ Route::get('/verif-bebas-pajak', function () {
 });
 ///////////////////////////////////////////////////
 
-//DASHBOARD
-
-
-Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
-
-
 Route::get('/login', function(){
     return view('dashboard.login');
 });
@@ -365,9 +359,6 @@ Route::get('/login', function(){
 Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
 Route::post('/register','RegisterController@Register');
 
-Route::get('/news', function(){
-    return view('dashboard.news');
-});
 Route::get('/blog-details', function(){
     return view('dashboard.blog-details');
 });

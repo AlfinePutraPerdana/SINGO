@@ -97,58 +97,56 @@
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="side-column">
               <h4>Berita Terbaru</h4>
-
+              @php $no = 1;
+              @endphp
+              @foreach ($news as $news)
+              @php
+                if($no == 6)
+                  break;
+                $no++;
+              @endphp
               <div class="single-post">
                 <div class="news-thumbnail">
-                  <a href="#">
-                    <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt=>
+                  <a href="/news/{{$news -> id}}">
+                    <img src="{{ asset('Artikel_file/foto/'.$news->foto.'')}}" alt=>
                   </a>
                 </div>
                 <div class="news-headline">
                   <p>
-                    <a href="#">lorem ipsum</a>
+                    <a href="/news/{{$news -> id}}">{{$news -> judul}}</a>
                   </p>
                 </div>
               </div>
-
-              <div class="single-post">
-                <div class="news-thumbnail">
-                  <a href="#">
-                    <img src="{{ asset('assets_fe/img/blog/2.jpg')}}" alt=>
-                  </a>
-                </div>
-                <div class="news-headline">
-                  <p>
-                    <a href="#">Dolor Sit Amet</a>
-                  </p>
-                </div>
-              </div>
+              @endforeach
 
             </div>
           </div>
 
           <!-- Content -->
           <div class="col-md-8 col-sm-8 col-xs-12">
-            <div class="row">
+            <div class="row main-column">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="content-news">
-
-                  <div class="content-img">
-                    <a href="#">
-                      <img src="{{ asset('assets_fe/img/blog/1.jpg')}}" alt=>
-                    </a>
-                  </div>
-
-                  <div class="meta">
+                  @foreach ($data as $data)
+                  @php
+                    $date = $data -> updated_at;
+                  @endphp
+                  <div class="content-header">
+                    <h3>{{$data -> judul}}</h3>
                     <span class="date-type">
                       <i class="fa fa-calendar"></i>
-                      01-01-2020 / 09:00:00
+                      {{ substr($date, 0, 10) }} / {{ substr($date,11) }}
                     </span>
                   </div>
-                  <div class="news-text">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.</p>
+
+                  <div class="content-img">
+                    <img src="{{ asset('Artikel_file/foto/'.$data -> foto.'')}}" alt=>
                   </div>
+
+                  <div class="news-text">
+                    {{$data -> artikel}}
+                  </div>
+                  @endforeach
 
                 </div>
               </div>

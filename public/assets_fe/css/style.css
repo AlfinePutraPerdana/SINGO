@@ -293,11 +293,19 @@ h6 {
   overflow: hidden;
 }
 
+#news .content-img img{
+  max-width: 700px;
+}
+
 #news .side-column{
   background: #f9f9f9 none repeat scroll 0 0;
   margin-bottom: 30px;
   overflow: hidden;
   padding-bottom: 20px;
+}
+
+#news .main-column{
+  background: #f9f9f9 none repeat scroll 0 0;
 }
 
 #news .side-column h4{
@@ -361,9 +369,21 @@ h6 {
   margin-right: 5px;
 }
 
-#news .news-text h4{
+#news .news-text{
+  margin-top: 15px;
+}
+
+#news .content-header{
+  margin: 10px 0 25px 0;
+}
+
+#news .content-header span{
+  font-size: small;
+}
+
+#news .content-header h3{
   color: #444;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 /* ---------- LOGIN SECTION --------------------------------------------------*/
