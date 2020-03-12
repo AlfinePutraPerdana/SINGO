@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('list-tenaga','active')
+
 @section('content')
     {{-- <history-tenaga></history-tenaga> --}}
 
@@ -39,17 +45,12 @@
                                   </div>
                                 </div>
                              </form>
-                            
                         </div>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body table-responsive p-0" style="height: 450px;">
+                        <div class="card-body table-responsive p-0" style="height: 550px;">
                             <table class="table table-head-fixed">
                                 <thead>
-                                    @php
-                                        $no = 1;
-
-                                    @endphp
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
@@ -72,33 +73,39 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($historis as $histori)
-                                    <tr>
-                                        <td>{{$no++}}</td>
-                                        <td>{{$histori -> nama}}</td>
-                                        <td>{{$histori -> jenis_kelamin}}</td>
-                                        <td>{{$histori -> tempat_lahir}}</td>
-                                        <td>{{$histori -> tanggal_lahir}}</td>
-                                        <td>{{$histori -> kewarganegaraan}}</td>
-                                        <td>{{$histori -> no_passport}}</td>
-                                        <td>{{$histori-> tgl_berlaku_awal}} s/d {{$histori-> tgl_berlaku_akhir}}</td>
-                                        <td>{{$histori->instansi->nama}}</td>
-                                        <td>{{$histori -> jabatan}}</td>
-                                        <td>{{$histori -> tgl_awal}} s/d {{$histori -> tgl_akhir}}</td>
-                                        <td>{{$histori -> foto}}</td>
-                                        <td>{{$histori -> upload_passpor}}</td>
-                                        <td>{{$histori -> cv_resume}}</td>
-                                        <td>{{$histori -> jobdesc}}</td>
-                                        <td>{{$histori -> dokumen_pendukung}}</td>
-                                        <td>{{$histori -> file_perpanjangan}}</td>
-                                        <td>{{$histori -> status_keaktifan}}</td>
-                                    </tr>    
-                                    @endforeach
+                                    @if ($historis->isEmpty())
+                                        <tr align="center">
+                                            <td colspan="18" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                                        </tr>
+                                    @else
+                                        @foreach ($historis as $histori)
+                                        <tr>
+                                            <td>{{($historis->currentPage()-1)*$historis->perPage()+$loop->iteration}}</td>
+                                            <td>{{$histori -> nama}}</td>
+                                            <td>{{$histori -> jenis_kelamin}}</td>
+                                            <td>{{$histori -> tempat_lahir}}</td>
+                                            <td>{{$histori -> tanggal_lahir}}</td>
+                                            <td>{{$histori -> kewarganegaraan}}</td>
+                                            <td>{{$histori -> no_passport}}</td>
+                                            <td>{{$histori-> tgl_berlaku_awal}} s/d {{$histori-> tgl_berlaku_akhir}}</td>
+                                            <td>{{$histori->instansi->nama}}</td>
+                                            <td>{{$histori -> jabatan}}</td>
+                                            <td>{{$histori -> tgl_awal}} s/d {{$histori -> tgl_akhir}}</td>
+                                            <td>{{$histori -> foto}}</td>
+                                            <td>{{$histori -> upload_passpor}}</td>
+                                            <td>{{$histori -> cv_resume}}</td>
+                                            <td>{{$histori -> jobdesc}}</td>
+                                            <td>{{$histori -> dokumen_pendukung}}</td>
+                                            <td>{{$histori -> file_perpanjangan}}</td>
+                                            <td>{{$histori -> status_keaktifan}}</td>
+                                        </tr>    
+                                        @endforeach
+                                    @endif
                                 </tbody>
                             </table>
                         </div>
                         <div class="card-footer clearfix">
-                            <a class="btn btn-warning" href="/list-tenaga" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
+                            <a class="btn btn-warning" href="{{ url()->previous()}}" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
                             <div class="pagination pagination-sm m-0 float-right">
                                 {{ $historis->links() }}
                             </div>

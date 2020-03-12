@@ -1,5 +1,11 @@
 @extends('layouts.menufasker')
 
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('data-tenaga','active')
+
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -40,8 +46,17 @@
                                     <input type="text" name="jenis_kelamin" value="{{$tenaga -> jenis_kelamin }}" class="form-control" id="jenis_kelamin" placeholder="Jenis Kelamin" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tempat_lahir">Tempat Lahir</label>
-                                    <input type="text" name="tempat_lahir" value="{{$tenaga -> tempat_lahir }}" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir" readonly>
+                                    {{-- <label for="tempat_lahir">Tempat Lahir</label>
+                                    <input type="text" name="tempat_lahir" value="{{$tenaga -> tempat_lahir }}" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir" readonly> --}}
+                                    <label class="mb-3">Jenis Kelamin</label></br>
+                                    <div class="icheck-primary  d-inline mr-5 mt-3">
+                                        <input type="radio"  id="radio1" name="jenis_kelamin"  @if ($tenaga->jenis_kelamin == 'Pria') checked @endif disabled>
+                                        <label for="radio1">Pria</label>
+                                    </div>
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio"  id="radio2" name="jenis_kelamin" @if ($tenaga->jenis_kelamin == 'Wanita') checked @endif disabled>
+                                        <label for="radio2">Wanita</label>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Tanggal Lahir</label>
@@ -165,7 +180,7 @@
                                 </div>
                                     
                                 <div class="card-footer">
-                                    <a class="btn btn-warning" href="/master-tenaga-asing" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
+                                    <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
                                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
                                 </div>
                             </div>

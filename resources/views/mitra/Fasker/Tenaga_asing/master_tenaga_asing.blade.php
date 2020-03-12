@@ -1,4 +1,11 @@
 @extends('layouts.menufasker')
+
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('data-tenaga','active')
+
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -51,28 +58,31 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @php
-                      $no=1;
-                  @endphp
-                  <tr>
-                    @foreach ($tenagas as $tenaga)
-                    <td>{{$no++}}</td>
-                    <td align="center">{{$tenaga->nama}}</td>
-                    <td align="center">{{$tenaga->kewarganegaraan}}</td>
-                    <td align="center">{{$tenaga->instansi->nama}}</td>
-                    <td align="center">
-                      @if ($tenaga->status_keaktifan == "Aktif")
-                        <span class="badge badge-info"><i class="far fa-check-circle"></i> <b>Aktif</b></span>
-                      @elseif ($tenaga->status_keaktifan == "Non-Aktif")
-                        <span class="badge badge-danger"><i class="fas fa-ban"></i> <b>Non-Aktif</b></span>
-                      @else
-                        <span></span>
-                      @endif
-                    </td>
-                    <td align="right"><a href="/master-tenaga-asing/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
-                    <td align="center"><a href="/master-tenaga-asing/{{$tenaga->id}}/history" class="btn btn-sm btn-info" role="button"><i class="fas fa-history"></i> <b>History</b></a></td>
-                  </tr>  
-                    @endforeach
+                  @if ($tenagas->isEmpty())
+                    <tr align="center">
+                      <td colspan="6" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                  </tr>
+                  @else
+                    <tr>
+                      @foreach ($tenagas as $tenaga)
+                      <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
+                      <td align="center">{{$tenaga->nama}}</td>
+                      <td align="center">{{$tenaga->kewarganegaraan}}</td>
+                      <td align="center">{{$tenaga->instansi->nama}}</td>
+                      <td align="center">
+                        @if ($tenaga->status_keaktifan == "Aktif")
+                          <span class="badge badge-info"><i class="far fa-check-circle"></i> <b>Aktif</b></span>
+                        @elseif ($tenaga->status_keaktifan == "Non-Aktif")
+                          <span class="badge badge-danger"><i class="fas fa-ban"></i> <b>Non-Aktif</b></span>
+                        @else
+                          <span></span>
+                        @endif
+                      </td>
+                      <td align="right"><a href="/master-tenaga-asing/{{$tenaga->id}}/edit" class="btn btn-sm btn-primary" role="button"><i class="fas fa-edit"></i> <b>Ubah</b></a></td>
+                      <td align="center"><a href="/master-tenaga-asing/{{$tenaga->id}}/history" class="btn btn-sm btn-info" role="button"><i class="fas fa-history"></i> <b>History</b></a></td>
+                    </tr>  
+                      @endforeach
+                  @endif
                 </tbody>
               </table>
             </div>

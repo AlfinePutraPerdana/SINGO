@@ -15,29 +15,27 @@
 
 use App\Http\Controllers\TenagaController;
 
-Route::get('/', function () {
-    return view('dashboard.index');
-});
+Route::get('/', 'DashboardController@index');
 
-Route::get('/rkt', function () {
-    return view('mitra.ngo.RKT.rkt');
-});
+Route::get('/rkt', 'RktController@index');
 
 Route::get('/draft-rkt', function () {
     return view('mitra.ngo.RKT.draftrkt');
 });
 
-Route::get('/tambah-rkt', function () {
-    return view('mitra.ngo.RKT.tambahrkt');
-});
+Route::get('/tambah-rkt', 'RktController@create');
+
+Route::post('/rkt', 'RktController@store');
 
 Route::get('/data-rkt', function () {
     return view('mitra.ngo.RKT.lihatdata');
 });
 
-Route::get('/revisi-rkt-draft', function () {
-    return view('mitra.ngo.RKT.revisirktdraft');
-});
+Route::get('/rkt/{id}/edit', 'RktController@edit');
+
+Route::post('/rkt/{id}/update', 'RktController@update');
+
+Route::post('/rkt/send', 'RktController@send');
 
 Route::get('/proses-rkt-draft', function () {
     return view('mitra.ngo.RKT.prosesrktdraft');
@@ -133,6 +131,8 @@ Route::post('/artikel/update', 'NewsController@update');
 
 Route::get('/artikel/delete/{id}', 'NewsController@delete');
 
+Route::get('/news/{id}', 'NewsController@frontview');
+
 // ---------- Laporan Tahunan Dan Keuangan -------------------
 
 Route::get('/ltk', 'ReportController@index');
@@ -199,21 +199,16 @@ Route::get('/logout', function () {
 
 // Satker
 
-Route::get('/satker/rkt', function () {
-    return view('mitra.satker.RKT.rkt');
-});
+Route::get('/satker/rkt', 'Verif_rktController@index');
 
-Route::get('/satker/draft-rkt', function () {
-    return view('mitra.satker.RKT.draftrkt');
-});
+Route::get('/satker/list-rkt', 'Master_rkt_satkerController@index' );
 
-Route::get('/satker/data-rkt', function () {
-    return view('mitra.satker.RKT.lihatdata');
-});
+Route::get('/satker/rkt/{id}/data-rkt', 'Master_rkt_satkerController@show');
 
-Route::get('/satker/verifikasi', function () {
-    return view('mitra.satker.RKT.verifrktdraft');
-});
+Route::get('/satker/rkt/{id}/verifikasi', 'Verif_rktController@show');
+
+Route::post('/satker/rkt/{id}/verifikasi', 'Verif_rktController@verif');
+
 
 Route::get('/satker/tenaga', function () {
     return view('mitra.satker.tenaga.tenaga');
@@ -366,9 +361,6 @@ Route::post('users/{id}', function ($id) {
 Route::get('/register1','RegisterController1@Showregisterform')->name('dashboard.register');
 Route::post('/register1','RegisterController1@Register');
 
-Route::get('/news', function(){
-    return view('dashboard.news');
-});
 Route::get('/blog-details', function(){
     return view('dashboard.blog-details');
 });

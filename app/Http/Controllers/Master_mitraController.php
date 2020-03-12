@@ -18,11 +18,13 @@ class Master_mitraController extends Controller
     {
         if ($request->has('search')) {
 
-            $mitras = Instansi::where('id_kategori',2)->where('nama','LIKE','%' .$request->search. '%')->latest()->paginate(5);
+            $mitras = Instansi::where('id_kategori',2)->where('nama','LIKE','%' .$request->search. '%')->latest('updated_at')->paginate(5);
+
+            $mitras->appends($request->only('search'));
 
         } else {
 
-            $mitras = Instansi::where('id_kategori',2)->latest()->paginate(5);
+            $mitras = Instansi::where('id_kategori',2)->latest('updated_at')->paginate(5);
         }
 
         return view('mitra.ngo.mitra.mitra',['mitras' => $mitras]);

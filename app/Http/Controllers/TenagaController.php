@@ -23,11 +23,18 @@ class TenagaController extends Controller
         //
         if($request->has('search'))
         {
-            $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')->paginate(5);
+            $tenaga = Master_tenaga_asing::where('nama','LIKE','%'.$request->search.'%')
+                                            ->wherein('status',[0,1,2])
+                                            ->latest('updated_at')
+                                            ->paginate(5);
+            
+             $tenaga->appends($request->only('search'));
+
         }else{
             
-            $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest()->paginate(5);
+            $tenaga = Master_tenaga_asing::wherein('status',[0,1,2])->latest('updated_at')->paginate(5);
         }
+        
 
         return view('mitra.ngo.tenaga.tenaga',['tenaga' => $tenaga]);
     }
@@ -42,9 +49,9 @@ class TenagaController extends Controller
         //
         $instansis = Instansi::all()->where('id_kategori',2);
 
-        $kategoris = ['Tamu', 'Tenaga'];
+        
 
-        return view('mitra.ngo.tenaga.ajukantenaga',['instansis' => $instansis,'kategoris' => $kategoris]);
+        return view('mitra.ngo.tenaga.ajukantenaga',['instansis' => $instansis]);
     }
 
     /**
@@ -60,6 +67,10 @@ class TenagaController extends Controller
         $pesan = [
             'required' => ':attribute Wajib di Isi',
             'mimes' => ':attribute Harus File pdf',
+            'upload_passpor.mimes' => 'Lampirkan Passport Harus File pdf',
+            'cv_resume.mimes' => 'Lampirkan CV Harus File pdf',
+            'jobdesc.mimes' => 'Lampirkan Jobdesk Harus File pdf',
+            'jobdesc.mimes' => 'Lampirkan Jobdesk Harus File pdf',
             'image' => ':attribute Harus File Gambar',
             'max' => ':attribute file Maksimal 3mb'
         ];
@@ -272,12 +283,7 @@ class TenagaController extends Controller
         return redirect('/tenaga')->with('sukses','Data Berhasil diupdate');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function send(Request $request)
     {
         //

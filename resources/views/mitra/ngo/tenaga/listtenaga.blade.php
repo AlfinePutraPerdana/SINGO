@@ -1,5 +1,11 @@
 @extends('layouts.menubar')
 
+@section('menu-tenaga','menu-open')
+
+@section('rekomendasi','active')
+
+@section('list-tenaga','active')
+
 
 @section('content')
 
@@ -45,9 +51,6 @@
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 450px;">
               <table class="table table-head-fixed">
-                  @php
-                      $no = 1;
-                  @endphp
                 <thead>
                   <tr>
                     <th>No</th>
@@ -59,9 +62,14 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @if ($tenagas->isEmpty())
+                    <tr align="center">
+                      <td colspan="6" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+                  @else
                     @foreach ($tenagas as $tenaga)
                     <tr>
-                      <td>{{$no++}}</td>
+                      <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
                       <td align="center">{{$tenaga->nama}}</td>
                       <td align="center">{{$tenaga->kewarganegaraan}}</td>
                       <td align="center">{{$tenaga->instansi->nama}}</td>
@@ -80,8 +88,9 @@
                           <td></td>
                           <td></td>
                         @endif
-                    </tr> 
-                    @endforeach
+                      </tr> 
+                      @endforeach
+                    @endif
                 </tbody>
               </table>
             </div>

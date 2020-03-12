@@ -26,6 +26,8 @@ class Verif_tenagaController extends Controller
                                             ->where('status','1')
                                             ->latest('updated_at')
                                             ->paginate(5);
+
+            $tenagas->appends($request->only('search'));
     
            }else{
     

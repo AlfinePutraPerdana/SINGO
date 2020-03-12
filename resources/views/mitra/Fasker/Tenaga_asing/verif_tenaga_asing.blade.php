@@ -1,5 +1,11 @@
 @extends('layouts.menufasker')
 
+@section('menu-open','menu-open')
+
+@section('menu-verif','active')
+
+@section('verif-tenaga','active')
+
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -51,125 +57,21 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                    @php
-                                        $no = 1;
-                                    @endphp
-                                    @foreach ($tenagas as $tenaga)
-                                <tr>
-                                    <td>{{$no++}}</td>
-                                    <td>{{$tenaga->nama}}</td>
-                                    <td>{{$tenaga->kewarganegaraan}}</td>
-                                    <td>{{$tenaga->instansi->nama}}</td>
-                                    <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
-                                    @endforeach
-                                </tr>
-                                        <div class="modal fade" id="pratinjau" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Pengajuan Tamu Asing</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form role="form">
-                                                            <div class="card-body">
-                                                                <div class="form-group">
-                                                                    <label for="nama">Nama</label>
-                                                                    <p>Andy Woods</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="nama">Tempat Lahir</label>
-                                                                    <p>Bogor</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                        <label for="">Tanggal Lahir</label>
-                                                                        <p>31-10-1967</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="negara">Asal Negara</label>
-                                                                    <p>Canada</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="Passport">Nomor Passport</label>
-                                                                    <p>12345689</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="">Masa Berlaku Passport</label>
-                                                                    <div class="input-group">
-                                                                        <p>30-12-2020  s/d 30-12-2022</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label>Instansi</label>
-                                                                    <p>UNESCO</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="">Tujuan Kegiatan</label>
-                                                                    <p>Mengawasi Pembangunan Jembatan Kampung</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="jabatan">Jabatan</label>
-                                                                    <p>Supervisor Lapangan</p>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="file">Lampirkan Foto</label>
-                                                                    <br />
-
-                                                                        <img src="{{asset('assets_fas/dist/img/user8-128x128.jpg')}}">
-
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="file">Lampirkan Passport</label>
-                                                                    <div class="input-group">
-                                                                        <div class="custom-file">
-                                                                            <p>Passport.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="file">Lampirkan CV</label>
-                                                                    <div class="input-group">
-                                                                        <div class="custom-file">
-                                                                            <p>CV.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="file">Lampirkan Jobdesc</label>
-                                                                    <div class="input-group">
-                                                                        <div class="custom-file">
-                                                                            <p>Jobdesc.PDF</p><button><i class="fas fa-file-download"></i>  Unduh</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="">Lama Kegiatan</label>
-                                                                    <div class="input-group">
-                                                                        <p>01-01-2021 s/d 01-01-2022</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label>Keterangan Koreksi :</label>
-                                                                    <br />
-                                                                    <textarea placeholder="Tuliskan Hal Yang Perlu Dikoreksi" style="width:100%; resize: none;">
-
-                                                                    </textarea>
-                                                                </div>
-                                                            <!-- /.card-body -->
-                                                            <div class="card-footer">
-                                                                <div class="modal-footer">
-                                                                <button type="button" class="btn btn-danger" data-dismiss="modal"data-toggle="tooltip" title="Ajukan Perbaikan Data"><i class="fas fa-ban"></i>  Revisi</button>
-                                                                <button type="submit" class="btn btn-success"  data-toggle="tooltip" title="Verifikasi Tamu"><i class="far fa-check-square"></i>  Verifikasi</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                   
+                                    @if ($tenagas->isEmpty())
+                                        <tr align="center">
+                                            <td colspan="5" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                                        </tr>
+                                    @else
+                                        @foreach ($tenagas as $tenaga)
+                                        <tr>
+                                            <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
+                                            <td>{{$tenaga->nama}}</td>
+                                            <td>{{$tenaga->kewarganegaraan}}</td>
+                                            <td>{{$tenaga->instansi->nama}}</td>
+                                            <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
+                                            @endforeach
+                                        </tr> 
+                                    @endif
                                 </tbody>
                             </table>
                         </form>

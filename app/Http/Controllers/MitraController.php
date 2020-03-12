@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 
+use Illuminate\Support\Facades\Session;
+
 use Illuminate\Http\Request;
 
 use App\Kategori_instansi;
@@ -23,12 +25,18 @@ class MitraController extends Controller
      */
     public function index(Request $request)
     {
+
+        
         //
         if($request->has('search')){
+            
             $mitra = Instansi::where('id_kategori',2)->where('nama','LIKE','%' .$request->search. '%')->paginate(5);
+
+            $mitra->appends($request->only('search'));       
+
         }else{
 
-            $mitra = Instansi::where('id_kategori',2)->latest()->paginate(5);
+            $mitra = Instansi::where('id_kategori',2)->latest('updated_at')->paginate(5);
         }
 
         // $lokal = Mitra_lokal::all();
