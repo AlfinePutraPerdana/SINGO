@@ -194,7 +194,7 @@
                                     
                                         
                                     <div class="card-footer">
-                                        <a class="btn btn-warning" href="/list-tenaga" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
+                                        <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b> Kembali</b></a>
                                         <button class="btn btn-primary" type="submit"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
                                     </div>
                                 </div>

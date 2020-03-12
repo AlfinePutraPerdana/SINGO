@@ -28,6 +28,8 @@ class Master_tenagaController extends Controller
                 ->latest('updated_at')
                 ->paginate(5);
 
+                $tenagas->appends($request->only('search'));
+
         } else {
             
             $tenagas = Master_tenaga_asing::where('status','3')->latest('updated_at')->paginate(5);
@@ -70,7 +72,7 @@ class Master_tenagaController extends Controller
         
         if ($request->has('search')) {
             
-            $historis = History_ta::where('nama','Like','%'.$request->search.'%')
+            $historis = History_ta::where('nama','LIKE','%' .$request->search. '%')
                                     ->where('id_tenaga',$id)
                                     ->latest('updated_at')
                                     ->paginate(5); 

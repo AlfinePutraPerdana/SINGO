@@ -49,9 +49,9 @@ class TenagaController extends Controller
         //
         $instansis = Instansi::all()->where('id_kategori',2);
 
-        $kategoris = ['Tamu', 'Tenaga'];
+        
 
-        return view('mitra.ngo.tenaga.ajukantenaga',['instansis' => $instansis,'kategoris' => $kategoris]);
+        return view('mitra.ngo.tenaga.ajukantenaga',['instansis' => $instansis]);
     }
 
     /**
@@ -283,12 +283,7 @@ class TenagaController extends Controller
         return redirect('/tenaga')->with('sukses','Data Berhasil diupdate');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function send(Request $request)
     {
         //

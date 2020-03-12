@@ -57,18 +57,21 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                    @php
-                                        $no = 1;
-                                    @endphp
-                                    @foreach ($tenagas as $tenaga)
-                                <tr>
-                                    <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
-                                    <td>{{$tenaga->nama}}</td>
-                                    <td>{{$tenaga->kewarganegaraan}}</td>
-                                    <td>{{$tenaga->instansi->nama}}</td>
-                                    <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
-                                    @endforeach
-                                </tr>                                 
+                                    @if ($tenagas->isEmpty())
+                                        <tr align="center">
+                                            <td colspan="5" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                                        </tr>
+                                    @else
+                                        @foreach ($tenagas as $tenaga)
+                                        <tr>
+                                            <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
+                                            <td>{{$tenaga->nama}}</td>
+                                            <td>{{$tenaga->kewarganegaraan}}</td>
+                                            <td>{{$tenaga->instansi->nama}}</td>
+                                            <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
+                                            @endforeach
+                                        </tr> 
+                                    @endif
                                 </tbody>
                             </table>
                         </form>

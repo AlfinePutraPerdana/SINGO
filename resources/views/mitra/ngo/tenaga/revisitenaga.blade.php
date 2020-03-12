@@ -36,7 +36,7 @@
                           <h3 class="card-title">Form Rekomendasi Tenaga Kerja</h3>
                       </div>
                       <div class="card-body">
-                           <form action="/tenaga/{{$tenaga -> id}}/update" method="post" enctype="multipart/form-data"  enctype="multipart/form-data" data-parsley-validate>
+                           <form action="/tenaga/{{$tenaga -> id}}/update" method="post"   enctype="multipart/form-data" data-parsley-validate>
                               {{ csrf_field() }}
                                   <div class="form-group">
                                       <label for="nama">Nama</label>

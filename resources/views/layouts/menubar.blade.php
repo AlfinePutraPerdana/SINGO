@@ -171,7 +171,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/rkt" class="nav-link">
+                <a href="/rkt" class="nav-link @yield('rencana-kerja')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rencana Kerja</p>
                 </a>

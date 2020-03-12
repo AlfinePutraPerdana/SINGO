@@ -17,25 +17,25 @@ use App\Http\Controllers\TenagaController;
 
 Route::get('/', 'DashboardController@index');
 
-Route::get('/rkt', function () {
-    return view('mitra.ngo.RKT.rkt');
-});
+Route::get('/rkt', 'RktController@index');
 
 Route::get('/draft-rkt', function () {
     return view('mitra.ngo.RKT.draftrkt');
 });
 
-Route::get('/tambah-rkt', function () {
-    return view('mitra.ngo.RKT.tambahrkt');
-});
+Route::get('/tambah-rkt', 'RktController@create');
+
+Route::post('/rkt', 'RktController@store');
 
 Route::get('/data-rkt', function () {
     return view('mitra.ngo.RKT.lihatdata');
 });
 
-Route::get('/revisi-rkt-draft', function () {
-    return view('mitra.ngo.RKT.revisirktdraft');
-});
+Route::get('/rkt/{id}/edit', 'RktController@edit');
+
+Route::post('/rkt/{id}/update', 'RktController@update');
+
+Route::post('/rkt/send', 'RktController@send');
 
 Route::get('/proses-rkt-draft', function () {
     return view('mitra.ngo.RKT.prosesrktdraft');
@@ -199,21 +199,16 @@ Route::get('/logout', function () {
 
 // Satker
 
-Route::get('/satker/rkt', function () {
-    return view('mitra.satker.RKT.rkt');
-});
+Route::get('/satker/rkt', 'Verif_rktController@index');
 
-Route::get('/satker/draft-rkt', function () {
-    return view('mitra.satker.RKT.draftrkt');
-});
+Route::get('/satker/list-rkt', 'Master_rkt_satkerController@index' );
 
-Route::get('/satker/data-rkt', function () {
-    return view('mitra.satker.RKT.lihatdata');
-});
+Route::get('/satker/rkt/{id}/data-rkt', 'Master_rkt_satkerController@show');
 
-Route::get('/satker/verifikasi', function () {
-    return view('mitra.satker.RKT.verifrktdraft');
-});
+Route::get('/satker/rkt/{id}/verifikasi', 'Verif_rktController@show');
+
+Route::post('/satker/rkt/{id}/verifikasi', 'Verif_rktController@verif');
+
 
 Route::get('/satker/tenaga', function () {
     return view('mitra.satker.tenaga.tenaga');

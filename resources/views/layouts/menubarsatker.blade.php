@@ -21,7 +21,9 @@
   <!-- Google Font: Source Sans Pro -->
 <link href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')}}" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{asset('assets_sat/plugins/summernote/summernote-lite.css')}}">
+<link rel="stylesheet" href="{{asset('assets_sat/plugins/summernote/summernote-lite.css')}}">
+
+<link rel="stylesheet" href="{{asset('assets_sat/plugins/toastr/toastr.min.css')}}">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -108,7 +110,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-success elevation-4">
+  <aside class="main-sidebar sidebar-dark-info elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="{{asset('assets_sat/dist/img/AdminLTELogo.png')}}"
@@ -175,8 +177,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-rkt')">
+            <a href="" class="nav-link @yield('rencana')">
               <i class="nav-icon  far fa-file-alt"></i>
               <p>
                 Rencana Kerja Tahunan
@@ -185,13 +187,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/satker/rkt" class="nav-link">
+                <a href="/satker/rkt" class="nav-link @yield('verif-rkt')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Verifikasi Rencana Kerja</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/satker/draft-rkt" class="nav-link">
+                <a href="/satker/list-rkt" class="nav-link @yield('master-rkt')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rencana Kerja</p>
                 </a>
@@ -288,8 +290,11 @@
 
 <script src="{{asset('assets_sat/plugins/datepicker/js/custom.js')}}"></script>
 
+<script src="{{ asset('assets_sat/plugins/toastr/toastr.min.js') }}"></script>
+
 <script src="{{asset('assets_sat/plugins/inputmask/min/jquery.inputmask.bundle.min.js')}}"></script>
 
+@stack('script')
 
 <script>
     $(document).ready(function () {
@@ -327,6 +332,12 @@
     //Money Euro
     $('[data-mask]').inputmask()
   });
+</script>
+
+<script>  
+  @if (Session::has('sukses'))
+      toastr.success("{{Session::get('sukses')}}","Sukses");                    
+   @endif
 </script>
 
 

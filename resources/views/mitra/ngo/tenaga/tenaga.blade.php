@@ -69,52 +69,49 @@
                                   @else
                                     @foreach ($tenaga as $ten)
                                     <tr>
-                                    <td>{{($tenaga->currentPage() - 1)*$tenaga->perPage()+$loop->iteration}}</td>
-                                    <td>{{$ten -> nama}}</td>
-                                        <td>{{ $ten -> kewarganegaraan }}</td>
-                                        <td>
-                                          @if ($ten->status == 1)
-                                              <span class="badge badge-info">Dalam Proses</span>      
-                                          @elseif ($ten->status == 2)
-                                            <span class="badge badge-danger">Revisi</span>
-                                          @else 
-                                            <span></span> 
-                                          @endif 
-                                        </td> 
-                                        <td>
+                                      <td>{{($tenaga->currentPage() - 1)*$tenaga->perPage()+$loop->iteration}}</td>
+                                      <td>{{$ten -> nama}}</td>
+                                      <td>{{ $ten -> kewarganegaraan }}</td>
+                                      <td>
+                                        @if ($ten->status == 1)
+                                            <span class="badge badge-info">Dalam Proses</span>      
+                                        @elseif ($ten->status == 2)
+                                          <span class="badge badge-danger">Revisi</span>
+                                        @else 
+                                          <span></span> 
+                                        @endif 
+                                      </td> 
+                                      <td>
+                                        @if ($ten->status == 0)
+                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a> 
+                                        @elseif ($ten->status == 2)
+                                          <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a>
+                                        @else
+                                          <span></span>
+                                        @endif  
+                                      </td>
+                                      <td>
+                                      <div class="icheck-success d-inline">
                                           @if ($ten->status == 0)
-                                              <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a> 
+                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                            <label for="{{ $ten->id }}"></label>
                                           @elseif ($ten->status == 2)
-                                            <a href="/tenaga/{{$ten -> id}}/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a>
+                                            <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
+                                            <label for="{{ $ten->id }}"></label>
                                           @else
                                             <span></span>
-                                          @endif  
-                                        <td>
-                                        <div class="icheck-success d-inline">
-                                            @if ($ten->status == NULL)
-                                              <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
-                                              <label for="{{ $ten->id }}"></label>
-                                            @elseif ($ten->status == 2)
-                                              <input type="checkbox" name="tenaga[]" value="{{ $ten->id }}" id="{{ $ten->id }}">
-                                              <label for="{{ $ten->id }}"></label>
-                                            @else
-                                              <span></span>
-                                            @endif
-                                        </div>
-                                        </td>
+                                          @endif
+                                      </div>
+                                      </td>
                                     </tr>  
                                     @endforeach
                                   @endif
                                 </tbody>
                             </table>
-                            
-                        
                         </div>
                         <div class="card-footer clearfix">
-                            
-                                {{-- <a href="{{ url('/tenaga/send') }}" role="button" class="btn btn-primary">kirim</a> --}}
-                                <button  type="submit"  class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
-                            
+                            {{-- <a href="{{ url('/tenaga/send') }}" role="button" class="btn btn-primary">kirim</a> --}}
+                            <button  type="submit"  class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
                             <ul class="pagination pagination-sm m-0 float-right">
                                 {{ $tenaga->links() }}
                             </ul>
