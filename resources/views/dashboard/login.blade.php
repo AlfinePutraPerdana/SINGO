@@ -33,7 +33,7 @@
 <body>
     <header id="header" class="fixed-top">
         <div class="container">
-    
+
             <div class="logo float-left">
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
@@ -41,7 +41,7 @@
                 <h1>SINGO</h1>
                 </a>
             </div>
-    
+
             <a class="btn-kembali float-right" href="/">Kembali</a>
         </div>
     </header>
@@ -56,12 +56,12 @@
                 <div class="card card-signin my-3">
                   <div class="card-body">
                     <h5 class="card-title text-center">Sign In</h5>
-                    <form class="form-signin">
+                    <form class="form-signin" method="POST" action="/login">
                       <div class="form-label-group">
                         <label>Email</label>
                         <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
                       </div>
-        
+
                       <div class="form-label-group">
                         <label>Password</label>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>

@@ -8,8 +8,9 @@ use App\User;
 use App\Ngo;
 use App\Kategori_instansi;
 use App\Instansi;
+use Illuminate\Support\Facades\Redirect;
 
-class RegisterController extends Controller
+class RegisterController1 extends Controller
 {
     public function Showregisterform()
     {
@@ -19,7 +20,7 @@ class RegisterController extends Controller
     public function Register(Request $request)
     {
         $this->validation($request);
-
+        $lokal = Kategori_instansi::where('id',1)->first();
 
         $instansi=Instansi::create([
             'nama' => $request -> name,
@@ -27,7 +28,7 @@ class RegisterController extends Controller
             'kota'=> 'Bogor',
             'alamat' => $request -> address,
             'no_regis_izin' => $request -> nomor,
-
+            'id_kategori' =>$lokal->id
         ]);
 
         $id_instansi = $instansi -> id;
@@ -56,7 +57,8 @@ class RegisterController extends Controller
             'status' =>0
 
         ]);
-        return view('dashboard.index')->with('Sukses','Akun anda segera di proses');
+
+        return redirect()->back()->with('Sukses','Akun anda segera di proses');
 
 
     }

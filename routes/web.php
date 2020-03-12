@@ -357,13 +357,14 @@ Route::get('/verif-bebas-pajak', function () {
 
 Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
 
+//LOGIN
+Route::get('/login', 'DashboardController@login');
+Route::post('users/{id}', function ($id) {
 
-Route::get('/login', function(){
-    return view('dashboard.login');
 });
 //REGISTRATION
-Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
-Route::post('/register','RegisterController@Register');
+Route::get('/register1','RegisterController1@Showregisterform')->name('dashboard.register');
+Route::post('/register1','RegisterController1@Register');
 
 Route::get('/news', function(){
     return view('dashboard.news');
@@ -373,3 +374,7 @@ Route::get('/blog-details', function(){
 });
 
 // Route::get('/')
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
