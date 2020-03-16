@@ -123,7 +123,7 @@
                             </div>
                             <div class="col-md-6">
                               <label for="">Besar Nominal</label>
-                              <input type="number" name="nominal_biaya" class="form-control" id="nominal" placeholder="Masukan Besaran" value="{{ $rencana->nominal_biaya }}">
+                              <input type="number" name="nominal_biaya" class="form-control" id="nominal" placeholder="Masukan Besaran" value="{{ $rencana->nominal_biaya }} " disabled>
                             </div>
                           </div>
                           {{-- <div class="form-group mt-3">
@@ -135,11 +135,11 @@
                           <div class="form-group">
                             <label for="">Jadwal Pelaksanaan</label>
                             <div class="input-group">
-                              <input type="text" name="jadwal_awal" class="form-control startdate" data-toggle="datetimepicker" data-target=".startdate" value="{{ $rencana->jadwal_awal }}"/>
+                              <input type="text" name="jadwal_awal" class="form-control startdate" data-toggle="datetimepicker" data-target=".startdate" value="{{ $rencana->jadwal_awal }}" disabled/>
                               <div class="input-group-append">
                                 <span class="input-group-text">s/d</span>
                               </div>
-                              <input type="text" name="jadwal_akhir" class="form-control enddate" data-toggle="datetimepicker" data-target=".enddate"  value="{{ $rencana->jadwal_akhir }}"/>
+                              <input type="text" name="jadwal_akhir" class="form-control enddate" data-toggle="datetimepicker" data-target=".enddate"  value="{{ $rencana->jadwal_akhir }}" disabled/>
                             </div>
                           </div>
                           <div class="form-group">
@@ -178,6 +178,7 @@
             $('#tenaga').summernote('disable')
             $('#pihak').summernote('disable')
             $('#lokasi').summernote('disable')
+            $('#penutup').summernote('disable')
         });
     </script>
     

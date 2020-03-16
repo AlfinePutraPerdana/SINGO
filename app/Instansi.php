@@ -28,4 +28,6 @@ class instansi extends Model
     public function history_ta(){
         return $this->hasMany('App\History_ta');
     }
+
+    
 }

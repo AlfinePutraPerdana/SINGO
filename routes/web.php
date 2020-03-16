@@ -19,17 +19,15 @@ Route::get('/', 'DashboardController@index');
 
 Route::get('/rkt', 'RktController@index');
 
-Route::get('/draft-rkt', function () {
-    return view('mitra.ngo.RKT.draftrkt');
-});
+Route::get('/list-rkt', 'Master_rktController@index');
 
 Route::get('/tambah-rkt', 'RktController@create');
 
 Route::post('/rkt', 'RktController@store');
 
-Route::get('/data-rkt', function () {
-    return view('mitra.ngo.RKT.lihatdata');
-});
+Route::get('/list-rkt/{id}/edit', 'Master_rktController@edit');
+
+Route::post('/list-rkt/{id}/update', 'Master_rktController@update');
 
 Route::get('/rkt/{id}/edit', 'RktController@edit');
 

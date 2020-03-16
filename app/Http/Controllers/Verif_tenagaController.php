@@ -121,6 +121,7 @@ class Verif_tenagaController extends Controller
         if ($request->setuju) {
             $setuju = Master_tenaga_asing::find($id);
             $setuju->update([
+                'catatan'=>$request->catatan,
                 'status'=> 3
             ]);
         }

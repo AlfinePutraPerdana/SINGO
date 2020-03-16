@@ -214,8 +214,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-rkt')">
+            <a href="" class="nav-link @yield('rencana')">
               <i class="nav-icon  far fa-file-alt"></i>
               <p>
                 Rencana Kerja Tahunan
@@ -224,7 +224,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/draft-rkt" class="nav-link">
+                <a href="/list-rkt" class="nav-link @yield('list-rkt')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rencana Kerja</p>
                 </a>
