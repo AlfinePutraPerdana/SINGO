@@ -345,15 +345,26 @@ Route::get('/verif-bebas-pajak', function () {
 });
 ///////////////////////////////////////////////////
 
-Route::get('/login', function(){
-    return view('dashboard.login');
+//DASHBOARD
+
+
+Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
+
+//LOGIN
+Route::get('/login', 'DashboardController@login');
+Route::post('users/{id}', function ($id) {
+
 });
 //REGISTRATION
-Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
-Route::post('/register','RegisterController@Register');
+Route::get('/register1','RegisterController1@Showregisterform')->name('dashboard.register');
+Route::post('/register1','RegisterController1@Register');
 
 Route::get('/blog-details', function(){
     return view('dashboard.blog-details');
 });
 
 // Route::get('/')
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

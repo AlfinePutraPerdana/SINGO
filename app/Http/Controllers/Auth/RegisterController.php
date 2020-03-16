@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\instansi;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -50,8 +51,10 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'no_hp' => ['required', 'string','min:10', 'max:12'],
         ]);
     }
 
@@ -63,10 +66,29 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        $instansi= instansi::create([
+            'name' => $data['org_name'],
+            'username'=>$data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'no_hp' => $data['no_hp'],
+            'status' => '0',
         ]);
+
+        $id_instansi = $instansi -> id;
+
+        return $instansi;
+
+        return User::create([
+            'id_instansi' => $id_instansi,
+            'name' => $data['name'],
+            'username'=>$data['username'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'no_hp' => $data['no_hp'],
+            'status' => '0',
+        ]);
+
+
     }
 }

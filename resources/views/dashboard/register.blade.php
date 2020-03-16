@@ -55,8 +55,18 @@
         <section id="register">
             <div class="container">
                 <div class="form">
-                    <form action="/register" method="post" class="contactForm" role="form">
+                <form action="/register1" method="post" class="contactForm" role="form">
                         {{csrf_field()}}
+                        @if (isset($errors) && count($errors))
+
+            There were {{count($errors->all())}} Error(s)
+                        <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }} </li>
+                    @endforeach
+                </ul>
+
+        @endif
                         <div class="row"><h3>Informasi Akun</h3></div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -188,7 +198,13 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- Uncomment below i you want to use a preloader -->
     <!-- <div id="preloader"></div> -->
-
+    <script>
+        var msg = '{{Session::get('alert')}}';
+        var exist = '{{Session::has('alert')}}';
+        if(exist){
+          alert(msg);
+        }
+      </script>
     <!-- JavaScript Libraries -->
     <script src="{{ asset('assets_fe/lib/jquery/jquery.min.js')}}"></script>
     <script src="{{ asset('assets_fe/lib/jquery/jquery-migrate.min.js')}}"></script>
