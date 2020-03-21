@@ -35,7 +35,7 @@ class CreateRktsTable extends Migration
             $table->string('lampiran');
             $table->string('filename_lampiran');
             $table->string('bap');
-            $table->string('lampiran_bap');
+            $table->string('filename_bap');
             $table->unsignedBigInteger('id_program');
             $table->integer('status');
             $table->text('catatan');
