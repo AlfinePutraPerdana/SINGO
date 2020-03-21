@@ -154,7 +154,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
+          {{-- <li class="nav-item has-treeview">
             <a href="" class="nav-link">
               <i class="nav-icon  far fa-list-alt"></i>
               <p>
@@ -176,7 +176,7 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
           <li class="nav-item has-treeview @yield('menu-rkt')">
             <a href="" class="nav-link @yield('rencana')">
               <i class="nav-icon  far fa-file-alt"></i>
@@ -201,7 +201,7 @@
             </ul>
             </a>
           </li>
-          <li class="nav-item has-treeview">
+          {{-- <li class="nav-item has-treeview">
             <a href="" class="nav-link">
               <i class="nav-icon  far fa-user-circle"></i>
               <p>
@@ -234,7 +234,7 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
           <li class="nav-item">
             <a href="/logout" class="nav-link">
               <i class="fas fa-sign-out-alt"></i>

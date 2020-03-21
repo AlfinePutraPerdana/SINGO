@@ -8,7 +8,7 @@
 
 @section('content')
     {{-- <lihat-rencana></lihat-rencana> --}}
-    <div class="content-wrapper">
+  <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <div class="container-fluid">
@@ -43,7 +43,7 @@
                           <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}">
                       </div>
                       <div class="form-group">
-                        <label>Rencana Induk Kegiatan</label>
+                        <label>Kegiatan</label>
                         <select class="form-control">
                           <option>option 1</option>
                           <option>option 2</option>
@@ -75,15 +75,6 @@
                           <textarea id="diharapkan" name="hasil_yang_diharapkan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
                               {{ $rencana->hasil_yang_diharapkan }}
                           </textarea>
-                      </div>
-                      <div class="form-group">
-                          <label for="">Mitra Lokal </label>
-                          <select name="" id="" class="form-control">
-                            <option value="">options 1</option>
-                            <option value="">options 2</option>
-                            <option value="">options 3</option>
-                            <option value="">options 4</option>
-                          </select>
                       </div>
                     <div class="form-group">
                         <label for="">Tenaga Kerja / Tenaga Ahli </label>
@@ -170,6 +161,6 @@
               </div>
             </div>
         </section>  
-      </div>
+  </div>
 
 @endsection

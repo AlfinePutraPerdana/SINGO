@@ -303,9 +303,9 @@ Route::get('/verif-mitra-lokal', function () {
     return view('mitra.Fasker.Mitra_lokal.verif_mitra');
 });
 
-Route::get('/master-mitra-lokal', function () {
-    return view('mitra.Fasker.Mitra_lokal.master_mitra');
-});
+Route::get('/master-mitra', 'Master_mitra_faskerController@index');
+
+Route::get('/master-mitra/{id}/data', 'Master_mitra_faskerController@show');
 
 //Fasker--Dokumentasi
 Route::get('/master-artikel', function () {
@@ -330,9 +330,9 @@ Route::get('/verif-rkt', function () {
     return view('mitra.Fasker.Rkt.verif_rkt');
 });
 
-Route::get('/master-rkt', function () {
-    return view('mitra.Fasker.Rkt.master_rkt');
-});
+Route::get('/master-rkt', 'Master_rkt_faskerController@index');
+
+Route::get('/master-rkt/{id}/data', 'Master_rkt_faskerController@show');
 
 //Fasker--Rik
 Route::get('/master-rik', function () {

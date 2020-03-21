@@ -169,17 +169,21 @@
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="form-group">
-                                    <div class="d-flex flex-row">
-                                        <label for="masa">Unggah Perpanjang Masa </label><p class="text-danger pl-2">*keterangan</p>
-                                     </div>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" id="masa" name="file_perpanjangan" value="{{$tenaga -> file_perpanjangan }}" class="custom-file-input">
-                                            <label class="custom-file-label" for="file">{{$tenaga -> file_perpanjangan }}</label>
+                                  @if ($tenaga->file_perpanjangan)
+                                    <div class="form-group">
+                                        <div class="d-flex flex-row">
+                                            <label for="masa">Unggah Perpanjang Masa </label><p class="text-danger pl-2">*keterangan</p>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" id="masa" name="file_perpanjangan" value="{{$tenaga -> file_perpanjangan }}" class="custom-file-input">
+                                                <label class="custom-file-label" for="file">{{$tenaga -> file_perpanjangan }}</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    
+                                @endif
+                                  
                                   @if ($tenaga->status == 2)
                                     <div class="form-group">
                                         <label for="">Catatan</label>

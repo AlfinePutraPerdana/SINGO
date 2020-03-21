@@ -52,7 +52,7 @@
                     <th>No</th>
                     <th class="text-center">Nama</th>
                     <th class="text-center">Asal Negara</th>
-                    <th class="text-center">Mitra</th>
+                    {{-- <th class="text-center">Mitra</th> --}}
                     <th class="text-center">Status</th>
                     <th class="text-center" colspan="2">Aksi</th>
                   </tr>
@@ -68,7 +68,7 @@
                       <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
                       <td align="center">{{$tenaga->nama}}</td>
                       <td align="center">{{$tenaga->kewarganegaraan}}</td>
-                      <td align="center">{{$tenaga->instansi->nama}}</td>
+                      {{-- <td align="center">{{$tenaga->instansi->nama}}</td> --}}
                       <td align="center">
                         @if ($tenaga->status_keaktifan == "Aktif")
                           <span class="badge badge-info"><i class="far fa-check-circle"></i> <b>Aktif</b></span>

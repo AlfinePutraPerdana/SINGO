@@ -13,9 +13,23 @@ class Master_rktController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $rencanas = Rkt::where('status','3')->latest()->paginate(5);
+        if ($request->has('search')) {
+            
+            $rencanas = Rkt::where('judul','LIKE','%'.$request->search.'%')
+                            ->where('status','3')
+                            ->latest('updated_at')
+                            ->paginate(5);
+
+            $rencanas->appends($request->only('search'));
+
+        } else {
+
+            $rencanas = Rkt::where('status','3')->latest()->paginate(5);
+        }
+        
+             
 
         return view('mitra.ngo.RKT.draftrkt',['rencanas' => $rencanas]);
     }

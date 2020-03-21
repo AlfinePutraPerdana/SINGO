@@ -152,11 +152,11 @@
                       </div>
                       <div class="form-group">
                           <label for="lampiran">Lampiran File</label>
-                          <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('lampiran RKT/'.$rencana->lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                          <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('storage/lampiran RKT/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                       </div>
                       <div class="form-group">
                         <label for="lampirpassport">Lampiran BAP</label>
-                        <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('lampiran BAP/'.$rencana->bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                        <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('storage/lampiran BAP/'.$rencana->lampiran_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                       </div>
                         
                         <div class="form-group">

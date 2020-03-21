@@ -210,17 +210,17 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-rkt')">
+            <a href="" class="nav-link @yield('rencana')">
               <i class="nav-icon  far fa-file-alt"></i>
               <p>
                 Rencana Kerja Tahunan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview ">
               <li class="nav-item">
-                <a href="/draft-rkt" class="nav-link">
+                <a href="/master-rkt" class="nav-link @yield('data-rkt')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rencana Kerja</p>
                 </a>
@@ -261,17 +261,17 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-mitra')">
+            <a href="#" class="nav-link @yield('mitra')">
               <i class="nav-icon  far fa-building"></i>
               <p>
-                Instansi
+                Mitra Lokal
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/mitra" class="nav-link">
+                <a href="/master-mitra" class="nav-link @yield('data-mitra')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Instansi Lokal</p>
                 </a>

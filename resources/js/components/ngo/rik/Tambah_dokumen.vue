@@ -34,7 +34,7 @@
                       <input type="text" class="form-control">
                   </div>
                   <div class="form-group">
-                    <label>Rencana Induk Kegiatan</label>
+                    <label>Kegiatan</label>
                     <select class="form-control">
                       <option>option 1</option>
                       <option>option 2</option>
@@ -65,7 +65,7 @@
 
                       </textarea>
                   </div>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                       <label for="">Mitra Lokal </label>
                       <select name="" id="" class="form-control">
                         <option value="">options 1</option>
@@ -73,7 +73,7 @@
                         <option value="">options 3</option>
                         <option value="">options 4</option>
                       </select>
-                  </div>
+                  </div> -->
                   <!-- <div class="form-row mb-3">
                       <div class="form-group col-md-9">
                         <label for="">Tenaga Asing </label>

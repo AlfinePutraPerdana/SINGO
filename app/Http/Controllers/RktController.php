@@ -15,10 +15,24 @@ class RktController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $rencanas = Rkt::wherein('status',[0,1,2])->latest()->paginate(5);
+        
+        if ($request->has('search')) {
+            
+            $rencanas = Rkt::where('judul','LIKE'.'%'.$request->search.'%')
+                            ->wherein('status',[0,1,2])
+                            ->latest('updated_at')
+                            ->paginate(5);
 
+            $rencanas->appends($request->only('search'));
+
+        } else {
+            
+            $rencanas = Rkt::wherein('status',[0,1,2])->latest()->paginate(5);
+
+        }
+        
         return view('mitra.ngo.RKT.rkt',['rencanas'=>$rencanas]);
     }
 
@@ -40,20 +54,54 @@ class RktController extends Controller
      */
     public function store(Request $request)
     {
+       
+       $pesan = [
+
+        'required' => ':attribute Wajib di Isi',
+        'lampiran.mimes' => 'Lampiran File Harus File PDF'
+
+       ];
+       
+        $this->validate($request,[
+
+        'judul' => 'required',
+        'pendahuluan' => 'required',
+        'tujuan' => 'required',
+        'kelompok_sasaran' => 'required',
+        'hasil_yang_diharapkan' => 'required',
+        'tenaga_lokal' => 'required',
+        'tenaga_asing' => 'required',
+        'jumlah_ta' => 'required',
+        'peran_ketiga' => 'required',
+        'lokasi' => 'required',
+        'nominal_biaya' => 'required',
+        'jadwal_awal' => 'required',
+        'jadwal_akhir' => 'required',
+        'penutup' => 'required',
+        'lampiran' => 'required|mimes:pdf|max:3000'
+
+       ],$pesan);
+       
+       
         $lampiran = $request->file('lampiran');
-        $nama_lampiran = time().'_'.$lampiran->getClientOriginalName();
-        $lokasi_lampiran = 'lampiran RKT';
-        $lampiran->move($lokasi_lampiran,$nama_lampiran);
+        $nama_lampiran = $lampiran->getClientOriginalName();
+        $namafile_lampiran = str_random(30).".".$lampiran->getClientOriginalExtension();
+        $lampiran->storeAs('lampiran RKT',$namafile_lampiran);
+        $filename_lampiran = $namafile_lampiran;
 
         if (($request->file('bap'))) {
             
             $bap = $request->file('bap');
-            $nama_bap = time().'_'.$bap->getClientOriginalName();
-            $lokasi_bap = 'lampiran BAP';
-            $bap->move($lokasi_bap,$nama_bap);
+            $nama_bap = $bap->getClientOriginalName();
+            $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
+            $bap->storeAs('lampiran BAP', $namafile_bap);
+            $filename_bap = $namafile_bap;
 
         } else {
+            
             $nama_bap = null;
+            $filename_bap = null;
+
         }
         
         $rencana = Rkt::create([
@@ -63,6 +111,7 @@ class RktController extends Controller
             'kelompok_sasaran' => $request->kelompok_sasaran,
             'hasil_yang_diharapkan' => $request->hasil_yang_diharapkan,
             'tenaga_lokal' => $request->tenaga_lokal,
+            'tenaga_asing' => $request->tenaga_asing,
             'jumlah_ta' => $request->jumlah_ta,
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
@@ -71,11 +120,13 @@ class RktController extends Controller
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,
             'lampiran' =>$nama_lampiran,
+            'filename_lampiran' => $filename_lampiran,
             'bap' => $nama_bap,
+            'filename_bap' => $filename_bap,
             'status' => 0
         ]);
 
-        return redirect('/rkt')->with('Sukse','Data Berhasil di Tambah');
+        return redirect('/rkt')->with('sukses','Data Berhasil di Tambah');
     }
 
     /**
@@ -116,36 +167,43 @@ class RktController extends Controller
         if (empty($request->file('lampiran'))) {
             
             $nama_lampiran = $rencana->lampiran;
+            $filename_lampiran = $rencana->filename_lampiran;
 
         } else {
             
             $lampiran = $request->file('lampiran');
-            $nama_lampiran = time().'_'.$lampiran->getClientOriginalName();
-            $lokasi_lampiran = 'lampiran RKT';
-            $lampiran->move($lokasi_lampiran,$nama_lampiran);
+            $lampiran_lama = $rencana->filename_lampiran;
+            File::delete('storage/lampiran RKT/'.$lampiran_lama);
+            $nama_lampiran = $lampiran->getClientOriginalName();
+            $namafile_lampiran = str_random(30).".".$lampiran->getClientOriginalExtension();
+            $lampiran->storeAs('lampiran RKT',$namafile_lampiran);
+            $filename_lampiran = $namafile_lampiran;
 
+            
         }
         
                 
         if(($request->file('bap'))){
 
-            $bap = $request -> file('bap');
-            $nama_bap = time().'_'.$bap->getClientOriginalName();
-            $lokasi_bap = 'lampiran BAP';
-            $bap -> move($lokasi_bap, $nama_bap);
+            $bap = $request->file('bap');
+            $nama_bap = $bap->getClientOriginalName();
+            $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
+            $bap->storeAs('lampiran BAP', $namafile_bap);
+            $filename_bap = $namafile_bap;
             
         }elseif (empty($request->file('bap'))){
 
-            $nama_bap = $rencana -> bap;
+            $nama_bap = $rencana ->bap;
+            $filename_bap = $rencana->filename_bap;
 
         }else {
             
                 $bap = $request -> file('bap');
-                $bap_lama = $rencana->bap;
-                File::delete('lampiran BAP/'.$bap_lama);
-                $nama_bap = time().'_'.$bap->getClientOriginalName();
-                $lokasi_bap = 'lampiran BAP';
-                $bap -> move($lokasi_bap, $nama_bap);
+                $bap_lama = $rencana->filename_bap;
+                File::delete('storage/lampiran BAP/'.$bap_lama);
+                $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
+                $bap->storeAs('lampiran BAP', $namafile_bap);
+                $filename_bap = $namafile_bap;
         }
         
 
@@ -156,6 +214,7 @@ class RktController extends Controller
             'kelompok_sasaran' => $request->kelompok_sasaran,
             'hasil_yang_diharapkan' => $request->hasil_yang_diharapkan,
             'tenaga_lokal' => $request->tenaga_lokal,
+            'tenaga_asing' => $request->tenaga_asing,
             'jumlah_ta' => $request->jumlah_ta,
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
@@ -164,7 +223,9 @@ class RktController extends Controller
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,
             'lampiran' =>$nama_lampiran,
+            'filename_lampiran' => $filename_lampiran,
             'bap' => $nama_bap,
+            'filename_bap' => $filename_bap,
             'catatan' => $request->catatan
         ]);
 

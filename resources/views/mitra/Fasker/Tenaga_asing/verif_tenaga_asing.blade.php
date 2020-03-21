@@ -52,7 +52,7 @@
                                     <th>No</th>
                                     <th>Nama</th>
                                     <th>Asal Negara</th>
-                                    <th>Mitra</th>
+                                    {{-- <th>Mitra</th> --}}
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
@@ -67,7 +67,7 @@
                                             <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
                                             <td>{{$tenaga->nama}}</td>
                                             <td>{{$tenaga->kewarganegaraan}}</td>
-                                            <td>{{$tenaga->instansi->nama}}</td>
+                                            {{-- <td>{{$tenaga->instansi->nama}}</td> --}}
                                             <td><a href="/verif-tenaga-asing/{{$tenaga->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
                                             @endforeach
                                         </tr> 

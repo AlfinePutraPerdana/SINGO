@@ -60,7 +60,7 @@
                                     <th>Asal Negara</th>
                                     <th>Nomor Passport</th>
                                     <th>Masa Berlaku pasport</th>
-                                    <th>Mitra</th>
+                                    {{-- <th>Mitra</th> --}}
                                     <th>Jabatan</th>
                                     <th>Lama Kegiatan</th>
                                     <th>File Foto</th>
@@ -88,7 +88,7 @@
                                             <td>{{$histori -> kewarganegaraan}}</td>
                                             <td>{{$histori -> no_passport}}</td>
                                             <td>{{$histori-> tgl_berlaku_awal}} s/d {{$histori-> tgl_berlaku_akhir}}</td>
-                                            <td>{{$histori->instansi->nama}}</td>
+                                            {{-- <td>{{$histori->instansi->nama}}</td> --}}
                                             <td>{{$histori -> jabatan}}</td>
                                             <td>{{$histori -> tgl_awal}} s/d {{$histori -> tgl_akhir}}</td>
                                             <td>{{$histori -> foto}}</td>
