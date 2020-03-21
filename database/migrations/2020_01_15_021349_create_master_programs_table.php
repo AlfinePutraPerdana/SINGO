@@ -15,6 +15,7 @@ class CreateMasterProgramsTable extends Migration
     {
         Schema::create('master_programs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('id_instansi');
             $table->string('nama');
             $table->timestamps();
         });

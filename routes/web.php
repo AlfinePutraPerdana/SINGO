@@ -356,8 +356,8 @@ Route::post('users/{id}', function ($id) {
 
 });
 //REGISTRATION
-Route::get('/register1','RegisterController1@Showregisterform')->name('dashboard.register');
-Route::post('/register1','RegisterController1@Register');
+Route::get('/register','RegisterController@Showregisterform')->name('dashboard.register');
+Route::post('/register','RegisterController@Register');
 
 Route::get('/blog-details', function(){
     return view('dashboard.blog-details');
