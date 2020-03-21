@@ -49,8 +49,6 @@ class TenagaController extends Controller
         //
         $instansis = Instansi::all()->where('id_kategori',2);
 
-        
-
         return view('mitra.ngo.tenaga.ajukantenaga',['instansis' => $instansis]);
     }
 

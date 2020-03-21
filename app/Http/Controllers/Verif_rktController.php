@@ -85,6 +85,7 @@ class Verif_rktController extends Controller
         if ($request->setuju) {
             $rencana = Rkt::find($id);
             $rencana->update([
+                'catatan'=> $request->catatan,
                 'status' => 3
             ]);
         }

@@ -35,6 +35,8 @@ class CreateRktsTable extends Migration
             $table->string('lampiran');
             $table->string('bap');
             $table->unsignedBigInteger('id_program');
+            $table->integer('status');
+            $table->text('catatan');
             //$table->foreign('id_program')->references('id')->on('master_programs');
 
 
