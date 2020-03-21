@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
-use App\instansi;
+use App\Kategori_instansi;
+use App\Instansi;
+use App\Ngo;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -63,21 +65,38 @@ class RegisterController extends Controller
      *
      * @param  array  $data
      * @return \App\User
+     * @return \App\instansi
+     * @return \App\Ngo
      */
     protected function create(array $data)
     {
+        $lokal = Kategori_instansi::where('id',1)->first();
+
         $instansi= instansi::create([
-            'name' => $data['org_name'],
-            'username'=>$data['username'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'no_hp' => $data['no_hp'],
-            'status' => '0',
+            'nama' => $data['org_name'],
+            'negara'=>$data['username'],
+            'kota' => $data['kota'],
+            'alamat' => $data['alamat'],
+            'no_regis_izin' => $data['no_regis'],
+            'id_kategori' => $lokal->id,
         ]);
+
 
         $id_instansi = $instansi -> id;
 
-        return $instansi;
+        $ngo= Ngo::create([
+            'id_instansi' => $id_instansi,
+            'no_telp'=>$data['org_telp'],
+            'fax' => $data['fax'],
+            'email' => $data['org_email'],
+            'website' => $data['no_regis'],
+            'bidang_kerja' => $data['bidang_kerja'],
+            'mulai_beroperasi' => $data['tgl_operasi'],
+            'tgl_ttd_msp' => $data['tgl_msp'],
+            'lokasi_kerja_sama' => $data['lokasi'],
+            'country_director' => $data['country_director']
+        ]);
+
 
         return User::create([
             'id_instansi' => $id_instansi,
@@ -88,7 +107,8 @@ class RegisterController extends Controller
             'no_hp' => $data['no_hp'],
             'status' => '0',
         ]);
-
+        return $instansi;
+        return $ngo;
 
     }
 }

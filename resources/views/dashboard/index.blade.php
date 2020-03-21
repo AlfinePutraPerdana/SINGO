@@ -74,7 +74,7 @@
           <li class="drop-down"><a href="#">Account</a>
             <ul>
               <li><a href="/login">Login</a></li>
-              <li><a href="/register1">Register</a></li>
+              <li><a href="/register">Register</a></li>
             </ul>
           </li>
         </ul>
