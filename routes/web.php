@@ -17,17 +17,12 @@ use App\Http\Controllers\TenagaController;
 
 Route::get('/', 'DashboardController@index');
 
+//NGO-----RKT
 Route::get('/rkt', 'RktController@index');
-
-Route::get('/list-rkt', 'Master_rktController@index');
 
 Route::get('/tambah-rkt', 'RktController@create');
 
 Route::post('/rkt', 'RktController@store');
-
-Route::get('/list-rkt/{id}/edit', 'Master_rktController@edit');
-
-Route::post('/list-rkt/{id}/update', 'Master_rktController@update');
 
 Route::get('/rkt/{id}/edit', 'RktController@edit');
 
@@ -35,10 +30,15 @@ Route::post('/rkt/{id}/update', 'RktController@update');
 
 Route::post('/rkt/send', 'RktController@send');
 
-Route::get('/proses-rkt-draft', function () {
-    return view('mitra.ngo.RKT.prosesrktdraft');
-});
+Route::get('/list-rkt', 'Master_rktController@index');
 
+Route::get('/list-rkt/{id}/data', 'Master_rktController@show');
+
+Route::get('/list-rkt/{id}/edit', 'Master_rktController@edit');
+
+Route::post('/list-rkt/{id}/update', 'Master_rktController@update');
+
+//NGO-----Tenaga Asing
 Route::get('/tenaga', 'TenagaController@index');
 
 Route::get('/ajukan-tenaga', 'TenagaController@create' );
@@ -59,6 +59,8 @@ Route::post('/list-tenaga/{id}/update', 'Master_tenagaController@update');
 
 Route::get('list-tenaga/{id}/history-tenaga', 'Master_tenagaController@history');
 
+
+//NGO-----Tamu Asing
 Route::get('/tamu', function () {
     return view('mitra.ngo.tamu.tamu');
 });
@@ -87,6 +89,7 @@ Route::get('/proses-tamu', function () {
     return view('mitra.ngo.tamu.prosestamu');
 });
 
+//NGO-----Mitra Lokal
 Route::get('/tambah-mitra', 'MitraController@index');
 
 Route::post('/tambah-mitra', 'MitraController@store');
@@ -99,6 +102,7 @@ Route::get('/mitra/{id}/data-mitra', 'Master_mitraController@show' );
 
 Route::get('/mitra', 'Master_mitraController@index' );
 
+//NGO-----Monev
 Route::get('/tambah-monev', 'MonevController@index');
 
 Route::get('/tambah-monev/new', 'MonevController@new');
@@ -333,6 +337,10 @@ Route::get('/verif-rkt', function () {
 Route::get('/master-rkt', 'Master_rkt_faskerController@index');
 
 Route::get('/master-rkt/{id}/data', 'Master_rkt_faskerController@show');
+
+Route::get('/master-rkt/{id}/edit', 'Master_rkt_faskerController@edit');
+
+Route::post('/master-rkt/{id}/update', 'Master_rkt_faskerController@update');
 
 //Fasker--Rik
 Route::get('/master-rik', function () {

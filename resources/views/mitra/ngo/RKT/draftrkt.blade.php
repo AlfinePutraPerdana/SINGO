@@ -55,18 +55,21 @@
             <div class="card-body table-responsive p-0" style="height: 350px;">
                 <table class="table table-head-fixed">
                   <thead>
-                    <tr>
-                      <th class="text-center">No</th>
-                      <th class="text-center">Judul Rencana</th>
-                      <th class="text-center">Aksi</th>
+                    <tr class="text-center">
+                      <th >No</th>
+                      <th>Judul Rencana</th>
+                      <th colspan="2">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                       @foreach ($rencanas as $rencana)
-                      <tr>
-                        <td align="center">{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
-                        <td align="center">{{ $rencana->judul }}</td>
-                        <td align="center">
+                      <tr align="center">
+                        <td>{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
+                        <td>{{ $rencana->judul }}</td>
+                        <td>
+                          <a href="/list-rkt/{{ $rencana->id }}/data" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a>
+                        </td>
+                        <td>
                           <a href="/list-rkt/{{ $rencana->id }}/edit" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a>
                         </td>
                       </tr>

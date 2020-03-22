@@ -6,6 +6,8 @@ use App\Rkt;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\File;
+
 class Master_rkt_faskerController extends Controller
 {
     /**
@@ -76,7 +78,9 @@ class Master_rkt_faskerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $rencana = Rkt::find($id);
+
+        return view('mitra.Fasker.Rkt.master_rkt_edit',['rencana'=>$rencana]);
     }
 
     /**
@@ -88,7 +92,69 @@ class Master_rkt_faskerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $rencana = Rkt::find($id);
+
+        if (empty($request->file('lampiran'))) {
+            
+            $nama_lampiran = $rencana->lampiran;
+            $filename_lampiran = $rencana->filename_lampiran;
+
+        } else {
+            
+            $lampiran = $request->file('lampiran');
+            $lampiran_lama = $rencana->filename_lampiran;
+            File::delete('storage/Lampiran RKT/File pendukung/'.$lampiran_lama);
+            $nama_lampiran = $lampiran->getClientOriginalName();
+            $namafile_lampiran = str_random(30).".".$lampiran->getClientOriginalExtension();
+            $lampiran->storeAs('Lampiran RKT/File pendukung',$namafile_lampiran);
+            $filename_lampiran = $namafile_lampiran;
+
+            
+        }
+        
+                
+        if(($request->file('bap'))){
+
+            $bap = $request->file('bap');
+            $bap_lama = $rencana->filename_bap;
+            File::delete('storage/Lampiran RKT/Lampiran BAP/'.$bap_lama);
+            $nama_bap = $bap->getClientOriginalName();
+            $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
+            $bap->storeAs('Lampiran RKT/Lampiran BAP', $namafile_bap);
+            $filename_bap = $namafile_bap;
+            
+        }elseif (empty($request->file('bap'))){
+
+            $nama_bap = $rencana ->bap;
+            $filename_bap = $rencana->filename_bap;
+
+        }
+        
+
+        $rencana->update([
+            'judul' => $request->judul,
+            'pendahuluan' => $request->pendahuluan,
+            'tujuan' => $request->tujuan,
+            'kelompok_sasaran' => $request->kelompok_sasaran,
+            'hasil_yang_diharapkan' => $request->hasil_yang_diharapkan,
+            'tenaga_lokal' => $request->tenaga_lokal,
+            'tenaga_asing' => $request->tenaga_asing,
+            'jumlah_ta' => $request->jumlah_ta,
+            'peran_ketiga' => $request->peran_ketiga,
+            'lokasi' => $request->lokasi,
+            'nominal_biaya' => $request->nominal_biaya,
+            'jadwal_awal' => $request->jadwal_awal,
+            'jadwal_akhir' => $request->jadwal_akhir,
+            'penutup' => $request->penutup,
+            'lampiran' =>$nama_lampiran,
+            'filename_lampiran' => $filename_lampiran,
+            'bap' => $nama_bap,
+            'filename_bap' => $filename_bap,
+            'status' => 1
+        ]);
+
+        return redirect('/master-rkt')->with('sukses', 'Data Berhasil Dikirim');
+
     }
 
     /**

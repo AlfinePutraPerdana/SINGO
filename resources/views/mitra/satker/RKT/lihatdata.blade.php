@@ -37,8 +37,7 @@
                     <h3 class="card-title">Data Rencana Kerja Tahunan</h3>
                   </div>
                   <form role="form">
-                    <div class="card-body">
-                        <div class="card-body">
+                      <div class="card-body">
                             <div class="form-group">
                               <label for="">Judul Rencana</label>
                               <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}" readonly>
@@ -157,14 +156,16 @@
                           </div>
                           <div class="form-group">
                               <label for="lampiran">Lampiran File</label>
-                              <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('storage/lampiran RKT/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                              <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/File pendukung/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                           </div>
                           <div class="form-group">
                             <label for="lampirpassport">Lampiran BAP</label>
-                            <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('storage/lampiran BAP/'.$rencana->filename_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                            <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/lampiran BAP/'.$rencana->filename_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                           </div>
-                      </div>
-                    </div> 
+                      </div> 
+                      <div class="card-footer">
+                        <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
+                      </div> 
                   </form>
                 </div>
               </div>

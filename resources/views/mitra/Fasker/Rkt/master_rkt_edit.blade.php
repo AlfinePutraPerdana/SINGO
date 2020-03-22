@@ -1,10 +1,10 @@
-@extends('layouts.menubar')
+@extends('layouts.menufasker')
 
 @section('menu-rkt','menu-open')
 
 @section('rencana','active')
 
-@section('list-rkt','active')
+@section('data-rkt','active')
 
 @section('content')
 <div class="content-wrapper">
@@ -34,12 +34,12 @@
               <div class="card-header">
                 <h3 class="card-title">Form Rencana Kerja Tahunan</h3>
               </div>
-              <form>
+              <form action="/master-rkt/{{ $rencana->id }}/update" method="POST" enctype="multipart/form-data"> 
                 {{ csrf_field() }}
                 <div class="card-body">
                   <div class="form-group">
                       <label for="">Judul Rencana</label>
-                      <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}" disabled>
+                      <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}">
                   </div>
                   <div class="form-group">
                     <label>Kegiatan</label>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="fom-group mb-3">
                     <label for="">Jumlah Tenaga</label>
-                    <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing" value="{{ $rencana->jumlah_ta }}" disabled>
+                    <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing" value="{{ $rencana->jumlah_ta }}">
                 </div>
                   <div class="form-group">
                       <label for="">Peran Serta Pihak Ketiga</label>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="col-md-6">
                       <label for="">Besar Nominal</label>
-                      <input type="number" name="nominal_biaya" class="form-control" id="nominal" placeholder="Masukan Besaran" value="{{ $rencana->nominal_biaya }}" disabled>
+                      <input type="number" name="nominal_biaya" class="form-control" id="nominal" placeholder="Masukan Besaran" value="{{ $rencana->nominal_biaya }}">
                     </div>
                   </div>
                   {{-- <div class="form-group mt-3">
@@ -130,11 +130,11 @@
                   <div class="form-group">
                     <label for="">Jadwal Pelaksanaan</label>
                     <div class="input-group">
-                      <input type="text" name="jadwal_awal" class="form-control startdate" data-toggle="datetimepicker" data-target=".startdate" value="{{ $rencana->jadwal_awal }}" disabled/>
+                      <input type="text" name="jadwal_awal" class="form-control startdate" data-toggle="datetimepicker" data-target=".startdate" value="{{ $rencana->jadwal_awal }}"/>
                       <div class="input-group-append">
                         <span class="input-group-text">s/d</span>
                       </div>
-                      <input type="text" name="jadwal_akhir" class="form-control enddate" data-toggle="datetimepicker" data-target=".enddate"  value="{{ $rencana->jadwal_akhir }}" disabled/>
+                      <input type="text" name="jadwal_akhir" class="form-control enddate" data-toggle="datetimepicker" data-target=".enddate"  value="{{ $rencana->jadwal_akhir }}"/>
                     </div>
                   </div>
                   <div class="form-group">
@@ -144,16 +144,23 @@
                     </textarea>
                   </div>
                   <div class="form-group">
-                    <label for="lampiran">Lampiran File</label>
-                    <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/File pendukung/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
-                </div>
-                <div class="form-group">
-                  <label for="lampirpassport">Lampiran BAP</label>
-                  <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/lampiran BAP/'.$rencana->filename_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
-                </div>
+                    <label for="file">Lampiran File</label>
+                      <div class="custom-file">
+                        <input type="file" name="lampiran" class="custom-file-input" id="file">
+                        <label class="custom-file-label" for="file">{{  $rencana->lampiran }}</label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="file">Unggah BAP</label>
+                      <div class="custom-file">
+                        <input type="file" name="bap" class="custom-file-input" id="bap">
+                        <label class="custom-file-label" for="bap">{{ $rencana->bap }}</label>
+                      </div>
+                  </div>
                 </div>
                   <div class="card-footer">
                     <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
+                    <button  type="submit"  class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
                   </div>  
               </form>
             </div>
@@ -162,21 +169,3 @@
     </section>  
 </div>
 @endsection
-
-@push('script')
-
-    <script>
-        $(document).ready(function(){
-            $('#pendahuluan').summernote('disable')
-            $('#tujuan').summernote('disable')
-            $('#sasaran').summernote('disable')
-            $('#diharapkan').summernote('disable')
-            $('#tenaga').summernote('disable')
-            $('#tenaga-asing').summernote('disable')
-            $('#pihak').summernote('disable')
-            $('#lokasi').summernote('disable')
-            $('#penutup').summernote('disable')
-        });
-    </script>
-    
-@endpush
