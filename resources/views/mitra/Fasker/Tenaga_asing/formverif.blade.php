@@ -131,7 +131,7 @@
                                 </div> 
                                 <div class="form-group">
                                     <label for="foto">Lampiran Foto</label></br>
-                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/foto/'.$tenaga->filename_foto) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Tenaga Asing/Foto/'.$tenaga->filename_foto) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
                                     {{-- <div class="custom-file">
                                         <label class="custom-file-label" for="foto" >Pilih File</label>
                                         <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto">
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="lampirpassport">Lampiran Passport</label>
-                                    <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/passport/'.$tenaga->filename_passport) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                                    <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Tenaga Asing/Passport/'.$tenaga->filename_passport) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                                     
                                     {{-- <div class="input-group">
                                         <div class="custom-file">
@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="file">Lampiran CV</label>
-                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/CV/'.$tenaga->filename_cv)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/CV/'.$tenaga->filename_cv)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
                                     {{-- <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" name="cv_resume" value="{{$tenaga -> cv_resume }}" class="custom-file-input" id="cv">
@@ -161,7 +161,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="file">Lampiran Jobdesk</label>
-                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/jobdesk/'.$tenaga->filename_jobdesc)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/Jobdesk/'.$tenaga->filename_jobdesc)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
                                     {{-- <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk">
@@ -171,7 +171,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="file">File Pendukung</label>
-                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/dokumen pendukung/'.$tenaga->filename_dokumen)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/Dokumen pendukung/'.$tenaga->filename_dokumen)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
                                     {{-- <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" name="dokumen_pendukung" value="{{$tenaga -> dokumen_pendukung }}" class="custom-file-input" id="">
@@ -182,7 +182,7 @@
                                 @if ($tenaga->file_perpanjangan)
                                 <div class="form-group">
                                     <label for="file">Perpanjangan Masa</label>
-                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/perpanjang masa/'.$tenaga->filename_perpanjangan)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/Perpanjang masa/'.$tenaga->filename_perpanjangan)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
                                     
                                 </div>
                                 

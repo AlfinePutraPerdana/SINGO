@@ -55,7 +55,7 @@
                       <input type="text" name="judul" class="form-control" placeholder="Judul Rencana" value="{{ old('judul') }}" data-parsley-required data-parsley-trigger="keyup">
                   </div>
                   <div class="form-group">
-                    <label>Kegiatan</label>
+                    <label>Rencana Induk Kegiatan</label>
                     <select class="form-control">
                       <option>option 1</option>
                       <option>option 2</option>

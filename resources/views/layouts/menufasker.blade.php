@@ -157,6 +157,23 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item has-treeview @yield('menu-akun')">
+            <a href="" class="nav-link @yield('kelola')">
+              <i class="nav-icon  far fa-user-circle"></i>
+              <p>
+                Kelola Akun 
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/list-satker" class="nav-link @yield('data-satker')">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tambah Akun</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item has-treeview @yield('menu-open')">
             <a href="#" class="nav-link @yield('menu-verif')">
               <i class="nav-icon  far fa-list-alt"></i>
@@ -226,7 +243,7 @@
                 </a>
               </li>
             </ul>
-            </a>
+          </li>
           <li class="nav-item has-treeview @yield('menu-tenaga')">
             <a href="" class="nav-link @yield('rekomendasi')">
               <i class="nav-icon  far fa-user-circle"></i>

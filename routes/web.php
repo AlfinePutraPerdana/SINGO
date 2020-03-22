@@ -343,6 +343,23 @@ Route::get('/master-rik', function () {
 Route::get('/verif-bebas-pajak', function () {
     return view('mitra.Fasker.Bebas_pajak.verif_pajak');
 });
+
+
+//Fasker--Kelola Akun
+Route::get('/list-satker', function () {
+    return view('mitra.Fasker.kelola_akun_satker.list_akun');
+});
+
+Route::get('/tambah-akun', function () {
+    return view('mitra.Fasker.kelola_akun_satker.tambah_akun');
+});
+
+Route::get('/list-satker/edit', function () {
+    return view('mitra.Fasker.kelola_akun_satker.edit_akun');
+});
+
+
+
 ///////////////////////////////////////////////////
 
 //DASHBOARD

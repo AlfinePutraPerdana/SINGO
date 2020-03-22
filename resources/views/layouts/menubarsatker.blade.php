@@ -312,6 +312,7 @@
       $('#lokasi').summernote()
       $('#kegiatan').summernote()
       $('#tenaga').summernote()
+      $('#tenaga-asing').summernote()
       $('#prioritas').summernote()
       $('#penerima').summernote()
       $('#detil_kegiatan').summernote()

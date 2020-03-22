@@ -99,14 +99,14 @@ class TenagaController extends Controller
         $foto = $request ->foto;
         $nama_foto = $foto->getClientOriginalName();
         $namafile_foto = str_random(30).".".$foto->getClientOriginalExtension();
-        $foto->storeAs('foto',$namafile_foto);
+        $foto->storeAs('Tenaga Asing/Foto',$namafile_foto);
         $filename_foto = $namafile_foto;
 
 
         $passport = $request ->upload_passpor;
         $nama_passport = $passport->getClientOriginalName();
         $namafile_passport = str_random(30).".".$passport->getClientOriginalExtension();
-        $passport->storeAs('passport',$namafile_passport);
+        $passport->storeAs('Tenaga Asing/Passport',$namafile_passport);
         $filename_passport = $namafile_passport;
 
         
@@ -114,26 +114,26 @@ class TenagaController extends Controller
         $cv = $request ->cv_resume;
         $nama_cv = $cv->getClientOriginalName();
         $namafile_cv = str_random(30).".".$cv->getClientOriginalExtension();
-        $cv->storeAs('CV',$namafile_cv);
+        $cv->storeAs('Tenaga Asing/CV',$namafile_cv);
         $filename_cv = $namafile_cv;
         
         $jobdesc = $request ->jobdesc;
         $nama_jobdesc = $jobdesc->getClientOriginalName();
         $namafile_job = str_random(30).".".$jobdesc->getClientOriginalExtension();
-        $jobdesc->storeAs('jobdesk',$namafile_job);
+        $jobdesc->storeAs('Tenaga Asing/Jobdesk',$namafile_job);
         $filename_jobdesc = $namafile_job;
         
         $dokumen = $request ->dokumen_pendukung;
         $nama_dokumen = $dokumen->getClientOriginalName();
         $namafile_dokumen = str_random(30).".".$dokumen->getClientOriginalExtension();
-        $dokumen->storeAs('dokumen pendukung',$namafile_dokumen);
+        $dokumen->storeAs('Tenaga Asing/Dokumen pendukung',$namafile_dokumen);
         $filename_dokumen = $namafile_dokumen;
         
         if(($request->file('file_perpanjangan'))){
             $masa = $request -> file('file_perpanjangan');
             $nama_perpanjangan = $masa->getClientOriginalName();
             $namafile_perpanjangan = str_random(30).".".$masa->getClientOriginalExtension();
-            $masa->storeAs('perpanjangan masa',$namafile_perpanjangan);
+            $masa->storeAs('Tenaga Asing/Perpanjangan masa',$namafile_perpanjangan);
             $filename_perpanjangan = $namafile_perpanjangan;
         }elseif (empty($request->file('file_perpanjangan'))){
             
@@ -144,10 +144,10 @@ class TenagaController extends Controller
 
                 $masa = $request -> file('file_perpanjangan');
                 $file_lama = $tenaga->filename_perpanjangan;
-                File::delete('perpanjang masa/'.$file_lama);
+                File::delete('Tenaga Asing/Perpanjang masa/'.$file_lama);
                 $nama_perpanjangan = $masa->getClientOriginalName();
                 $namafile_perpanjangan = str_random(30).".".$masa->getClientOriginalExtension();
-                $masa->storeAs('storage/perpanjangan masa',$namafile_perpanjangan);
+                $masa->storeAs('storage/Tenaga Asing/perpanjangan masa',$namafile_perpanjangan);
                 $filename_perpanjangan = $namafile_perpanjangan;
 
                 
@@ -236,10 +236,10 @@ class TenagaController extends Controller
             
             $foto = $request ->foto;
             $foto_lama = $tenaga->filename_foto;
-            File::delete('storage/foto/'.$foto_lama);
+            File::delete('storage/Tenaga Asing/Foto/'.$foto_lama);
             $nama_foto = $foto->getClientOriginalName();
             $namafile_foto = str_random(30).".".$foto->getClientOriginalExtension();
-            $foto->storeAs('foto',$namafile_foto);
+            $foto->storeAs('Tenaga Asing/Foto',$namafile_foto);
             $filename_foto = $namafile_foto;
             
             // $foto = $request -> file('foto');
@@ -259,10 +259,10 @@ class TenagaController extends Controller
 
             $passport = $request ->upload_passpor;
             $passport_lama = $tenaga->filename_passport;
-            File::delete('storage/passport/'.$passport_lama);
+            File::delete('storage/Tenaga Asing/Passport/'.$passport_lama);
             $nama_passport = $passport->getClientOriginalName();
             $namafile_passport = str_random(30).".".$passport->getClientOriginalExtension();
-            $passport->storeAs('passport',$namafile_passport);
+            $passport->storeAs('Tenaga Asing/Passport',$namafile_passport);
             $filename_passport = $namafile_passport;
 
         }
@@ -276,10 +276,10 @@ class TenagaController extends Controller
             
             $cv = $request ->cv_resume;
             $cv_lama = $tenaga->filename_cv;
-            File::delete('storage/CV/'.$cv_lama);
+            File::delete('storage/Tenaga Asing/CV/'.$cv_lama);
             $nama_cv = $cv->getClientOriginalName();
             $namafile_cv = str_random(30).".".$cv->getClientOriginalExtension();
-            $cv->storeAs('CV',$namafile_cv);
+            $cv->storeAs('Tenaga Asing/CV',$namafile_cv);
             $filename_cv = $namafile_cv;
             
             
@@ -294,10 +294,10 @@ class TenagaController extends Controller
             
             $jobdesc = $request ->jobdesc;
             $jobdesc_lama = $tenaga->filename_jobdesc;
-            File::delete('storage/jobdesk/'.$jobdesc_lama);
+            File::delete('storage/Tenaga Asing/Jobdesk/'.$jobdesc_lama);
             $nama_jobdesc = $jobdesc->getClientOriginalName();
             $namafile_job = str_random(30).".".$jobdesc->getClientOriginalExtension();
-            $jobdesc->storeAs('jobdesk',$namafile_job);
+            $jobdesc->storeAs('Tenaga Asing/Jobdesk',$namafile_job);
             $filename_jobdesc = $namafile_job;
 
             
@@ -312,10 +312,10 @@ class TenagaController extends Controller
             
             $dokumen = $request ->dokumen_pendukung;
             $dokumen_lama = $tenaga->filename_dokumen;
-            File::delete('storage/dokumen pendukung/'.$dokumen_lama);
+            File::delete('storage/Tenaga Asing/Dokumen pendukung/'.$dokumen_lama);
             $nama_dokumen = $dokumen->getClientOriginalName();
             $namafile_dokumen = str_random(30).".".$dokumen->getClientOriginalExtension();
-            $dokumen->storeAs('dokumen pendukung',$namafile_dokumen);
+            $dokumen->storeAs('Tenaga Asing/Dokumen pendukung',$namafile_dokumen);
             $filename_dokumen = $namafile_dokumen;
             
             
@@ -326,7 +326,7 @@ class TenagaController extends Controller
             $masa = $request -> file('file_perpanjangan');
             $nama_perpanjangan = $masa->getClientOriginalName();
             $namafile_perpanjangan = str_random(30).".".$masa->getClientOriginalExtension();
-            $masa->storeAs('perpanjangan masa',$namafile_perpanjangan);
+            $masa->storeAs('Tenaga Asing/Perpanjangan masa',$namafile_perpanjangan);
             $filename_perpanjangan = $namafile_perpanjangan;
 
         }elseif (empty($request->file('file_perpanjangan'))){
@@ -338,10 +338,10 @@ class TenagaController extends Controller
             
             $masa = $request -> file('file_perpanjangan');
             $file_lama = $tenaga->filename_perpanjangan;
-            File::delete('perpanjang masa/'.$file_lama);
+            File::delete('storage/Tenaga Asing/Perpanjang masa/'.$file_lama);
             $nama_perpanjangan = $masa->getClientOriginalName();
             $namafile_perpanjangan = str_random(30).".".$masa->getClientOriginalExtension();
-            $masa->storeAs('perpanjangan masa',$namafile_perpanjangan);
+            $masa->storeAs('Tenaga Asing/Perpanjangan masa',$namafile_perpanjangan);
             $filename_perpanjangan = $namafile_perpanjangan;
         }
 

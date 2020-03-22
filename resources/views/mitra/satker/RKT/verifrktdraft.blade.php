@@ -80,7 +80,7 @@
                               {{ $rencana->hasil_yang_diharapkan }}
                           </textarea>
                       </div>
-                      <div class="form-group">
+                      {{-- <div class="form-group">
                           <label for="">Mitra Lokal </label>
                           <select name="" id="" class="form-control">
                             <option value="">options 1</option>
@@ -88,7 +88,7 @@
                             <option value="">options 3</option>
                             <option value="">options 4</option>
                           </select>
-                      </div>
+                      </div> --}}
                     <div class="form-group">
                         <label for="">Tenaga Kerja / Tenaga Ahli </label>
                         {{-- <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing"> --}}
@@ -96,6 +96,12 @@
                             {!! $rencana->tenaga_lokal !!}
                         </textarea>
                     </div>
+                    <div class="form-group">
+                      <label for="">Tenaga Ahli Asing</label>
+                      <textarea id="tenaga-asing" name="tenaga_asing" class="form-control" style="height: 100px">
+                          {!! $rencana->tenaga_asing !!}
+                      </textarea>
+                  </div>
                     <div class="fom-group mb-3">
                         <label for="">Jumlah Tenaga</label>
                         <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing" value="{{ $rencana->jumlah_ta }}" disabled>
@@ -152,12 +158,12 @@
                       </div>
                       <div class="form-group">
                           <label for="lampiran">Lampiran File</label>
-                          <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('storage/lampiran RKT/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                          <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/File pendukung/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                       </div>
-                      @if ($request->filename_bap)
+                      @if ($rencana->filename_bap)
                         <div class="form-group">
                           <label for="lampirpassport">Lampiran BAP</label>
-                          <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('storage/lampiran BAP/'.$rencana->lampiran_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                          <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/Lampiran BAP/'.$rencana->filename_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                         </div>
                       @endif
                         
@@ -193,6 +199,7 @@
             $('#sasaran').summernote('disable')
             $('#diharapkan').summernote('disable')
             $('#tenaga').summernote('disable')
+            $('#tenaga-asing').summernote('disable')
             $('#pihak').summernote('disable')
             $('#lokasi').summernote('disable')
             $('#penutup').summernote('disable')

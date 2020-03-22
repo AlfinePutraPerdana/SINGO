@@ -49,11 +49,11 @@
                             <table class="table table-head-fixed">
                                 <thead>
                                 <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Asal Negara</th>
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">Nama</th>
+                                    <th class="text-center">Asal Negara</th>
                                     {{-- <th>Mitra</th> --}}
-                                    <th>Aksi</th>
+                                    <th class="text-center">Aksi</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -63,7 +63,7 @@
                                         </tr>
                                     @else
                                         @foreach ($tenagas as $tenaga)
-                                        <tr>
+                                        <tr align="center">
                                             <td>{{($tenagas->currentPage() - 1)*$tenagas->perPage()+$loop->iteration}}</td>
                                             <td>{{$tenaga->nama}}</td>
                                             <td>{{$tenaga->kewarganegaraan}}</td>

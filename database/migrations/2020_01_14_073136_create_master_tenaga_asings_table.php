@@ -44,7 +44,7 @@ class CreateMasterTenagaAsingsTable extends Migration
             $table->integer('status');
             $table->string('status_keaktifan');
             $table->string('file_perpanjangan')->nullable();
-            $table->string('filenameperpanjangan')->nullable();
+            $table->string('filename_perpanjangan')->nullable();
             $table->text('catatan')->nullable();
             $table->timestamps();
         });

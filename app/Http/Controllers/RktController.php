@@ -86,7 +86,7 @@ class RktController extends Controller
         $lampiran = $request->file('lampiran');
         $nama_lampiran = $lampiran->getClientOriginalName();
         $namafile_lampiran = str_random(30).".".$lampiran->getClientOriginalExtension();
-        $lampiran->storeAs('lampiran RKT',$namafile_lampiran);
+        $lampiran->storeAs('Lampiran RKT/File pendukung',$namafile_lampiran);
         $filename_lampiran = $namafile_lampiran;
 
         if (($request->file('bap'))) {
@@ -94,7 +94,7 @@ class RktController extends Controller
             $bap = $request->file('bap');
             $nama_bap = $bap->getClientOriginalName();
             $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
-            $bap->storeAs('lampiran BAP', $namafile_bap);
+            $bap->storeAs('Lampiran RKT/Lampiran BAP', $namafile_bap);
             $filename_bap = $namafile_bap;
 
         } else {
@@ -173,10 +173,10 @@ class RktController extends Controller
             
             $lampiran = $request->file('lampiran');
             $lampiran_lama = $rencana->filename_lampiran;
-            File::delete('storage/lampiran RKT/'.$lampiran_lama);
+            File::delete('storage/Lampiran RKT/File pendukung/'.$lampiran_lama);
             $nama_lampiran = $lampiran->getClientOriginalName();
             $namafile_lampiran = str_random(30).".".$lampiran->getClientOriginalExtension();
-            $lampiran->storeAs('lampiran RKT',$namafile_lampiran);
+            $lampiran->storeAs('Lampiran RKT/File pendukung',$namafile_lampiran);
             $filename_lampiran = $namafile_lampiran;
 
             
@@ -186,9 +186,11 @@ class RktController extends Controller
         if(($request->file('bap'))){
 
             $bap = $request->file('bap');
+            $bap_lama = $rencana->filename_bap;
+            File::delete('storage/Lampiran RKT/Lampiran BAP/'.$bap_lama);
             $nama_bap = $bap->getClientOriginalName();
             $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
-            $bap->storeAs('lampiran BAP', $namafile_bap);
+            $bap->storeAs('Lampiran RKT/Lampiran BAP', $namafile_bap);
             $filename_bap = $namafile_bap;
             
         }elseif (empty($request->file('bap'))){
@@ -196,14 +198,6 @@ class RktController extends Controller
             $nama_bap = $rencana ->bap;
             $filename_bap = $rencana->filename_bap;
 
-        }else {
-            
-                $bap = $request -> file('bap');
-                $bap_lama = $rencana->filename_bap;
-                File::delete('storage/lampiran BAP/'.$bap_lama);
-                $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
-                $bap->storeAs('lampiran BAP', $namafile_bap);
-                $filename_bap = $namafile_bap;
         }
         
 
