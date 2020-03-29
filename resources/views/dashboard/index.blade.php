@@ -71,6 +71,7 @@
           </li>
           -->
           <li><a href="#contact">Kontak</a></li>
+          <li><a href="/home">Beranda Akun</a></li>
           <li class="drop-down"><a href="#">Account</a>
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->

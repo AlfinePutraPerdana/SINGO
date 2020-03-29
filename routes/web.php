@@ -199,9 +199,7 @@ Route::get('/profile', function () {
     return view('mitra.ngo.profile.profile');
 });
 
-Route::get('/logout', function () {
-    return view('mitra.ngo.logout.logout');
-});
+
 
 // Satker
 
@@ -387,6 +385,13 @@ Route::get('/list-satker/edit', function () {
 
 
 Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
+//KLASIFIKASI AKUN
+Route::group(['middleware' =>['auth','checklevel:1']], function () {
+    Route::get('/ngo', function(){
+        return view('mitra.ngo.beranda.beranda');
+    });
+});
+//KLASIFIKASI FASKER
 
 //LOGIN
 Route::get('/login', 'LoginController@login');

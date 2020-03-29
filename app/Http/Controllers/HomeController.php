@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except'=>['index']]);
     }
 
     /**
@@ -21,8 +21,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        if($request->user()->status =='1'){
+
+            if($request->user()->level =='1'){
+                return view('mitra.ngo.beranda.beranda');
+            }
+            if($request->user()->level =='2'){
+                return view('mitra.satker.beranda.beranda');
+            }
+            return view('mitra.Fasker.beranda.beranda');
+            }
+        return redirect('/');
     }
 }

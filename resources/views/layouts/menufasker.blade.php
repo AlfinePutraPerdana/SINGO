@@ -161,7 +161,7 @@
             <a href="" class="nav-link @yield('kelola')">
               <i class="nav-icon  far fa-user-circle"></i>
               <p>
-                Kelola Akun 
+                Kelola Akun
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -364,6 +364,17 @@
                   <p>Laporan Keuangan</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+                    <i class="fas fa-sign-out-alt"></i>
+                    {{ __('Logout') }}
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+              </li>
             </ul>
           </li>
         </ul>
@@ -459,9 +470,9 @@
   });
 </script>
 
-<script>  
+<script>
   @if (Session::has('sukses'))
-      toastr.success("{{Session::get('sukses')}}","Sukses");                    
+      toastr.success("{{Session::get('sukses')}}","Sukses");
    @endif
 </script>
 
