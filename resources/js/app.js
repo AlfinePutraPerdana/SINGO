@@ -43,6 +43,8 @@ const app = new Vue(Vue.util.extend({ router }, App)).$mount('#app');
 
 //-----NGO------
 
+Vue.component('ngo-home', require('./components/ngo/beranda/beranda.vue').default);
+
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('proses-rencana-kerja', require('./components/ngo/rkt/Proses_rkt_draft.vue').default);
 Vue.component('rencana-kerja', require('./components/ngo/rkt/Rencana_kerja.vue').default);

@@ -1,16 +1,13 @@
-@extends('layouts.menubar')
+@extends('layouts.menufasker')
 
-@section('open','menu-open')
+@section('menu-rkt','menu-open')
 
-@section('permintaan','active')
+@section('rencana','active')
 
-@section('rencana-kerja','active')
+@section('data-rkt','active')
 
 @section('content')
-
-  {{-- <revisi-rencana></revisi-rencana> --}}
-
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -21,7 +18,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="/rkt">Rencana Kerja Tahunan</a></li>
+              <li class="breadcrumb-item"><a href="/list-rkt">Rencana Kerja Tahunan</a></li>
               <li class="breadcrumb-item active">Ubah Rencana</li>
             </ol>
           </div>
@@ -37,7 +34,7 @@
               <div class="card-header">
                 <h3 class="card-title">Form Rencana Kerja Tahunan</h3>
               </div>
-              <form action="/rkt/{{ $rencana->id }}/update" method="POST" enctype="multipart/form-data">
+              <form action="/master-rkt/{{ $rencana->id }}/update" method="POST" enctype="multipart/form-data"> 
                 {{ csrf_field() }}
                 <div class="card-body">
                   <div class="form-group">
@@ -45,7 +42,7 @@
                       <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}">
                   </div>
                   <div class="form-group">
-                    <label>Rencana Induk Kegiatan</label>
+                    <label>Kegiatan</label>
                     <select class="form-control">
                       <option>option 1</option>
                       <option>option 2</option>
@@ -78,15 +75,6 @@
                           {{ $rencana->hasil_yang_diharapkan }}
                       </textarea>
                   </div>
-                  {{-- <div class="form-group">
-                      <label for="">Mitra Lokal </label>
-                      <select name="" id="" class="form-control">
-                        <option value="">options 1</option>
-                        <option value="">options 2</option>
-                        <option value="">options 3</option>
-                        <option value="">options 4</option>
-                      </select>
-                  </div> --}}
                 <div class="form-group">
                     <label for="">Tenaga Ahli Lokal</label>
                     {{-- <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing"> --}}
@@ -103,7 +91,7 @@
                 </div>
                 <div class="fom-group mb-3">
                     <label for="">Jumlah Tenaga</label>
-                    <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga"  value="{{ $rencana->jumlah_ta }}">
+                    <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing" value="{{ $rencana->jumlah_ta }}">
                 </div>
                   <div class="form-group">
                       <label for="">Peran Serta Pihak Ketiga</label>
@@ -169,27 +157,15 @@
                         <label class="custom-file-label" for="bap">{{ $rencana->bap }}</label>
                       </div>
                   </div>
-                  @if ($rencana->status == 2)
-                    <div class="form-group">
-                      <label for="">Catatan</label>
-                      <textarea id="catatan" name="catatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-                          {!! $rencana->catatan !!}
-                      </textarea>
-                    </div> 
-                  @endif
                 </div>
                   <div class="card-footer">
                     <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
-                    <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
+                    <button  type="submit"  class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
                   </div>  
               </form>
             </div>
           </div>
         </div>
     </section>  
-  </div>
-  
+</div>
 @endsection
-
-
-

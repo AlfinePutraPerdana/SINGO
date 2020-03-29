@@ -40,7 +40,7 @@
                         <form action="" role="form">
                             <div class="form-group">
                                 <label for="nama">Judul Rencana</label>
-                                <input type="text" class="form-control" id="nama" placeholder="Nama Mitra">
+                                <input type="text" class="form-control" id="nama" placeholder="Judul Rencana">
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

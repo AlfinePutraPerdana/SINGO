@@ -150,9 +150,26 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/index" class="nav-link">
+                <a href="/fasker" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Beranda</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview @yield('menu-akun')">
+            <a href="" class="nav-link @yield('kelola')">
+              <i class="nav-icon  far fa-user-circle"></i>
+              <p>
+                Kelola Akun 
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/list-satker" class="nav-link @yield('data-satker')">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tambah Akun</p>
                 </a>
               </li>
             </ul>
@@ -210,23 +227,23 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-rkt')">
+            <a href="" class="nav-link @yield('rencana')">
               <i class="nav-icon  far fa-file-alt"></i>
               <p>
                 Rencana Kerja Tahunan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview ">
               <li class="nav-item">
-                <a href="/draft-rkt" class="nav-link">
+                <a href="/master-rkt" class="nav-link @yield('data-rkt')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rencana Kerja</p>
                 </a>
               </li>
             </ul>
-            </a>
+          </li>
           <li class="nav-item has-treeview @yield('menu-tenaga')">
             <a href="" class="nav-link @yield('rekomendasi')">
               <i class="nav-icon  far fa-user-circle"></i>
@@ -261,17 +278,17 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview @yield('menu-mitra')">
+            <a href="#" class="nav-link @yield('mitra')">
               <i class="nav-icon  far fa-building"></i>
               <p>
-                Instansi
+                Mitra Lokal
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/mitra" class="nav-link">
+                <a href="/master-mitra" class="nav-link @yield('data-mitra')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Instansi Lokal</p>
                 </a>
@@ -424,6 +441,7 @@
       $('#lokasi').summernote()
       $('#kegiatan').summernote()
       $('#tenaga').summernote()
+      $('#tenaga-asing').summernote()
       $('#catatan').summernote()
     });
 </script>
@@ -445,6 +463,13 @@
   @if (Session::has('sukses'))
       toastr.success("{{Session::get('sukses')}}","Sukses");                    
    @endif
+</script>
+
+<script type="application/javascript">
+  $('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop();
+   $(this).siblings('.custom-file-label').addClass('selected').html(fileName);
+});
 </script>
 
 

@@ -73,7 +73,7 @@
                                 <div class="form-group">
                                     <label for="tanggal lahir">Tanggal Lahir</label>
                                     <div class="input-group">
-                                        <input type="text" name="tanggal_lahir" id="tanggal lahir" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker" value="{{old('tanggal_lahir')}}" placeholder="yyyy/mm/dd"  data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
+                                        <input type="text" name="tanggal_lahir" id="tanggal lahir" class="form-control datepicker" data-toggle="datetimepicker" data-target=".datepicker" value="{{old('tanggal_lahir')}}" placeholder="yyyy/mm/dd"  data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -87,14 +87,14 @@
                                 <div class="form-group">
                                     <label for="berlaku">Masa Berlaku Passport</label>
                                     <div class="input-group">
-                                        <input type="text" name="tgl_berlaku_awal" id="berlaku" class="form-control startdate2 datetimepicker-input" placeholder="yyyy/mm/dd" data-toggle="datetimepicker" data-target=".startdate2" value="{{old('tgl_berlaku_awal')}}"/>
+                                        <input type="text" name="tgl_berlaku_awal" id="berlaku" class="form-control startdate2" placeholder="yyyy/mm/dd" data-toggle="datetimepicker" data-target=".startdate2" value="{{old('tgl_berlaku_awal')}}"/>
                                         <div class="input-group-append">
                                         <span class="input-group-text">s/d</span>
                                         </div>
-                                        <input type="text" name="tgl_berlaku_akhir" class="form-control enddate2 datetimepicker-input" placeholder="yyyy/mm/dd" data-toggle="datetimepicker" data-target=".enddate2" value="{{old('tgl_berlaku_akhir')}}"  data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
+                                        <input type="text" name="tgl_berlaku_akhir" class="form-control enddate2" placeholder="yyyy/mm/dd" data-toggle="datetimepicker" data-target=".enddate2" value="{{old('tgl_berlaku_akhir')}}"  data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label for="mitra">Mitra</label>
                                     <select name="id_instansi" class="form-control" id="mitra"  data-parsley-required data-parsley-trigger="keyup">
                                         <option value="">Pilih Mitra</option>
@@ -102,7 +102,7 @@
                                              <option value="{{$instansi -> id}}" {{(old('id_instansi') == $instansi -> id) ? 'selected' : ''}}> {{ $instansi -> nama}} </option>
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
                                 
                                 <div class="form-group" >
                                     <label for="kategori">Kategori</label>
@@ -131,11 +131,11 @@
                                 <div class="form-group">
                                     <label for="lama kegiatan">Lama Kegiatan</label>
                                     <div class="input-group">
-                                        <input type="text" name="tgl_awal" id="lama kegiatan" placeholder="yyyy/mm/dd" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate" value="{{old('tgl_awal')}}"/>
+                                        <input type="text" name="tgl_awal" id="lama kegiatan" placeholder="yyyy/mm/dd" class="form-control startdate" data-toggle="datetimepicker" data-target=".startdate" value="{{old('tgl_awal')}}"/>
                                         <div class="input-group-append">
                                         <span class="input-group-text">s/d</span>
                                         </div>
-                                        <input type="text" name="tgl_akhir" class="form-control enddate datetimepicker-input" placeholder="yyyy/mm/dd" data-toggle="datetimepicker" data-target=".enddate" value="{{old('tgl_akhir')}}"  data-parsley-required data-parsley-trigger="keyup"/>
+                                        <input type="text" name="tgl_akhir" class="form-control enddate" placeholder="yyyy/mm/dd" data-toggle="datetimepicker" data-target=".enddate" value="{{old('tgl_akhir')}}"  data-parsley-required data-parsley-trigger="keyup"/>
                                     </div>
                                 </div>
                                 <div class="form-group">

@@ -40,12 +40,14 @@
               <h3 class="card-title">Rencana Kerja Tahunan <a href="/tambah-rkt" class="btn btn-sm btn-primary"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a></h3>  
                 
               <div class="card-tools">
+                <form action="/rkt" method="GET">
                 <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                  <input type="text" name="search" class="form-control float-right" placeholder="Search">
                   <div class="input-group-append">
                     <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                   </div>
                 </div>
+              </form>
               </div>
             </div>
             <!-- /.card-header -->
@@ -55,7 +57,7 @@
                 <table class="table table-head-fixed">
                   <thead>
                     <tr>
-                      <th>No</th>
+                      <th class="text-center">No</th>
                       <th class="text-center">Judul Rencana</th>
                       <th class="text-center">Status</th> 
                       <th class="text-center">Aksi</th>
@@ -65,8 +67,8 @@
                   <tbody>
                       @foreach ($rencanas as $rencana)
                       <tr>
-                        <td>{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
-                        <td>{{ $rencana->judul }}</td>
+                        <td align="center">{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
+                        <td align="center">{{ $rencana->judul }}</td>
                         <td align="center">
                             @if ($rencana->status == 0 )
                                 <span class="badge badge-info">Menunggu Hasil Pembahasan</span>

@@ -11,7 +11,7 @@
 
   {{-- <draft-rencana> </draft-rencana> --}}
 
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -41,30 +41,35 @@
               <h3 class="card-title">Rencana Kerja Tahunan</h3>  
                 
               <div class="card-tools">
+                <form action="/list-rkt" method="GET">
                 <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                  <input type="text" name="search" class="form-control float-right" placeholder="Search">
                   <div class="input-group-append">
                     <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                   </div>
                 </div>
+              </form>
               </div>
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 350px;">
                 <table class="table table-head-fixed">
                   <thead>
-                    <tr>
-                      <th class="text-center">No</th>
-                      <th class="text-center">Judul Rencana</th>
-                      <th class="text-center">Aksi</th>
+                    <tr class="text-center">
+                      <th >No</th>
+                      <th>Judul Rencana</th>
+                      <th colspan="2">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                       @foreach ($rencanas as $rencana)
-                      <tr>
-                        <td align="center">{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
-                        <td align="center">{{ $rencana->judul }}</td>
-                        <td align="center">
+                      <tr align="center">
+                        <td>{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
+                        <td>{{ $rencana->judul }}</td>
+                        <td>
+                          <a href="/list-rkt/{{ $rencana->id }}/data" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a>
+                        </td>
+                        <td>
                           <a href="/list-rkt/{{ $rencana->id }}/edit" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a>
                         </td>
                       </tr>

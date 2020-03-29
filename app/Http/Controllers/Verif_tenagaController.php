@@ -127,8 +127,6 @@ class Verif_tenagaController extends Controller
         }
         
 
-        
-
         return redirect('/verif-tenaga-asing')->with('sukses','Data Berhasil di Verifikasi');
     }
 

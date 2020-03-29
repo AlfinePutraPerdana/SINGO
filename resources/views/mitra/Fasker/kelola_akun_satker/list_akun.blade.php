@@ -1,10 +1,10 @@
 @extends('layouts.menufasker')
 
-@section('menu-rkt','menu-open')
+@section('menu-akun','menu-open')
 
-@section('rencana','active')
+@section('kelola','active')
 
-@section('data-rkt','active')
+@section('data-satker','active')
 
 @section('content')
 <div class="content-wrapper">
@@ -13,12 +13,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Rencana Kerja Tahunan</h1>
+            <h1>Kelola Akun </h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Rencana Kerja Tahunan</li>
+              <li class="breadcrumb-item active">Daftar Akun</li>
             </ol>
           </div>
         </div>
@@ -34,10 +34,10 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Rencana Kerja Tahunan</h3>  
+              <h3 class="card-title">Daftar Akun</h3>  
                 
               <div class="card-tools">
-                <form action="/list-rkt" method="GET">
+                <form action="#" method="GET">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="search" class="form-control float-right" placeholder="Search">
                   <div class="input-group-append">
@@ -49,33 +49,31 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 350px;">
+                {{ csrf_field() }}
                 <table class="table table-head-fixed">
                   <thead>
                     <tr class="text-center">
                       <th>No</th>
-                      <th>Judul Rencana</th>
-                      <th colspan="2" >Aksi</th>
+                      <th>Nama</th>
+                      <th>Username</th> 
+                      <th>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
-                      @foreach ($rencanas as $rencana)
+                      
                       <tr align="center">
-                        <td >{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
-                        <td>{{ $rencana->judul }}</td>
-                        <td>
-                          <a href="/master-rkt/{{ $rencana->id }}/data" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a>
-                        </td>
-                        <td>
-                          <a href="/master-rkt/{{ $rencana->id }}/edit" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a>
-                        </td>
+                        <td> 1 </td>
+                        <td>Satuan Kerja </td>
+                        <td>Satuan_Kerja01</td>
+                        <td><a href="/list-satker/edit"  class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Ubah</a></td>
                       </tr>
-                      @endforeach
                   </tbody>
                 </table>
             </div>
                 <div class="card-footer clearfix">
+                    <a href="/tambah-akun" class="btn btn-primary"><i class="fas fa-plus-circle"></i> <b>Tambah</b></a>
                     <ul class="pagination pagination-sm m-0 float-right">
-                      {{ $rencanas->links() }}
+                      
                     </ul>
                 </div>
             </div>
@@ -84,3 +82,4 @@
     </section>
 </div>
 @endsection
+    

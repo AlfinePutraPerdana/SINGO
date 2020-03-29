@@ -83,7 +83,7 @@
                                         <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" disabled/>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label>Mitra</label>
                                     <select name="id_instansi" class="form-control" disabled>
                                         @foreach ($instansis as $instansi)
@@ -95,7 +95,7 @@
                                                     > {{ $instansi -> nama}} </option>
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
                                 <div class="form-group">
                                     <label for="kategori">Kategori</label>
                                     <select name="kategori" class="form-control" disabled>
@@ -131,62 +131,36 @@
                                 </div> 
                                 <div class="form-group">
                                     <label for="foto">Lampiran Foto</label></br>
-                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{url('foto/'.$tenaga->foto)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
-                                    {{-- <div class="custom-file">
-                                        <label class="custom-file-label" for="foto" >Pilih File</label>
-                                        <input type="file" name="foto" value="{{$tenaga -> foto }}" class="custom-file-input" id="foto" aria-describedby="foto">
-                                    </div> --}}
+                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Tenaga Asing/Foto/'.$tenaga->filename_foto) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                   
                                 </div>
                                 <div class="form-group">
                                     <label for="lampirpassport">Lampiran Passport</label>
-                                    <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('passport/'.$tenaga->upload_passpor) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
-                                    
-                                    {{-- <div class="input-group">
-                                        <div class="custom-file">
-                                            <label class="custom-file-label" for="lampirpassport">Pilih File</label>
-                                            <input type="file" name="upload_passpor" value="{{$tenaga -> upload_passpor }}" class="custom-file-input" id="lampirpassport">
-                                        </div>
-                                    </div> --}}
-                                    
+                                    <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Tenaga Asing/Passport/'.$tenaga->filename_passport) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                                   
                                 </div>
                                 <div class="form-group">
                                     <label for="file">Lampiran CV</label>
-                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{url('cv/'.$tenaga->cv_resume)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
-                                    {{-- <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" name="cv_resume" value="{{$tenaga -> cv_resume }}" class="custom-file-input" id="cv">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
-                                        </div>
-                                    </div> --}}
+                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/CV/'.$tenaga->filename_cv)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    
                                 </div>
                                 <div class="form-group">
                                     <label for="file">Lampiran Jobdesk</label>
-                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{url('jobdesc/'.$tenaga->jobdesc)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
-                                    {{-- <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" name="jobdesc" value="{{$tenaga -> jobdesc }}" class="custom-file-input" id="jobdesk">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
-                                        </div>
-                                    </div> --}}
+                                    <p for="foto">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/Jobdesk/'.$tenaga->filename_jobdesc)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                   
                                 </div>
                                 <div class="form-group">
                                     <label for="file">File Pendukung</label>
-                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{url('dokumen pendukung/'.$tenaga->dokumen_pendukung)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
-                                    {{-- <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" name="dokumen_pendukung" value="{{$tenaga -> dokumen_pendukung }}" class="custom-file-input" id="">
-                                            <label class="custom-file-label" for="file">Pilih File</label>
-                                        </div>
-                                    </div> --}}
+                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/Dokumen pendukung/'.$tenaga->filename_dokumen)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    
                                 </div>
                                 @if ($tenaga->file_perpanjangan)
                                 <div class="form-group">
                                     <label for="file">Perpanjangan Masa</label>
-                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{url('perpanjang masa/'.$tenaga->file_perpanjangan)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
+                                    <p for="foto">Lampiran File   : <a class="btn btn-info btn-sm" role="button" href="{{asset('storage/Tenaga Asing/Perpanjang masa/'.$tenaga->filename_perpanjangan)}}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a> </p>
                                     
                                 </div>
-                                @else
-                                    
+                                
                                 @endif
                                 <div class="form-group">
                                     <label for="">Catatan</label>

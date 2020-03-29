@@ -82,7 +82,7 @@
                                         <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" disabled/>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label>Mitra</label>
                                     <select name="id_instansi" class="form-control" disabled>
                                         @foreach ($instansis as $instansi)
@@ -94,7 +94,7 @@
                                                     > {{ $instansi -> nama}} </option>
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
                                 <div class="form-group">
                                     <label for="kategori">Kategori</label>
                                     <select name="kategori" class="form-control" disabled>

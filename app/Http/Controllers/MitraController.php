@@ -87,7 +87,8 @@ class MitraController extends Controller
             'nama' => $request -> nama,
             'alamat' => $request -> alamat,
             'no_regis_izin' => $request -> no_regis_izin,
-            'id_kategori' =>$lokal->id
+            'id_kategori' =>$lokal->id,
+            'negara' => 'Indonesia'
         ]);
 
         $id_instansi = $instansi -> id;

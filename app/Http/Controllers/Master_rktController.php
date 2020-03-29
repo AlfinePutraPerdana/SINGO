@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Rkt;
 
+use Illuminate\Support\Facades\File;
+
 class Master_rktController extends Controller
 {
     /**
@@ -13,9 +15,23 @@ class Master_rktController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $rencanas = Rkt::where('status','3')->latest()->paginate(5);
+        if ($request->has('search')) {
+            
+            $rencanas = Rkt::where('judul','LIKE','%'.$request->search.'%')
+                            ->where('status','3')
+                            ->latest('updated_at')
+                            ->paginate(5);
+
+            $rencanas->appends($request->only('search'));
+
+        } else {
+
+            $rencanas = Rkt::where('status','3')->latest()->paginate(5);
+        }
+        
+             
 
         return view('mitra.ngo.RKT.draftrkt',['rencanas' => $rencanas]);
     }
@@ -49,7 +65,9 @@ class Master_rktController extends Controller
      */
     public function show($id)
     {
-        
+        $rencana = Rkt::find($id);
+
+        return view('mitra.ngo.RKT.lihatdata',['rencana'=>$rencana]);
     }
 
     /**
@@ -62,7 +80,7 @@ class Master_rktController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.ngo.RKT.lihatdata',['rencana'=>$rencana]);
+        return view('mitra.ngo.RKT.editdata',['rencana'=>$rencana]);
     }
 
     /**
@@ -79,29 +97,40 @@ class Master_rktController extends Controller
         if (empty($request->file('lampiran'))) {
             
             $nama_lampiran = $rencana->lampiran;
+            $filename_lampiran = $rencana->filename_lampiran;
 
         } else {
             
             $lampiran = $request->file('lampiran');
-            $nama_lampiran = time().'_'.$lampiran->getClientOriginalName();
-            $lokasi_lampiran = 'lampiran RKT';
-            $lampiran->move($lokasi_lampiran,$nama_lampiran);
+            $lampiran_lama = $rencana->filename_lampiran;
+            File::delete('storage/Lampiran RKT/File pendukung/'.$lampiran_lama);
+            $nama_lampiran = $lampiran->getClientOriginalName();
+            $namafile_lampiran = str_random(30).".".$lampiran->getClientOriginalExtension();
+            $lampiran->storeAs('Lampiran RKT/File pendukung',$namafile_lampiran);
+            $filename_lampiran = $namafile_lampiran;
 
+            
         }
+
+        
 
         if (empty($request->file('bap'))) {
             
-            $nama_bap = $rencana->bap;
+            $nama_bap = $rencana ->bap;
+            $filename_bap = $rencana->filename_bap;
 
         } else {
             
-            $bap = $request -> file('bap');
-            $bap_lama = $rencana->bap;
-            File::delete('lampiran BAP/'.$bap_lama);
-            $nama_bap = time().'_'.$bap->getClientOriginalName();
-            $lokasi_bap = 'lampiran BAP';
-            $bap -> move($lokasi_bap, $nama_bap);
+            $bap = $request->file('bap');
+            $bap_lama = $rencana->filename_bap;
+            File::delete('storage/Lampiran RKT/Lampiran BAP/'.$bap_lama);
+            $nama_bap = $bap->getClientOriginalName();
+            $namafile_bap = str_random(30).".".$bap->getClientOriginalExtension();
+            $bap->storeAs('Lampiran RKT/Lampiran BAP', $namafile_bap);
+            $filename_bap = $namafile_bap;
         }
+
+       
 
         $rencana->update([
             'judul' => $request->judul,
@@ -110,6 +139,7 @@ class Master_rktController extends Controller
             'kelompok_sasaran' => $request->kelompok_sasaran,
             'hasil_yang_diharapkan' => $request->hasil_yang_diharapkan,
             'tenaga_lokal' => $request->tenaga_lokal,
+            'tenaga_asing' => $request->tenaga_asing,
             'jumlah_ta' => $request->jumlah_ta,
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
@@ -118,7 +148,9 @@ class Master_rktController extends Controller
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,
             'lampiran' =>$nama_lampiran,
+            'filename_lampiran' => $filename_lampiran,
             'bap' => $nama_bap,
+            'filename_bap' => $filename_bap,
             'status' => 1
         ]);
 

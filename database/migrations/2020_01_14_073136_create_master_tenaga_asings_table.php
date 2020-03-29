@@ -24,8 +24,11 @@ class CreateMasterTenagaAsingsTable extends Migration
             //$table->foreign('id_instansi')->references('id')->on('instansis');
             $table->string('jabatan');
             $table->string('foto');
+            $table->string('filename_foto');
             $table->string('upload_passpor');
+            $table->string('filename_passport');
             $table->string('cv_resume');
+            $table->string('filename_cv');
             $table->string('jenis_kelamin');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
@@ -35,10 +38,13 @@ class CreateMasterTenagaAsingsTable extends Migration
             $table->date('tgl_awal');
             $table->date('tgl_akhir');
             $table->string('jobdesc');
+            $table->string('filename_jobdesc');
             $table->string('dokumen_pendukung');
+            $table->string('filename_dokumen');
             $table->integer('status');
             $table->string('status_keaktifan');
             $table->string('file_perpanjangan')->nullable();
+            $table->string('filename_perpanjangan')->nullable();
             $table->text('catatan')->nullable();
             $table->timestamps();
         });

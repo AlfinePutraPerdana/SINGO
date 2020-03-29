@@ -37,8 +37,7 @@
                     <h3 class="card-title">Data Rencana Kerja Tahunan</h3>
                   </div>
                   <form role="form">
-                    <div class="card-body">
-                        <div class="card-body">
+                      <div class="card-body">
                             <div class="form-group">
                               <label for="">Judul Rencana</label>
                               <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}" readonly>
@@ -78,7 +77,7 @@
                                   {{ $rencana->hasil_yang_diharapkan }}
                               </textarea>
                           </div>
-                          <div class="form-group">
+                          {{-- <div class="form-group">
                               <label for="">Mitra Lokal </label>
                               <select name="" id="" class="form-control">
                                 <option value="">options 1</option>
@@ -86,17 +85,24 @@
                                 <option value="">options 3</option>
                                 <option value="">options 4</option>
                               </select>
-                          </div>
+                          </div> --}}
                         <div class="form-group">
-                            <label for="">Tenaga Kerja / Tenaga Ahli </label>
+                            <label for="">Tenaga Ahli Lokal</label>
                             {{-- <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing"> --}}
                             <textarea id="tenaga" name="tenaga_lokal" class="form-control" style="height: 100px" placeholder="Masukan Teks">
                                 {!! $rencana->tenaga_lokal !!}
                             </textarea>
                         </div>
+                        <div class="form-group">
+                            <label for="">Tenaga Ahli Asing</label>
+                            {{-- <input type="text" class="form-control" id="asing" placeholder="Tenaga Asing"> --}}
+                            <textarea id="tenaga-asing" name="tenaga_asing"  class="form-control" style="height: 100px" placeholder="Masukan Teks">
+                                {!! $rencana->tenaga_asing !!}
+                            </textarea>
+                        </div>
                         <div class="fom-group mb-3">
                             <label for="">Jumlah Tenaga</label>
-                            <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" id="tenaga-asing" value="{{ $rencana->jumlah_ta }}" disabled>
+                            <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga"  value="{{ $rencana->jumlah_ta }}" disabled>
                         </div>
                           <div class="form-group">
                               <label for="">Peran Serta Pihak Ketiga</label>
@@ -150,14 +156,16 @@
                           </div>
                           <div class="form-group">
                               <label for="lampiran">Lampiran File</label>
-                              <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('lampiran RKT/'.$rencana->lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                              <p for="lampiran">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/File pendukung/'.$rencana->filename_lampiran) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                           </div>
                           <div class="form-group">
                             <label for="lampirpassport">Lampiran BAP</label>
-                            <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ url('lampiran BAP/'.$rencana->bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
+                            <p for="lampirpassport">Lampiran File  : <a class="btn btn-info btn-sm" role="button" href="{{ asset('storage/Lampiran RKT/lampiran BAP/'.$rencana->filename_bap) }}" target="_blank"><i class="far fa-eye"></i> <b>Lihat</b></a></p>
                           </div>
-                      </div>
-                    </div> 
+                      </div> 
+                      <div class="card-footer">
+                        <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
+                      </div> 
                   </form>
                 </div>
               </div>
@@ -176,6 +184,7 @@
             $('#sasaran').summernote('disable')
             $('#diharapkan').summernote('disable')
             $('#tenaga').summernote('disable')
+            $('#tenaga-asing').summernote('disable')
             $('#pihak').summernote('disable')
             $('#lokasi').summernote('disable')
             $('#penutup').summernote('disable')

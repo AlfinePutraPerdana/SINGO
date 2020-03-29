@@ -154,7 +154,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/index" class="nav-link">
+                <a href="/ngo" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Beranda</p>
                 </a>
@@ -412,28 +412,29 @@
 <script>
     $(document).ready(function () {
       //Add text editor
-      $('#pendahuluan').summernote()
-      $('#penutup').summernote()
-      $('#upaya').summernote()
-      $('#hasil').summernote()
-      $('#sasaran').summernote()
+      $('#pendahuluan').summernote({placeholder: 'Masukan Teks...'})
+      $('#penutup').summernote({placeholder: 'Masukan Teks...'})
+      $('#upaya').summernote({placeholder: 'Masukan Teks...'})
+      $('#hasil').summernote({placeholder: 'Masukan Teks...'})
+      $('#sasaran').summernote({placeholder: 'Masukan Teks...'})
       $('#tujuan').summernote({placeholder: 'Masukan Teks...'})
-      $('#daerah').summernote()
-      $('#diharapkan').summernote()
-      $('#pihak').summernote()
+      $('#daerah').summernote({placeholder: 'Masukan Teks...'})
+      $('#diharapkan').summernote({placeholder: 'Masukan Teks...'})
+      $('#pihak').summernote({placeholder: 'Masukan Teks...'})
       $('#dana').summernote()
-      $('#lokasi').summernote()
+      $('#lokasi').summernote({placeholder: 'Masukan Teks...'})
       $('#kegiatan').summernote({placeholder: 'Masukan Teks...'})
-      $('#tenaga').summernote()
-      $('#prioritas').summernote()
-      $('#penerima').summernote()
+      $('#tenaga').summernote({placeholder: 'Masukan Teks...'})
+      $('#tenaga-asing').summernote({placeholder: 'Masukan Teks...'})
+      $('#prioritas').summernote({placeholder: 'Masukan Teks...'})
+      $('#penerima').summernote({placeholder: 'Masukan Teks...'})
       $('#detil_kegiatan').summernote()
       $('#output').summernote()
       $('#income').summernote()
       $('#capaian').summernote()
       $('#peran').summernote()
       $('#masalah').summernote()
-      $('#catatan').summernote()
+      $('#catatan').summernote({placeholder: 'Masukan Teks...'})
     });
 </script>
 
