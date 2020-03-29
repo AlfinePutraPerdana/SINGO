@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                   Akun Anda Berhasil Dibuat, Mohon Tunggu Notifikasi Fasker Pada Email Anda
                 </div>
             </div>
         </div>
