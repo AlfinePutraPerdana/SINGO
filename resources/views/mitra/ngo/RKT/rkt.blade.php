@@ -65,6 +65,11 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @if ($rencanas->isEmpty())
+                    <tr align="center">
+                      <td colspan="5" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+                    @else
                       @foreach ($rencanas as $rencana)
                       <tr>
                         <td align="center">{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
@@ -98,6 +103,7 @@
                         </td>
                       </tr>
                       @endforeach
+                    @endif
                   </tbody>
                 </table>
             </div>

@@ -62,18 +62,24 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @if ($rencanas->isEmpty())
+                    <tr align="center">
+                      <td colspan="3" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+                    @else
                       @foreach ($rencanas as $rencana)
-                      <tr align="center">
-                        <td>{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
-                        <td>{{ $rencana->judul }}</td>
-                        <td>
-                          <a href="/list-rkt/{{ $rencana->id }}/data" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a>
-                        </td>
-                        <td>
-                          <a href="/list-rkt/{{ $rencana->id }}/edit" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a>
-                        </td>
-                      </tr>
+                        <tr align="center">
+                          <td>{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
+                          <td>{{ $rencana->judul }}</td>
+                          <td>
+                            <a href="/list-rkt/{{ $rencana->id }}/data" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a>
+                          </td>
+                          <td>
+                            <a href="/list-rkt/{{ $rencana->id }}/edit" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>ubah</b></a>
+                          </td>
+                        </tr>
                       @endforeach
+                    @endif  
                   </tbody>
                 </table>
             </div>

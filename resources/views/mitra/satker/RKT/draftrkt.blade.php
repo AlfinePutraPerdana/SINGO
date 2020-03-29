@@ -56,13 +56,19 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach ($rencanas as $rencana)
-                  <tr>
-                    <td align="center">{{ ($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration }}</td>
-                    <td align="center">{{ $rencana->judul }}</td>
-                    <td align="center"><a href="/satker/rkt/{{ $rencana->id }}/data-rkt" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
-                  </tr>
-                  @endforeach
+                  @if ($rencanas->isEmpty())
+                    <tr align="center">
+                      <td colspan="3" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+                  @else
+                    @foreach ($rencanas as $rencana)
+                    <tr>
+                      <td align="center">{{ ($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration }}</td>
+                      <td align="center">{{ $rencana->judul }}</td>
+                      <td align="center"><a href="/satker/rkt/{{ $rencana->id }}/data-rkt" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a></td>
+                    </tr>
+                    @endforeach
+                  @endif
                 </tbody>
               </table>
             </div>
