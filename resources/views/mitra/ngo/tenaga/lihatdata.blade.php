@@ -84,7 +84,7 @@
                                             <input type="text" name="tgl_berlaku_akhir" value="{{$tenaga -> tgl_berlaku_akhir }}" class="form-control enddate2 " data-toggle="datetimepicker" data-target=".enddate2" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label>Mitra</label>
                                         <select name="id_instansi" class="form-control" data-parsley-required data-parsley-trigger="keyup">
                                             @foreach ($instansis as $instansi)
@@ -96,7 +96,7 @@
                                                         > {{ $instansi -> nama}} </option>
                                             @endforeach
                                         </select>
-                                    </div>
+                                    </div> --}}
                                     <div class="form-group">
                                         <label for="kategori">Kategori</label>
                                         <select name="kategori" class="form-control" data-parsley-required data-parsley-trigger="keyup">
