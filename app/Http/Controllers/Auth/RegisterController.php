@@ -106,6 +106,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'no_hp' => $data['no_hp'],
             'status' => '0',
+            'level' =>'1'
         ]);
         return $instansi;
         return $ngo;

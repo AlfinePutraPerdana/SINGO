@@ -351,7 +351,8 @@ Route::get('/verif-bebas-pajak', function () {
 Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
 
 //LOGIN
-Route::get('/login', 'DashboardController@login');
+Route::get('/login', 'LoginController@login');
+Route::get('/logout', 'LoginController@logout');
 Route::post('users/{id}', function ($id) {
 
 });

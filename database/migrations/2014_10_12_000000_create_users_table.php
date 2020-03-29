@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('username');
             $table->string('no_hp',12);
             $table->string('status');
+            $table->string('level');
             $table->rememberToken();
             $table->timestamps();
         });
