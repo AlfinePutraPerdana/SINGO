@@ -103,6 +103,8 @@
               @php
                 if($no == 6)
                   break;
+                elseif($news -> id == $data[0] -> id)
+                  continue;
                 $no++;
               @endphp
               <div class="single-post">
@@ -144,7 +146,7 @@
                   </div>
 
                   <div class="news-text">
-                    {{$data -> artikel}}
+                    {!! $data -> artikel !!}
                   </div>
                   @endforeach
 

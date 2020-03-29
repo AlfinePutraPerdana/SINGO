@@ -17,6 +17,10 @@ use App\Http\Controllers\TenagaController;
 
 Route::get('/', 'DashboardController@index');
 
+Route::get('/ngo', function(){
+    return view('mitra.ngo.beranda.beranda');
+});
+
 //NGO-----RKT
 Route::get('/rkt', 'RktController@index');
 
@@ -201,6 +205,10 @@ Route::get('/logout', function () {
 
 // Satker
 
+Route::get('/satker', function(){
+    return view('mitra.satker.beranda.beranda');
+});
+
 Route::get('/satker/rkt', 'Verif_rktController@index');
 
 Route::get('/satker/list-rkt', 'Master_rkt_satkerController@index' );
@@ -264,6 +272,11 @@ Route::get('/satker/revisi-tamu', function () {
 Auth::routes();
 
 //-------FASKER------
+
+Route::get('/fasker', function(){
+    return view('mitra.Fasker.beranda.beranda');
+});
+
 //Fasker--Tamu
 
 Route::get('/verif-tamu', function () {
