@@ -1,5 +1,5 @@
 @extends('layouts.menufasker')
-
+@section('akun','active')
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -37,24 +37,29 @@
                         </div>
                     </div>
                     <div class="card-body table-responsive p-0" style="height: 450px;">
-                        <form action="">
+                    <form action="/verif-akun" method="GET" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                             <table class="table table-head-fixed">
                                 <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Organisasi</th>
-                                    <th>Asal Negara</th>
-                                    <th>No. Registrasi</th>
+                                    <th>Nama Akun</th>
+                                    <th>Email</th>
                                     <th>Aksi</th>
                                     <th>Pilih</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                    @if ($akun->isEmpty())
+                                    <tr align="center">
+                                        <td colspan="6" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                                      </tr>
+                                    @else
+                                      @foreach ($akun as $row)
                                 <tr>
-                                    <td>1</td>
-                                    <td>World Wildlife Foundation</td>
-                                    <td>Amerika Serikat</td>
-                                    <td>202100101</td>
+                                <td>{{($akun->currentPage() - 1)*$akun->perPage()+$loop->iteration }}</td>
+                                <td>{{$row-> name}}</td>
+                                <td>{{$row-> email}}</td>
                                     <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
                                        <i class="far fa-eye"></i><b> Pratinjau</b>
                                     </td>
@@ -62,7 +67,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Pengajuan Tamu Asing</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Pengajuan Akun</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -133,62 +138,8 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>World Wildlife Foundation</td>
-                                    <td>Amerika Serikat</td>
-                                    <td>202100101</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih2">
-                                        <label for="pilih2"></label>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>World Wildlife Foundation</td>
-                                    <td>Amerika Serikat</td>
-                                    <td>202100101</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></a></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih3">
-                                        <label for="pilih3"></label>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>World Wildlife Foundation</td>
-                                    <td>Amerika Serikat</td>
-                                    <td>202100101</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></a></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih4">
-                                        <label for="pilih4"></label>
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>World Wildlife Foundation</td>
-                                    <td>Amerika Serikat</td>
-                                    <td>202100101</td>
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b></a></td>
-                                    <td>
-                                    <div class="icheck-success d-inline">
-                                        <input type="checkbox" id="pilih5">
-                                        <label for="pilih5"></label>
-                                    </div>
-                                    </td>
-                                </tr>
+                                    @endforeach
+                                @endif
                                 </tbody>
                             </table>
                         </form>

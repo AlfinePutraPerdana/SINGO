@@ -305,9 +305,7 @@ Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@
 Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@history');
 
 //Fasker--NGO
-Route::get('/verif-akun', function () {
-    return view('mitra.Fasker.Ngo.verif_ngo');
-});
+Route::get('/verif-akun', 'Verif_AkunController@index');
 
 Route::get('/master-ngo', function () {
     return view('mitra.Fasker.Ngo.master_ngo');
@@ -369,9 +367,8 @@ Route::get('/list-satker', function () {
     return view('mitra.Fasker.kelola_akun_satker.list_akun');
 });
 
-Route::get('/tambah-akun', function () {
-    return view('mitra.Fasker.kelola_akun_satker.tambah_akun');
-});
+Route::get('/tambah-akun','RegisterSatkerController@index');
+Route::post('/tambah-akun','RegisterSatkerController@store');
 
 Route::get('/list-satker/edit', function () {
     return view('mitra.Fasker.kelola_akun_satker.edit_akun');

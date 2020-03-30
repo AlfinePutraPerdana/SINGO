@@ -92,6 +92,11 @@ class ForeignAll extends Migration
             $table->foreign('id_instansi')->references('id')->on('instansis');
 
         });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->foreign('id_instansi')->references('id')->on('instansis');
+
+        });
     }
 
     /**

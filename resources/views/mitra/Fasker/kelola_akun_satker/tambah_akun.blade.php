@@ -35,8 +35,8 @@
                         <h3 class="card-title">Form Registrasi Akun</h3>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post" enctype="multipart/form-data" id="formtenaga" data-parsley-validate >
-                            {{ csrf_field() }}
+                        <form action="/tambah-akun" method="post" enctype="multipart/form-data" id="formtenaga" data-parsley-validate >
+                            @csrf
                             @if (count($errors) > 0)
                             <div class="alert alert-danger" role="alert">
                                 <ul>
@@ -46,34 +46,80 @@
                                 </ul>
                             </div>
                             @endif
-                                <div class="form-group">
-                                    <label for="nama">Nama</label>
-                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Lengkap"   data-parsley-required data-parsley-trigger="keyup">
+                            <div class="form-group row">
+                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nama Lengkap') }}</label>
+
+                                <div class="col-md-6">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{old('name')}}" required autocomplete="name">
+
+                                    @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" name="username" class="form-control" id="username" placeholder="Username" data-parsley-required data-parsley-trigger="keyup">
+                            </div>
+                            <div class="form-group row">
+                                <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
+
+                                    @error('username')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">email</label>
-                                    <input type="text" name="email" class="form-control" id="email" placeholder="Email"  data-parsley-required data-parsley-trigger="keyup">
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <div class="input-group">
-                                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" data-parsley-required data-parsley-type="date" data-parsley-trigger="keyup"/>
-                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                    @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label for="confirm-password">Confirm Password</label>
-                                    <input type="password" name="confirm_password" class="form-control" id="confirm-password" placeholder="Confirm Password"  data-parsley-required data-parsley-trigger="keyup">
+                            </div>
+                            <div class="form-group row">
+                                <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                 </div>
-                                <div class="form-group">
-                                    <label for="no-telp">No telp</label>
-                                    <input type="text" name="no_telp" class="form-control" id="no-telp" placeholder="No telephone" data-parsley-required data-parsley-trigger="keyup">
+                            </div>
+                            <div class="form-group row">
+                                <label for="no_hp" class="col-md-4 col-form-label text-md-right">{{ __('No. Handphone') }}</label>
+
+                                <div class="col-md-6">
+                                <input id="no_hp" type="text" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{old('no_hp')}}" required autocomplete="no_hp">
+
+                                    @error('no_hp')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                
-                      
+                            </div>
+
+
                                 <div class="card-footer">
                                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
                                 </div>
