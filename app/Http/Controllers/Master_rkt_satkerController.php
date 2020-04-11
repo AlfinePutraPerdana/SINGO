@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mata_uang;
+
 use App\Rkt;
+
 
 use Illuminate\Http\Request;
 
@@ -51,7 +54,9 @@ class Master_rkt_satkerController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.satker.RKT.lihatdata',['rencana'=>$rencana]);
+        $uangs = Mata_uang::all();
+
+        return view('mitra.satker.RKT.lihatdata',['rencana'=>$rencana,'uangs'=>$uangs]);
     }
 
     /**

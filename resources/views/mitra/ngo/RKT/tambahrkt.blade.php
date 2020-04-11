@@ -127,15 +127,24 @@
                             {!! old('lokasi') !!}
                       </textarea>
                   </div>
+                  {{-- <div class="form-group">
+                                    <label for="mitra">Mitra</label>
+                                    <select name="id_instansi" class="form-control" id="mitra"  data-parsley-required data-parsley-trigger="keyup">
+                                        <option value="">Pilih Mitra</option>
+                                        @foreach ($instansis as $instansi)
+                                             <option value="{{$instansi -> id}}" {{(old('id_instansi') == $instansi -> id) ? 'selected' : ''}}> {{ $instansi -> nama}} </option>
+                                        @endforeach
+                                    </select>
+                                </div> --}}
                   <div class="form-row mb-3">
                     <div class="col-md-6">
                       <label>Mata Uang</label>
-                    <select class="form-control" name="mata_uang_id">
-                      <option selected>Pilih Mata Uang</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                    <select class="form-control" name="mata_uang_id" data-parsley-required data-parsley-trigger="keyup">
+                      <option value="">Pilih Mata Uang</option>
+                      @foreach ($uangs as $uang)
+                      <option value="{{$uang -> id}}" {{(old('mata_uang_id') == $uang -> id) ? 'selected' : ''}}> {{ $uang -> name}} </option>
+                        @endforeach
+                      
                     </select>
                     </div>
                     <div class="col-md-6">

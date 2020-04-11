@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Rkt;
 
+use App\Mata_uang;
+
 use Illuminate\Support\Facades\File;
 
 class RktController extends Controller
@@ -43,7 +45,9 @@ class RktController extends Controller
      */
     public function create()
     {
-        return view('mitra.ngo.RKT.tambahrkt');
+        $uangs = Mata_uang::all();
+        
+        return view('mitra.ngo.RKT.tambahrkt',['uangs'=>$uangs]);
     }
 
     /**
@@ -116,6 +120,7 @@ class RktController extends Controller
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
             'nominal_biaya' => $request->nominal_biaya,
+            'mata_uang_id' => $request->mata_uang_id,
             'jadwal_awal' => $request->jadwal_awal,
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,
@@ -150,7 +155,9 @@ class RktController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.ngo.RKT.revisirktdraft',['rencana'=>$rencana]);
+        $uangs = Mata_uang::all();
+
+        return view('mitra.ngo.RKT.revisirktdraft',['rencana'=>$rencana,'uangs'=> $uangs]);
     }
 
     /**
@@ -213,6 +220,7 @@ class RktController extends Controller
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
             'nominal_biaya' => $request->nominal_biaya,
+            'mata_uang_id' => $request->mata_uang_id,
             'jadwal_awal' => $request->jadwal_awal,
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,

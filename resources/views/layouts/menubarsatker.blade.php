@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>FASKER</title>
+  <title>SINGO</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -117,7 +117,7 @@
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Fasker</span>
+      <span class="brand-text font-weight-light">SINGO</span>
     </a>
 
     <!-- Sidebar -->
@@ -272,7 +272,7 @@
   <!-- /.control-sidebar -->
 <!-- ./wrapper -->
 <footer class="main-footer">
-  <strong>Copyright &copy; Fasker.</strong>
+  <strong>Copyright &copy; SINGO.</strong>
   All rights reserved.
 </footer>
 
