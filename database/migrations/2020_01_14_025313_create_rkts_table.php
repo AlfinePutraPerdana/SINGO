@@ -15,7 +15,7 @@ class CreateRktsTable extends Migration
     {
         Schema::create('rkts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_ngo');
+            $table->unsignedBigInteger('id_ngo')->nullable();
             $table->string('judul');
             $table->text('pendahuluan');
             $table->string('hasil_yang_diharapkan');
@@ -25,7 +25,7 @@ class CreateRktsTable extends Migration
             $table->string('tenaga_lokal');
             $table->string('tenaga_asing');
             $table->integer('jumlah_ta');
-            $table->float('nominal_biaya');
+            $table->decimal('nominal_biaya',8,2);
             $table->unsignedBigInteger('mata_uang_id');
             $table->text('lokasi');
             //$table->foreign('mata_uang_id')->references('id')->on('mata_uangs');
@@ -34,8 +34,8 @@ class CreateRktsTable extends Migration
             $table->text('penutup');
             $table->string('lampiran');
             $table->string('filename_lampiran');
-            $table->string('bap');
-            $table->string('filename_bap');
+            $table->string('bap')->nullable();
+            $table->string('filename_bap')->nullable();
             $table->unsignedBigInteger('id_program');
             $table->integer('status');
             $table->text('catatan');

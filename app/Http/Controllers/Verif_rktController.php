@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mata_uang;
+
 use Illuminate\Http\Request;
 
 use App\Rkt;
@@ -51,7 +53,9 @@ class Verif_rktController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.satker.RKT.verifrktdraft',['rencana' => $rencana]);
+        $uangs = Mata_uang::all();
+
+        return view('mitra.satker.RKT.verifrktdraft',['rencana' => $rencana,'uangs'=>$uangs]);
     }
 
     /**

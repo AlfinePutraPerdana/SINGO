@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fasker</title>
+  <title>SINGO</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -403,7 +403,7 @@
   <!-- /.control-sidebar -->
 <!-- ./wrapper -->
 <footer class="main-footer">
-  <strong>Copyright &copy; Fasker.</strong>
+  <strong>Copyright &copy; SINGO.</strong>
   All rights reserved.
 </footer>
 

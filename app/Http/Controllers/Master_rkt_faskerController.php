@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mata_uang;
+
 use App\Rkt;
 
 use Illuminate\Http\Request;
@@ -67,7 +69,9 @@ class Master_rkt_faskerController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.Fasker.Rkt.master_rkt_lihat',['rencana'=>$rencana]);
+        $uangs = Mata_uang::all();
+
+        return view('mitra.Fasker.Rkt.master_rkt_lihat',['rencana'=>$rencana, 'uangs'=>$uangs]);
     }
 
     /**
@@ -80,7 +84,9 @@ class Master_rkt_faskerController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.Fasker.Rkt.master_rkt_edit',['rencana'=>$rencana]);
+        $uangs = Mata_uang::all();
+
+        return view('mitra.Fasker.Rkt.master_rkt_edit',['rencana'=>$rencana,'uangs'=>$uangs]);
     }
 
     /**
@@ -143,6 +149,7 @@ class Master_rkt_faskerController extends Controller
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
             'nominal_biaya' => $request->nominal_biaya,
+            'mata_uang_id' => $request->mata_uang_id,
             'jadwal_awal' => $request->jadwal_awal,
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,

@@ -16,5 +16,10 @@ class Rkt extends Model
         'tenaga_lokal','tenaga_asing','jumlah_ta','nominal_biaya', 'mata_uang_id','lokasi', 'jadwal_awal', 'jadwal_akhir', 'penutup', 'lampiran','filename_lampiran', 'bap', 'filename_bap' ,'id_program','status','catatan','created_at','updated_at',
     ];
 
+    public function mata_uang()
+    {
+        return $this->hasOne('App/Mata_uang');
+    }
+
     
 }

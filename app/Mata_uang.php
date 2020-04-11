@@ -14,4 +14,8 @@ class Mata_uang extends Model
     protected $fillable = [
         'name', 'instansi_id','created_at','updated_at',
     ];
+
+    public function rkt(){
+        return $this->belongsTo('App\Rkt','mata_uang_id');
+    }
 }

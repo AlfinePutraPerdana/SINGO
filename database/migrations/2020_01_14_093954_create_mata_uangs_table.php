@@ -17,7 +17,7 @@ class CreateMataUangsTable extends Migration
             $table->bigIncrements('id');
             
         $table->string('name');
-        $table->unsignedBigInteger('id_instansi');
+        $table->unsignedBigInteger('id_instansi')->nullable();
         // $table->foreign('id_instansi')->references('id')->on('instansis');
             $table->timestamps();
         });

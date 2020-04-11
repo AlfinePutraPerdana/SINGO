@@ -117,15 +117,33 @@
                         {!! $rencana->lokasi !!}
                       </textarea>
                   </div>
+                  {{-- <div class="form-group">
+                                      <label>Mitra</label>
+                                      <select name="id_instansi" class="form-control" data-parsley-required data-parsley-trigger="keyup">
+                                          @foreach ($instansis as $instansi)
+                                               <option 
+                                                   value="{{$instansi -> id}}"
+                                                      @if ($instansi -> id === $tenaga-> id_instansi)
+                                                          selected
+                                                      @endif
+                                                      > {{ $instansi -> nama}} 
+                                                </option>
+                                          @endforeach
+                                      </select>
+                                  </div> --}}
                   <div class="form-row mb-3">
                     <div class="col-md-6">
                       <label>Mata Uang</label>
-                    <select class="form-control">
-                      <option selected>Pilih Mata Uang</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                    <select class="form-control" name="mata_uang_id" data-parsley-required data-parsley-trigger="keyup">
+                      @foreach ($uangs as $uang)
+                            <option 
+                                value="{{$uang -> id}}"
+                                  @if ($uang -> id === $rencana-> mata_uang_id)
+                                      selected
+                                  @endif
+                                  > {{ $uang -> name}} 
+                            </option>
+                      @endforeach
                     </select>
                     </div>
                     <div class="col-md-6">
