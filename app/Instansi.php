@@ -29,5 +29,9 @@ class instansi extends Model
         return $this->hasMany('App\History_ta');
     }
 
-    
+    public function user() {
+        return $this->hasOne('App\User','id_instansi');
+    }
+
+
 }

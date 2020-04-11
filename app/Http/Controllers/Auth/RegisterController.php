@@ -31,7 +31,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -74,7 +74,7 @@ class RegisterController extends Controller
 
         $instansi= instansi::create([
             'nama' => $data['org_name'],
-            'negara'=>$data['username'],
+            'negara'=>$data['negara'],
             'kota' => $data['kota'],
             'alamat' => $data['alamat'],
             'no_regis_izin' => $data['no_regis'],

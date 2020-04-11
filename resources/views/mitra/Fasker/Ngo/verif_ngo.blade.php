@@ -45,6 +45,7 @@
                                     <th>No</th>
                                     <th>Nama Akun</th>
                                     <th>Email</th>
+                                    <th>Instansi</th>
                                     <th>Aksi</th>
                                     <th>Pilih</th>
                                 </tr>
@@ -60,9 +61,13 @@
                                 <td>{{($akun->currentPage() - 1)*$akun->perPage()+$loop->iteration }}</td>
                                 <td>{{$row-> name}}</td>
                                 <td>{{$row-> email}}</td>
+                                <td>{{$row-> id_instansi}}</td>
+                                <td><a href="/verif-akun/{{$row->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
+
                                     <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
                                        <i class="far fa-eye"></i><b> Pratinjau</b>
                                     </td>
+                                        @foreach($instansi as $ngo)
                                         <div class="modal fade" id="pratinjau" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
@@ -76,15 +81,15 @@
                                                         <form action="" method="post" class="contactForm">
                                                             <div class="form-group">
                                                                 <h5>Nama Organisasi</h5>
-                                                                <p>World Wildlife Foundation</p>
+                                                            <p>{{$ngo-> nama}}</p>
                                                             </div>
                                                             <div class="form-group">
                                                                 <h5>Negara Asal</h5>
-                                                                <p>Amerika Serikat</p>
+                                                            <p>{{$ngo-> negara}}</p>
                                                             </div>
                                                             <div class="form-group">
                                                                 <h5>Nomor Registrasi Izin Prinsip</h5>
-                                                                <p>202100101</p>
+                                                            <p>{{$ngo-> no_regis_izin}}</p>
                                                             </div>
                                                             <div class="form-group">
                                                                 <h5>Country Director / Representative</h5>
@@ -126,11 +131,14 @@
                                                                 <h5>Lokasi Kerja Sama</h5>
                                                                 <p>Ujung Kulon, Banten</p>
                                                             </div>
+                                                            <button class="btn btn-danger" name="revisi[]" type="submit"><i class="fas fa-sync-alt"></i> <b>Revisi</b></button>
+                                    <button class="btn btn-success" name="setuju[]" type="submit"><i class="far fa-check-circle"></i> <b>Setuju</b></button>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                     <td>
                                         <div class="icheck-success d-inline">
                                             <input type="checkbox" id="pilih1">
@@ -146,7 +154,7 @@
                     </div>
                         <div class="card-footer clearfix">
                             <div class="col-md-4 float-left">
-                                <a href="/master-ngo" role="button" class="btn btn-block btn-primary"><i class="far fa-check-square"></i>   Verifikasi</a>
+                            <!--<a href="/verif" role="button" class="btn btn-block btn-primary"><i class="far fa-check-square"></i>   Verifikasi</a> -->
                             </div>
                             <ul class="pagination pagination-sm m-0 float-right">
                             <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>

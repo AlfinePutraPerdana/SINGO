@@ -15,6 +15,8 @@ class Verif_AkunController extends Controller
      */
     public function index(Request $request)
     {
+
+
         if($request->has('search'))
         {
             $akun = User::where('name','LIKE','%'.$request->search.'%')
@@ -24,14 +26,49 @@ class Verif_AkunController extends Controller
 
              $akun->appends($request->only('search'));
 
+
         }else{
 
             $akun = User::wherein('status',[0])->latest('updated_at')->paginate(5);
+
+
+        }
+
+        $instansi = instansi::all();
+
+        return view('mitra.Fasker.ngo.verif_ngo',['akun' => $akun, 'instansi' => $instansi]);
+
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function send(Request $request, $id)
+    {
+
+
+        if ($request->revisi) {
+            $revisi = User::find($id);
+            $revisi->update([
+
+                'status'=> 0
+            ]);
+        }
+
+        if ($request->setuju) {
+            $setuju = User::find($id);
+            $setuju->update([
+
+                'status'=> 1
+            ]);
         }
 
 
-        return view('mitra.Fasker.ngo.verif_ngo',['akun' => $akun]);
-
+        return redirect('/verif-akun')->with('sukses','akun Berhasil di Verifikasi');
     }
 
 }
