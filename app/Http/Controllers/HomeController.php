@@ -22,19 +22,17 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index(Request $request)
-    {   if($request->has('_token')){
-            if($request->user()->status =='1'){
-
-                if($request->user()->level =='1'){
-                    return redirect('/ngo');
-                }
-                if($request->user()->level =='2'){
+    {
+        if($request->user()->level =='1'){
+                return redirect('/ngo');
+            }
+        elseif($request->user()->level =='2'){
                     return redirect('/satker');
-                }
-                return redirect('/fasker');
-                }
-            return redirect('/');
-        }
+            }
+        elseif($request->user()->level=='3'){
+            return redirect('/fasker');
+            }
         return redirect('/');
+
     }
 }

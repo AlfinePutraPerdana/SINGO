@@ -187,9 +187,9 @@ Route::get('/revisi-kegiatan', function () {
     return view('mitra.ngo.RIK.revisirencana');
 });
 
-Route::get('/draft-rik', function () {
-    return view('mitra.ngo.RIK.draftrik');
-});
+Route::get('/draft-rik','RikController@index');
+
+Route::post('/draft-rik/tambah-program','RikController@create');
 
 Route::get('/pajak', function () {
     return view('mitra.ngo.pajak.pajak');
@@ -306,7 +306,7 @@ Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@
 
 //Fasker--NGO
 Route::get('/verif-akun', 'Verif_AkunController@index');
-
+Route::post('/verif-akun/{id}', 'Verif_tenagaController@send');
 Route::get('/master-ngo', function () {
     return view('mitra.Fasker.Ngo.master_ngo');
 });

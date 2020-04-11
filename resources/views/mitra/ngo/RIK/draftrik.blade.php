@@ -20,7 +20,7 @@
             </div>
           </div><!-- /.container-fluid -->
         </section>
-    
+
         <!-- Main content -->
       <section class="content">
         <div class="row">
@@ -34,16 +34,17 @@
                    <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nama Rencana</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Tambah Program</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <div class="modal-body">
-                            <form action="" role="form">
+                            <form action="/draft-rik/tambah-program" method="POST" role="form">
+                                {{ csrf_field() }}
                                 <div class="form-group">
-                                    <label for="nama">Judul Rencana</label>
-                                    <input type="text" class="form-control" id="nama" placeholder="Judul Rencana">
+                                    <label for="nama">Nama Program</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Program">
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
@@ -69,25 +70,35 @@
                     <thead>
                       <tr>
                         <th>No</th>
-                        <th>Nama Rencana</th>
+                        <th>Nama Program</th>
                         <th>Nama Kegiatan</th>
                         <th class="text-center">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Fasilitas Pengembangan</td>
-                        <td>
-                          <ul>
-                            <li><a href="/revisi-kegiatan"> <b>Kegiatan 1</b></a></li>
-                            <li><a href="/revisi-kegiatan"> <b>Kegiatan 2</b></a></li>
-                          </ul>
-                        </td>
-                        {{-- <td align="right"><a href="/revisi-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a> </td> --}}
-                        <td align="center"><a  href="/tambah-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-plus-circle"></i> <b>Kegiatan</b></a></td>
-                      </tr>
-                    </tbody>
+                        @if ($program->isEmpty())
+                                    <tr align="center">
+                                        <td colspan="6" class="text-center"><i class="fas fa-exclamation-circle"></i> <b>DATA TIDAK DI TEMUKAN</b> <i class="fas fa-exclamation-circle"></i></td>
+                                      </tr>
+                                    @else
+                                @foreach ($program as $rik)
+                                <tr>
+                                    <td>{{($program->currentPage() - 1)*$program->perPage()+$loop->iteration }}</td>
+                                    <td>{{$rik->nama}}</td>
+                                        @foreach($kegiatan as $row)
+                                    <td>
+                                      <ul>
+                                        <li><a href="/revisi-kegiatan"> <b>{{$row->name}}</b></a></li>
+                                      </ul>
+                                    </td>
+                                        @endforeach
+                                    {{-- <td align="right"><a href="/revisi-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a> </td> --}}
+                                    <td align="center"><a  href="/tambah-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-plus-circle"></i> <b>Kegiatan</b></a></td>
+                                  </tr>
+                                </tbody>
+                                @endforeach
+                            @endif
+
                   </table>
                 </div>
                 <div class="card-footer clearfix">
@@ -104,5 +115,5 @@
         </div>
       </section>
     </div>
-    
+
 @endsection
