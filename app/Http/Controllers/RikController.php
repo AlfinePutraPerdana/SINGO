@@ -48,4 +48,10 @@ class RikController extends Controller
 
         return redirect('/draft-rik');
     }
+    public function formtambahkgt(){
+        return view('mitra.ngo.RIK.tambahrencana');
+    }
+    public function tambahkgt(Request $request,$id){
+        $program = Master_program::find($id);
+    }
 }

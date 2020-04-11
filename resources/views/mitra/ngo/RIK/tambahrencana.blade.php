@@ -2,7 +2,7 @@
 
 
 @section('content')
-    
+
 {{-- <rencana-induk></rencana-induk> --}}
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -31,72 +31,61 @@
               <div class="card-header">
                 <h3 class="card-title">Form Rencana Induk Kegiatan</h3>
               </div>
-              <form role="form">
+              <form role="form" action="/draft-rik/{id}/tambah-kegiatan" method="POST">
+                {{ csrf_field() }}
                 <div class="card-body">
                   <div class="form-group">
                       <label for="">Nama Kegiatan</label>
-                      <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                      <label for="">Kegiatan Prioritas</label>
-                      <textarea id="prioritas" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-
-                      </textarea>
+                      <input type="text" class="form-control" id="name" name="name">
                   </div>
                   <div class="form-group">
                       <label for="">Detil Kegiatan</label>
-                      <textarea id="detil_kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                      <textarea id="detail_kegiatan" name="detail_kegiatan" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
                       </textarea>
                   </div>
                   <div class="form-group">
                       <label for="">Penerima Manfaat</label>
-                      <textarea id="penerima" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                      <textarea id="penerima_manfaat" name="penerima_manfaat" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
                       </textarea>
                   </div>
                   <div class="form-group">
-                      <label for="">Indikator Output</label>
-                      <textarea id="output" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-
-                      </textarea>
-                  </div>
-                  <div class="form-group">
-                      <label for="">Indikator Income</label>
-                      <textarea id="income" class="form-control" style="height: 300px" placeholder="Masukan Teks">
+                      <label for="">Indikator outcome</label>
+                      <textarea id="indikator_outcome" name="indikator_outcome" class="form-control" style="height: 300px" placeholder="Masukan Teks">
 
                       </textarea>
                   </div>
                   <div class="form-group">
                       <label for="">Lokasi</label>
-                      <input type="text" class="form-control">
+                      <input type="text" id="lokasi" name="lokasi" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="">Waktu</label>
                     <div class="input-group">
-                      <input type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
+                      <input id="tahun_awal" name="tahun_awal" type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
                       <div class="input-group-append">
                         <span class="input-group-text">s/d</span>
                       </div>
-                      <input type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
+                      <input id="tahun_akhir" name="tahun_akhir" type="text" class="form-control enddate datetimepicker-input" data-toggle="datetimepicker" data-target=".enddate" />
                     </div>
                   </div>
                   <div class="form-group">
                       <label for="">Mitra Koordinasi Kemendagri</label>
-                      <input type="text" class="form-control">
+                      <input id="mitra_kemendagri" name="mitra_kemendagri" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                       <label for="">Mitra Koordinasi Lapangan</label>
-                      <input type="text" class="form-control">
+                      <input id="mitra_lapangan" name="mitra_lapangan" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                       <label for="">Mitra Kerja</label>
-                      <input type="text" class="form-control">
+                      <input id="mitra_kerja" name="mitra_kerja" type="text" class="form-control">
                   </div>
                   <div class="form-row">
                     <div class="col-md-6">
                       <label>Mata Uang</label>
-                    <select class="form-control">
+                    <select class="form-control" name="mata_uang">
                       <option selected>Pilih Mata Uang</option>
                       <option>option 2</option>
                       <option>option 3</option>
@@ -117,12 +106,12 @@
 
                   <div class="card-footer">
                     <a class="btn btn-primary" href="/draft-rik" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
-                  </div>  
+                  </div>
               </form>
             </div>
           </div>
         </div>
-    </section>  
+    </section>
 </div>
 
 @endsection

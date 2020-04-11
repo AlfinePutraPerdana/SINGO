@@ -14,6 +14,7 @@ class Rik_kegiatan extends Model
     protected $fillable = [
         'id_program','name','detail_kegiatan',
         'penerima_manfaat','indikator_outcome','lokasi','tahun_awal','tahun_akhir',
-        'mitra_kemendagri','mitra_lapangan','mitra_kerja','sumber_dana','created_at','updated_at',
+        'mitra_kemendagri','mitra_lapangan','nominal_lokal','nominal_asing','mata_uang_id','mitra_kerja','sumber_dana','created_at','updated_at',
     ];
+
 }

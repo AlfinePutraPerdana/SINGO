@@ -179,9 +179,8 @@ Route::get('/revisi-dokumen', function () {
     return view('mitra.ngo.RIK.revisidokumen');
 });
 
-Route::get('/tambah-kegiatan', function () {
-    return view('mitra.ngo.RIK.tambahrencana');
-});
+Route::get('/draft-rik/{id}/tambah-kegiatan','RikController@formtambahkgt');
+Route::post('/draft-rik/{id}/tambah-kegiatan','RikController@tambahkgt');
 
 Route::get('/revisi-kegiatan', function () {
     return view('mitra.ngo.RIK.revisirencana');
