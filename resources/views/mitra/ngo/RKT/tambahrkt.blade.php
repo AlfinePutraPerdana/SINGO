@@ -144,7 +144,7 @@
                       @foreach ($uangs as $uang)
                       <option value="{{$uang -> id}}" {{(old('mata_uang_id') == $uang -> id) ? 'selected' : ''}}> {{ $uang -> name}} </option>
                         @endforeach
-                      
+
                     </select>
                     </div>
                     <div class="col-md-6">
@@ -192,12 +192,12 @@
 
                   <div class="card-footer">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
-                  </div>  
+                  </div>
               </form>
             </div>
           </div>
         </div>
-    </section>  
+    </section>
 </div>
 
 

@@ -85,15 +85,21 @@
                                 <tr>
                                     <td>{{($program->currentPage() - 1)*$program->perPage()+$loop->iteration }}</td>
                                     <td>{{$rik->nama}}</td>
-                                        @foreach($kegiatan as $row)
                                     <td>
-                                      <ul>
-                                        <li><a href="/revisi-kegiatan"> <b>{{$row->name}}</b></a></li>
-                                      </ul>
+                                            @foreach($kegiatan as $kgt)
+                                            @if($kgt->id_program == $rik->id)
+                                            <ul>
+                                                 <li><a href="/revisi-kegiatan/{{$kgt->id}}"> <b>{{$kgt->name}}</b></a></li>
+                                                </ul>
+                                            @endif
+
+                                            @endforeach
+
                                     </td>
-                                        @endforeach
+
                                     {{-- <td align="right"><a href="/revisi-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> <b>Ubah</b></a> </td> --}}
-                                    <td align="center"><a  href="/tambah-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-plus-circle"></i> <b>Kegiatan</b></a></td>
+                                    <td></td>
+                                    <td align="center"><a  href="/draft-rik/{{$rik->id}}/tambah-kegiatan" class="btn btn-sm btn-primary"><i class="fas fa-plus-circle"></i> <b>Kegiatan</b></a></td>
                                   </tr>
                                 </tbody>
                                 @endforeach

@@ -21,8 +21,8 @@ class CreateRikKegiatansTable extends Migration
             $table->text('penerima_manfaat');
             $table->text('indikator_outcome');
             $table->text('lokasi');
-            $table->year('tahun_awal');
-            $table->year('tahun_akhir');
+            $table->date('tahun_awal');
+            $table->date('tahun_akhir');
             $table->text('mitra_kemendagri');
             $table->text('mitra_lapangan');
             $table->text('mitra_kerja');
