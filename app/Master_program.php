@@ -14,4 +14,8 @@ class Master_program extends Model
     protected $fillable = [
         'id_instansi','nama', 'created_at','updated_at'
     ];
+
+    public function rkt(){
+        return $this->belongsTo('App\Rkt','id_program');
+    }
 }

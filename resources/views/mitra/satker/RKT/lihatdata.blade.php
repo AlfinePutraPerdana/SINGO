@@ -44,12 +44,17 @@
                           </div>
                           <div class="form-group">
                             <label>Rencana Induk Kegiatan</label>
-                            <select class="form-control">
-                              <option>option 1</option>
-                              <option>option 2</option>
-                              <option>option 3</option>
-                              <option>option 4</option>
-                              <option>option 5</option>
+                            <select class="form-control" name="id_program" data-parsley-required data-parsley-trigger="keyup" disabled>
+                              <option value="">pilih program</option>
+                              @foreach ($programs as $program)
+                              <option 
+                              value="{{$program -> id}}"
+                                 @if ($program -> id === $rencana-> id_program)
+                                     selected
+                                 @endif
+                                 > {{ $program -> nama}} 
+                           </option>
+                            @endforeach
                             </select>
                           </div>
                           <div class="form-group">

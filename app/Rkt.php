@@ -21,5 +21,10 @@ class Rkt extends Model
         return $this->hasOne('App/Mata_uang');
     }
 
+
+    public function master_program()
+    {
+        return $this->hasOne('App/Master_program');
+    }
     
 }

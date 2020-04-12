@@ -6,6 +6,8 @@ use App\Mata_uang;
 
 use App\Rkt;
 
+use App\Master_program;
+
 
 use Illuminate\Http\Request;
 
@@ -56,7 +58,9 @@ class Master_rkt_satkerController extends Controller
 
         $uangs = Mata_uang::all();
 
-        return view('mitra.satker.RKT.lihatdata',['rencana'=>$rencana,'uangs'=>$uangs]);
+        $programs = Master_program::all();
+
+        return view('mitra.satker.RKT.lihatdata',['rencana'=>$rencana,'uangs'=>$uangs,'programs'=>$programs]);
     }
 
     /**
