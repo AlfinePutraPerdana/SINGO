@@ -31,9 +31,20 @@
               <div class="card-header">
                 <h3 class="card-title">Form Rencana Induk Kegiatan</h3>
               </div>
-              <form role="form" action="/draft-rik/{id}/tambah-kegiatan" method="POST">
+              <form role="form" action="/draft-rik/{{$program->id}}/tambah-kegiatan" method="post">
                 {{ csrf_field() }}
+
+
                 <div class="card-body">
+                    @if (count($errors) > 0)
+                    <div class="alert alert-danger" role="alert">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                  @endif
                   <div class="form-group">
                       <label for="">Nama Kegiatan</label>
                       <input type="text" class="form-control" id="name" name="name">
@@ -53,12 +64,11 @@
                   <div class="form-group">
                       <label for="">Indikator outcome</label>
                       <textarea id="indikator_outcome" name="indikator_outcome" class="form-control" style="height: 300px" placeholder="Masukan Teks">
-
                       </textarea>
                   </div>
                   <div class="form-group">
-                      <label for="">Lokasi</label>
-                      <input type="text" id="lokasi" name="lokasi" class="form-control">
+                    <label for="">Lokasi</label>
+                    <input id="lokasi_kerja" name="lokasi_kerja" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="">Waktu</label>
@@ -84,28 +94,32 @@
                   </div>
                   <div class="form-row">
                     <div class="col-md-6">
+                        <label for="">Besar Nominal Asing</label>
+                        <input type="number" class="form-control" id="nominal_asing" name="nominal_asing" placeholder="Masukan Besaran">
+                    </div>
+
+                    <div class="col-md-6">
                       <label>Mata Uang</label>
                     <select class="form-control" name="mata_uang">
-                      <option selected>Pilih Mata Uang</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                      <option value="">Pilih Mata Uang</option>
+                      @foreach ($uangs as $currency)
+                      <option value="{{$currency ->id}}" {{(old('mata_uang_id') == $currency -> id) ? 'selected' : ''}}> {{ $currency -> name}} </option>
+                        @endforeach
                     </select>
                     </div>
                     <div class="col-md-6">
-                      <label for="">Besar Nominal</label>
-                      <input type="number" class="form-control" id="nominal" placeholder="Masukan Besaran">
+                        <label for="">Besar Nominal Rupiah</label>
+                        <input type="number" class="form-control" id="nominal_lokal" name="nominal_lokal" placeholder="Masukan Besaran">
                     </div>
                   </div>
                   <div class="form-group mt-3">
                       <label for="">Sumber Dana</label>
-                      <input type="text" class="form-control">
+                      <input id="sumber_dana" name="sumber_dana" type="text" class="form-control">
                   </div>
                 </div>
 
-                  <div class="card-footer">
-                    <a class="btn btn-primary" href="/draft-rik" role="button"><i class="far fa-save"></i> <b>Simpan</b></a>
+                <div class="card-footer">
+                    <button class="btn btn-primary" type="submit"><i class="far fa-save"></i> <b>Simpan</b></button>
                   </div>
               </form>
             </div>

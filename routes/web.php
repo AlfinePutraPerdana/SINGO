@@ -181,7 +181,8 @@ Route::get('/revisi-dokumen', function () {
 
 Route::get('/draft-rik/{id}/tambah-kegiatan','RikController@formtambahkgt');
 Route::post('/draft-rik/{id}/tambah-kegiatan','RikController@tambahkgt');
-
+Route::get('/master-rik','Verif_rikController@index');
+Route::post('/master-rik');
 Route::get('/revisi-kegiatan', function () {
     return view('mitra.ngo.RIK.revisirencana');
 });
@@ -351,9 +352,7 @@ Route::get('/master-rkt/{id}/edit', 'Master_rkt_faskerController@edit');
 Route::post('/master-rkt/{id}/update', 'Master_rkt_faskerController@update');
 
 //Fasker--Rik
-Route::get('/master-rik', function () {
-    return view('mitra.Fasker.RIK.master_rik');
-});
+
 
 //Fasker--Pajak
 Route::get('/verif-bebas-pajak', function () {
