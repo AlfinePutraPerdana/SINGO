@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Rkt;
 
+use App\Mata_uang;
+
+use App\Master_program;
+
 use Illuminate\Support\Facades\File;
 
 class Master_rktController extends Controller
@@ -67,7 +71,11 @@ class Master_rktController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.ngo.RKT.lihatdata',['rencana'=>$rencana]);
+        $programs = Master_program::all();
+
+        $uangs = Mata_uang::all();
+
+        return view('mitra.ngo.RKT.lihatdata',['rencana'=>$rencana,'programs'=>$programs,'uangs'=>$uangs]);
     }
 
     /**
@@ -80,7 +88,11 @@ class Master_rktController extends Controller
     {
         $rencana = Rkt::find($id);
 
-        return view('mitra.ngo.RKT.editdata',['rencana'=>$rencana]);
+        $programs = Master_program::all();
+
+        $uangs = Mata_uang::all();
+
+        return view('mitra.ngo.RKT.editdata',['rencana'=>$rencana,'programs'=>$programs,'uangs'=>$uangs]);
     }
 
     /**
@@ -144,6 +156,7 @@ class Master_rktController extends Controller
             'peran_ketiga' => $request->peran_ketiga,
             'lokasi' => $request->lokasi,
             'nominal_biaya' => $request->nominal_biaya,
+            'mata_uang_id' =>$request->mata_uang_id,
             'jadwal_awal' => $request->jadwal_awal,
             'jadwal_akhir' => $request->jadwal_akhir,
             'penutup' => $request->penutup,
@@ -151,6 +164,7 @@ class Master_rktController extends Controller
             'filename_lampiran' => $filename_lampiran,
             'bap' => $nama_bap,
             'filename_bap' => $filename_bap,
+            'id_program'=> $request->id_program,
             'status' => 1
         ]);
 

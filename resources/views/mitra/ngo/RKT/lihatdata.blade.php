@@ -42,13 +42,18 @@
                       <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}" disabled>
                   </div>
                   <div class="form-group">
-                    <label>Kegiatan</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                    <label>Rencana Induk Kegiatan</label>
+                    <select class="form-control" name="id_program" data-parsley-required data-parsley-trigger="keyup" disabled>
+                      <option value="">pilih program</option>
+                      @foreach ($programs as $program)
+                      <option 
+                      value="{{$program -> id}}"
+                         @if ($program -> id === $rencana-> id_program)
+                             selected
+                         @endif
+                         > {{ $program -> nama}} 
+                   </option>
+                    @endforeach
                     </select>
                   </div>
                   <div class="form-group">
@@ -108,12 +113,16 @@
                   <div class="form-row mb-3">
                     <div class="col-md-6">
                       <label>Mata Uang</label>
-                    <select class="form-control">
-                      <option selected>Pilih Mata Uang</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                    <select class="form-control" name="mata_uang_id" data-parsley-required data-parsley-trigger="keyup" disabled>
+                      @foreach ($uangs as $uang)
+                            <option 
+                                value="{{$uang -> id}}"
+                                  @if ($uang -> id === $rencana-> mata_uang_id)
+                                      selected
+                                  @endif
+                                  > {{ $uang -> name}} 
+                            </option>
+                      @endforeach
                     </select>
                     </div>
                     <div class="col-md-6">

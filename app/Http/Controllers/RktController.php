@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Master_program;
+
 use Illuminate\Http\Request;
 
 use App\Rkt;
@@ -46,8 +48,10 @@ class RktController extends Controller
     public function create()
     {
         $uangs = Mata_uang::all();
+
+        $programs = Master_program::all();
         
-        return view('mitra.ngo.RKT.tambahrkt',['uangs'=>$uangs]);
+        return view('mitra.ngo.RKT.tambahrkt',['uangs'=>$uangs,'programs' => $programs]);
     }
 
     /**
@@ -126,6 +130,7 @@ class RktController extends Controller
             'penutup' => $request->penutup,
             'lampiran' =>$nama_lampiran,
             'filename_lampiran' => $filename_lampiran,
+            'id_program' => $request->id_program,
             'bap' => $nama_bap,
             'filename_bap' => $filename_bap,
             'status' => 0
@@ -157,7 +162,9 @@ class RktController extends Controller
 
         $uangs = Mata_uang::all();
 
-        return view('mitra.ngo.RKT.revisirktdraft',['rencana'=>$rencana,'uangs'=> $uangs]);
+        $programs = Master_program::all();
+
+        return view('mitra.ngo.RKT.revisirktdraft',['rencana'=>$rencana,'uangs'=> $uangs, 'programs'=> $programs]);
     }
 
     /**
@@ -228,6 +235,7 @@ class RktController extends Controller
             'filename_lampiran' => $filename_lampiran,
             'bap' => $nama_bap,
             'filename_bap' => $filename_bap,
+            'id_program'=> $request->id_program,
             'catatan' => $request->catatan
         ]);
 

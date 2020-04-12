@@ -54,14 +54,22 @@
                       <label for="">Judul Rencana</label>
                       <input type="text" name="judul" class="form-control" placeholder="Judul Rencana" value="{{ old('judul') }}" data-parsley-required data-parsley-trigger="keyup">
                   </div>
+                  {{-- <div class="form-group">
+                                    <label for="mitra">Mitra</label>
+                                    <select name="id_instansi" class="form-control" id="mitra"  data-parsley-required data-parsley-trigger="keyup">
+                                        <option value="">Pilih Mitra</option>
+                                        @foreach ($instansis as $instansi)
+                                             <option value="{{$instansi -> id}}" {{(old('id_instansi') == $instansi -> id) ? 'selected' : ''}}> {{ $instansi -> nama}} </option>
+                                        @endforeach
+                                    </select>
+                                </div> --}}
                   <div class="form-group">
                     <label>Rencana Induk Kegiatan</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                    <select class="form-control" name="id_program" data-parsley-required data-parsley-trigger="keyup">
+                      <option value="">pilih program</option>
+                      @foreach ($programs as $program)
+                          <option value="{{$program -> id}}" {{(old('id_program') == $program -> id) ? 'selected' : ''}}> {{ $program -> nama}} </option>
+                    @endforeach
                     </select>
                   </div>
                   <div class="form-group">
@@ -127,15 +135,7 @@
                             {!! old('lokasi') !!}
                       </textarea>
                   </div>
-                  {{-- <div class="form-group">
-                                    <label for="mitra">Mitra</label>
-                                    <select name="id_instansi" class="form-control" id="mitra"  data-parsley-required data-parsley-trigger="keyup">
-                                        <option value="">Pilih Mitra</option>
-                                        @foreach ($instansis as $instansi)
-                                             <option value="{{$instansi -> id}}" {{(old('id_instansi') == $instansi -> id) ? 'selected' : ''}}> {{ $instansi -> nama}} </option>
-                                        @endforeach
-                                    </select>
-                                </div> --}}
+                  
                   <div class="form-row mb-3">
                     <div class="col-md-6">
                       <label>Mata Uang</label>

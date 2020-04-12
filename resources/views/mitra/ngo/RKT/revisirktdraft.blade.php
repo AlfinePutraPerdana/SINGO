@@ -44,14 +44,33 @@
                       <label for="">Judul Rencana</label>
                       <input type="text" class="form-control" name="judul" value="{{ $rencana->judul }}">
                   </div>
+                  {{-- <div class="form-group">
+                                      <label>Mitra</label>
+                                      <select name="id_instansi" class="form-control" data-parsley-required data-parsley-trigger="keyup">
+                                          @foreach ($instansis as $instansi)
+                                               <option 
+                                                   value="{{$instansi -> id}}"
+                                                      @if ($instansi -> id === $tenaga-> id_instansi)
+                                                          selected
+                                                      @endif
+                                                      > {{ $instansi -> nama}} 
+                                                </option>
+                                          @endforeach
+                                      </select>
+                                  </div> --}}
                   <div class="form-group">
                     <label>Rencana Induk Kegiatan</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
+                    <select class="form-control" name="id_program" data-parsley-required data-parsley-trigger="keyup">
+                      <option value="">pilih program</option>
+                      @foreach ($programs as $program)
+                      <option 
+                      value="{{$program -> id}}"
+                         @if ($program -> id === $rencana-> id_program)
+                             selected
+                         @endif
+                         > {{ $program -> nama}} 
+                   </option>
+                    @endforeach
                     </select>
                   </div>
                   <div class="form-group">
@@ -117,20 +136,7 @@
                         {!! $rencana->lokasi !!}
                       </textarea>
                   </div>
-                  {{-- <div class="form-group">
-                                      <label>Mitra</label>
-                                      <select name="id_instansi" class="form-control" data-parsley-required data-parsley-trigger="keyup">
-                                          @foreach ($instansis as $instansi)
-                                               <option 
-                                                   value="{{$instansi -> id}}"
-                                                      @if ($instansi -> id === $tenaga-> id_instansi)
-                                                          selected
-                                                      @endif
-                                                      > {{ $instansi -> nama}} 
-                                                </option>
-                                          @endforeach
-                                      </select>
-                                  </div> --}}
+                  
                   <div class="form-row mb-3">
                     <div class="col-md-6">
                       <label>Mata Uang</label>

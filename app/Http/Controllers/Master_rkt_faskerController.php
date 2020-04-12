@@ -6,6 +6,8 @@ use App\Mata_uang;
 
 use App\Rkt;
 
+use App\Master_program;
+
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\File;
@@ -71,7 +73,9 @@ class Master_rkt_faskerController extends Controller
 
         $uangs = Mata_uang::all();
 
-        return view('mitra.Fasker.Rkt.master_rkt_lihat',['rencana'=>$rencana, 'uangs'=>$uangs]);
+        $programs = Master_program::all();
+
+        return view('mitra.Fasker.Rkt.master_rkt_lihat',['rencana'=>$rencana, 'uangs'=>$uangs,'programs'=>$programs]);
     }
 
     /**
@@ -86,7 +90,9 @@ class Master_rkt_faskerController extends Controller
 
         $uangs = Mata_uang::all();
 
-        return view('mitra.Fasker.Rkt.master_rkt_edit',['rencana'=>$rencana,'uangs'=>$uangs]);
+        $programs = Master_program::all();
+
+        return view('mitra.Fasker.Rkt.master_rkt_edit',['rencana'=>$rencana,'uangs'=>$uangs,'programs'=>$programs]);
     }
 
     /**
@@ -157,6 +163,7 @@ class Master_rkt_faskerController extends Controller
             'filename_lampiran' => $filename_lampiran,
             'bap' => $nama_bap,
             'filename_bap' => $filename_bap,
+            'id_program'=> $request->id_program,
             'status' => 1
         ]);
 
