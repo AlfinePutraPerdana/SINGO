@@ -15,7 +15,7 @@ class CreateRktsTable extends Migration
     {
         Schema::create('rkts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_ngo')->nullable();
+            $table->unsignedBigInteger('id_ngo');
             $table->string('judul');
             $table->text('pendahuluan');
             $table->string('hasil_yang_diharapkan');
