@@ -71,7 +71,7 @@
                     <input id="lokasi_kerja" name="lokasi_kerja" type="text" class="form-control">
                   </div>
                   <div class="form-group">
-                    <label for="">Waktu</label>
+                    <label for="">Lama Kegiatan</label>
                     <div class="input-group">
                       <input id="tahun_awal" name="tahun_awal" type="text" class="form-control startdate datetimepicker-input" data-toggle="datetimepicker" data-target=".startdate"/>
                       <div class="input-group-append">

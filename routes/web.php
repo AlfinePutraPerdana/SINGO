@@ -182,7 +182,7 @@ Route::get('/revisi-dokumen', function () {
 Route::get('/draft-rik/{id}/tambah-kegiatan','RikController@formtambahkgt');
 Route::post('/draft-rik/{id}/tambah-kegiatan','RikController@tambahkgt');
 Route::get('/master-rik','Verif_rikController@index');
-Route::post('/master-rik');
+//Route::post('/master-rik');
 Route::get('/revisi-kegiatan', function () {
     return view('mitra.ngo.RIK.revisirencana');
 });
