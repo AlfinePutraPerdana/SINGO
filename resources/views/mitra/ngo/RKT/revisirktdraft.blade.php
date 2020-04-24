@@ -216,4 +216,15 @@
 @endsection
 
 
+@push('script')
+
+    <script>
+        $(document).ready(function(){
+            $('#catatan').summernote('disable')
+        });
+    </script>
+    
+@endpush
+
+
 

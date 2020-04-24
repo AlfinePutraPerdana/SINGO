@@ -75,9 +75,12 @@
                         <td align="center">{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
                         <td align="center">{{ $rencana->judul }}</td>
                         <td align="center">
+                          @if ($rencana->bap == NULL)    
                             @if ($rencana->status == 0 )
                                 <span class="badge badge-info">Menunggu Hasil Pembahasan</span>
-                            @elseif ($rencana->status == 1)
+                            @endif
+                          @endif
+                            @if ($rencana->status == 1)
                                 <span class="badge badge-warning">Menunggu Verifikasi</span>  
                             @elseif ($rencana->status == 2)
                                 <span class="badge badge-danger">Revisi</span>
@@ -91,6 +94,7 @@
                             @endif
                         </td>
                         <td>
+                          @if ($rencana->bap != NULL)
                             <div class="icheck-success d-inline">
                             @if ($rencana->status == 0 )
                                     <input type="checkbox" name="kirim[]" value="{{$rencana->id}}" id="{{ $rencana->id }}">
@@ -99,7 +103,8 @@
                                     <input type="checkbox" name="kirim[]" value="{{$rencana->id}}" id="{{ $rencana->id }}">
                                     <label for="{{ $rencana->id }}"></label>
                             @endif
-                            </div>
+                            </div>  
+                          @endif
                         </td>
                       </tr>
                       @endforeach
