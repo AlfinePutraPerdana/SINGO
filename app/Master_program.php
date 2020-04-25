@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
+
 class Master_program extends Model
 {
       /**
@@ -18,5 +20,10 @@ class Master_program extends Model
     public function rkt(){
         return $this->belongsTo('App\Rkt','id_program');
     }
+    
+    public function instansi(){
+        return $this->belongsTo('App\Instansi','id_instansi');
+    }
+
 }
 

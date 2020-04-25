@@ -15,6 +15,7 @@ class RikController extends Controller
     {   $id_instansi = Auth::user()->id_instansi;
 
         $kegiatan = Rik_kegiatan::all();
+        
         if ($request->has('search')) {
 
             $program = Master_program::where('nama','LIKE'.'%'.$request->search.'%')

@@ -33,5 +33,18 @@ class instansi extends Model
         return $this->hasOne('App\User','id_instansi');
     }
 
+    public function rkt()
+    {
+        return $this->hasOne('App/Rkt');
+    }
+    
+    public function master_program()
+    {
+        return $this->hasMany('App/Master_program');
+    }
+    
+    
+    
+
 
 }

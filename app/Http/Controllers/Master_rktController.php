@@ -12,6 +12,8 @@ use App\Master_program;
 
 use Illuminate\Support\Facades\File;
 
+use Illuminate\Support\Facades\Auth;
+
 class Master_rktController extends Controller
 {
     /**
@@ -21,6 +23,8 @@ class Master_rktController extends Controller
      */
     public function index(Request $request)
     {
+        $id_ngo = Auth::user()->id_instansi;
+       
         if ($request->has('search')) {
             
             $rencanas = Rkt::where('judul','LIKE','%'.$request->search.'%')
@@ -32,7 +36,7 @@ class Master_rktController extends Controller
 
         } else {
 
-            $rencanas = Rkt::where('status','3')->latest()->paginate(5);
+            $rencanas = Rkt::where('status','3')->wherein('id_ngo',[$id_ngo])->latest()->paginate(5);
         }
         
              
@@ -86,9 +90,11 @@ class Master_rktController extends Controller
      */
     public function edit($id)
     {
+        $id_instansi = Auth::user()->id_instansi;
+        
         $rencana = Rkt::find($id);
 
-        $programs = Master_program::all();
+        $programs = Master_program::all()->wherein('id_instansi',[$id_instansi]);
 
         $uangs = Mata_uang::all();
 

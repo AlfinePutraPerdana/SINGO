@@ -20,7 +20,9 @@ class CheckLevel
             return $next($request);
         }
 
-        return redirect('/')->with('Error Access Unauthorized');
+        return redirect('/login');
+
+        // ->with('Error Access Unauthorized')
 
     }
 }

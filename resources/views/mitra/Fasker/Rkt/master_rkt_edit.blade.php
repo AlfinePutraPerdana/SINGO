@@ -169,7 +169,7 @@
                 </div>
                   <div class="card-footer">
                     <a class="btn btn-warning" href="{{ url()->previous() }}" role="button"><i class="fas fa-chevron-left"></i> <b>Kembali</b></a>
-                    <button  type="submit"  class="btn btn-primary"><i class="far fa-paper-plane"></i> <b>Kirim</b></button>
+                    <button  type="submit"  class="btn btn-primary"><i class="far fa-save"></i> <b>Simpan</b></button>
                   </div>  
               </form>
             </div>

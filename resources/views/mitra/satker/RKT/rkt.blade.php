@@ -55,6 +55,7 @@
                   <thead>
                     <tr>
                       <th class="text-center">No</th>
+                      <th class="text-center">Organisasi</th>
                       <th class="text-center">Judul Rencana</th>
                       <th class="text-center">Aksi</th>
                     </tr>
@@ -68,6 +69,7 @@
                       @foreach ($rencanas as $rencana)
                       <tr>
                         <td align="center">{{ ($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration }}</td>
+                        <td align="center">{{ $rencana->instansi->nama }}</td>
                         <td align="center">{{ $rencana->judul }}</td>
                         <td align="center"><a href="/satker/rkt/{{ $rencana->id }}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a></td>
                       </tr>      

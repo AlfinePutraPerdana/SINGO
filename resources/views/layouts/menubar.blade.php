@@ -135,7 +135,7 @@
           <img src="{{asset('assets_be/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/profile" class="d-block">NGO</a>
+          <a href="/profile" class="d-block">{{ Auth::user()->name }} - NGO</a>
         </div>
       </div>
 
@@ -192,12 +192,6 @@
                 <a href="/pajak" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ajukan Bebas Pajak</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tambah-mitra" class="nav-link @yield('tambah-mitra')">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Mitra Lokal</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -279,6 +273,12 @@
                 <a href="/mitra" class="nav-link @yield('daftar-mitra')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Mitra Lokal</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/tambah-mitra" class="nav-link @yield('tambah-mitra')">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tambah Mitra Lokal</p>
                 </a>
               </li>
             </ul>
@@ -391,6 +391,8 @@
 <script src="{{ asset('js/app.js') }}"></script>
 
 <script src="{{asset('assets_be/plugins/jquery/jquery.min.js')}}"></script>
+
+<script src="{{asset('assets_be/plugins/cleave.js-master/cleave.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('assets_be/plugins/bootstrap/js/bootstrap.bundle.js')}}"></script>
 <!-- AdminLTE App -->

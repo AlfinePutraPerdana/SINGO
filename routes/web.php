@@ -17,12 +17,203 @@ use App\Http\Controllers\TenagaController;
 
 Route::get('/', 'DashboardController@index');
 
-Route::get('/ngo', function(){
-    return view('mitra.ngo.beranda.beranda');
+
+
+    
+
+Route::group(['middleware' =>['auth','checklevel:2']], function () {
+
+// Satker
+
+Route::get('/satker', function(){
+    return view('mitra.satker.beranda.beranda');
 });
 
-//NGO-----RKT
-Route::get('/rkt', 'RktController@index');
+Route::get('/satker/rkt', 'Verif_rktController@index');
+
+Route::get('/satker/list-rkt', 'Master_rkt_satkerController@index' );
+
+Route::get('/satker/rkt/{id}/data-rkt', 'Master_rkt_satkerController@show');
+
+Route::get('/satker/rkt/{id}/verifikasi', 'Verif_rktController@show');
+
+Route::post('/satker/rkt/{id}/verifikasi', 'Verif_rktController@verif');
+
+
+Route::get('/satker/tenaga', function () {
+    return view('mitra.satker.tenaga.tenaga');
+});
+
+Route::get('/satker/ajukan-tenaga', function () {
+    return view('mitra.satker.tenaga.ajukantenaga');
+});
+
+Route::get('/satker/revisi-tenaga', function () {
+    return view('mitra.satker.tenaga.revisitenaga');
+});
+
+Route::get('/satker/list-tenaga', function () {
+    return view('mitra.satker.tenaga.listtenaga');
+});
+
+Route::get('/satker/data-tenaga', function () {
+    return view('mitra.satker.tenaga.lihatdata');
+});
+
+Route::get('/satker/history-tenaga', function () {
+    return view('mitra.satker.tenaga.historytenaga');
+});
+
+Route::get('/satker/tamu', function () {
+    return view('mitra.satker.tamu.tamu');
+});
+
+Route::get('/satker/ajukan-tamu', function () {
+    return view('mitra.satker.tamu.ajukantamu');
+});
+
+Route::get('/satker/list-tamu', function () {
+    return view('mitra.satker.tamu.listtamu');
+});
+
+Route::get('/satker/data-tamu', function () {
+    return view('mitra.satker.tamu.lihatdata');
+});
+
+Route::get('/satker/history-tamu', function () {
+    return view('mitra.satker.tamu.historytamu');
+});
+
+Route::get('/satker/revisi-tamu', function () {
+    return view('mitra.satker.tamu.revisitamu');
+});
+
+});
+
+
+Auth::routes();
+
+//-------FASKER------
+Route::group(['middleware' =>['auth','checklevel:3']], function () {
+Route::get('/fasker', function(){
+    return view('mitra.Fasker.beranda.beranda');
+});
+
+//Fasker--Tamu
+
+Route::get('/verif-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.verif_tamu');
+});
+
+Route::get('/master-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.master_tamu');
+});
+
+Route::get('/history-tamu', function () {
+    return view('mitra.Fasker.Tamu_asing.history_tamu');
+});
+
+//Fasker--Tenaga
+Route::get('/verif-tenaga-asing', 'Verif_tenagaController@index');
+
+Route::get('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@show');
+
+Route::post('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@send');
+
+Route::get('/master-tenaga-asing', 'Master_tenaga_faskerController@index');
+
+Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edit');
+
+Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
+
+Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@history');
+
+//Fasker--NGO
+Route::get('/verif-akun', 'Verif_AkunController@index');
+Route::post('/verif-akun/{id}', 'Verif_tenagaController@send');
+Route::get('/master-ngo', function () {
+    return view('mitra.Fasker.Ngo.master_ngo');
+});
+
+//Fasker--MitraLokal
+Route::get('/verif-mitra-lokal', function () {
+    return view('mitra.Fasker.Mitra_lokal.verif_mitra');
+});
+
+Route::get('/master-mitra', 'Master_mitra_faskerController@index');
+
+Route::get('/master-mitra/{id}/data', 'Master_mitra_faskerController@show');
+
+//Fasker--Dokumentasi
+Route::get('/master-artikel', function () {
+    return view('mitra.Fasker.Dokumentasi.master_mitra');
+});
+
+Route::get('/verif-artikel', function () {
+    return view('mitra.Fasker.Dokumentasi.master_mitra');
+});
+
+//Fasker--Monev
+Route::get('/master-monev', function () {
+    return view('mitra.Fasker.Monev.master_monev');
+});
+
+Route::get('/verif-monev', function () {
+    return view('mitra.Fasker.Monev.verif_monev');
+});
+
+//Fasker--Rkt
+Route::get('/verif-rkt', function () {
+    return view('mitra.Fasker.Rkt.verif_rkt');
+});
+
+Route::get('/master-rkt', 'Master_rkt_faskerController@index');
+
+Route::get('/master-rkt/{id}/data', 'Master_rkt_faskerController@show');
+
+Route::get('/master-rkt/{id}/edit', 'Master_rkt_faskerController@edit');
+
+Route::post('/master-rkt/{id}/update', 'Master_rkt_faskerController@update');
+
+//Fasker--Rik
+
+
+//Fasker--Pajak
+Route::get('/verif-bebas-pajak', function () {
+    return view('mitra.Fasker.Bebas_pajak.verif_pajak');
+});
+
+
+//Fasker--Kelola Akun
+Route::get('/list-satker', function () {
+    return view('mitra.Fasker.kelola_akun_satker.list_akun');
+});
+
+Route::get('/tambah-akun','RegisterSatkerController@index');
+Route::post('/tambah-akun','RegisterSatkerController@store');
+
+Route::get('/list-satker/edit', function () {
+    return view('mitra.Fasker.kelola_akun_satker.edit_akun');
+});
+
+});
+
+
+///////////////////////////////////////////////////
+
+//DASHBOARD
+
+
+Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
+//KLASIFIKASI AKUN
+Route::group(['middleware' =>['auth','checklevel:1']], function () {
+    
+Route::get('/ngo', function(){
+        return view('mitra.ngo.beranda.beranda');
+});
+
+ // NGO-----RKT
+ Route::get('/rkt', 'RktController@index');
 
 Route::get('/tambah-rkt', 'RktController@create');
 
@@ -201,195 +392,12 @@ Route::get('/profile', function () {
 
 
 
-// Satker
 
-Route::get('/satker', function(){
-    return view('mitra.satker.beranda.beranda');
-});
-
-Route::get('/satker/rkt', 'Verif_rktController@index');
-
-Route::get('/satker/list-rkt', 'Master_rkt_satkerController@index' );
-
-Route::get('/satker/rkt/{id}/data-rkt', 'Master_rkt_satkerController@show');
-
-Route::get('/satker/rkt/{id}/verifikasi', 'Verif_rktController@show');
-
-Route::post('/satker/rkt/{id}/verifikasi', 'Verif_rktController@verif');
-
-
-Route::get('/satker/tenaga', function () {
-    return view('mitra.satker.tenaga.tenaga');
-});
-
-Route::get('/satker/ajukan-tenaga', function () {
-    return view('mitra.satker.tenaga.ajukantenaga');
-});
-
-Route::get('/satker/revisi-tenaga', function () {
-    return view('mitra.satker.tenaga.revisitenaga');
-});
-
-Route::get('/satker/list-tenaga', function () {
-    return view('mitra.satker.tenaga.listtenaga');
-});
-
-Route::get('/satker/data-tenaga', function () {
-    return view('mitra.satker.tenaga.lihatdata');
-});
-
-Route::get('/satker/history-tenaga', function () {
-    return view('mitra.satker.tenaga.historytenaga');
-});
-
-Route::get('/satker/tamu', function () {
-    return view('mitra.satker.tamu.tamu');
-});
-
-Route::get('/satker/ajukan-tamu', function () {
-    return view('mitra.satker.tamu.ajukantamu');
-});
-
-Route::get('/satker/list-tamu', function () {
-    return view('mitra.satker.tamu.listtamu');
-});
-
-Route::get('/satker/data-tamu', function () {
-    return view('mitra.satker.tamu.lihatdata');
-});
-
-Route::get('/satker/history-tamu', function () {
-    return view('mitra.satker.tamu.historytamu');
-});
-
-Route::get('/satker/revisi-tamu', function () {
-    return view('mitra.satker.tamu.revisitamu');
-});
-
-
-Auth::routes();
-
-//-------FASKER------
-
-Route::get('/fasker', function(){
-    return view('mitra.Fasker.beranda.beranda');
-});
-
-//Fasker--Tamu
-
-Route::get('/verif-tamu', function () {
-    return view('mitra.Fasker.Tamu_asing.verif_tamu');
-});
-
-Route::get('/master-tamu', function () {
-    return view('mitra.Fasker.Tamu_asing.master_tamu');
-});
-
-Route::get('/history-tamu', function () {
-    return view('mitra.Fasker.Tamu_asing.history_tamu');
-});
-
-//Fasker--Tenaga
-Route::get('/verif-tenaga-asing', 'Verif_tenagaController@index');
-
-Route::get('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@show');
-
-Route::post('/verif-tenaga-asing/{id}/verifikasi', 'Verif_tenagaController@send');
-
-Route::get('/master-tenaga-asing', 'Master_tenaga_faskerController@index');
-
-Route::get('/master-tenaga-asing/{id}/edit', 'Master_tenaga_faskerController@edit');
-
-Route::post('/master-tenaga-asing/{id}/update', 'Master_tenaga_faskerController@update');
-
-Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@history');
-
-//Fasker--NGO
-Route::get('/verif-akun', 'Verif_AkunController@index');
-Route::post('/verif-akun/{id}', 'Verif_tenagaController@send');
-Route::get('/master-ngo', function () {
-    return view('mitra.Fasker.Ngo.master_ngo');
-});
-
-//Fasker--MitraLokal
-Route::get('/verif-mitra-lokal', function () {
-    return view('mitra.Fasker.Mitra_lokal.verif_mitra');
-});
-
-Route::get('/master-mitra', 'Master_mitra_faskerController@index');
-
-Route::get('/master-mitra/{id}/data', 'Master_mitra_faskerController@show');
-
-//Fasker--Dokumentasi
-Route::get('/master-artikel', function () {
-    return view('mitra.Fasker.Dokumentasi.master_mitra');
-});
-
-Route::get('/verif-artikel', function () {
-    return view('mitra.Fasker.Dokumentasi.master_mitra');
-});
-
-//Fasker--Monev
-Route::get('/master-monev', function () {
-    return view('mitra.Fasker.Monev.master_monev');
-});
-
-Route::get('/verif-monev', function () {
-    return view('mitra.Fasker.Monev.verif_monev');
-});
-
-//Fasker--Rkt
-Route::get('/verif-rkt', function () {
-    return view('mitra.Fasker.Rkt.verif_rkt');
-});
-
-Route::get('/master-rkt', 'Master_rkt_faskerController@index');
-
-Route::get('/master-rkt/{id}/data', 'Master_rkt_faskerController@show');
-
-Route::get('/master-rkt/{id}/edit', 'Master_rkt_faskerController@edit');
-
-Route::post('/master-rkt/{id}/update', 'Master_rkt_faskerController@update');
-
-//Fasker--Rik
-
-
-//Fasker--Pajak
-Route::get('/verif-bebas-pajak', function () {
-    return view('mitra.Fasker.Bebas_pajak.verif_pajak');
-});
-
-
-//Fasker--Kelola Akun
-Route::get('/list-satker', function () {
-    return view('mitra.Fasker.kelola_akun_satker.list_akun');
-});
-
-Route::get('/tambah-akun','RegisterSatkerController@index');
-Route::post('/tambah-akun','RegisterSatkerController@store');
-
-Route::get('/list-satker/edit', function () {
-    return view('mitra.Fasker.kelola_akun_satker.edit_akun');
-});
-
-
-
-///////////////////////////////////////////////////
-
-//DASHBOARD
-
-
-Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
-//KLASIFIKASI AKUN
-Route::group(['middleware' =>['auth','checklevel:1']], function () {
-    Route::get('/ngo', function(){
-        return view('mitra.ngo.beranda.beranda');
-    });
 });
 //KLASIFIKASI FASKER
 
 //LOGIN
-Route::get('/login', 'LoginController@login');
+Route::get('/login', 'LoginController@login')->name('login');
 Route::get('/logout', 'LoginController@logout');
 Route::post('users/{id}', function ($id) {
 

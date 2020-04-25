@@ -46,7 +46,7 @@
                                     <th>Nama Akun</th>
                                     <th>Email</th>
                                     <th>Instansi</th>
-                                    <th>Aksi</th>
+                                    <th colspan="2" class="text-center">Aksi</th>
                                     <th>Pilih</th>
                                 </tr>
                                 </thead>
@@ -142,7 +142,7 @@
                                     <td>
                                         <div class="icheck-success d-inline">
                                             <input type="checkbox" id="pilih1">
-                                            <label for="pilih1">pilih</label>
+                                            <label for="pilih1"></label>
                                         </div>
                                     </td>
                                 </tr>

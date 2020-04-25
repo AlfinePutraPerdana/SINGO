@@ -20,11 +20,19 @@ class Rkt extends Model
     {
         return $this->hasOne('App/Mata_uang');
     }
-
-
+    
+    public function instansi(){
+        return $this->belongsTo('App\Instansi','id_ngo');
+    }
+   
     public function master_program()
     {
         return $this->hasOne('App/Master_program');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App/User','id_ngo');
     }
 
 }

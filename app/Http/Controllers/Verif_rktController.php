@@ -6,6 +6,8 @@ use App\Mata_uang;
 
 use App\Master_program;
 
+use App\instansi;
+
 use Illuminate\Http\Request;
 
 use App\Rkt;
@@ -21,7 +23,9 @@ class Verif_rktController extends Controller
     {
         $rencanas = Rkt::where('status','1')->latest()->paginate(5);
 
-        return view('mitra.satker.RKT.rkt',['rencanas' => $rencanas]);
+        $instansi = instansi::all();
+
+        return view('mitra.satker.RKT.rkt',['rencanas' => $rencanas,'instansi'=>$instansi]);
     }
 
     /**
@@ -57,9 +61,11 @@ class Verif_rktController extends Controller
 
         $uangs = Mata_uang::all();
 
+        $instansi = instansi::all();
+
         $programs = Master_program::all();
 
-        return view('mitra.satker.RKT.verifrktdraft',['rencana' => $rencana,'uangs'=>$uangs,'programs'=>$programs]);
+        return view('mitra.satker.RKT.verifrktdraft',['rencana' => $rencana,'uangs'=>$uangs,'programs'=>$programs,'instansi'=>$instansi]);
     }
 
     /**

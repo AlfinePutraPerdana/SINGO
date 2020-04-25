@@ -121,7 +121,7 @@
                 </div>
                 <div class="fom-group mb-3">
                     <label for="">Jumlah Tenaga</label>
-                    <input type="number" name="jumlah_ta" class="form-control" value="{{ old('jumlah_ta') }}" placeholder="Jumlah Tenaga" id="tenaga-asing" data-parsley-required data-parsley-trigger="keyup">
+                    <input type="number" name="jumlah_ta" class="form-control" value="{{ old('jumlah_ta') }}" placeholder="Jumlah Tenaga" id="tenaga-asing" min="0" data-parsley-required data-parsley-trigger="keyup">
                 </div>
                   <div class="form-group">
                       <label for="">Peran Serta Pihak Ketiga</label>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="col-md-6">
                       <label for="">Besar Nominal</label>
-                      <input type="number" name="nominal_biaya" class="form-control" value="{{ old('nominal_biaya') }}" id="nominal" placeholder="Masukan Besaran" data-parsley-required data-parsley-trigger="keyup">
+                      <input type="number" name="nominal_biaya" class="form-control" value="{{ old('nominal_biaya') }}" id="nominal" placeholder="Masukan Besaran" min="0" data-parsley-required data-parsley-trigger="keyup">
                     </div>
                   </div>
                   {{-- <div class="form-group mt-3">
@@ -203,6 +203,7 @@
 
 
 @endsection
+
 
 
 

@@ -38,7 +38,7 @@ class CreateRktsTable extends Migration
             $table->string('filename_bap')->nullable();
             $table->unsignedBigInteger('id_program');
             $table->integer('status');
-            $table->text('catatan');
+            $table->text('catatan')->nullable();
             //$table->foreign('id_program')->references('id')->on('master_programs');
 
 

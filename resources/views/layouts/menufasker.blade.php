@@ -131,7 +131,7 @@
           <img src="{{asset('assets_fas/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Fasker</a>
+          <a href="#" class="d-block">{{ Auth::user()->name }} - Fasker</a>
         </div>
       </div>
 
@@ -387,8 +387,12 @@
   <!-- Content Wrapper. Contains page content -->
 
 
+        
+          
+          @yield('content')
 
-            @yield('content')
+        
+           
 
 
 

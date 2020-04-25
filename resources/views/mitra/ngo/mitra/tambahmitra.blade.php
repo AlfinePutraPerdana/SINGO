@@ -1,8 +1,8 @@
 @extends('layouts.menubar')
 
-@section('permintaan','active')
+@section('menu-mitra','menu-open')
 
-@section('open','menu-open')
+@section('mitra-lokal','active')
 
 @section('tambah-mitra','active')
 

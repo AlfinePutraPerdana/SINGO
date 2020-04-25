@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\File;
 
+use Illuminate\Support\Facades\Auth;
+
 class Master_rkt_faskerController extends Controller
 {
     /**
@@ -21,6 +23,8 @@ class Master_rkt_faskerController extends Controller
      */
     public function index(Request $request)
     {
+        // $id_ngo = Auth::user()->id_instansi;
+
         if ($request->has('search')) {
             
             $rencanas = Rkt::where('judul','LIKE','%'.$request->search.'%')
@@ -69,6 +73,7 @@ class Master_rkt_faskerController extends Controller
      */
     public function show($id)
     {
+        
         $rencana = Rkt::find($id);
 
         $uangs = Mata_uang::all();
@@ -86,6 +91,9 @@ class Master_rkt_faskerController extends Controller
      */
     public function edit($id)
     {
+       
+        // $id_instansi = Auth::user()->id_instansi;
+
         $rencana = Rkt::find($id);
 
         $uangs = Mata_uang::all();
@@ -164,10 +172,10 @@ class Master_rkt_faskerController extends Controller
             'bap' => $nama_bap,
             'filename_bap' => $filename_bap,
             'id_program'=> $request->id_program,
-            'status' => 1
+            
         ]);
 
-        return redirect('/master-rkt')->with('sukses', 'Data Berhasil Dikirim');
+        return redirect('/master-rkt')->with('sukses', 'Data Berhasil DiUpdate');
 
     }
 

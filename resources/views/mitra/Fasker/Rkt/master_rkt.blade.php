@@ -53,6 +53,7 @@
                   <thead>
                     <tr class="text-center">
                       <th>No</th>
+                      <th>Organisasi</th>
                       <th>Judul Rencana</th>
                       <th colspan="2" >Aksi</th>
                     </tr>
@@ -66,6 +67,7 @@
                       @foreach ($rencanas as $rencana)
                       <tr align="center">
                         <td >{{($rencanas->currentPage()-1)*$rencanas->perPage()+$loop->iteration}}</td>
+                        <td>{{ $rencana->instansi->nama }}</td>
                         <td>{{ $rencana->judul }}</td>
                         <td>
                           <a href="/master-rkt/{{ $rencana->id }}/data" class="btn btn-sm btn-primary"><i class="far fa-eye"></i> <b>Lihat</b></a>

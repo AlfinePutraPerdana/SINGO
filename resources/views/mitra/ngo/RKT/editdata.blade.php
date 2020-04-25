@@ -97,7 +97,7 @@
                     </div>
                     <div class="fom-group mb-3">
                         <label for="">Jumlah Tenaga</label>
-                        <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" value="{{ $rencana->jumlah_ta }}">
+                        <input type="number" name="jumlah_ta" class="form-control" placeholder="Jumlah Tenaga" min="0" value="{{ $rencana->jumlah_ta }}">
                     </div>
                       <div class="form-group">
                           <label for="">Peran Serta Pihak Ketiga</label>
@@ -128,7 +128,7 @@
                         </div>
                         <div class="col-md-6">
                           <label for="">Besar Nominal</label>
-                          <input type="number" name="nominal_biaya" class="form-control" id="nominal" placeholder="Masukan Besaran" value="{{ $rencana->nominal_biaya }}">
+                          <input type="number" name="nominal_biaya" class="form-control" id="nominal" placeholder="Masukan Besaran" min="0" value="{{ $rencana->nominal_biaya }}">
                         </div>
                       </div>
                       {{-- <div class="form-group mt-3">

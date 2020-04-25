@@ -10,7 +10,11 @@ use App\Rkt;
 
 use App\Mata_uang;
 
+use App\Instansi;
+
 use Illuminate\Support\Facades\File;
+
+use Illuminate\Support\Facades\Auth;
 
 class RktController extends Controller
 {
@@ -21,9 +25,11 @@ class RktController extends Controller
      */
     public function index(Request $request)
     {
-        
+        $id_ngo = Auth::user()->id_instansi;
+
         if ($request->has('search')) {
             
+
             $rencanas = Rkt::where('judul','LIKE'.'%'.$request->search.'%')
                             ->wherein('status',[0,1,2])
                             ->latest('updated_at')
@@ -33,7 +39,9 @@ class RktController extends Controller
 
         } else {
             
-            $rencanas = Rkt::wherein('status',[0,1,2])->latest()->paginate(5);
+           
+           
+            $rencanas = Rkt::wherein('status',[0,1,2])->wherein('id_ngo',[$id_ngo])->latest()->paginate(5);
 
         }
         
@@ -47,9 +55,13 @@ class RktController extends Controller
      */
     public function create()
     {
+        $id_instansi = Auth::user()->id_instansi;
+
         $uangs = Mata_uang::all();
 
-        $programs = Master_program::all();
+        // $programs = Master_program::wherein('id_instansi',[$id_instansi]);
+
+        $programs = Master_program::all()->wherein('id_instansi',[$id_instansi]);
         
         return view('mitra.ngo.RKT.tambahrkt',['uangs'=>$uangs,'programs' => $programs]);
     }
@@ -111,9 +123,14 @@ class RktController extends Controller
             $filename_bap = null;
 
         }
+
+        $id_ngo = Auth::user()->id_instansi;
+
+        // $id_program = Master_program::where('id',$id)->first();
         
         $rencana = Rkt::create([
             'judul' => $request->judul,
+            'id_ngo' => $id_ngo,
             'pendahuluan' => $request->pendahuluan,
             'tujuan' => $request->tujuan,
             'kelompok_sasaran' => $request->kelompok_sasaran,
@@ -130,7 +147,7 @@ class RktController extends Controller
             'penutup' => $request->penutup,
             'lampiran' =>$nama_lampiran,
             'filename_lampiran' => $filename_lampiran,
-            'id_program' => $request->id_program,
+            'id_program' => $request-> id_program,
             'bap' => $nama_bap,
             'filename_bap' => $filename_bap,
             'status' => 0
@@ -158,11 +175,13 @@ class RktController extends Controller
      */
     public function edit($id)
     {
+        $id_instansi = Auth::user()->id_instansi;
+        
         $rencana = Rkt::find($id);
 
         $uangs = Mata_uang::all();
 
-        $programs = Master_program::all();
+        $programs = Master_program::all()->wherein('id_instansi',[$id_instansi]);
 
         return view('mitra.ngo.RKT.revisirktdraft',['rencana'=>$rencana,'uangs'=> $uangs, 'programs'=> $programs]);
     }

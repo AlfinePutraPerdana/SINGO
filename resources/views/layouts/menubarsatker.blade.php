@@ -128,7 +128,7 @@
           <img src="{{asset('assets_sat/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/profile" class="d-block">Satker</a>
+          <a href="/profile" class="d-block">{{ Auth::user()->name }} - Satker</a>
         </div>
       </div>
 
