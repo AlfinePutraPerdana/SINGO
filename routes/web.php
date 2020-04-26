@@ -386,9 +386,7 @@ Route::get('/pajak', function () {
     return view('mitra.ngo.pajak.pajak');
 });
 
-Route::get('/profile', function () {
-    return view('mitra.ngo.profile.profile');
-});
+Route::get('/{id}/profile', 'ProfileNgoController@profile' );
 
 
 
@@ -415,3 +413,6 @@ Route::get('/blog-details', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
