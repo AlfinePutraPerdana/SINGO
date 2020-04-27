@@ -78,13 +78,14 @@ class RktController extends Controller
        $pesan = [
 
         'required' => ':attribute Wajib di Isi',
+        'judul.unique' => 'Judul Rencana Sudah Ada',
         'lampiran.mimes' => 'Lampiran File Harus File PDF'
 
        ];
        
         $this->validate($request,[
 
-        'judul' => 'required',
+        'judul' => 'required|unique:rkts',
         'pendahuluan' => 'required',
         'tujuan' => 'required',
         'kelompok_sasaran' => 'required',

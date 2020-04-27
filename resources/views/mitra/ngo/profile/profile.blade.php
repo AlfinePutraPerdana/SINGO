@@ -39,7 +39,7 @@
                     <h3 class="profile-username text-center">{{ Auth::user()->name }}</h3>
                 
 
-                <p class="text-muted text-center">{{ $users->email }}</p>
+                <p class="text-muted text-center">{{ Auth::user()->email }}</p>
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
