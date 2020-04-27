@@ -36,7 +36,6 @@ class RegisterSatkerController extends Controller
      * @return void
      */
     protected function index(){
-
         return view('mitra.Fasker.kelola_akun_satker.tambah_akun');
     }
     public function __construct()
@@ -66,7 +65,7 @@ class RegisterSatkerController extends Controller
      *@param  \Illuminate\Http\Request  $request
      */
     public function store(Request $request){
-        return User::create([
+        User::create([
             'name' => $request -> name,
             'username'=>$request -> username,
             'email' => $request -> email,
@@ -75,6 +74,7 @@ class RegisterSatkerController extends Controller
             'status' => 1,
             'level' =>2
         ]);
+        return redirect('/list-satker')->with('sukses','Data Berhasil ditambah');
     }
 
 }
