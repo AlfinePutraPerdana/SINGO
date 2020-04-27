@@ -162,6 +162,16 @@ Route::get('/verif-monev', function () {
     return view('mitra.Fasker.Monev.verif_monev');
 });
 
+//Fasker--Laporan tahunan dan keuangan
+
+Route::get('/master-ltk', 'ReportController@index_fasker');
+
+Route::get('/master-ltk/lihat/{id}', 'ReportController@lihat_fasker');
+
+Route::get('/master-lk', 'LapUangController@index_fasker');
+
+Route::get('/master-lk/lihat/{id}', 'LapUangController@lihat_fasker');
+
 //Fasker--Rkt
 Route::get('/verif-rkt', function () {
     return view('mitra.Fasker.Rkt.verif_rkt');
