@@ -132,10 +132,10 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{asset('assets_be/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{asset('assets_be/dist/img/profile.png')}}" class="img-circle elevation-4" alt="User Image">
         </div>
         <div class="info">
-          <a href="/profile" class="d-block">{{ Auth::user()->name }} - NGO</a>
+           <a href="/{{ Auth::id() }}/profile" class="d-block">{{ Auth::user()->name }} - NGO</a>
         </div>
       </div>
 
