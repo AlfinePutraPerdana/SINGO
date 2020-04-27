@@ -19,7 +19,7 @@ Route::get('/', 'DashboardController@index');
 
 
 
-    
+
 
 Route::group(['middleware' =>['auth','checklevel:2']], function () {
 
@@ -130,7 +130,8 @@ Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@
 
 //Fasker--NGO
 Route::get('/verif-akun', 'Verif_AkunController@index');
-Route::post('/verif-akun/{id}', 'Verif_tenagaController@send');
+Route::get('/verif-akun/{id}/verifikasi', 'Verif_AkunController@show');
+Route::post('/verif-akun/{id}/verifikasi', 'Verif_AkunController@send');
 Route::get('/master-ngo', function () {
     return view('mitra.Fasker.Ngo.master_ngo');
 });
@@ -217,7 +218,7 @@ Route::get('/list-satker/edit', function () {
 Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
 //KLASIFIKASI AKUN
 Route::group(['middleware' =>['auth','checklevel:1']], function () {
-    
+
 Route::get('/ngo', function(){
         return view('mitra.ngo.beranda.beranda');
 });
@@ -396,9 +397,7 @@ Route::get('/pajak', function () {
     return view('mitra.ngo.pajak.pajak');
 });
 
-Route::get('/profile', function () {
-    return view('mitra.ngo.profile.profile');
-});
+Route::get('/{id}/profile', 'ProfileNgoController@profile' );
 
 
 
@@ -425,3 +424,6 @@ Route::get('/blog-details', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+

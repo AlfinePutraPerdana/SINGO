@@ -28,7 +28,7 @@ class RegisterSatkerController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/list-satker';
 
     /**
      * Create a new controller instance.
@@ -36,6 +36,7 @@ class RegisterSatkerController extends Controller
      * @return void
      */
     protected function index(){
+
         return view('mitra.Fasker.kelola_akun_satker.tambah_akun');
     }
     public function __construct()
@@ -74,7 +75,6 @@ class RegisterSatkerController extends Controller
             'status' => 1,
             'level' =>2
         ]);
-        return redirect('/list-satker')->with('sukses','Data Berhasil ditambah');
     }
 
 }
