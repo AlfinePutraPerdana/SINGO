@@ -28,7 +28,7 @@ class RegisterSatkerController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/list-satker';
 
     /**
      * Create a new controller instance.
@@ -65,7 +65,7 @@ class RegisterSatkerController extends Controller
      *@param  \Illuminate\Http\Request  $request
      */
     public function store(Request $request){
-        return User::create([
+        User::create([
             'name' => $request -> name,
             'username'=>$request -> username,
             'email' => $request -> email,

@@ -19,7 +19,7 @@ Route::get('/', 'DashboardController@index');
 
 
 
-    
+
 
 Route::group(['middleware' =>['auth','checklevel:2']], function () {
 
@@ -130,7 +130,8 @@ Route::get('/master-tenaga-asing/{id}/history', 'Master_tenaga_faskerController@
 
 //Fasker--NGO
 Route::get('/verif-akun', 'Verif_AkunController@index');
-Route::post('/verif-akun/{id}', 'Verif_tenagaController@send');
+Route::get('/verif-akun/{id}/verifikasi', 'Verif_AkunController@show');
+Route::post('/verif-akun/{id}/verifikasi', 'Verif_AkunController@send');
 Route::get('/master-ngo', function () {
     return view('mitra.Fasker.Ngo.master_ngo');
 });
@@ -161,6 +162,16 @@ Route::get('/master-monev', function () {
 Route::get('/verif-monev', function () {
     return view('mitra.Fasker.Monev.verif_monev');
 });
+
+//Fasker--Laporan tahunan dan keuangan
+
+Route::get('/master-ltk', 'ReportController@index_fasker');
+
+Route::get('/master-ltk/lihat/{id}', 'ReportController@lihat_fasker');
+
+Route::get('/master-lk', 'LapUangController@index_fasker');
+
+Route::get('/master-lk/lihat/{id}', 'LapUangController@lihat_fasker');
 
 //Fasker--Rkt
 Route::get('/verif-rkt', function () {
@@ -207,7 +218,7 @@ Route::get('/list-satker/edit', function () {
 Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
 //KLASIFIKASI AKUN
 Route::group(['middleware' =>['auth','checklevel:1']], function () {
-    
+
 Route::get('/ngo', function(){
         return view('mitra.ngo.beranda.beranda');
 });
