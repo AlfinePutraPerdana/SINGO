@@ -45,9 +45,8 @@
                                     <th>No</th>
                                     <th>Nama Akun</th>
                                     <th>Email</th>
-                                    <th>Instansi</th>
-                                    <th colspan="2" class="text-center">Aksi</th>
-                                    <th>Pilih</th>
+                                    <th>Aksi</th>
+
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -61,90 +60,7 @@
                                 <td>{{($akun->currentPage() - 1)*$akun->perPage()+$loop->iteration }}</td>
                                 <td>{{$row-> name}}</td>
                                 <td>{{$row-> email}}</td>
-                                <td>{{$row-> id_instansi}}</td>
                                 <td><a href="/verif-akun/{{$row->id}}/verifikasi" class="btn btn-sm btn-primary"><i class="far fa-check-circle"></i> <b>Verifikasi</b></a>
-
-                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pratinjau" data-toggle="tooltip" title="Lihat form pengajuan">
-                                       <i class="far fa-eye"></i><b> Pratinjau</b>
-                                    </td>
-                                        @foreach($instansi as $ngo)
-                                        <div class="modal fade" id="pratinjau" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Pengajuan Akun</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form action="" method="post" class="contactForm">
-                                                            <div class="form-group">
-                                                                <h5>Nama Organisasi</h5>
-                                                            <p>{{$ngo-> nama}}</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Negara Asal</h5>
-                                                            <p>{{$ngo-> negara}}</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Nomor Registrasi Izin Prinsip</h5>
-                                                            <p>{{$ngo-> no_regis_izin}}</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Country Director / Representative</h5>
-                                                                <p>text here</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Alamat</h5>
-                                                                <p>Jl.Merdeka No.45, Kecamatan Kemayoran, Jakarta Pusat</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Nomor Telepon</h5>
-                                                                <p>089210364538</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Faximile</h5>
-                                                                <p>+62 21-7829462</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Email</h5>
-                                                                <p>service@wwf.or.id</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Website</h5>
-                                                                <p>Worldwildlife.org</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Bidang Kerja</h5>
-                                                                <p>Pelestarian Lingkungan</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Tanggal Mulai Beroperasi di Indonesia</h5>
-                                                                <p>31-01-1962</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Tanggal Penandatanganan MSP Terakhir</h5>
-                                                                <p>31-01-2020</p>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Lokasi Kerja Sama</h5>
-                                                                <p>Ujung Kulon, Banten</p>
-                                                            </div>
-                                                            <button class="btn btn-danger" name="revisi[]" type="submit"><i class="fas fa-sync-alt"></i> <b>Revisi</b></button>
-                                    <button class="btn btn-success" name="setuju[]" type="submit"><i class="far fa-check-circle"></i> <b>Setuju</b></button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        @endforeach
-                                    <td>
-                                        <div class="icheck-success d-inline">
-                                            <input type="checkbox" id="pilih1">
-                                            <label for="pilih1"></label>
-                                        </div>
-                                    </td>
                                 </tr>
                                     @endforeach
                                 @endif

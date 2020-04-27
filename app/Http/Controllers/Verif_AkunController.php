@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\instansi;
+use App\Ngo;
 use Illuminate\Http\Request;
 use App\User;
 
@@ -33,8 +34,9 @@ class Verif_AkunController extends Controller
 
 
         }
+        $instansiid = user::all()->get('id_instansi');
+        $instansi = instansi::find($instansiid);
 
-        $instansi = instansi::all();
 
         return view('mitra.Fasker.ngo.verif_ngo',['akun' => $akun, 'instansi' => $instansi]);
 
@@ -55,7 +57,7 @@ class Verif_AkunController extends Controller
             $revisi = User::find($id);
             $revisi->update([
 
-                'status'=> 0
+                'status'=> 3
             ]);
         }
 
@@ -70,5 +72,22 @@ class Verif_AkunController extends Controller
 
         return redirect('/verif-akun')->with('sukses','akun Berhasil di Verifikasi');
     }
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
+public function show($id){
+    $user=User::find($id);
+    $instansiid=$user-> id_instansi;
+    $instansis=instansi::find($instansiid);
+    $ngo=Ngo::find($instansiid);
+    return view('mitra.Fasker.Ngo.pratinjau_ngo',['user'=>$user,'instansis'=>$instansis,'ngo'=>$ngo]);
+}
+
+
 
 }
+
