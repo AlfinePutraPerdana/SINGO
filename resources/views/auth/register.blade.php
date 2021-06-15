@@ -90,7 +90,7 @@
                             @enderror
                         </div>
                     </div>
-
+                <!--
                     <div class="row"><h3>Informasi Organisasi</h3></div>
                     <div class="form-group row">
                         <label for="org_name" class="col-md-4 col-form-label text-md-right">{{ __('Nama Organisasi') }}</label>
@@ -190,6 +190,20 @@
                     </div>
 
                     <div class="form-group row">
+                        <label for="web" class="col-md-4 col-form-label text-md-right">{{ __('Website') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="web" type="text" class="form-control @error('web') is-invalid @enderror" name="web" value="{{ old('web') }}" required autocomplete="web">
+
+                            @error('web')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label for="bidang_kerja" class="col-md-4 col-form-label text-md-right">{{ __('Bidang Kerja') }}</label>
 
                         <div class="col-md-6">
@@ -271,7 +285,7 @@
                             @enderror
                         </div>
                     </div>
-
+                -->
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
                             <button type="submit" class="btn btn-primary">

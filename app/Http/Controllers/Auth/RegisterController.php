@@ -52,11 +52,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'username' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'name' => ['required', 'string', 'max:30'],
+            'username' => ['required', 'string', 'max:30'],
+            'email' => ['required', 'string', 'email', 'max:40', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'no_hp' => ['required', 'string','min:10', 'max:12'],
+            'alamat' => ['required', 'string','max:255'],
+            'org_name'=>['required','string','max:100'],
+            'no_regis_izin'=>['required','string','max:15'],
+            'fax'=>['max:10'],
+            'web'=>['string'],
+            
         ]);
     }
 
@@ -89,7 +95,7 @@ class RegisterController extends Controller
             'no_telp'=>$data['org_telp'],
             'fax' => $data['fax'],
             'email' => $data['org_email'],
-            'website' => $data['no_regis'],
+            'website' => $data['web'],
             'bidang_kerja' => $data['bidang_kerja'],
             'mulai_beroperasi' => $data['tgl_operasi'],
             'tgl_ttd_msp' => $data['tgl_msp'],
