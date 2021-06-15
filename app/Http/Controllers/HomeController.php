@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -13,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except'=>['index']]);
     }
 
     /**
@@ -21,8 +23,24 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        if (Auth::check()) {
+            if($request->user()->level =='1'){
+                return redirect('/ngo');
+            }
+            elseif($request->user()->level =='2'){
+                        return redirect('/satker');
+                }
+            elseif($request->user()->level=='3'){
+                return redirect('/fasker');
+                }
+            else
+            {
+                return redirect('/login');
+            }
+        }
+        return redirect('/login');
+
     }
 }
